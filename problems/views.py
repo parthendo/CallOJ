@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.core.mail import send_mail
+from django.contrib.auth.decorators import login_required
 from .models import AllProblems
 import os, zipfile
 import shutil
@@ -9,26 +10,33 @@ import time
 
 from django.core.files.storage import FileSystemStorage
 # Create your views here.
-def correct_form(request):
+
+@login_required
+def correctFormView(request):
     return render(request,'thanks.html')
 
-def dashboard(request):
+@login_required
+def dashboardView(request):
     return render(request,'dashboard.html')
 
-def problems(request):
+@login_required
+def problemsView(request):
     all_questions = AllProblems.objects.all()
     return render(request,'problems.html',{'all_problems':all_questions})
 
+@login_required
 def showProblemView(request,problem_id):
     problem_to_show = AllProblems.objects.get(id=problem_id)
     return render(request,'problem.html',{'problem':problem_to_show})
 
+@login_required
 def submitProblemView(request,problem_id):
     usercode = request.POST['code']
     language = request.POST['language']
     print(usercode,language)
     return render(request,'thanks.html')
 
+@login_required
 def createProblemView(request):
     if request.method == 'POST':
         length=10

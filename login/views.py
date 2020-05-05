@@ -2,9 +2,11 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.core.mail import send_mail
 from django.contrib import messages
-from .models import User
+from django.contrib import auth
+# from .models import User
+from django.contrib.auth.models import User
 from problems.models import AllProblems
-def login(request):
+def loginView(request):
     #print(request.POST['username'],request.POST['pass'])
     # insertInProblems = 1
     # if(insertInProblems == 1):
@@ -26,29 +28,34 @@ def login(request):
     #     editorialist2 = "Parth74"
     #     problem2 = AllProblems(problemCode=problemCode2,problemName=problemName2,problemStatement=problemStatement2,timeLimit=timeLimit2,memoryLimit=memoryLimit2,creator=creator2,editorialist=editorialist2)
     #     problem2.save()
-
-    invalid = 1
-    userfound = 0
+    # invalid = 1
+    # userfound = 0
     username = request.POST['username']
     password = request.POST['pass']
-    all_users = User.objects.all()
-    for user in all_users:
-        if user.userid == username:
-            userfound=1
-            if user.password == password:
-                invalid = 0
-                break
-            else:
-                messages.info(request,'Password did not match')
-                break
-    if userfound==0:
-        messages.info(request,'Username is not valid')
+    user = auth.authenticate(username=username, password=password)
+    if user is not None and user.is_active:
+        auth.login(request,user)
+        return HttpResponseRedirect('/dashboard/')
+    else:
+        return HttpResponseRedirect('/')
+    # all_users = User.objects.all()
+    # for user in all_users:
+    #     if user.userid == username:
+    #         userfound=1
+    #         if user.password == password:
+    #             invalid = 0
+    #             break
+    #         else:
+    #             messages.info(request,'Password did not match')
+    #             break
+    # if userfound==0:
+    #     messages.info(request,'Username is not valid')
     #loop through all the users in the user table
     #if username matches but password does not match
-    if invalid == 1:
-        return HttpResponseRedirect('/')
-    else:
-        return HttpResponseRedirect('/dashboard/')
+    # if invalid == 1:
+    #     return HttpResponseRedirect('/')
+    # else:
+    #     return HttpResponseRedirect('/dashboard/')
     #else
     #render to the dashboard page
 
@@ -77,17 +84,22 @@ def login(request):
 #def initial_view(request):
  #   return render(request,'home.html',{'form':form})
 
+def logoutView(request):
+    auth.logout(request)
+    return HttpResponseRedirect('/')
 
-def initial(request):
+def initialView(request):
     return render(request,'index.html')
 
-def register(request):
+def registerView(request):
     return render(request,'registration.html')
 
-def save_user(request):
+def saveUserView(request):
     exists = 0
     username = request.POST['username']
-    name = request.POST['name']
+    firstname = request.POST['firstname']
+    lastname = request.POST['lastname']
+
     email = request.POST['mail']
     password1 = request.POST['password1']
     password2 = request.POST['password2']
@@ -96,11 +108,11 @@ def save_user(request):
         exists = 1
     all_users = User.objects.all()
     for user in all_users:
-        if user.userid == username:
+        if user.username == username:
             exists = 1
             messages.info(request,'Username Taken')
             break
-        if user.mail == email:
+        if user.email == email:
             exists = 1
             messages.info(request,'Email Taken')
             break
@@ -108,7 +120,7 @@ def save_user(request):
     #loop through all the users if at any point username matches set exists=1 and break
 
     if exists == 0:
-        new_user = User(userid=username,name=name,mail=email,password=password1)
+        new_user = User.objects.create_user(username=username,first_name=firstname,last_name=lastname,email=email,password=password1)
         new_user.save()
         return HttpResponseRedirect('/')
     else:
