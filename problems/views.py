@@ -3,7 +3,7 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.core.mail import send_mail
 from django.contrib.auth.decorators import login_required
-from .models import AllProblems
+from .models import AllProblems,Question
 import os, zipfile
 import shutil
 import time
@@ -21,12 +21,16 @@ def dashboardView(request):
 
 @login_required
 def problemsView(request):
-    all_questions = AllProblems.objects.all()
+    questions = Question.objects.all()
+    all_questions = []
+    for ques in questions:
+        if ques.access == 1 or ques.creator == request.user.username:
+            all_questions.append(ques)
     return render(request,'problems.html',{'all_problems':all_questions})
 
 @login_required
 def showProblemView(request,problem_id):
-    problem_to_show = AllProblems.objects.get(id=problem_id)
+    problem_to_show = Question.objects.get(id=problem_id)
     return render(request,'problem.html',{'problem':problem_to_show})
 
 @login_required
@@ -39,6 +43,7 @@ def submitProblemView(request,problem_id):
 @login_required
 def createProblemView(request):
     if request.method == 'POST':
+        exists = 0
         length=10
         yml_file = request.FILES['uploadFiles']
         directory = request.POST['problemCode']
@@ -76,6 +81,34 @@ def createProblemView(request):
                 break
 
         if inputFileWrong == 0:
+            problem_code = request.POST['problemCode']
+            problem_name = request.POST['problemName']
+            problem_statement = request.POST['problemStatement']
+            time_limit = request.POST['timeLimit']
+            memory_limit = request.POST['memoryLimit']
+            problemType = request.POST['problemType']
+            # ioi = bool(request.POST.get('problemType')=='1')
+            print(int(problemType))
+            if int(problemType) == 1:
+                marking = 1
+            else:
+                marking = 2
+            visibility = request.POST['visibility']
+            print(int(visibility))
+            if int(visibility) == 1:
+                access = 1
+            else:
+                access = 2
+            creator = request.user.username
+            all_questions = Question.objects.all()
+            for ques in all_questions:
+                if ques.problemCode == problem_code:
+                    exists = 1
+                    break
+            if exists == 1:
+                return render(request,'createproblem.html')
+            newProblem = Question(problemCode=problem_code,problemName=problem_name,problemStatement=problem_statement,timeLimit=time_limit,memoryLimit=memory_limit,marking=marking,access=access,creator=creator,editorialist=creator)
+            newProblem.save()
             all_files = request.FILES.getlist('uploadedFiles')
             length = len(request.FILES.getlist('uploadedFiles'))
             loop = 0

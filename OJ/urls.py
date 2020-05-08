@@ -22,7 +22,7 @@ urlpatterns = [
     path('',include('login.urls')),
     path('dashboard/',include('problems.urls')),
     path('contest/',include('contest.urls')),
-
+    path('userprofile/',include('userprofile.urls')),
 ]
 
 if settings.DEBUG:

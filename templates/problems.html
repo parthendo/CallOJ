@@ -4,7 +4,7 @@
     <!-- {{ user.username }} -->
     {% for problem in all_problems %}
     <li>{{ problem.problemName }}
-        {{ problem.problemCode }}
+        <!-- {{ problem.problemCode }} -->
         <form action="/dashboard/problems/{{ problem.id }}/"
         style="display: inline;"
         method="post">

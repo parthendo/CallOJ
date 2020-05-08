@@ -1,9 +1,12 @@
 <div>
     {% if user.is_authenticated %}
         <p> Welcome, {{ user.username }}.</p>
+        <div class="row">
         <a href="/dashboard/problems/">Problems Page</a>
         <a href="/dashboard/createProblem/">Create Problem Page</a>
+        <a href="/userprofile/">My Profile</a>
         <a href="/logout/">logout</a>
+        </div>
     {% else %}
         <p>Do not try to bypass , please Log In ! </p>
     {% endif %}
