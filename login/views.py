@@ -3,6 +3,7 @@ from django.shortcuts import render
 from django.core.mail import send_mail
 from django.contrib import messages
 from django.contrib import auth
+import os
 # from .models import User
 from django.contrib.auth.models import User
 from problems.models import AllProblems
@@ -32,6 +33,7 @@ def loginView(request):
     # userfound = 0
     username = request.POST['username']
     password = request.POST['pass']
+    print(username," ",password)
     user = auth.authenticate(username=username, password=password)
     if user is not None and user.is_active:
         auth.login(request,user)
@@ -121,6 +123,11 @@ def saveUserView(request):
 
     if exists == 0:
         new_user = User.objects.create_user(username=username,first_name=firstname,last_name=lastname,email=email,password=password1)
+        mode = 0o777
+        directory = username
+        parent_dir = os.path.expanduser('~/CallOJ/media/submittedFiles')
+        path = os.path.join(parent_dir, directory)
+        os.mkdir(path,mode)
         new_user.save()
         return HttpResponseRedirect('/')
     else:

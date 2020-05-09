@@ -4,6 +4,7 @@ from django.shortcuts import render
 from django.core.mail import send_mail
 from django.contrib.auth.decorators import login_required
 from .models import AllProblems,Question
+from .judge import Judge
 import os, zipfile
 import shutil
 import time
@@ -37,8 +38,54 @@ def showProblemView(request,problem_id):
 def submitProblemView(request,problem_id):
     usercode = request.POST['code']
     language = request.POST['language']
-    print(usercode,language)
-    return render(request,'thanks.html')
+    problem = Question.objects.get(id=problem_id)
+    if language == "Java":
+        with open(("media/submittedFiles/"+request.user.username+"/"+problem.problemCode+".txt"), "w") as file:
+            file.write(usercode)
+        my_file = "media/submittedFiles/"+request.user.username+"/"+problem.problemCode+".txt"
+        base = os.path.splitext(my_file)[0]
+        os.rename(my_file, base + '.java')
+    if language == "C++":
+        with open(("media/submittedFiles/"+request.user.username+"/"+problem.problemCode+".txt"), "w") as file:
+            file.write(usercode)
+        my_file = "media/submittedFiles/"+request.user.username+"/"+problem.problemCode+".txt"
+        base = os.path.splitext(my_file)[0]
+        os.rename(my_file, base + '.cpp')
+    if language == "python":
+        with open(("media/submittedFiles/"+request.user.username+"/"+problem.problemCode+".txt"), "w") as file:
+            file.write(usercode)
+        my_file = "media/submittedFiles/"+request.user.username+"/"+problem.problemCode+".txt"
+        base = os.path.splitext(my_file)[0]
+        os.rename(my_file, base + '.py')
+    if language == "C":
+        with open(("media/submittedFiles/"+request.user.username+"/"+problem.problemCode+".txt"), "w") as file:
+            file.write(usercode)
+        my_file = "media/submittedFiles/"+request.user.username+"/"+problem.problemCode+".txt"
+        base = os.path.splitext(my_file)[0]
+        os.rename(my_file, base + '.c')
+
+    judge = Judge()
+    judge.judgeConfigFile =  b"/home/jayant/CallOJ/media/judgeConfiguration/config.yml"
+    if language == "Java":
+        judge.solutionCode = request.user.username + "/" + problem.problemCode + ".java"
+    if language == "C++":
+        judge.solutionCode = request.user.username + "/" + problem.problemCode + ".cpp"
+    if language == "C":
+        judge.solutionCode = request.user.username + "/" + problem.problemCode + ".c"
+    if language == "python":
+        judge.solutionCode = request.user.username + "/" + problem.problemCode + ".py"
+
+    judge.problemCode = str(problem.problemCode)
+    # judge.problemCode = "XYZ"
+    if language == "Java":
+        judge.languageCode = "JAVA8"
+
+    judge.timeLimit = str(problem.timeLimit)
+    judge.memoryLimit = str(problem.memoryLimit)
+    judge.problemType = problem.marking #ICPC type
+    x = judge.executeJudge()
+    print(x)
+    return render(request,'results.html',{'results':x})
 
 @login_required
 def createProblemView(request):
@@ -47,7 +94,7 @@ def createProblemView(request):
         length=10
         yml_file = request.FILES['uploadFiles']
         directory = request.POST['problemCode']
-        parent_dir = os.path.expanduser('~/CallOJ/media')
+        parent_dir = os.path.expanduser('~/CallOJ/media/problems')
         path = os.path.join(parent_dir,directory)
         #directory permissions in octal
         mode = 0o777
@@ -139,7 +186,7 @@ def createProblemView(request):
             print((path+"/"+directory+".zip"))
             zf = zipfile.ZipFile((path+"/"+directory+".zip"), "w")
             notdelete = directory+".zip"
-            for root,subdirs,files in os.walk("/home/jayant/CallOJ/media/"+directory):
+            for root,subdirs,files in os.walk("/home/jayant/CallOJ/media/problems/"+directory):
                 for filename in files:
                     if filename != "init.yml" and filename!=notdelete:
                         zf.write(os.path.join(root, filename), filename, zipfile.ZIP_DEFLATED)
@@ -150,11 +197,11 @@ def createProblemView(request):
             while loop<length:
                 file_input = all_files[loop]
                 # file_input.name = "tc" + str(index) + ".in"
-                src=os.path.expanduser('~/CallOJ/media/'+directory+'/'+file_input.name)
+                src=os.path.expanduser('~/CallOJ/media/problems/'+directory+'/'+file_input.name)
                 os.remove(src)
                 file_output = all_files[loop+1]
                 # file_output.name = "tc" + str(index) + ".out"
-                src=os.path.expanduser(('~/CallOJ/media/'+directory+'/')+file_output.name)
+                src=os.path.expanduser(('~/CallOJ/media/problems/'+directory+'/')+file_output.name)
                 os.remove(src)
                 loop=loop+2
                 index=index+1

@@ -1,4 +1,0 @@
-archive: XYZ.zip
-test_cases:
-- {in: input.1.in, out: input.1.out, points: 25}
-- {in: input.2.in, out: input.2.out, points: 75}

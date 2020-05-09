@@ -8,7 +8,7 @@ class Judge:
         # initializes the process to query dmoj-cli
         process = subprocess.Popen(["dmoj-cli","-c",self.judgeConfigFile], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
         # query for dmoj-cli
-        query = "submit -tl "+ self.timeLimit + " -ml " + self.memoryLimit + " " + self.problemCode + " " + self.languageCode + " " + "CallOJ/media/submittedFiles/" + self.solutionCode
+        query = "submit -tl "+ self.timeLimit + " -ml " + self.memoryLimit + " " + self.problemCode + " " + self.languageCode + " " + "/home/jayant/CallOJ/media/submittedFiles/" + self.solutionCode
         print("Query is ",query)
         query = bytes(query, 'utf-8') 
         stdout, stderr = process.communicate(input=query)
@@ -62,7 +62,7 @@ class Judge:
 
     def grade(self):
         
-        problemConfigurationFile = open("CallOJ/media/problems/" + self.problemCode + "/init.yml")
+        problemConfigurationFile = open("/home/jayant/CallOJ/media/problems/" + self.problemCode + "/init.yml")
         problemConfigurationFile = yaml.load(problemConfigurationFile, Loader=yaml.FullLoader)
 
         testCases = problemConfigurationFile.get("test_cases")
@@ -120,18 +120,18 @@ class Judge:
 
 if __name__ == "__main__":
     
-    judge = Judge()
+    # judge = Judge()
+    count=0
+    # judge.judgeConfigFile =  b"CallOJ/media/judgeConfiguration/config.yml"
+    # judge.solutionCode = "1.java"
+    # judge.problemCode = "XYZ"
+    # judge.languageCode = "JAVA8" 
+    # judge.timeLimit = "1"
+    # judge.memoryLimit = "65000"
+    # judge.problemType = 2 #ICPC type
     
-    judge.judgeConfigFile =  b"CallOJ/media/judgeConfiguration/config.yml"
-    judge.solutionCode = "1.java"
-    judge.problemCode = "XYZ"
-    judge.languageCode = "JAVA8" 
-    judge.timeLimit = "1"
-    judge.memoryLimit = "65000"
-    judge.problemType = 2 #ICPC type
-    
-    x = judge.executeJudge()
-    print(x)
+    # x = judge.executeJudge()
+    # print(x)
     #output = Judge.trimResult(None, output)
     
     #print(list[1])

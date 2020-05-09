@@ -1,0 +1,14 @@
+<h1> Results </h1>
+<div>
+    <ul>
+    {% for result in results %}
+        <li>
+        {% for verdict in result %}
+        
+        {{ verdict }}
+        
+        {% endfor %}
+        </li>
+    {% endfor %}
+    </ul>
+</div>
