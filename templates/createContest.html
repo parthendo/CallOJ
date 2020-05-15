@@ -1,0 +1,539 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    {% load static %}
+    <link rel="icon" href="{% static "/docs/4.0/assets/img/favicons/favicon.ico" %}">
+
+    <title>{{ problem.problemCode }}</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/checkout/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static "css/form-validation.css" %}" rel="stylesheet">
+  </head>
+
+  <body class="bg-light">
+
+    <div class="container">
+      <!-- <div class="py-5 text-left"> -->
+        <!-- <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72"> -->
+        <!-- <h2>{{ problem.problemName }}</h2>
+        <p class="lead">{{ problem.problemStatement}}</p>
+      </div> -->
+
+      <div class="row">
+        <!-- <div class="col-md-4 order-md-2 mb-4">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-muted">Your cart</span>
+            <span class="badge badge-secondary badge-pill">3</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Product name</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">$12</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Second product</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">$8</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Third item</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">$5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between bg-light">
+              <div class="text-success">
+                <h6 class="my-0">Promo code</h6>
+                <small>EXAMPLECODE</small>
+              </div>
+              <span class="text-success">-$5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total (USD)</span>
+              <strong>$20</strong>
+            </li>
+          </ul>
+
+          <form class="card p-2">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Promo code">
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-secondary">Redeem</button>
+              </div>
+            </div>
+          </form>
+        </div> -->
+        <!-- <div class="col-md-6 mb-3">
+          <label style="font-size:20px;" for="firstName"><b>Problem Description</b></label>
+          <p> Memory Limit : {{ problem.memoryLimit }}</p>
+          <p> Time Limit : {{ problem.timeLimit }}</p>
+          <p> Creator : {{ problem.creator }}</p> -->
+          <!-- <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+          <div class="invalid-feedback">
+            Valid first name is required.
+          </div> -->
+        <!-- </div> -->
+        <div class="col-md-12">
+          <h1 class="mb-3">Create Contest</h1>
+          <div><br><br></div>
+          <form action="/contest/submit/" method="post" class="needs-validation" novalidate>
+            {% csrf_token %}
+             <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="contestCode">Contest Code</label>
+                <input type="text" class="form-control" id="contestCode" name="contestCode" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid contest code is required.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="contestName">Contest name</label>
+                <input type="text" class="form-control" id="contestName" name="contestName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid contest name is required.
+                </div>
+              </div>
+            </div> 
+
+            <!-- <div class="mb-3"> -->
+              <!-- <label for="username">Username</label> -->
+              <!-- <div class="input-group"> -->
+                <!-- <div class="input-group-prepend">
+                  <span class="input-group-text">@</span>
+                </div> -->
+                <!-- <textarea class="form-control" rows="20" name="code"></textarea> -->
+                <!-- <input type="textarea" rows="20" class="form-control" id="username" placeholder="Username" required> -->
+                <!-- <div class="invalid-feedback" style="width: 100%;">
+                  Your username is required.
+                </div> -->
+              <!-- </div>
+            </div> -->
+            <h4 class="mb-3">Start Date</h4>
+            <div><br></div>
+            <div class="row">
+              <div class="col-md-4 mb-1">
+                <label for="day">Select Day</label>
+                <select class="custom-select d-block w-50" id="day" name="day" required>
+                  <option value="">Choose...</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                  <option>13</option>
+                  <option>14</option>
+                  <option>15</option>
+                  <option>16</option>
+                  <option>17</option>
+                  <option>18</option>
+                  <option>19</option>
+                  <option>20</option>
+                  <option>21</option>
+                  <option>22</option>
+                  <option>23</option>
+                  <option>24</option>
+                  <option>25</option>
+                  <option>26</option>
+                  <option>27</option>
+                  <option>28</option>
+                  <option>29</option>
+                  <option>30</option>
+                  <option>31</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select valid day for your contest.
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-1">
+                  <label for="month">Select month</label>
+                  <select class="custom-select d-block w-50" id="month" name="month" required>
+                    <option value="">Choose...</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select valid month for your contest.
+                  </div>
+              </div>
+              <div class="col-md-4 mb-1">
+                <label for="year">Select year</label>
+                <select class="custom-select d-block w-50" id="year" name="year" required>
+                  <option value="">Choose...</option>
+                  <option>2020</option>
+                  <option>2021</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select valid year for your contest.
+                </div>
+            </div>
+          </div>
+          <div><br></div>
+
+          <h4 class="mb-3">Start Time</h4>
+          <div><br></div>
+          <div class="row">
+            <div class="col-md-5 mb-3">
+              <label for="start_hours">Select start hours</label>
+              <select class="custom-select d-block w-100" id="start_hours" name="start_hours" required>
+                <option value="">Choose...</option>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select valid start hour for your contest.
+              </div>
+            </div>
+
+            <div class="col-md-5 mb-3">
+                <label for="start_minutes">Select start minutes</label>
+                <select class="custom-select d-block w-100" id="start_minutes" name="start_minutes" required>
+                  <option value="">Choose...</option>
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                  <option>13</option>
+                  <option>14</option>
+                  <option>15</option>
+                  <option>16</option>
+                  <option>17</option>
+                  <option>18</option>
+                  <option>19</option>
+                  <option>20</option>
+                  <option>21</option>
+                  <option>22</option>
+                  <option>23</option>
+                  <option>24</option>
+                  <option>25</option>
+                  <option>26</option>
+                  <option>27</option>
+                  <option>28</option>
+                  <option>29</option>
+                  <option>30</option>
+                  <option>31</option>
+                  <option>32</option>
+                  <option>33</option>
+                  <option>34</option>
+                  <option>35</option>
+                  <option>36</option>
+                  <option>37</option>
+                  <option>38</option>
+                  <option>39</option>
+                  <option>40</option>
+                  <option>41</option>
+                  <option>42</option>
+                  <option>43</option>
+                  <option>44</option>
+                  <option>45</option>
+                  <option>46</option>
+                  <option>47</option>
+                  <option>48</option>
+                  <option>49</option>
+                  <option>50</option>
+                  <option>51</option>
+                  <option>52</option>
+                  <option>53</option>
+                  <option>54</option>
+                  <option>55</option>
+                  <option>56</option>
+                  <option>57</option>
+                  <option>58</option>
+                  <option>59</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select valid start minutes for your contest.
+                </div>
+            </div>
+        </div>
+        <div><br></div>
+            <h4 class="mb-3">Duration</h4>
+            <div class="row">
+                <div class="col-md-5 mb-3">
+                  <label for="hours">Select Hours</label>
+                  <select class="custom-select d-block w-100" id="hours" name="hours" required>
+                    <option value="">Choose...</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select valid hours for your contest.
+                  </div>
+                </div>
+
+                <div class="col-md-5 mb-3">
+                    <label for="minutes">Select minutes</label>
+                    <select class="custom-select d-block w-100" id="minutes" name="minutes" required>
+                      <option value="">Choose...</option>
+                      <option>0</option>
+                      <option>15</option>
+                      <option>30</option>
+                      <option>45</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select valid minutes for your contest.
+                    </div>
+                  </div>
+            </div>
+            <div><br></div>
+            <h4 class="mb-3">Marking Type</h4>
+            <div class="row">
+            <div class="col-md-5 mb-3">
+                <label for="marking">Select Marking Style</label>
+                <select class="custom-select d-block w-100" id="marking" name="marking" required>
+                  <option value="">Choose...</option>
+                  <option>IOI</option>
+                  <option>ICPC</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid marking style.
+                </div>
+              </div>
+            </div>
+            <div><br></div>
+            <h4 class="mb-3">List of Available Problems</h4>
+            {% for question in all_problems %}
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id={{ question.problemCode }} name="checks[]" value={{ question.problemCode }}>
+                <label class="custom-control-label" for={{ question.problemCode }}> {{ question.problemName }} </label>
+                <a href="/dashboard/problems/{{ question.id }}/">view</a>
+            </div>
+            {% endfor %}
+
+            <div><br></div>
+            <!-- 
+            <div class="mb-3">
+              <label for="email">Email <span class="text-muted">(Optional)</span></label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="address">Address</label>
+              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+              <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+            </div> -->
+
+            <!-- <div class="row">
+              <div class="col-md-5 mb-3">
+                <label for="country">Select Language</label>
+                <select class="custom-select d-block w-100" id="country" name="language" required>
+                  <option value="">Choose...</option>
+                  <option>C++</option>
+                  <option>Java</option>
+                  <option>Python</option>
+                  <option>C</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid country.
+                </div>
+              </div> -->
+              <!-- <div class="col-md-4 mb-3">
+                <label for="state">State</label>
+                <select class="custom-select d-block w-100" id="state" required>
+                  <option value="">Choose...</option>
+                  <option>California</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div> -->
+              <!-- <div class="col-md-3 mb-3">
+                <label for="zip">Zip</label>
+                <input type="text" class="form-control" id="zip" placeholder="" required>
+                <div class="invalid-feedback">
+                  Zip code required.
+                </div>
+              </div> -->
+            <!-- </div> -->
+            <!-- <hr class="mb-4"> -->
+            <!-- <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="same-address">
+              <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="save-info">
+              <label class="custom-control-label" for="save-info">Save this information for next time</label>
+            </div> -->
+            <!-- <hr class="mb-4"> -->
+
+            <!-- <h4 class="mb-3">Payment</h4> -->
+
+            <!-- <div class="d-block my-3">
+              <div class="custom-control custom-radio">
+                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                <label class="custom-control-label" for="credit">Credit card</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                <label class="custom-control-label" for="debit">Debit card</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+                <label class="custom-control-label" for="paypal">Paypal</label>
+              </div>
+            </div> -->
+            <!-- <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="cc-name">Name on card</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                <small class="text-muted">Full name as displayed on card</small>
+                <div class="invalid-feedback">
+                  Name on card is required
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="cc-number">Credit card number</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                <div class="invalid-feedback">
+                  Credit card number is required
+                </div>
+              </div>
+            </div> -->
+            <!-- <div class="row">
+              <div class="col-md-3 mb-3">
+                <label for="cc-expiration">Expiration</label>
+                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                <div class="invalid-feedback">
+                  Expiration date required
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="cc-expiration">CVV</label>
+                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                <div class="invalid-feedback">
+                  Security code required
+                </div>
+              </div>
+            </div> -->
+            <!-- <hr class="mb-4"> -->
+            <button class="btn btn-primary" type="submit">Submit Contest</button>
+          </form>
+        </div>
+      </div>
+      <div><br></div>
+      <p>  </p>
+      <p>  </p>
+      <!-- <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2017-2018 Company Name</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Privacy</a></li>
+          <li class="list-inline-item"><a href="#">Terms</a></li>
+          <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+      </footer> -->
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="{% static "js/vendor/popper.min.js" %}"></script>
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+    <script src="{% static "js/vendor/holder.min.js" %}"></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+  </body>
+</html>
+

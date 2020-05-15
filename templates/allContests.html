@@ -1,0 +1,36 @@
+<h1>Contests</h1>
+
+<ul>
+    <!-- {{ user.username }} -->
+    {% for present_cont in present %}
+    <li>{{ present_cont.contestName }}
+        <!-- {{ problem.problemCode }} -->
+        <form action="/contest/{{ present_cont.id }}/"
+        style="display: inline;"
+        method="post">
+        {% csrf_token %}
+        <input type="submit" value="Go to contest"/>
+        </form>
+        <p> </p>
+        <p> </p>
+    </li>
+    {% endfor %}
+    
+    {% for future_cont in future %}
+    <li>{{ future_cont.contestName }}
+        <!-- {{ problem.problemCode }} -->
+        <form action="/contest/{{ future_cont.id }}/"
+        style="display: inline;"
+        method="post">
+        <p>Contest begins on : {{ future_cont.startDay }}/{{ future_cont.startMonth }}/{{ future_cont.startYear }} and at {{ future_cont.startHours }}:{{ future_cont.startMinutes}}:00</p>
+        <!-- <br> -->
+        <p>Contest Duration : {{ future_cont.durationHours }} hours and {{ future_cont.durationMinutes }} minutes </p>
+        {% csrf_token %}
+        <!-- <input type="submit" value="Go to contest"/> -->
+        </form>
+        <p> </p>
+        <p> </p>
+    </li>
+    <br>
+    {% endfor %}
+</ul>

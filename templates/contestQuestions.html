@@ -1,0 +1,17 @@
+<h1>Holla!</h1>
+<ul>
+    <!-- {{ user.username }} -->
+    {% for problem in all_problems %}
+    <li>{{ problem.problemName }}
+        <!-- {{ problem.problemCode }} -->
+        <form action="/dashboard/problems/{{ problem.id }}/"
+        style="display: inline;"
+        method="post">
+        {% csrf_token %}
+        <input type="submit" value="Go to problem"/>
+        </form>
+        <p> </p>
+        <p> </p>
+    </li>
+    {% endfor %}
+</ul>
