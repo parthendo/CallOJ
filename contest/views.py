@@ -77,16 +77,16 @@ def allContestView(request):
         if contest.startYear>int(server_year):
             future_contests.append(contest)
             continue
-        if contest.startMonth>int(server_month):
+        if contest.startYear==int(server_year) and contest.startMonth>int(server_month):
             future_contests.append(contest)
             continue
-        if contest.startDay>int(server_day):
+        if contest.startYear==int(server_year) and contest.startMonth==int(server_month) and contest.startDay>int(server_day):
             future_contests.append(contest)
             continue
-        if contest.startHours>int(server_hours):
+        if contest.startYear==int(server_year) and contest.startMonth==int(server_month) and contest.startDay==int(server_day) and contest.startHours>int(server_hours):
             future_contests.append(contest)
             continue
-        if contest.startMinutes>int(server_minutes):
+        if contest.startYear==int(server_year) and contest.startMonth==int(server_month) and contest.startDay==int(server_day) and contest.startHours==int(server_hours) and contest.startMinutes>int(server_minutes):
             future_contests.append(contest)
             continue
         present_contests.append(contest)
