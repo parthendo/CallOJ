@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'problems',
     'contest',
     'userprofile',
+    'six',
 ]
 
 MIDDLEWARE = [
@@ -81,8 +82,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'OnlineJudge',
-        'USER':'jayant',
-        'PASSWORD':'8171',
+        'USER':'root',
+        'PASSWORD':'parth@123',
         'HOST':'localhost',
         'PORT':'3306',
     }
@@ -133,3 +134,14 @@ STATICFILES_DIRS=[
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+# Email Configuration
+# https://medium.com/@frfahim/django-registration-with-confirmation-email-bb5da011e4ef
+# Use Django 2.1 [$pip3 install django==2.1]
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'mike.dent9@gmail.com'
+EMAIL_HOST_PASSWORD = '8009998615122179'
