@@ -8,6 +8,7 @@ from .judge import Judge
 import os, zipfile
 import shutil
 import time
+from .utils import Utils 
 
 from django.core.files.storage import FileSystemStorage
 # Create your views here.
@@ -32,7 +33,8 @@ def problemsView(request):
 @login_required
 def showProblemView(request,problem_id):
     problem_to_show = Question.objects.get(id=problem_id)
-    return render(request,'problem.html',{'problem':problem_to_show})
+    languages = Utils.fetchAvailableLanguages(None)
+    return render(request,'problem.html',{'problem':problem_to_show, 'languages': languages})
 
 @login_required
 def submitProblemView(request,problem_id):
@@ -65,7 +67,7 @@ def submitProblemView(request,problem_id):
         os.rename(my_file, base + '.c')
 
     judge = Judge()
-    judge.judgeConfigFile =  b"/home/jayant/CallOJ/media/judgeConfiguration/config.yml"
+    judge.judgeConfigFile =  b"/home/parthendo/Project/CallOJ/media/judgeConfiguration/config.yml"
     if language == "Java":
         judge.solutionCode = request.user.username + "/" + problem.problemCode + ".java"
     if language == "C++":
@@ -186,7 +188,7 @@ def createProblemView(request):
             print((path+"/"+directory+".zip"))
             zf = zipfile.ZipFile((path+"/"+directory+".zip"), "w")
             notdelete = directory+".zip"
-            for root,subdirs,files in os.walk("/home/jayant/CallOJ/media/problems/"+directory):
+            for root,subdirs,files in os.walk("/home/parthendo/Project/CallOJ/media/problems/"+directory):
                 for filename in files:
                     if filename != "init.yml" and filename!=notdelete:
                         zf.write(os.path.join(root, filename), filename, zipfile.ZIP_DEFLATED)

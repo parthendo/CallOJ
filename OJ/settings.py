@@ -145,3 +145,7 @@ EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'mike.dent9@gmail.com'
 EMAIL_HOST_PASSWORD = '8009998615122179'
+
+# Path Variables
+fun = [{'DIRECTORY_PATH' : '/home/parthendo/Project/media/judgeConfiguration'},]
+#JUDGE_CONFIGURATION = os.path.join(DIRECTORY_PATH, 'media/judgeConfiguration')
