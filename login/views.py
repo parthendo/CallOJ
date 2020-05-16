@@ -1,12 +1,25 @@
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render
-from django.core.mail import send_mail
+from django.contrib.sites.shortcuts import get_current_site
 from django.contrib import messages
 from django.contrib import auth
+from django.conf import settings
 import os
 # from .models import User
+
+from django.template.loader import render_to_string
+from django.utils.encoding import force_bytes, force_text
 from django.contrib.auth.models import User
 from problems.models import AllProblems
+
+from django.core.mail import send_mail
+from django.core.mail import EmailMultiAlternatives 
+from django.template.loader import get_template 
+from django.template import Context 
+from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
+from .tokens import account_activation_token
+from django.core.mail import EmailMessage
+
 def loginView(request):
     #print(request.POST['username'],request.POST['pass'])
     # insertInProblems = 1
@@ -96,42 +109,91 @@ def initialView(request):
 def registerView(request):
     return render(request,'registration.html')
 
-def saveUserView(request):
-    exists = 0
-    username = request.POST['username']
-    firstname = request.POST['firstname']
-    lastname = request.POST['lastname']
-
-    email = request.POST['mail']
-    password1 = request.POST['password1']
-    password2 = request.POST['password2']
-    if(password1!=password2):
-        messages.info(request,'Password did not match')
-        exists = 1
-    all_users = User.objects.all()
-    for user in all_users:
-        if user.username == username:
-            exists = 1
-            messages.info(request,'Username Taken')
-            break
-        if user.email == email:
-            exists = 1
-            messages.info(request,'Email Taken')
-            break
-    
-    #loop through all the users if at any point username matches set exists=1 and break
-
-    if exists == 0:
-        new_user = User.objects.create_user(username=username,first_name=firstname,last_name=lastname,email=email,password=password1)
-        mode = 0o777
-        directory = username
-        parent_dir = os.path.expanduser('~/CallOJ/media/submittedFiles')
-        path = os.path.join(parent_dir, directory)
-        os.mkdir(path,mode)
-        new_user.save()
+# E-mail verification redirect sent from user's email
+def activate(request, uidb64, token):
+    try:
+        uid = force_text(urlsafe_base64_decode(uidb64))
+        user = User.objects.get(pk=uid)
+    except(TypeError, ValueError, OverflowError, user.DoesNotExist):
+        user = None
+    if user is not None and account_activation_token.check_token(user, token):
+        user.is_active = True
+        user.save()
+        
+        # Redirecting to user's dashboard
+        # auth.login(request, user)
+        # return HttpResponseRedirect('/dashboard/')
+        
+        # Redirecting to login page
         return HttpResponseRedirect('/')
     else:
-        return HttpResponseRedirect('/registration/')
+        return HttpResponse('Activation link is invalid!')
+
+def saveUserView(request):
+    
+    if(request.method == 'POST'):
+        
+        exists = False
+        username = request.POST['username']
+        firstname = request.POST['firstname']
+        lastname = request.POST['lastname']
+
+        email = request.POST['email']
+        password1 = request.POST['password1']
+        password2 = request.POST['password2']
+
+        # Confirming passwords
+        if(password1 != password2):
+            messages.info(request,'Password did not match')
+            exists = True
+
+        # Checking if username or e-mail is already taken
+        all_users = User.objects.all()
+        for user in all_users:
+            # Unique username
+            if user.username == username:
+                exists = True
+                messages.info(request,'Username Taken')
+                break
+            # Unique e-mail
+            if user.email == email:
+                exists = True
+                messages.info(request,'Username with this e-mail account already exists')
+                break
+
+        #loop through all the users if at any point username matches set exists=1 and break
+
+        if exists == False:
+            # mode = 0o777
+            # directory = username
+            # parent_dir = os.path.expanduser('~/CallOJ/media/submittedFiles')
+            # path = os.path.join(parent_dir, directory)
+            # os.mkdir(path,mode)
+            new_user = User.objects.create_user(username=username,first_name=firstname,last_name=lastname,email=email,password=password1)
+            # Setting active status for the user false for the email verification
+            new_user.is_active = False
+            new_user.save()
+
+            # E-mail Verfication 
+            current_site = get_current_site(request)
+            mail_subject = 'Activate your CallOJ account'
+            message = render_to_string('verificationEmail.html', {
+                    'user': new_user,
+                    'domain': current_site.domain,
+                    'uid':urlsafe_base64_encode(force_bytes(new_user.pk)).decode(),
+                    'token':account_activation_token.make_token(new_user),
+                })
+
+            reciever_email = email
+            msg = EmailMessage(mail_subject, message, to=[reciever_email])
+            msg.send()
+            messages.success(request, f'Your account has been created ! You are now able to log in')
+
+            return HttpResponse('Please confirm your email address to complete the registration')
+        
+        else:
+            # Redirects to registeration page in case of invalid inputs
+            return HttpResponseRedirect('/registration/')
 
 
 

@@ -1,0 +1,7 @@
+{% autoescape off %}
+Hi {{ user.username }},
+Welcome to your in-house competitive programming portal, CallOJ
+Please click on the link to confirm your registration, http://{{ domain }}{% url 'activate' uidb64=uid token=token %}
+All the best,
+CallOJ
+{% endautoescape %}

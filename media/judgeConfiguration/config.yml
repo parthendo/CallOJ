@@ -2,7 +2,7 @@ id: dmoj
 key: dmoj
 
 problem_storage_root:
-  - /home/jayant/CallOJ/media/problems/
+  - /home/parthendo/Project/CallOJ/media/problems/
 
 runtime:
   as_x64: /usr/bin/x86_64-linux-gnu-as
@@ -10,20 +10,21 @@ runtime:
   awk: /usr/bin/mawk
   cat: /bin/cat
   dmd: /snap/bin/dmd
+  sed: /bin/sed
+  tclsh: /usr/bin/tclsh
+  ld_x64: /usr/bin/x86_64-linux-gnu-ld
+  ld_x86: /usr/bin/ld
+  gcc: /usr/bin/gcc
+  gcc11: /usr/bin/gcc
   g++: /usr/bin/g++
   g++11: /usr/bin/g++-5
   g++14: /usr/bin/g++-5
   g++17: /usr/bin/g++-7
-  gcc: /usr/bin/gcc
-  gcc11: /usr/bin/gcc
   java8: /usr/lib/jvm/java-8-openjdk-amd64/bin/java
   javac8: /usr/lib/jvm/java-8-openjdk-amd64/bin/javac
-  ld_x64: /usr/bin/x86_64-linux-gnu-ld
-  ld_x86: /usr/bin/ld
   perl: /usr/bin/perl
   python: /usr/bin/python2.7
   python3: /usr/bin/python3.6
-  sed: /bin/sed
-  tclsh: /usr/bin/tclsh
+  
 
 
