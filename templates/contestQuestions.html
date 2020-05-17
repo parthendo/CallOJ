@@ -16,4 +16,8 @@
         <p> </p>
     </li>
     {% endfor %}
+    <br>
+    {% if status %}
+    <p>{{ status }} . Your submission won't count against your score in this contest</p>
+    {% endif %}
 </ul>
