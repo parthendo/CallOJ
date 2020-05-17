@@ -1,5 +1,6 @@
 from django.urls import path, include
 from .views import contestsView,createContestView,submitContestView,allContestView,contestView,showProblemView,submitProblemView,rankListView
+
 urlpatterns = [
     path('',contestsView),
     path('create/',createContestView),

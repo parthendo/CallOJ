@@ -259,9 +259,6 @@ def rankListView(request,contest_id):
     final_list.sort(key=lambda x: (-x[1], x[2]))
     return render(request,"ranklist.html",{'rankings':final_list})
 
-    
-
-
 
 
 
