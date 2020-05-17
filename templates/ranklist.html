@@ -1,16 +1,29 @@
 <h1>Ranklist</h1>
 
 <ul>
-    <!-- {{ user.username }} -->
-    {% for item in rankings %}
-    <li>
-        <!-- {{ problem.problemCode }} -->
-        <p>
-       {{ forloop.counter }}
-       {% for values in item %}
-       {{ values }}
-       {% endfor %}
-        </p>
-    </li>
-    {% endfor %}
+    {% if ioi %}
+        <!-- {{ user.username }} -->
+        {% for item in rankings %}
+        <li>
+            <!-- {{ problem.problemCode }} -->
+            <p>
+            {% for values in item %}
+            {{ values }}
+            {% endfor %}
+            </p>
+        </li>
+        {% endfor %}
+    {% else %}
+        {% for item in rankings %}
+        <li>
+            <!-- {{ problem.problemCode }} -->
+            <p>
+            {{ forloop.counter }}
+            {% for values in item %}
+            {{ values }}
+            {% endfor %}
+            </p>
+        </li>
+        {% endfor %}
+    {% endif %}
 </ul>

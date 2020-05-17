@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ACE in Action</title>
+{% load static %}
+<style type="text/css" media="screen">
+    #editor { 
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+</style>
+</head>
+<body>
+
+<form action="/dashboard/problems/{{ problem.id }}/" method="post">
+        {% csrf_token %}
+        <input type="textarea" name="sample"></input>
+        <div id="editor">function foo(items) {
+            var x = "All is syntax highlighted";
+            return x;
+        }</div>
+        <input type="submit" value="Go to problem"/>
+        </form>
+    
+<script src="{% static "js/ace.js" %}" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/twilight");
+    editor.session.setMode("ace/mode/javascript");
+</script>
+<script>
+    function createEditor(name) {
+        // find the textarea
+        var textarea = document.querySelector("form textarea[name=" + name + "]");
+
+        // create ace editor 
+        var editor = ace.edit()
+        editor.container.style.height = "100px"
+        editor.session.setValue(textarea.value)
+        // replace textarea with ace
+        textarea.parentNode.insertBefore(editor.container, textarea)
+        textarea.style.display = "none"
+        // find the parent form and add submit event listener
+        var form = textarea
+        while (form && form.localName != "form") form = form.parentNode
+        form.addEventListener("submit", function() {
+            // update value of textarea to match value in ace
+            textarea.value = editor.getValue()
+        }, true)
+    }
+    createEditor("t1")
+    createEditor("t2")
+</script>
+</body>
+</html>

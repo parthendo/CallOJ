@@ -221,3 +221,6 @@ def createProblemView(request):
 
     return render(request,'createproblem.html')
 
+def aceView(request):
+    return render(request,'demoAce.html')
+

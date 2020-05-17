@@ -18,6 +18,15 @@
 
     <!-- Custom styles for this template -->
     <link href="{% static "css/form-validation.css" %}" rel="stylesheet">
+    <style type="text/css" media="screen">
+      #editor { 
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+      }
+  </style>
   </head>
 
   <body class="bg-light">
@@ -120,7 +129,7 @@
                 <!-- <div class="input-group-prepend">
                   <span class="input-group-text">@</span>
                 </div> -->
-                <textarea class="form-control" rows="20" name="code"></textarea>
+                <textarea class="form-control" id="test" rows="20" name="code"></textarea>
                 <!-- <input type="textarea" rows="20" class="form-control" id="username" placeholder="Username" required> -->
                 <!-- <div class="invalid-feedback" style="width: 100%;">
                   Your username is required.
@@ -289,6 +298,44 @@
         }, false);
       })();
     </script>
+    <script src="{% static "js/ace.js" %}" type="text/javascript" charset="utf-8"></script>
+    <script>
+        var editor = ace.edit("editor");
+        editor.setTheme("ace/theme/twilight");
+        editor.session.setMode("ace/mode/javascript");
+    </script>
+    <script>
+      // Hook up ACE editor to all textareas with data-editor attribute
+      $(function () {
+          $('textarea[]').each(function () {
+              var textarea = $(this);
+  
+              var mode = textarea.data('editor');
+  
+              var editDiv = $('<div>', {
+                  position: 'absolute',
+                  width: textarea.width(),
+                  height: textarea.height(),
+                  'class': textarea.attr('class')
+              }).insertBefore(textarea);
+  
+              textarea.css('visibility', 'hidden');
+  
+              var editor = ace.edit(editDiv[0]);
+              editor.renderer.setShowGutter(false);
+              editor.getSession().setValue(textarea.val());
+              editor.getSession().setMode("ace/mode/" + mode);
+              // editor.setTheme("ace/theme/idle_fingers");
+              
+              // copy back to textarea on form submit...
+              textarea.closest('form').submit(function () {
+                  textarea.val(editor.getSession().getValue());
+              })
+  
+          });
+      });
+  </script>
+  
   </body>
 </html>
 

@@ -23,3 +23,9 @@ class IcpcMarks(models.Model):
     userId = models.ForeignKey(User,default=None,on_delete=models.CASCADE)
     totalTime = models.IntegerField()
     verdict = models.IntegerField()
+
+class IoiMarks(models.Model):
+    contestId = models.ForeignKey(Contest,default=None,on_delete=models.CASCADE)
+    questionId = models.ForeignKey(Question,default=None,on_delete=models.CASCADE)
+    userId = models.ForeignKey(User,default=None,on_delete=models.CASCADE)
+    marksAlloted = models.IntegerField()

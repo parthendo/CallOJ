@@ -1,11 +1,12 @@
 from django.shortcuts import render
 from problems.models import Question
-from .models import Contest, IcpcMarks
+from .models import Contest, IcpcMarks, IoiMarks
 from problems.models import Question
 from django.http import HttpResponseRedirect
 from datetime import datetime, timedelta
 from problems.judge import Judge
 from django.contrib.auth.models import User
+from .utils import ContestUtilities
 import os, zipfile
 import shutil
 import time
@@ -66,47 +67,25 @@ def submitContestView(request):
     return render(request,'thanks.html')
 
 def allContestView(request):
-    all_contests = Contest.objects.all()
-    present_contests = []
-    future_contests = []
-    past_contests = []
-    now = datetime.now()
-    current = str(now)
-    server_year = current[:4]
-    server_month = current[5:7]
-    server_day = current[8:10]
-    server_hours = current[11:13]
-    server_minutes = current[14:16]
-    print('Hi',server_year,server_month,server_day,server_hours,server_minutes)
-    print('Holla',int(server_year),int(server_month),int(server_day),int(server_hours),int(server_minutes))
-    for contest in all_contests:
-        if contest.startYear>int(server_year):
-            future_contests.append(contest)
-            continue
-        if contest.startYear==int(server_year) and contest.startMonth>int(server_month):
-            future_contests.append(contest)
-            continue
-        if contest.startYear==int(server_year) and contest.startMonth==int(server_month) and contest.startDay>int(server_day):
-            future_contests.append(contest)
-            continue
-        if contest.startYear==int(server_year) and contest.startMonth==int(server_month) and contest.startDay==int(server_day) and contest.startHours>int(server_hours):
-            future_contests.append(contest)
-            continue
-        if contest.startYear==int(server_year) and contest.startMonth==int(server_month) and contest.startDay==int(server_day) and contest.startHours==int(server_hours) and contest.startMinutes>int(server_minutes):
-            future_contests.append(contest)
-            continue
-        present_contests.append(contest)
-    
+    util = ContestUtilities()
+    present_contests,future_contests = util.getContests()
     return render(request,'allContests.html',{'present':present_contests,'future':future_contests})
 
 def contestView(request,contest_id):
+    util = ContestUtilities()
+    contestStatus = util.contestFinished(contest_id)
     current_contest = Contest.objects.get(id=contest_id)
     all_questions = current_contest.questions.all()
-    return render(request,'contestQuestions.html',{'all_problems':all_questions,'contestId':contest_id})
+    return render(request,'contestQuestions.html',{'all_problems':all_questions,'contestId':contest_id,'status':contestStatus})
 
 def showProblemView(request,contest_id,problem_id):
+    util = ContestUtilities()
+    contestStatus = util.contestFinished(contest_id)
     problem_to_show = Question.objects.get(id=problem_id)
-    return render(request,'problem.html',{'problem':problem_to_show,'contestId':contest_id})
+    if contestStatus == "contestEnded":
+        return render(request,'problem.html',{'problem':problem_to_show})
+    else:
+        return render(request,'problem.html',{'problem':problem_to_show,'contestId':contest_id})
 
 def submitProblemView(request,contest_id,problem_id):
     usercode = request.POST['code']
@@ -160,7 +139,9 @@ def submitProblemView(request,contest_id,problem_id):
     print(x)
     print('Hello',len(x))
     final_verdict = x[len(x)-1][0]
+    marks_obtained = x[len(x)-1][1]
     #Add Code to check whether contest finished or not , if not finished then only update in Icpc_Marks
+
     contest = Contest.objects.get(id=contest_id)
     print('Ho',contest_id)
     startYear = contest.startYear
@@ -169,14 +150,20 @@ def submitProblemView(request,contest_id,problem_id):
     startHours = contest.startHours
     startMinutes = contest.startMinutes
     entries = IcpcMarks.objects.all()
+    entries_ioi = IoiMarks.objects.all()
     print(entries)
     entry = ()
+    entry_ioi = ()
     for item in entries:
         if item.userId_id == request.user.id and item.contestId_id == contest_id and item.questionId_id==problem_id:
             entry = item
             break
+    for item in entries_ioi:
+        if item.userId_id == request.user.id and item.contestId_id == contest_id and item.questionId_id==problem_id:
+            entry_ioi = item
+            break
     #1 is for Icpc
-    if contest.rankingStyle == 1:
+    if contest.rankingStyle == 2:
         # entry = IcpcMarks.objects.get(userId_id=request.user.id,contestId_id=contest_id,questionId_id=problem_id)
         if entry:
             if final_verdict == "AC":
@@ -222,42 +209,31 @@ def submitProblemView(request,contest_id,problem_id):
                 user_object = User.objects.get(id=request.user.id)
                 newItem = IcpcMarks(userId_id=request.user.id,contestId_id=contest_id,questionId_id=problem_id,totalTime=1200,verdict=verdict)
                 newItem.save()
+    else:
+        if entry_ioi:
+            entry_ioi.marksAlloted = max(entry_ioi.marksAlloted,marks_obtained)
+            entry_ioi.save()
+        else:
+            newItem = IoiMarks(userId_id=request.user.id,contestId_id=contest_id,questionId_id=problem_id,marksAlloted=marks_obtained)
+            newItem.save()
+
+
 
     print(x[0][0])
     return render(request,'results.html',{'results':x})
 
 def rankListView(request,contest_id):
-    print('Kadam')
-    currentContestEntries = []
-    final_list = []
-    contestants = []
-    mydict = {}
     currentContest = Contest.objects.get(id=contest_id)
-    contestEntries = IcpcMarks.objects.all()
-    print(contestEntries)
-    for contest in contestEntries:
-        if contest.contestId_id == contest_id and contest.verdict==1:
-            currentContestEntries.append(contest)
-            participant = User.objects.get(id=contest.userId_id)
-            contestants.append(participant.username)
-    contestants = list(set(contestants))
-    for contestant in contestants:
-        mydict[contestant] = [0,0]
-    
-    for entry in currentContestEntries:
-        participant = User.objects.get(id=entry.userId_id)
-        if entry.verdict == 1:
-            mydict[participant.username][0] = mydict[participant.username][0] + 1
-            mydict[participant.username][1] = mydict[participant.username][1] + entry.totalTime
-
-    for item in mydict:
-	    print(item,mydict[item][0],mydict[item][1])
-	    temp=[item,mydict[item][0],mydict[item][1]]
-	    final_list.append(temp)
-    print(final_list)
-
-    final_list.sort(key=lambda x: (-x[1], x[2]))
-    return render(request,"ranklist.html",{'rankings':final_list})
+    util = ContestUtilities()
+    if currentContest.rankingStyle == 1:
+        final_list = util.ioiRanklist(contest_id)
+        contest_type = 1
+        return render(request,"ranklist.html",{'rankings':final_list,'ioi':contest_type})
+    else:
+        print('Rajjo')
+        final_list = util.icpcRanklist(contest_id)
+        contest_type = 2 
+        return render(request,"ranklist.html",{'rankings':final_list})
 
     
 
