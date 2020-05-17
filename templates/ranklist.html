@@ -1,0 +1,16 @@
+<h1>Ranklist</h1>
+
+<ul>
+    <!-- {{ user.username }} -->
+    {% for item in rankings %}
+    <li>
+        <!-- {{ problem.problemCode }} -->
+        <p>
+       {{ forloop.counter }}
+       {% for values in item %}
+       {{ values }}
+       {% endfor %}
+        </p>
+    </li>
+    {% endfor %}
+</ul>

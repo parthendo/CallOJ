@@ -1,10 +1,12 @@
 <h1>Holla!</h1>
 <ul>
     <!-- {{ user.username }} -->
+
+    <a href="/contest/{{ contestId }}/ranklist/">Ranklist</a>
     {% for problem in all_problems %}
     <li>{{ problem.problemName }}
         <!-- {{ problem.problemCode }} -->
-        <form action="/dashboard/problems/{{ problem.id }}/"
+        <form action="/contest/{{ contestId }}/{{ problem.id }}/"
         style="display: inline;"
         method="post">
         {% csrf_token %}
