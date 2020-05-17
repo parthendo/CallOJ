@@ -1,0 +1,10 @@
+C: .c
+C11: .c
+CPP03: .cpp
+CPP11: .cpp
+CPP14: .cpp
+CPP17: .cpp
+JAVA8: .java
+PERL: .pl
+PY2: .py
+PY3: .py

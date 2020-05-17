@@ -164,11 +164,12 @@ def saveUserView(request):
         #loop through all the users if at any point username matches set exists=1 and break
 
         if exists == False:
-            # mode = 0o777
-            # directory = username
-            # parent_dir = os.path.expanduser('~/CallOJ/media/submittedFiles')
-            # path = os.path.join(parent_dir, directory)
-            # os.mkdir(path,mode)
+            mode = 0o777
+            directory = username
+            parentDirPath = os.path.dirname(__file__).rsplit('/',1)[0]
+            parent_dir = os.path.join(parentDirPath,'media/submittedFiles')
+            path = os.path.join(parent_dir, directory)
+            os.mkdir(path,mode)
             new_user = User.objects.create_user(username=username,first_name=firstname,last_name=lastname,email=email,password=password1)
             # Setting active status for the user false for the email verification
             new_user.is_active = False

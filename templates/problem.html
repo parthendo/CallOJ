@@ -40,10 +40,10 @@
           <h4 class="mb-3">Your Code Goes Here: </h4>
           <form action="/dashboard/submission/{{ problem.id }}/" method="post" class="needs-validation" novalidate>
             {% csrf_token %}
-            <div class="mb-3">
-              <div class="input-group">
+            <div>
+              <!-- <div class="input-group"> -->
                 <textarea class="form-control" rows="20" name="code"></textarea>
-              </div>
+              <!-- </div> -->
             </div>
             <div class="row">
               <div class="col-md-5 mb-3">
@@ -52,6 +52,7 @@
                   <option value="">Choose...</option>
                   {% for language in languages %}
                   <option >{{language}}</option>
+                  {% endfor %}
                 </select>
               </div>
             </div>
@@ -73,6 +74,7 @@
     <script src="{% static "js/vendor/popper.min.js" %}"></script>
     <script src="{% static "js/bootstrap.min.js" %}"></script>
     <script src="{% static "js/vendor/holder.min.js" %}"></script>
+    <script src="{% static "js/ace.js" %}" type="text/javascript" charset="utf-8"></script>
     <script>
       // Example starter JavaScript for disabling form submissions if there are invalid fields
       (function() {
@@ -95,6 +97,30 @@
         }, false);
       })();
     </script>
+    <script>
+      function createEditor(name, language, theme) {
+          // find the textarea
+          var textarea = document.querySelector("form textarea[name=" + name + "]");
+  
+          // create ace editor 
+          var editor = ace.edit()
+          editor.setTheme("ace/theme/"+theme);
+          editor.session.setMode("ace/mode/"+language);
+          editor.container.style.height = "350px"
+          editor.session.setValue(textarea.value)
+          // replace textarea with ace
+          textarea.parentNode.insertBefore(editor.container, textarea)
+          textarea.style.display = "none"
+          // find the parent form and add submit event listener
+          var form = textarea
+          while (form && form.localName != "form") form = form.parentNode
+          form.addEventListener("submit", function() {
+              // update value of textarea to match value in ace
+              textarea.value = editor.getValue()
+          }, true)
+      }
+      createEditor("code", "java", "monokai")
+  </script>
   </body>
 </html>
 
