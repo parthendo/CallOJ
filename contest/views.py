@@ -235,9 +235,6 @@ def rankListView(request,contest_id):
         contest_type = 2 
         return render(request,"ranklist.html",{'rankings':final_list})
 
-    
-
-
 
 
 

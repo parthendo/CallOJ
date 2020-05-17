@@ -1,6 +1,7 @@
 import subprocess
 import re
 import yaml
+import os
 
 class Judge:
 
@@ -8,7 +9,7 @@ class Judge:
         # initializes the process to query dmoj-cli
         process = subprocess.Popen(["dmoj-cli","-c",self.judgeConfigFile], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
         # query for dmoj-cli
-        query = "submit -tl "+ self.timeLimit + " -ml " + self.memoryLimit + " " + self.problemCode + " " + self.languageCode + " " + "/home/jayant/CallOJ/media/submittedFiles/" + self.solutionCode
+        query = "submit -tl "+ self.timeLimit + " -ml " + self.memoryLimit + " " + self.problemCode + " " + self.languageCode + " " + os.path.join(self.submittedFileDir,self.solutionCode)
         print("Query is ",query)
         query = bytes(query, 'utf-8') 
         stdout, stderr = process.communicate(input=query)
@@ -62,7 +63,8 @@ class Judge:
 
     def grade(self):
         
-        problemConfigurationFile = open("/home/jayant/CallOJ/media/problems/" + self.problemCode + "/init.yml")
+        problemConfigurationFile = open(self.problemPath + self.problemCode + "/init.yml")
+        print(self.problemPath + self.problemCode)
         problemConfigurationFile = yaml.load(problemConfigurationFile, Loader=yaml.FullLoader)
 
         testCases = problemConfigurationFile.get("test_cases")
@@ -123,6 +125,7 @@ if __name__ == "__main__":
     # judge = Judge()
     count=0
     # judge.judgeConfigFile =  b"CallOJ/media/judgeConfiguration/config.yml"
+    # judge.problemPath = b"CallOJ/media/problems/"
     # judge.solutionCode = "1.java"
     # judge.problemCode = "XYZ"
     # judge.languageCode = "JAVA8" 
