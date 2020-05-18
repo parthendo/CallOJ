@@ -1,15 +1,27 @@
 <div>
     {% if user.is_authenticated %}
-        <p> Welcome, {{ user.username }}.</p>
-        <div class="row">
-        <a href="/dashboard/problems/">Problems Page</a>
-        <a href="/dashboard/createProblem/">Create Problem Page</a>
-        <a href="/contest/create/">Create Contest</a>
-        <a href="/contest/all/">Contests</a>
-        <a href="/userprofile/">My Profile</a>
-        <a href="/logout/">logout</a>
-        <a href="/dashboard/ace/">Ace</a>
-        </div>
+    <head>
+        <title> IIIT Online Judge </title>
+        <link rel="stylesheet" type="text/css"  href="../static/css/dashboard.css">
+    </head>
+    <body>
+        <header>
+            <div class="main">
+                <ul>
+                    <li class="active"><a href="/dashboard">Home</a></li>
+                    <li><a href="/dashboard/problems/">Problems</a></li>
+                    <li><a href="/dashboard/createProblem/">Create Problem</a></li>
+                    <li><a href="/contest/all/">Contests</a></li>
+                    <li><a href="/contest/create/">Create contest</a></li>
+                    <li><a href="/userprofile/">My Profile</a></li>
+                    <li><a href="/logout/">Logout</a></li>
+                </ul>
+            </div>
+            <div class ="title">
+                <h1> Welcome {{ user.username }}!</h1>
+            </div>
+        </header>
+    </body>
     {% else %}
         <p>Do not try to bypass , please Log In ! </p>
     {% endif %}
