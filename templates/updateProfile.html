@@ -47,18 +47,24 @@
                       <label>Last Name</label>
                       <input value={{ user.last_name }} type="text" name="lastName" required><br />
                       <label>Email</label>
-                      <input value={{ user.email }} type="email" name="email" required><br />
+                      <input value={{ user.email }} type="email" name="email" readonly><br />
                       <label>Password</label>
-                      <input type="password" name="password1" required><br />
+                      <input type="password" name="password1"><br />
                       <label>Confirm Password</label>
-                      <input type="password" name="password2" required><br />
+                      <input type="password" name="password2"><br />
                       <div>
                           <br>
                       </div>
                       <button class="login100-form-btn">
                         Update
                       </button>
+                      <div>
+						{% for message in messages %}
+						<p>{{ message }}</p>
+						{% endfor %}
+					</div>
                     </form>
+
                   </div>
                 <!-- <h1 class="masthead-heading text-uppercase mb-0">{{ user.first_name }} {{ user.last_name }}</h1> -->
                 <!-- Icon Divider-->

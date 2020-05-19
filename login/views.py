@@ -52,6 +52,15 @@ def loginView(request):
         auth.login(request,user)
         return HttpResponseRedirect('/dashboard/')
     else:
+        allusers = User.objects.all()
+        whichMessageToShow = 1
+        for user in allusers:
+            if user.username == username and user.password!=password:
+                messages.info(request,'Password did not match')
+                whichMessageToShow = 2
+                break
+        if whichMessageToShow == 1:
+            messages.info(request,'Username does not exist')
         return HttpResponseRedirect('/')
     # all_users = User.objects.all()
     # for user in all_users:
