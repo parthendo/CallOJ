@@ -1,15 +1,85 @@
 <div>
     {% if user.is_authenticated %}
-        <p> Welcome, {{ user.username }}.</p>
-        <div class="row">
-        <a href="/dashboard/problems/">Problems Page</a>
-        <a href="/dashboard/createProblem/">Create Problem Page</a>
-        <a href="/contest/create/">Create Contest</a>
-        <a href="/contest/all/">Contests</a>
-        <a href="/userprofile/">My Profile</a>
-        <a href="/logout/">logout</a>
-        <a href="/dashboard/ace/">Ace</a>
-        </div>
+    <head>
+        <title> IIIT Online Judge </title>
+        <link rel="stylesheet" type="text/css"  href="../static/css/dashboard.css">
+        <style>
+            .dropbtn {
+                text-decoration: none;
+                color: #fff;
+                font-size: 15px;
+                padding: 8px 15px;
+                border: 1px solid transparent;
+                transition: 0.6s ease;
+                background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(../static/images/coding.jpg);
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #fff;
+                min-width: 160px;
+                z-index: 1;
+                transition: 0.6s ease;
+            }
+
+            .dropdown-content a {
+                color: black;
+                padding: 8px 15px;
+                text-decoration: none;
+                display: block;
+                transition: 0.6s ease;
+            }
+
+.dropdown-content a:hover {background-color: #000;
+    color: #fff;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-image:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url(../static/images/coding.jpg);
+    color: black;}
+
+</style>
+    </head>
+    <body>
+        <header>
+            <div class="main">
+                <ul>
+                    <li class="active"><a href="/dashboard">Home</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Problems</button>
+                            <div class="dropdown-content">
+                                <a href="/dashboard/problems/">View</a>
+                                <a href="/dashboard/createProblem/">Create</a>
+                            </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Contests</button>
+                            <div class="dropdown-content">
+                                <a href="/contest/all/">View</a>
+                                <a href="/contest/create/">Create</a>
+                            </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Profile</button>
+                            <div class="dropdown-content">
+                                <a href="/userprofile/">View</a>
+                                <a href="/userprofile/updateProfile">Update</a>
+                            </div>
+                    </div>
+                    <li><a href="/logout/">Logout</a></li>
+                </ul>
+            </div>
+            <div class ="title">
+                <h1> {{ user.username }}</h1>
+            </div>
+        </header>
+    </body>
     {% else %}
         <p>Do not try to bypass , please Log In ! </p>
     {% endif %}
