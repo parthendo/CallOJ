@@ -45,7 +45,10 @@ def submitProblemView(request,problem_id):
 
         utils = Utils()
         x = utils.submitProblem(request.user, usercode, language, problem)
-
+        problem.totalAttempts = problem.totalAttempts + 1
+        if x[len(x)-1][0] == "AC":
+            problem.successfulAttempts = problem.successfulAttempts + 1
+        problem.save()
     # if language == "Java":
     #     with open(("media/submittedFiles/"+request.user.username+"/"+problem.problemCode+".txt"), "w") as file:
     #         file.write(usercode)
@@ -148,8 +151,9 @@ def createProblemView(request):
             all_files = request.FILES.getlist('uploadedFiles')
             utils = Utils()
             utils.saveProblem(yml_file, problem_code, all_files)
-            newProblem = Question(problemCode=problem_code,problemName=problem_name,problemStatement=problem_statement,timeLimit=time_limit,memoryLimit=memory_limit,marking=marking,access=access,creator=creator,editorialist=creator)
+            newProblem = Question(problemCode=problem_code,problemName=problem_name,problemStatement=problem_statement,timeLimit=time_limit,memoryLimit=memory_limit,marking=marking,access=access,creator=creator,editorialist=creator,totalAttempts=0,successfulAttempts=0)
             newProblem.save()
+            return HttpResponseRedirect('/dashboard/problems/')
             # all_files = request.FILES.getlist('uploadedFiles')
             # length = len(request.FILES.getlist('uploadedFiles'))
             # loop = 0
