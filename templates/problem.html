@@ -60,12 +60,23 @@
             </div>
             <div class="row">
               <div class="col-md-5 mb-3">
-                <label for="country">Select Language</label>
-                <select class="custom-select d-block w-100" id="country" name="language" required>
+                <label for="language">Select Language</label>
+                <select class="custom-select d-block w-100" id="language" name="language" required>
                   <option value="">Choose...</option>
                   {% for language in languages %}
                   <option >{{language}}</option>
                   {% endfor %}
+                </select>
+              </div>
+              <div class="col-md-5 mb-3">
+                <label for="editorTheme">Select theme</label>
+                <select class="custom-select d-block w-100" id="editorTheme" name="editorTheme" required>
+                  <option value="">Choose...</option>
+                  <option>monokai</option>
+                  <option>twilight</option>
+                  <option>terminal</option>
+                  <option>github</option>
+                  <option>eclipse</option>
                 </select>
               </div>
             </div>
@@ -74,7 +85,7 @@
         </div>
       </div>
 
-      <p>  </p>
+      <p id="demo">  </p>
       <p>  </p>
       
     </div>
@@ -110,30 +121,7 @@
         }, false);
       })();
     </script>
-    <script>
-      function createEditor(name, language, theme) {
-          // find the textarea
-          var textarea = document.querySelector("form textarea[name=" + name + "]");
-  
-          // create ace editor 
-          var editor = ace.edit()
-          editor.setTheme("ace/theme/"+theme);
-          editor.session.setMode("ace/mode/"+language);
-          editor.container.style.height = "350px"
-          editor.session.setValue(textarea.value)
-          // replace textarea with ace
-          textarea.parentNode.insertBefore(editor.container, textarea)
-          textarea.style.display = "none"
-          // find the parent form and add submit event listener
-          var form = textarea
-          while (form && form.localName != "form") form = form.parentNode
-          form.addEventListener("submit", function() {
-              // update value of textarea to match value in ace
-              textarea.value = editor.getValue()
-          }, true)
-      }
-      createEditor("code", "java", "monokai")
-  </script>
+    <script src="{% static "js/problem.js" %}"></script>
   </body>
 </html>
 

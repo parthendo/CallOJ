@@ -20,6 +20,8 @@ class Question(models.Model):
     access = models.IntegerField()
     creator = models.CharField(max_length=20)
     editorialist = models.CharField(max_length=20)
+    totalAttempts = models.IntegerField()
+    successfulAttempts = models.IntegerField()
 
 
 

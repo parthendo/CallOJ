@@ -65,7 +65,7 @@ def submitContestView(request):
         print(question.problemCode)
     # question_instance = Contest.objects.filter(questions__problemCode="ADDALL")
     # print(question_instance.problemCode)
-    return render(request,'thanks.html')
+    return HttpResponseRedirect('/contest/all/')
 
 def allContestView(request):
     util = ContestUtilities()

@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:5.7
+    ports:
+      - '3306:3306'
+    environment:
+       MYSQL_DATABASE: 'OnlineJudge'
+       MYSQL_USER: 'jayant'
+       MYSQL_PASSWORD: '8171'
+       MYSQL_ROOT_PASSWORD: '8171'
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8001
+    volumes:
+      - .:/CallOJ
+    ports:
+      - "8001:8001"
+    depends_on:
+      - db

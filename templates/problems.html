@@ -3,7 +3,7 @@
 <ul>
     <!-- {{ user.username }} -->
     {% for problem in all_problems %}
-    <li>{{ problem.problemName }}
+    <li>{{ problem.problemName }} <br> <p>Successfull Submissions : {{ problem.successfulAttempts }}          Total Attempts : {{ problem.totalAttempts }} </p>  
         <!-- {{ problem.problemCode }} -->
         <form action="/dashboard/problems/{{ problem.id }}/"
         style="display: inline;"
@@ -11,8 +11,9 @@
         {% csrf_token %}
         <input type="submit" value="Go to problem"/>
         </form>
-        <p> </p>
-        <p> </p>
+        <!-- <p> </p> -->
+        <p> <br> </p> 
+        
     </li>
     {% endfor %}
 </ul>
