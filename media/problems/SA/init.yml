@@ -1,0 +1,3 @@
+archive: SA.zip
+test_cases:
+- {in: tc0.in, out: tc0.out, points: 100}

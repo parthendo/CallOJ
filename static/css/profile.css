@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Courier New;
+}
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(../images/jayant.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20% 60%;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 40px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #000;
+    padding: 8px 15px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+
+ul li a:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+ul li.active a{
+    background-color: #000;
+    color: #fff;
+}
+
+.main{
+    max-width: 1800px;
+    margin: auto;
+}
+
+.email{
+    position: relative;
+}
+
+.email h1{
+    position: absolute;
+    width: 100%;
+    margin-top: 7%;
+    text-align: center;
+    color: #000;
+    font-size: 20px;
+}
+.email h2{
+    position: absolute;
+    width: 100%;
+    margin-top: 40%;
+    text-align: center;
+    color: #000;
+    font-size: 20px;
+}
