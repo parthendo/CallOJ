@@ -1,36 +1,154 @@
-<h1>Contests</h1>
+<head>
+        <title> All Contests </title>
+        <link rel="stylesheet" type="text/css"  href="../../static/css/allContests.css">
+        <style>
+            input[type=submit] {
+                background-color: white;
+                color: black;
+                padding: 8px 15px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                cursor: pointer;
+                border: 1px solid transparent;
+                transition: 0.6s ease;
+            }
+            input[type=submit]:hover{
+                background-color: #000;
+                color: #fff;
+            }
+            .dropbtn {
+                text-decoration: none;
+                color: #000;
+                font-size: 15px;
+                padding: 8px 15px;
+                border: 1px solid transparent;
+                transition: 0.6s ease;
+                background-color: white;
+            }
 
-<ul>
-    <!-- {{ user.username }} -->
-    {% for present_cont in present %}
-    <li>{{ present_cont.contestName }}
-        <!-- {{ problem.problemCode }} -->
-        <form action="/contest/{{ present_cont.id }}/"
-        style="display: inline;"
-        method="post">
-        {% csrf_token %}
-        <input type="submit" value="Go to contest"/>
-        </form>
-        <p> </p>
-        <p> </p>
-    </li>
-    {% endfor %}
-    
-    {% for future_cont in future %}
-    <li>{{ future_cont.contestName }}
-        <!-- {{ problem.problemCode }} -->
-        <form action="/contest/{{ future_cont.id }}/"
-        style="display: inline;"
-        method="post">
-        <p>Contest begins on : {{ future_cont.startDay }}/{{ future_cont.startMonth }}/{{ future_cont.startYear }} and at {{ future_cont.startHours }}:{{ future_cont.startMinutes}}:00</p>
-        <!-- <br> -->
-        <p>Contest Duration : {{ future_cont.durationHours }} hours and {{ future_cont.durationMinutes }} minutes </p>
-        {% csrf_token %}
-        <!-- <input type="submit" value="Go to contest"/> -->
-        </form>
-        <p> </p>
-        <p> </p>
-    </li>
-    <br>
-    {% endfor %}
-</ul>
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #fff;
+                min-width: 160px;
+                z-index: 1;
+                transition: 0.6s ease;
+            }
+
+            .dropdown-content a {
+                color: black;
+                padding: 8px 15px;
+                text-decoration: none;
+                display: block;
+                transition: 0.6s ease;
+            }
+
+.dropdown-content a:hover {background-color: #000;
+    color: #fff;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn { background-color: black;
+    color: white;}
+
+</style>
+    </head>
+    <body>
+        <header>
+            <div class="main">
+                <ul>
+                    <li><a href="/dashboard">Home</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Problems</button>
+                            <div class="dropdown-content">
+                                <a href="/dashboard/problems/">View</a>
+                                <a href="/dashboard/createProblem/">Create</a>
+                            </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Contests</button>
+                            <div class="dropdown-content">
+                                <a href="/contest/all/">View</a>
+                                <a href="/contest/create/">Create</a>
+                            </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Profile</button>
+                            <div class="dropdown-content">
+                                <a href="/userprofile/">View</a>
+                                <a href="/userprofile/updateProfile">Update</a>
+                            </div>
+                    </div>
+                    <li><a href="/logout/">Logout</a></li>
+                </ul>
+            </div>
+            <div class ="title">
+                <h1> Contests: </h1> <br> <br>
+                {% for present_cont in present %}
+                    <h2> <li>{{ present_cont.contestName }} </h2>
+
+
+                <div id="{{present_cont.contestCode}}"></div>
+                <script type="text/javascript">
+                    setInterval(displayclock, 1000);
+                    function displayclock (){
+                        var time=new Date();
+                        var pt=(time.getHours())*60 + time.getMinutes();
+                        var et=(      ((    {{present_cont.startHours}}  +  {{present_cont.durationHours}}  +  parseInt( ({{present_cont.startMinutes}} + {{present_cont.durationMinutes}})/60 )  )%24)*60    + ({{present_cont.startMinutes}}  +  {{present_cont.durationMinutes}})%60       )%1440;
+
+                        var rh, rm;
+                        if(pt<=et){
+                            rh=parseInt((et-pt)/60);
+                            rm=(et-pt)%60;
+                        }
+                        else{
+                            rh=parseInt(((1440-pt)+et)/60);
+                            rm=((1440-pt)+et)%60;
+                        }
+
+                        document.getElementById('{{present_cont.contestCode}}').innerHTML='(this contest ends in ' + rh + ' hours and ' + rm +' minutes)' ;
+                    }
+                </script>
+
+                <br> &nbsp
+                        <!-- {{ problem.problemCode }} -->
+                    <form action="/contest/{{ present_cont.id }}/"
+                    style="display: inline;"
+                    method="post">
+                    {% csrf_token %}
+                        <input type="submit" value="Go to contest-->"/>
+                    </form>
+                    <p> <br> <br> </p>
+                    <p> </p>
+                    </li>
+                {% endfor %}
+                <br><br><br>
+                <h1> Upcoming Contests: </h1> <br> <br>
+                {% for future_cont in future %}
+                <h2> <li>{{ future_cont.contestName }} </h2><br>
+                    <!-- {{ problem.problemCode }} -->
+                    <form action="/contest/{{ future_cont.id }}/"
+                    style="display: inline;"
+                    method="post">
+                    <p>&nbsp Contest begins on:  {{ future_cont.startDay }}/{{ future_cont.startMonth }}/{{ future_cont.startYear }}  at {{ future_cont.startHours }}:{{ future_cont.startMinutes}}:00</p>
+                     <br>
+                    <p>&nbsp Contest duration is: {{ future_cont.durationHours }} hours and {{ future_cont.durationMinutes }} minutes </p> <br>
+                    {% csrf_token %}
+                    <!-- <input type="submit" value="Go to contest"/> -->
+                    </form>
+                    <p> </p>
+                    <p> </p>
+                    </li>
+                    <br>
+                {% endfor %}
+                <br> <br>
+            </div>
+        </header>
+    </body>

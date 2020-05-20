@@ -93,12 +93,12 @@
                 <h1> Problems: </h1> <br> <br>
                 {% for problem in all_problems %}
                     <h2><li>  {{ problem.problemName }} </h2><br> <p> &nbsp Successful Submissions : {{ problem.successfulAttempts }}  <br>     &nbsp   Total Attempts : {{ problem.totalAttempts }} </p>
-                    <!-- {{ problem.problemCode }} --><br> <br> &nbsp
+                    <!-- {{ problem.problemCode }} --><br> &nbsp
                     <form action="/dashboard/problems/{{ problem.id }}/"
                         style="display: inline;"
                         method="post">
                         {% csrf_token %}
-                        <input type="submit" value="Go to problem"/>
+                        <input type="submit" value="Go to problem-->"/>
                         <br> <br> <br>
                     </form>
                     </li>

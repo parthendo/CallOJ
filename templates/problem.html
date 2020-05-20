@@ -1,8 +1,178 @@
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--  <head>-->
+<!--    <meta charset="utf-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+<!--    <meta name="description" content="">-->
+<!--    <meta name="author" content="">-->
+<!--    {% load static %}-->
+<!--    <link rel="icon" href="{% static "/docs/4.0/assets/img/favicons/favicon.ico" %}">-->
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
+<!--    <title>{{ problem.problemCode }}</title>-->
+
+<!--    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/checkout/">-->
+
+<!--    &lt;!&ndash; Bootstrap core CSS &ndash;&gt;-->
+<!--    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">-->
+
+<!--    &lt;!&ndash; Custom styles for this template &ndash;&gt;-->
+<!--    <link href="{% static "css/form-validation.css" %}" rel="stylesheet">-->
+<!--    <style type="text/css" media="screen">-->
+<!--      #editor { -->
+<!--          position: absolute;-->
+<!--          top: 0;-->
+<!--          right: 0;-->
+<!--          bottom: 0;-->
+<!--          left: 0;-->
+<!--      }-->
+<!--  </style>-->
+<!--  </head>-->
+
+<!--  <body class="bg-light">-->
+
+<!--    <div class="container">-->
+<!--      <div class="py-5 text-left">-->
+<!--        &lt;!&ndash; <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72"> &ndash;&gt;-->
+<!--        <h2>{{ problem.problemName }}</h2>-->
+<!--        <p class="lead">{{ problem.problemStatement}}</p>-->
+<!--      </div>-->
+
+<!--      <div class="row">-->
+<!--        <div class="col-md-6 mb-3">-->
+<!--          <label style="font-size:20px;" for="firstName"><b>Problem Description</b></label>-->
+<!--          <p> Memory Limit : {{ problem.memoryLimit }}</p>-->
+<!--          <p> Time Limit : {{ problem.timeLimit }}</p>-->
+<!--          <p> Creator : {{ problem.creator }}</p>-->
+<!--        </div>-->
+<!--        <div class="col-md-12">-->
+<!--          <h4 class="mb-3">Your Code Goes Here: </h4>-->
+<!--          {% if contestId %}-->
+<!--          <form action="/contest/{{ contestId }}/{{ problem.id }}/submit/" method="post" class="needs-validation" novalidate>-->
+<!--          {% else %}-->
+<!--          <form action="/dashboard/submission/{{ problem.id }}/" method="post" class="needs-validation" novalidate>-->
+<!--          {% endif %}-->
+<!--            {% csrf_token %}-->
+<!--            <div>-->
+<!--              &lt;!&ndash; <div class="input-group"> &ndash;&gt;-->
+<!--                <textarea class="form-control" rows="20" name="code"></textarea>-->
+<!--              &lt;!&ndash; </div->&ndash;&gt;-->
+<!--            </div>-->
+<!--            <div class="row">-->
+<!--              <div class="col-md-5 mb-3">-->
+<!--                <label for="language">Select Language</label>-->
+<!--                <select class="custom-select d-block w-100" id="language" name="language" required>-->
+<!--                  <option value="">Choose...</option>-->
+<!--                  {% for language in languages %}-->
+<!--                  <option >{{language}}</option>-->
+<!--                  {% endfor %}-->
+<!--                </select>-->
+<!--              </div>-->
+<!--              <div class="col-md-5 mb-3">-->
+<!--                <label for="editorTheme">Select theme</label>-->
+<!--                <select class="custom-select d-block w-100" id="editorTheme" name="editorTheme" required>-->
+<!--                  <option value="">Choose...</option>-->
+<!--                  <option>monokai</option>-->
+<!--                  <option>twilight</option>-->
+<!--                  <option>terminal</option>-->
+<!--                  <option>github</option>-->
+<!--                  <option>eclipse</option>-->
+<!--                </select>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <button class="btn btn-primary" type="submit">Submit Code</button>-->
+<!--          </form>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--      <p id="demo">  </p>-->
+<!--      <p>  </p>-->
+<!--      -->
+<!--    </div>-->
+
+<!--    &lt;!&ndash; Bootstrap core JavaScript-->
+<!--    ================================================== &ndash;&gt;-->
+<!--    &lt;!&ndash; Placed at the end of the document so the pages load faster &ndash;&gt;-->
+<!--    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+<!--    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>-->
+<!--    <script src="{% static "js/vendor/popper.min.js" %}"></script>-->
+<!--    <script src="{% static "js/bootstrap.min.js" %}"></script>-->
+<!--    <script src="{% static "js/vendor/holder.min.js" %}"></script>-->
+<!--    <script src="{% static "js/ace.js" %}" type="text/javascript" charset="utf-8"></script>-->
+<!--    <script>-->
+<!--      // Example starter JavaScript for disabling form submissions if there are invalid fields-->
+<!--      (function() {-->
+<!--        'use strict';-->
+
+<!--        window.addEventListener('load', function() {-->
+<!--          // Fetch all the forms we want to apply custom Bootstrap validation styles to-->
+<!--          var forms = document.getElementsByClassName('needs-validation');-->
+
+<!--          // Loop over them and prevent submission-->
+<!--          var validation = Array.prototype.filter.call(forms, function(form) {-->
+<!--            form.addEventListener('submit', function(event) {-->
+<!--              if (form.checkValidity() === false) {-->
+<!--                event.preventDefault();-->
+<!--                event.stopPropagation();-->
+<!--              }-->
+<!--              form.classList.add('was-validated');-->
+<!--            }, false);-->
+<!--          });-->
+<!--        }, false);-->
+<!--      })();-->
+<!--    </script>-->
+<!--    <script src="{% static "js/problem.js" %}"></script>-->
+<!--  </body>-->
+<!--</html>-->
+
+
+
+<div>
+    <head>
+        <title> {{ problem.problemName }} </title>
+        <link rel="stylesheet" type="text/css"  href="../../../static/css/problem.css">
+        <style>
+            .dropbtn {
+                text-decoration: none;
+                color: #000;
+                font-size: 15px;
+                padding: 8px 15px;
+                border: 1px solid transparent;
+                transition: 0.6s ease;
+                background-color: white;
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #fff;
+                min-width: 160px;
+                z-index: 1;
+                transition: 0.6s ease;
+            }
+
+            .dropdown-content a {
+                color: black;
+                padding: 8px 15px;
+                text-decoration: none;
+                display: block;
+                transition: 0.6s ease;
+            }
+
+.dropdown-content a:hover {background-color: #000;
+    color: #fff;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #000;
+    color: #fff;}
+
+</style>
+<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -19,7 +189,7 @@
     <!-- Custom styles for this template -->
     <link href="{% static "css/form-validation.css" %}" rel="stylesheet">
     <style type="text/css" media="screen">
-      #editor { 
+      #editor {
           position: absolute;
           top: 0;
           right: 0;
@@ -27,26 +197,53 @@
           left: 0;
       }
   </style>
-  </head>
-
-  <body class="bg-light">
-
-    <div class="container">
+    </head>
+    <body>
+        <header>
+            <div class="main">
+                <ul>
+                    <li><a href="/dashboard">Home</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Problems</button>
+                            <div class="dropdown-content">
+                                <a href="/dashboard/problems/">View</a>
+                                <a href="/dashboard/createProblem/">Create</a>
+                            </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Contests</button>
+                            <div class="dropdown-content">
+                                <a href="/contest/all/">View</a>
+                                <a href="/contest/create/">Create</a>
+                            </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Profile</button>
+                            <div class="dropdown-content">
+                                <a href="/userprofile/">View</a>
+                                <a href="/userprofile/updateProfile">Update</a>
+                            </div>
+                    </div>
+                    <li><a href="/logout/">Logout</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="container">
       <div class="py-5 text-left">
         <!-- <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72"> -->
-        <h2>{{ problem.problemName }}</h2>
+        <br><br> <h1> {{ problem.problemName }} </h1>
         <p class="lead">{{ problem.problemStatement}}</p>
       </div>
 
       <div class="row">
         <div class="col-md-6 mb-3">
-          <label style="font-size:20px;" for="firstName"><b>Problem Description</b></label>
-          <p> Memory Limit : {{ problem.memoryLimit }}</p>
-          <p> Time Limit : {{ problem.timeLimit }}</p>
-          <p> Creator : {{ problem.creator }}</p>
+          <label style="font-size:24px;" for="firstName">Problem Description</label><br>
+          <p> Memory limit: {{ problem.memoryLimit }}</p>
+          <p> Time limit: {{ problem.timeLimit }}</p>
+          <p> Creator: {{ problem.creator }}</p> <br> <br>
         </div>
         <div class="col-md-12">
-          <h4 class="mb-3">Your Code Goes Here: </h4>
+          <h4 class="mb-3">Your code goes here: </h4>
           {% if contestId %}
           <form action="/contest/{{ contestId }}/{{ problem.id }}/submit/" method="post" class="needs-validation" novalidate>
           {% else %}
@@ -58,6 +255,7 @@
                 <textarea class="form-control" rows="20" name="code"></textarea>
               <!-- </div->-->
             </div>
+            <br>
             <div class="row">
               <div class="col-md-5 mb-3">
                 <label for="language">Select Language</label>
@@ -80,6 +278,7 @@
                 </select>
               </div>
             </div>
+            <br> <br>
             <button class="btn btn-primary" type="submit">Submit Code</button>
           </form>
         </div>
@@ -87,7 +286,7 @@
 
       <p id="demo">  </p>
       <p>  </p>
-      
+     <br>
     </div>
 
     <!-- Bootstrap core JavaScript
@@ -122,6 +321,10 @@
       })();
     </script>
     <script src="{% static "js/problem.js" %}"></script>
-  </body>
-</html>
+    </body>
+
+</div>
+
+
+
 
