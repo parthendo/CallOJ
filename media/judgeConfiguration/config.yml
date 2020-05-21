@@ -2,7 +2,7 @@ id: dmoj
 key: dmoj
 
 problem_storage_root:
-  - /home/modhzz/CallOJ/media/problems/
+  - /CallOJ/media/problems/
 
 runtime:
   as_x64: /usr/bin/x86_64-linux-gnu-as
@@ -15,16 +15,13 @@ runtime:
   ld_x64: /usr/bin/x86_64-linux-gnu-ld
   ld_x86: /usr/bin/ld
   gcc: /usr/bin/gcc
-  gcc11: /usr/bin/gcc
   g++: /usr/bin/g++
-  g++11: /usr/bin/g++-5
-  g++14: /usr/bin/g++-5
-  g++17: /usr/bin/g++-7
+  g++17: /usr/bin/g++-8
   java8: /usr/lib/jvm/java-8-openjdk-amd64/bin/java
   javac8: /usr/lib/jvm/java-8-openjdk-amd64/bin/javac
   perl: /usr/bin/perl
   python: /usr/bin/python2.7
-  python3: /usr/bin/python3.6
+  python3: /usr/bin/python3.7
   
 
 

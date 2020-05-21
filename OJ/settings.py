@@ -25,7 +25,7 @@ SECRET_KEY = '*%hcxewmtv&_8n&v68ens3=e&f#au_i-a)3_+n+g_*q-qjsgvx'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0','127.0.0.1','localhost']
 
 
 # Application definition
@@ -83,8 +83,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'OnlineJudge',
         'USER':'root',
-        'PASSWORD':'Parth@123',
-        'HOST':'localhost',
+        'PASSWORD':'parth@123',
+        'HOST':'db',
         'PORT':'3306',
     }
 }
