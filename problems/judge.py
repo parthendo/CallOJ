@@ -15,7 +15,11 @@ class Judge:
         stdout, stderr = process.communicate(input=query)
         # Saving the terminal output
         self.terminalOutput = stdout
-        self.terminalExecutionError = stderr 
+        self.terminalExecutionError = stderr
+        file = open(os.path.join(self.submittedFileDir,self.solutionCode)+"temp.txt","w") 
+        file.write(str(query))
+        file.write(str(stdout)) 
+        file.close()  
 
     def trimResult(self):
         ASCIICodes = [b'\x1b[0m',b'\x1b[1m',b'\x1b[4m',b'\x1b[31m',b'\x1b[32m',b'\x1b[33m',b'\x1b[36m',b'\x1b[35m',b'\x1b[01m\x1b[K',b'\x1b[m\x1b[K',b'\x1b[01;31m\x1b[K',b'\x1b[01;32m\x1b[K']

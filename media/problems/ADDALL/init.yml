@@ -1,0 +1,4 @@
+archive: ADDALL.zip
+test_cases:
+- {in: tc0.in, out: tc0.out, points: 25}
+- {in: tc1.in, out: tc1.out, points: 75} 
