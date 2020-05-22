@@ -1,6 +1,4 @@
 Django==2.1
-mysqlclient
-django-mysql
 six
 pyyaml
 dmoj==1.0

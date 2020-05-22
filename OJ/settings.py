@@ -80,12 +80,8 @@ WSGI_APPLICATION = 'OJ.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'OnlineJudge',
-        'USER':'root',
-        'PASSWORD':'parth@123',
-        'HOST':'db',
-        'PORT':'3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
