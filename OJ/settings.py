@@ -83,7 +83,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'OnlineJudge',
         'USER':'root',
-        'PASSWORD':'',
+        'PASSWORD':'parth@123',
         'HOST':'db',
         'PORT':'3306',
     }
