@@ -13,7 +13,7 @@ services:
        MYSQL_ROOT_PASSWORD: 'parth@123'
   web:
     build: .
-    command: python3 manage.py runserver 0.0.0.0:8000
+    command: bash -c "python3 manage.py makemigrations && python3 manage.py migrate && python3 manage.py test && python3 manage.py runserver 0.0.0.0:8000"
     container_name: webapp
     volumes:
       - .:/CallOJ
