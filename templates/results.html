@@ -1,112 +1,101 @@
-<!--<h1> Results </h1>-->
-<!--<div>-->
-<!--    <ul>-->
-<!--    {% for result in results %}-->
-<!--        <li>-->
-<!--        {% for verdict in result %}-->
-
-<!--        {{ verdict }}-->
-
-<!--        {% endfor %}-->
-<!--        </li>-->
-<!--    {% endfor %}-->
-<!--    </ul>-->
-<!--</div>-->
-
-
-
-
-
 <div>
-    <head>
-        <title> Results </title>
-        <link rel="stylesheet" type="text/css"  href="../../../../static/css/results.css">
-        <style>
-            .dropbtn {
-                text-decoration: none;
-                color: #000;
-                font-size: 15px;
-                padding: 8px 15px;
-                border: 1px solid transparent;
-                transition: 0.6s ease;
-                background-color: white;
-            }
+    <ul>
+    {% for result in results %}
+        <li>
+        {% for verdict in result %}
 
-            .dropdown {
-                position: relative;
-                display: inline-block;
-            }
+        {{ verdict }}
 
-            .dropdown-content {
-                display: none;
-                position: absolute;
-                background-color: #fff;
-                min-width: 160px;
-                z-index: 1;
-                transition: 0.6s ease;
-            }
-
-            .dropdown-content a {
-                color: black;
-                padding: 8px 15px;
-                text-decoration: none;
-                display: block;
-                transition: 0.6s ease;
-            }
-
-.dropdown-content a:hover {background-color: #000;
-    color: #fff;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: #000;
-    color: #fff;}
-
-</style>
-    </head>
-    <body>
-        <header>
-            <div class="main">
-                <ul>
-                    <li><a href="/dashboard">Home</a></li>
-                    <div class="dropdown">
-                        <button class="dropbtn">Problems</button>
-                            <div class="dropdown-content">
-                                <a href="/dashboard/problems/">View</a>
-                                <a href="/dashboard/createProblem/">Create</a>
-                            </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="dropbtn">Contests</button>
-                            <div class="dropdown-content">
-                                <a href="/contest/all/">View</a>
-                                <a href="/contest/create/">Create</a>
-                            </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="dropbtn">Profile</button>
-                            <div class="dropdown-content">
-                                <a href="/userprofile/">View</a>
-                                <a href="/userprofile/updateProfile">Update</a>
-                            </div>
-                    </div>
-                    <li><a href="/logout/">Logout</a></li>
-                </ul>
-            </div>
-        </header>
-
-    </body>
-
+        {% endfor %}
+        </li>
+    {% endfor %}
+    </ul>
 </div>
-<div>
-                <ul>
-            {% for result in results %}
-            <li>
-            {% for verdict in result %}
 
-            {{ verdict }}
 
-            {% endfor %}
-            </li>
-            {% endfor %}
-                </ul></div>
+
+
+
+<!--<div>-->
+<!--    <head>-->
+<!--        <title> Results </title>-->
+<!--        <link rel="stylesheet" type="text/css"  href="../../../../static/css/results.css">-->
+<!--        <style>-->
+<!--            .dropbtn {-->
+<!--                text-decoration: none;-->
+<!--                color: #000;-->
+<!--                font-size: 15px;-->
+<!--                padding: 8px 15px;-->
+<!--                border: 1px solid transparent;-->
+<!--                transition: 0.6s ease;-->
+<!--                background-color: white;-->
+<!--            }-->
+
+<!--            .dropdown {-->
+<!--                position: relative;-->
+<!--                display: inline-block;-->
+<!--            }-->
+
+<!--            .dropdown-content {-->
+<!--                display: none;-->
+<!--                position: absolute;-->
+<!--                background-color: #fff;-->
+<!--                min-width: 160px;-->
+<!--                z-index: 1;-->
+<!--                transition: 0.6s ease;-->
+<!--            }-->
+
+<!--            .dropdown-content a {-->
+<!--                color: black;-->
+<!--                padding: 8px 15px;-->
+<!--                text-decoration: none;-->
+<!--                display: block;-->
+<!--                transition: 0.6s ease;-->
+<!--            }-->
+
+<!--.dropdown-content a:hover {background-color: #000;-->
+<!--    color: #fff;}-->
+
+<!--.dropdown:hover .dropdown-content {display: block;}-->
+
+<!--.dropdown:hover .dropbtn {background-color: #000;-->
+<!--    color: #fff;}-->
+
+<!--</style>-->
+<!--    </head>-->
+<!--    <body>-->
+<!--        <header>-->
+<!--            <div class="main">-->
+<!--                <ul>-->
+<!--                    <li><a href="/dashboard">Home</a></li>-->
+<!--                    <div class="dropdown">-->
+<!--                        <button class="dropbtn">Problems</button>-->
+<!--                            <div class="dropdown-content">-->
+<!--                                <a href="/dashboard/problems/">View</a>-->
+<!--                                <a href="/dashboard/createProblem/">Create</a>-->
+<!--                            </div>-->
+<!--                    </div>-->
+<!--                    <div class="dropdown">-->
+<!--                        <button class="dropbtn">Contests</button>-->
+<!--                            <div class="dropdown-content">-->
+<!--                                <a href="/contest/all/">View</a>-->
+<!--                                <a href="/contest/create/">Create</a>-->
+<!--                            </div>-->
+<!--                    </div>-->
+<!--                    <div class="dropdown">-->
+<!--                        <button class="dropbtn">Profile</button>-->
+<!--                            <div class="dropdown-content">-->
+<!--                                <a href="/userprofile/">View</a>-->
+<!--                                <a href="/userprofile/updateProfile">Update</a>-->
+<!--                            </div>-->
+<!--                    </div>-->
+<!--                    <li><a href="/about/">About</a></li>-->
+<!--                    <li><a href="/logout/">Logout</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+
+<!--        </header>-->
+
+<!--    </body>-->
+
+<!--</div>-->
