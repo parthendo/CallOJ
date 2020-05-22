@@ -8,9 +8,6 @@ services:
       - '3306:3306'
     environment:
        MYSQL_DATABASE: 'OnlineJudge'
-       MYSQL_USER: 'root'
-       MYSQL_PASSWORD: ''
-       MYSQL_ROOT_PASSWORD: ''
   web:
     build: .
     command: bash -c "python3 manage.py makemigrations && python3 manage.py migrate && python3 manage.py test"
