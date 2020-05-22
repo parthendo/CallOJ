@@ -8,7 +8,7 @@ services:
       - '3306:3306'
     environment:
        MYSQL_DATABASE: 'OnlineJudge'
-       MYSQL_USER: 'root'
+       MYSQL_USER: 'parth'
        MYSQL_PASSWORD: 'parth@123'
        MYSQL_ROOT_PASSWORD: 'parth@123'
   web:
