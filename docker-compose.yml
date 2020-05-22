@@ -3,6 +3,7 @@ version: '3'
 services:
   db:
     image: mysql:5.7
+    container_name: webappdb
     ports:
       - '3306:3306'
     environment:
@@ -13,6 +14,7 @@ services:
   web:
     build: .
     command: python3 manage.py runserver 0.0.0.0:8000
+    container_name: webapp
     volumes:
       - .:/CallOJ
     ports:
