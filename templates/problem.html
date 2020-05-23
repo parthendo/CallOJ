@@ -105,7 +105,7 @@
       <div class="py-5 text-left">
         <!-- <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72"> -->
         <br><br> <h1> {{ problem.problemName }} </h1>
-        <p class="lead">{{ problem.problemStatement}}</p>
+        <p class="lead">{{ problem.problemStatement | safe }}</p>
       </div>
 
       <div class="row">
