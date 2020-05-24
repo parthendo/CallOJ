@@ -60,6 +60,7 @@
 
     <!-- Custom styles for this template -->
     <link href="{% static "css/form-validation.css" %}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" />
   </head>
 
   <body class="bg-light">
@@ -357,13 +358,34 @@
             </div>
             <div><br></div>
             <h4 class="mb-3">List of Available Problems</h4>
+            <div>
+            <table id="selectProblems" class="table table-bordered" style="width:150%; padding:5px;">
+              <thead>
+                <tr>
+                  <th>Select</th>
+                  <th>Problem</th>
+                  <th>Visibility</th>
+                  <th>View</th>
+                </tr>
+              </thead>
+              <tbody>
             {% for question in all_problems %}
+            <tr>
             <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id={{ question.problemCode }} name="checks[]" value={{ question.problemCode }}>
-                <label class="custom-control-label" for={{ question.problemCode }}> {{ question.problemName }} </label>
-                <a href="/dashboard/problems/{{ question.id }}/">view</a>
+                <td><input type="checkbox"  id={{ question.problemCode }} name="checks[]" value={{ question.problemCode }}></td>
+                <td>{{ question.problemName }}</td>
+                {% if question.access == 1 %}
+                <td>Public</td>
+                {% else %}
+                <td>Private</td>
+                {% endif %}
+                <td><a href="/dashboard/problems/{{ question.id }}/">view</a></td>
             </div>
+            </tr>
             {% endfor %}
+          </tbody>
+          </table>
+        </div>
 
             <div><br><br></div>
 
@@ -378,7 +400,6 @@
       <p>  </p>
       <p>  </p>
     </div>
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -409,6 +430,14 @@
         }, false);
       })();
     </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap.min.js"></script>
+    <script>$(document).ready( function () {
+        $('#selectProblems').DataTable(
+          {'ordering':false}
+        );
+    } );</script>
   </body>
 </html>
 

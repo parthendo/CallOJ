@@ -1,8 +1,44 @@
 
 <div>
     <head>
+        {% load static %}
         <title> View profile </title>
-        <link rel="stylesheet" type="text/css"  href="../static/css/profile.css">
+        <style>
+            table {
+              width:100%;
+            }
+            table, th, td {
+              border: 1px solid #808080;
+              padding-top: 2px; 
+              border-collapse: collapse;
+            }
+            th, td {
+              padding: 15px;
+              text-align: left;
+            }
+            table#t01 tr:nth-child(even) {
+              background-color: #eee;
+            }
+            table#t01 tr:nth-child(odd) {
+             background-color: #fff;
+            }
+            table#t01 th {
+              background-color: #808080;
+              color: white;
+            }
+            table#t02 tr:nth-child(even) {
+              background-color: #eee;
+            }
+            table#t02 tr:nth-child(odd) {
+             background-color: #fff;
+            }
+            table#t02 th {
+              background-color: #808080;
+              color: white;
+            }
+            </style>
+            <link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" />
+        <link rel="stylesheet" type="text/css"  href="{% static "css/profile.css" %}">
         <style>
             .dropbtn {
                 text-decoration: none;
@@ -45,6 +81,73 @@
     color: #fff;}
 
 </style>
+<style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box;}
+    
+    /* Button used to open the contact form - fixed at the bottom of the page */
+    .open-button {
+      background-color: #555;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      opacity: 0.8;
+     
+    }
+    
+    /* The popup form - hidden by default */
+    .form-popup {
+      display: none;
+      
+      border: 3px solid #f1f1f1;
+      z-index: 9;
+    }
+    
+    /* Add styles to the form container */
+    .form-container {
+      max-width: 300px;
+      padding: 10px;
+      background-color: white;
+    }
+    
+    /* Full-width input fields */
+    .form-container input[type=text], .form-container input[type=password] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      border: none;
+      background: #f1f1f1;
+    }
+    
+    /* When the inputs get focus, do something */
+    .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+    
+    /* Set a style for the submit/login button */
+    .form-container .btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom:10px;
+      opacity: 0.8;
+    }
+    
+    /* Add a red background color to the cancel button */
+    .form-container .cancel {
+      background-color: red;
+    }
+    
+    /* Add some hover effects to buttons */
+    .form-container .btn:hover, .open-button:hover {
+      opacity: 1;
+    }
+    </style>
     </head>
     <body>
         <header>
@@ -77,10 +180,152 @@
                 </ul>
             </div>
             <div class ="email">
+                {% if searchedUser %}
+                <h1> UserName: {{ searchedUser.username }} </h1>
+                <h2> Email: {{ searchedUser.email }} <br> FullName: {{ searchedUser.first_name }} {{ searchedUser.last_name }} </h2>
+                {% else %}
                 <h1> UserName: {{ user.username }} </h1>
                 <h2> Email: {{ user.email }} <br> FullName: {{ user.first_name }} {{ user.last_name }} </h2>
+                {% endif %}
             </div>
         </header>
+        {% if not category %}
+        <button class="open-button" onclick="openForm()">Add Category</button>
+        <div class="form-popup" id="myForm">
+            <form action="/userprofile/addCategory/" class="form-container" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+              <!-- <h1>Login</h1> -->
+          
+              <label for="category"><b>Category</b></label>
+              <input type="text" placeholder="Enter Category" name="category" required>
+          
+              <!-- <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required> -->
+              <br>
+              <button type="submit" class="btn">Add</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+          </div>
+          <div><br><br></div>
+          {% endif %}
+          {% if playlistEntries %}
+          <div>
+            <table id="t01">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Category</th>
+                        <th>ProblemsCount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for entry in playlistEntries%}
+                    <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td><a href="/userprofile/playlist/{{ entry.playlistCategory }}/questions/">{{ entry.playlistCategory }}</a></td>
+                        <td>{{ entry.problemCount }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+      
+        
+        </div>
+        {% endif %}
+
+        <div><br><br></div>
+
+        {% if category %}
+        <button class="open-button" onclick="openForm2()">Add Problem</button>
+        <div class="form-popup" id="questionForm">
+            <form action="/userprofile/{{ category }}/addQuestion/" class="form-container" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+              <!-- <h1>Login</h1> -->
+          
+              <label for="problemLink"><b>Link</b></label>
+              <input type="text" placeholder="Problem Link" name="problemLink" required>
+
+              <label for="problemName"><b>Name</b></label>
+              <input type="text" placeholder="Enter name" name="problemName" required>
+
+              <label for="contestName"><b>ContestName</b></label>
+              <input type="text" placeholder="Enter Contest" name="contestName" required>
+
+              <label for="difficulty"><b>Difficulty</b></label>
+              <select id="difficulty" name="difficulty" required>
+                <option value="">Choose...</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+              </select>
+          
+              <!-- <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required> -->
+              <br>
+              <button type="submit" class="btn">Add</button>
+              <button type="button" class="btn cancel" onclick="closeForm2()">Close</button>
+              <!-- <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->
+            </form>
+          </div>
+          <div><br><br></div>
+        <div>
+            <table id="t02">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Problem Name</th>
+                        <th>Contest</th>
+                        <th>Difficulty Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for problem in categoryProblems %}
+                    <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td><a href={{ problem.problemLink }}>{{ problem.problemName }}</a></td>
+                        <td>{{ problem.contestName }}</td>
+                        <td>{{ problem.difficultyLevel }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% endif %}
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap.min.js"></script>
+<script>$(document).ready( function () {
+    $('#t01').DataTable();
+} );</script>
+<script>$(document).ready( function () {
+    $('#t02').DataTable();
+} );</script>
+<script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+    <script>
+        function openForm2() {
+          document.getElementById("questionForm").style.display = "block";
+        }
+        
+        function closeForm2() {
+          document.getElementById("questionForm").style.display = "none";
+        }
+        </script>
     </body>
 
 </div>

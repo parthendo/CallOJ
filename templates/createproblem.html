@@ -2,8 +2,9 @@
 <!doctype html>
 <html lang="en">
   <head>
+    {% load static %}
     <title> Create a problem </title>
-        <link rel="stylesheet" type="text/css"  href="../../static/css/createproblem.css">
+        <link rel="stylesheet" type="text/css"  href="{% static "css/createproblem.css" %}">
 
         <style>
             .dropbtn {
@@ -106,7 +107,7 @@
           <form action="/dashboard/createProblem/" method="post" enctype="multipart/form-data" class="needs-validation" novalidate>
             {% csrf_token %}
             <!-- <div class="row"> -->
-              <div class="col-md-6 mb-3">
+              <div class="col-md-12 mb-3">
                 <label for="problemCode">Problem Code</label>
                 <input type="text" class="form-control" id="problemCode" placeholder="" value="" name="problemCode" required>
                 <div class="invalid-feedback">
@@ -114,7 +115,7 @@
                 </div>
               </div>
             <!-- </div> -->
-              <div class="col-md-6 mb-3">
+              <div class="col-md-12 mb-3">
                 <label for="problemName">Problem Name</label>
                 <input type="text" class="form-control" id="problemName" placeholder="" value="" name="problemName" required>
                 <div class="invalid-feedback">
@@ -130,7 +131,7 @@
                 <!-- <div class="input-group-prepend">
                   <span class="input-group-text">@</span>
                 </div> -->
-                <textarea class="form-control" rows="20" name="problemStatement" id="problemStatement"></textarea>
+                <textarea class="form-control" rows="20" name="problemStatement" id="problemStatement" style="width:100%;"></textarea>
                 <!-- <input type="textarea" rows="20" class="form-control" id="username" placeholder="Username" required> -->
                 <!-- <div class="invalid-feedback" style="width: 100%;">
                   Your username is required.
