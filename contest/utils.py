@@ -21,8 +21,41 @@ class ContestUtilities:
         contestStart = str(startYear)+ "-" + str(startMonth)+ "-" + str(startDay)+" "+str(startHours)+ ":"+str(startMinutes)+":"+ "00"
         timeElapsed = datetime.strptime(current, datetimeFormat)-datetime.strptime(contestStart, datetimeFormat)
         contestTimePeriod = (durationHours*60*60) + (durationMinutes*60)
+        print(contestTimePeriod)
+        print(timeElapsed.seconds)
         if timeElapsed.seconds>=contestTimePeriod:
             return "contestEnded" 
+    
+    # Tells the state of a cotest i.e.
+    # 0 for contest is in past
+    # 1 for contest is in future
+    # 2 for contest is running
+    def contestState(self,contest_id):
+        currentTimeStamp = datetime.now()
+        contest = Contest.objects.get(id=contest_id)
+        startYear = contest.startYear
+        startMonth = contest.startMonth
+        startDay = contest.startDay
+        startHours = contest.startHours
+        startMinutes = contest.startMinutes
+        durationHours = contest.durationHours
+        durationMinutes = contest.durationMinutes
+        contestTimeStamp = datetime(int(startYear), int(startMonth), int(startDay), int(startHours), int(startMinutes),int(0))
+        startMinutes = int(startMinutes) + int(durationMinutes)
+        if(startMinutes >= 60):
+            startHours = startHours + 1
+            startMinutes = startMinutes % 60
+        startHours = int(startHours) + int(durationHours)
+        if(startHours >= 24):
+            startDay = startDay + 1
+            startHours = startHours % 24
+        contestEndTimeStamp = datetime(int(startYear), int(startMonth), int(startDay), int(startHours), int(startMinutes),int(0))
+        if(currentTimeStamp<contestTimeStamp):
+            return 1
+        elif(currentTimeStamp>=contestTimeStamp and currentTimeStamp<contestEndTimeStamp):
+            return 2
+        else:
+            return 0
 
     def ioiRanklist(self,contest_id):
         print('Kadam')
