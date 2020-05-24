@@ -11,7 +11,8 @@ import time
 from .utils import Utils 
 
 from django.core.files.storage import FileSystemStorage
-# Create your views here.
+from OJ.loggingUtils import registerLog
+from OJ.loggingUtils import get_client_ip
 
 @login_required
 def correctFormView(request):
@@ -25,6 +26,7 @@ def dashboardView(request):
 def problemsView(request):
     questions = Question.objects.all()
     all_questions = []
+    registerLog('INFO','GET',request.user.username,'Problem','ViewProblemList',get_client_ip(request))
     for ques in questions:
         if ques.access == 1 or ques.creator == request.user.username:
             all_questions.append(ques)
@@ -34,6 +36,7 @@ def problemsView(request):
 def showProblemView(request,problem_id):
     problem_to_show = Question.objects.get(id=problem_id)
     languages = Utils.fetchAvailableLanguages(None)
+    registerLog('INFO','GET',request.user.username,'Problem','AccessProblemWithID_'+str(problem_id),get_client_ip(request))
     return render(request,'problem.html',{'problem':problem_to_show, 'languages': languages})
 
 @login_required
@@ -42,48 +45,24 @@ def submitProblemView(request,problem_id):
         usercode = request.POST['code']
         print(usercode)
         language = request.POST['language']
+        registerLog('INFO','POST',request.user.username,'Problem','SubmittedProblemWithID_'+str(problem_id),get_client_ip(request))
+        registerLog('INFO','POST',request.user.username,'Problem',language,get_client_ip(request))
+        registerLog('INFO','POST',request.user.username,'Problem','Problem'+str(problem_id)+'_Language'+language,get_client_ip(request))
         problem = Question.objects.get(id=problem_id)
-
         utils = Utils()
         x = utils.submitProblem(request.user, usercode, language, problem)
-
+        registerLog('INFO','POST',request.user.username,'Problem','JudgeExecutedForProblemWithID_'+str(problem_id),get_client_ip(request))
         problem.totalAttempts = problem.totalAttempts + 1
         if x[len(x)-1][0] == "AC":
             problem.successfulAttempts = problem.successfulAttempts + 1
+            registerLog('INFO','POST',request.user.username,'Problem','ForProblemWithID_'+str(problem_id)+'verdict_AC',get_client_ip(request))
         problem.save()
-    # if language == "Java":
-    #     with open(("media/submittedFiles/"+request.user.username+"/"+problem.problemCode+".txt"), "w") as file:
-    #         file.write(usercode)
-    #     my_file = "media/submittedFiles/"+request.user.username+"/"+problem.problemCode+".txt"
-    #     base = os.path.splitext(my_file)[0]
-    #     os.rename(my_file, base + '.java')
-    
-
-    # judge = Judge()
-    # judge.judgeConfigFile =  b"/home/parthendo/Project/CallOJ/media/judgeConfiguration/config.yml"
-    # if language == "Java":
-    #     judge.solutionCode = request.user.username + "/" + problem.problemCode + ".java"
-    # if language == "C++":
-    #     judge.solutionCode = request.user.username + "/" + problem.problemCode + ".cpp"
-    # if language == "C":
-    #     judge.solutionCode = request.user.username + "/" + problem.problemCode + ".c"
-    # if language == "python":
-    #     judge.solutionCode = request.user.username + "/" + problem.problemCode + ".py"
-
-    # judge.problemCode = str(problem.problemCode)
-    # judge.problemCode = "XYZ"
-    # if language == "Java":
-    #     judge.languageCode = "JAVA8"
-
-    # judge.timeLimit = str(problem.timeLimit)
-    # judge.memoryLimit = str(problem.memoryLimit)
-    # judge.problemType = problem.marking #ICPC type
-    # x = judge.executeJudge()
         print(x)
         if(x[0]=='CE'):
             temp = []
             errorMessage = " "
             temp.append("Compilation Error")
+            registerLog('INFO','POST',request.user.username,'Problem','ForProblemWithID_'+str(problem_id)+'verdict_CE',get_client_ip(request))
             for messageString in x[4]:
                 errorMessage = errorMessage + messageString + "    "
             temp.append(errorMessage)
@@ -97,39 +76,22 @@ def createProblemView(request):
     if request.method == 'POST':
         exists = 0
         fileValidity = True
-        # length=10
         yml_file = request.FILES['uploadFiles']
-        # directory = request.POST['problemCode']
-        # parent_dir = os.path.expanduser('~/CallOJ/media/problems')
-        # path = os.path.join(parent_dir,directory)
-        # directory permissions in octal
-        # mode = 0o777
-        # os.mkdir(path,mode)
-        print('hello')
-        # uploaded_file = request.FILES['hoji']
-        # print(uploaded_file.name)
-        print(request.FILES)
-        # problemCode = request.POST['problemCode']
-
-        #Check that problemCode should not match with any problemCode already in the database
-        #if problem code matches return message and reload the page
-        #else execute further
         for f in request.FILES.getlist('uploadFiles'):
             filename = f.name
             reqname = "init.yml"
             if filename == reqname:
                 print()
-                # fs = FileSystemStorage()
-                # fs.save(f.name,f)
             else:
+                registerLog('ERROR','POST',request.user.username,'Problem','CreateProblem_Invalid_initYAML',get_client_ip(request))
                 print("not yml")
-                #code to reload the page and print message goes here
 
         for f in request.FILES.getlist('uploadedFiles'):
             filename = f.name
             length = len(filename)
             if filename[length-1]!='t' or filename[length-2]!='x' or filename[length-3]!='t' or filename[length-4]!='.':
                 fileValidity = False
+                registerLog('ERROR','POST',request.user.username,'Problem','CreateProblem_Invalid_testCase',get_client_ip(request))
                 break
 
         if fileValidity == True:
@@ -139,7 +101,6 @@ def createProblemView(request):
             time_limit = request.POST['timeLimit']
             memory_limit = request.POST['memoryLimit']
             problemType = request.POST['problemType']
-            # ioi = bool(request.POST.get('problemType')=='1')
             print(int(problemType))
             if int(problemType) == 1:
                 marking = 1
@@ -163,71 +124,13 @@ def createProblemView(request):
             all_files = request.FILES.getlist('uploadedFiles')
             utils = Utils()
             utils.saveProblem(yml_file, problem_code, all_files)
+            registerLog('INFO','POST',request.user.username,'Problem','CreateProblemSuccessful',get_client_ip(request))
+            registerLog('INFO','POST',request.user.username,'Problem','CreateProblem_'+problem_code,get_client_ip(request))
             newProblem = Question(problemCode=problem_code,problemName=problem_name,problemStatement=problem_statement,timeLimit=time_limit,memoryLimit=memory_limit,marking=marking,access=access,creator=creator,editorialist=creator,totalAttempts=0,successfulAttempts=0)
             newProblem.save()
             return HttpResponseRedirect('/dashboard/problems/')
-            # all_files = request.FILES.getlist('uploadedFiles')
-            # length = len(request.FILES.getlist('uploadedFiles'))
-            # loop = 0
-            # index = 0
-            # os.mkdir(path,mode)
-            # fs = FileSystemStorage()
-            # fs.save(yml_file.name,yml_file)
-            # src=os.path.expanduser('~/CallOJ/media/init.yml')
-            # #dest=os.path.expanduser()
-            # shutil.move(src,path)
-            # while loop<length:
-            #         file_input = all_files[loop]
-            #         file_input.name = "tc" + str(index) + ".in"
-            #         fs = FileSystemStorage()
-            #         fs.save(file_input.name,file_input)
-            #         src=os.path.expanduser('~/CallOJ/media/'+file_input.name)
-            #         shutil.move(src,path)
-                    
-            #         file_output = all_files[loop+1]
-            #         file_output.name = "tc" + str(index) + ".out"
-            #         fs = FileSystemStorage()
-            #         fs.save(file_output.name,file_output)
-            #         src=os.path.expanduser('~/CallOJ/media/'+file_output.name)
-            #         shutil.move(src,path)
-            #         loop=loop+2
-            #         index=index+1
-
-            # print((path+"/"+directory+".zip"))
-            # zf = zipfile.ZipFile((path+"/"+directory+".zip"), "w")
-            # notdelete = directory+".zip"
-            # for root,subdirs,files in os.walk("/home/parthendo/Project/CallOJ/media/problems/"+directory):
-            #     for filename in files:
-            #         if filename != "init.yml" and filename!=notdelete:
-            #             zf.write(os.path.join(root, filename), filename, zipfile.ZIP_DEFLATED)
-            
-            # zf.close()
-            # loop=0
-            # index=0
-            # while loop<length:
-            #     file_input = all_files[loop]
-            #     # file_input.name = "tc" + str(index) + ".in"
-            #     src=os.path.expanduser('~/CallOJ/media/problems/'+directory+'/'+file_input.name)
-            #     os.remove(src)
-            #     file_output = all_files[loop+1]
-            #     # file_output.name = "tc" + str(index) + ".out"
-            #     src=os.path.expanduser(('~/CallOJ/media/problems/'+directory+'/')+file_output.name)
-            #     os.remove(src)
-            #     loop=loop+2
-            #     index=index+1
-
-            
         else:
             print("Not valid input cases")
-            #code to reload the page with error message input file wrong
-        # ymlfile = request.FILES['inFile']
-        # normalfile = request.FILES['ip0']
-        # print(problemCode)
-        # uploaded_files = request.FILES.getlist('file_field')
-        # for file in uploaded_files:
-        #     print('1')
-        #     print(file.name)
-        #     print(file.size)
 
     return render(request,'createproblem.html')
 

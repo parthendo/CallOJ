@@ -11,24 +11,6 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-from contest.emailAlert import alertEmail
-import logging
-
-log = logging.getLogger('CallOJLogs')
-id = 0
-def updateLog(logType, username, method, function, message):
-    global id
-    id = id + 1
-    if logType == 'info':
-        log.info({"index":{"username":username, "_id":id},"level":'info','message':""})
-        log.info({"type":'api-call',"module":function,"method":method, "text_entry":message})
-    elif logType == 'warning':
-        log.warning({"index":{"username":username, "_id":id},"level":'warning','message':""})
-        log.warning({"type":'api-call',"module":function,"method":method, "text_entry":message})
-    else:
-        log.error({"index":{"username":username, "_id":id},"level":'error','message':""})
-        log.error({"type":'api-call',"module":function,"method":method, "text_entry":message})
-
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -57,9 +39,6 @@ LOGGING = {
         'my':{
             'format':'%(levelname)s %(asctime)s %(clientip)s %(user)s %(message)s'
         },
-        'my1':{
-            'format':'%(apicall)s %(module)s %(method)s %(username)s %(message)s'
-        }
   },
   'handlers': {
         'console': {
@@ -81,12 +60,6 @@ LOGGING = {
             'filename': 'CallOJLogFile',
             'formatter':'my'
         },
-        'CallOJLogHandler1': {
-            'level':'INFO',
-            'class':'logging.handlers.RotatingFileHandler',
-            'filename': 'CallOJLogFile',
-            'formatter':'my1'
-        }
         #'logstash': {
         #    'level': 'INFO',
         #    'class': 'logstash.TCPLogstashHandler',
@@ -120,7 +93,7 @@ LOGGING = {
             'propagate': True,
         },
         'CallOJLogs':{
-            'handlers': ['CallOJLogHandler','CallOJLogHandler1'],
+            'handlers': ['CallOJLogHandler'],
             'level': 'INFO'
         }
     }

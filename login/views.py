@@ -67,12 +67,7 @@ def activate(request, uidb64, token):
     if user is not None and account_activation_token.check_token(user, token):
         user.is_active = True
         user.save()
-        
-        # Redirecting to user's dashboard
-        # auth.login(request, user)
-        # return HttpResponseRedirect('/dashboard/')
-        
-        # Redirecting to login page
+        registerLog('INFO','GET',user.username,'Login','AccountActivated',get_client_ip(request))
         return HttpResponseRedirect('/')
     else:
         return HttpResponse('Activation link is invalid!')
@@ -94,6 +89,7 @@ def saveUserView(request):
         if(password1 != password2):
             messages.info(request,'Password did not match')
             exists = True
+            registerLog('ERROR','POST',username,'Login','RegisterationPasswordMismatch',get_client_ip(request))
 
         # Checking if username or e-mail is already taken
         all_users = User.objects.all()
@@ -102,10 +98,12 @@ def saveUserView(request):
             if user.username == username:
                 exists = True
                 messages.info(request,'Username Taken')
+                registerLog('ERROR','POST',username,'Login','RegisterationUsernameTaken',get_client_ip(request))
                 break
             # Unique e-mail
             if user.email == email:
                 exists = True
+                registerLog('ERROR','POST',username,'Login','RegisterationEMailTaken',get_client_ip(request))
                 messages.info(request,'Username with this e-mail account already exists')
                 break
 
@@ -119,6 +117,7 @@ def saveUserView(request):
             path = os.path.join(parent_dir, directory)
             os.mkdir(path,mode)
             new_user = User.objects.create_user(username=username,first_name=firstname,last_name=lastname,email=email,password=password1)
+            registerLog('INFO','POST',username,'Login','NewUserCreated',get_client_ip(request))
             # Setting active status for the user false for the email verification
             new_user.is_active = False
             new_user.save()

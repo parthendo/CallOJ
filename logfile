@@ -104,3 +104,138 @@ INFO 2020-05-25 00:34:59,916 "GET /static/vendor/bootstrap/css/bootstrap.min.css
 INFO 2020-05-25 00:34:59,916 "GET /static/fonts/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 8192
 INFO 2020-05-25 00:34:59,919 "GET /static/vendor/css-hamburgers/hamburgers.min.css HTTP/1.1" 200 8192
 INFO 2020-05-25 00:34:59,938 "GET /static/vendor/select2/select2.min.css HTTP/1.1" 200 8192
+INFO 2020-05-25 01:07:57,908 "GET / HTTP/1.1" 200 5208
+INFO 2020-05-25 01:07:58,026 "GET /static/vendor/select2/select2.min.css HTTP/1.1" 200 8192
+INFO 2020-05-25 01:07:58,037 "GET /static/vendor/animsition/css/animsition.min.css HTTP/1.1" 200 8192
+INFO 2020-05-25 01:07:58,041 "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 8192
+INFO 2020-05-25 01:07:58,045 "GET /static/vendor/daterangepicker/daterangepicker.css HTTP/1.1" 200 8163
+INFO 2020-05-25 01:07:58,053 "GET /static/css/util.css HTTP/1.1" 200 8192
+INFO 2020-05-25 01:07:58,067 "GET /static/fonts/poppins/Poppins-Bold.ttf HTTP/1.1" 304 0
+INFO 2020-05-25 01:07:58,068 "GET /static/fonts/poppins/Poppins-Regular.ttf HTTP/1.1" 304 0
+INFO 2020-05-25 01:08:11,756 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-25 01:08:11,762 "GET / HTTP/1.1" 200 5252
+INFO 2020-05-25 01:08:15,195 "GET /registration/ HTTP/1.1" 200 6493
+WARNING 2020-05-25 01:08:15,411 Not Found: /registration/static/images/IIIT-B_logo.jpg
+WARNING 2020-05-25 01:08:15,411 Not Found: /registration/static/images/IIIT-B_logo.jpg
+WARNING 2020-05-25 01:08:15,412 "GET /registration/static/images/IIIT-B_logo.jpg HTTP/1.1" 404 3738
+INFO 2020-05-25 01:08:37,543 "POST /saveUser/ HTTP/1.1" 200 62
+INFO 2020-05-25 01:08:59,196 "GET /activate/NA/5gs-1915c9b89a80208f64c4/ HTTP/1.1" 302 0
+INFO 2020-05-25 01:08:59,204 "GET / HTTP/1.1" 200 5287
+INFO 2020-05-25 01:08:59,345 "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 8192
+INFO 2020-05-25 01:08:59,371 "GET /static/vendor/animsition/css/animsition.min.css HTTP/1.1" 200 8192
+INFO 2020-05-25 01:08:59,424 "GET /static/fonts/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 8192
+INFO 2020-05-25 01:08:59,572 "GET /static/images/bg-01.jpg HTTP/1.1" 200 8192
+INFO 2020-05-25 01:08:59,626 "GET /static/fonts/poppins/Poppins-Bold.ttf HTTP/1.1" 200 8192
+INFO 2020-05-25 01:09:07,623 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-25 01:09:07,648 "GET /dashboard/ HTTP/1.1" 200 2909
+INFO 2020-05-25 01:09:07,796 "GET /static/css/dashboard.css HTTP/1.1" 200 839
+WARNING 2020-05-25 01:09:07,807 Not Found: /favicon.ico
+WARNING 2020-05-25 01:09:07,807 Not Found: /favicon.ico
+WARNING 2020-05-25 01:09:07,807 "GET /favicon.ico HTTP/1.1" 404 3645
+INFO 2020-05-25 01:09:16,008 "GET /userprofile/ HTTP/1.1" 200 8238
+INFO 2020-05-25 01:09:16,117 "GET /static/css/profile.css HTTP/1.1" 200 1029
+INFO 2020-05-25 01:09:16,237 "GET /static/images/jayant.jpg HTTP/1.1" 200 92505
+INFO 2020-05-25 01:10:40,386 "POST /userprofile/addCategory/ HTTP/1.1" 302 0
+INFO 2020-05-25 01:10:40,437 "GET /userprofile/ HTTP/1.1" 200 8500
+INFO 2020-05-25 01:10:40,487 "GET /static/css/profile.css HTTP/1.1" 304 0
+WARNING 2020-05-25 01:10:40,534 Not Found: /favicon.ico
+WARNING 2020-05-25 01:10:40,534 Not Found: /favicon.ico
+WARNING 2020-05-25 01:10:40,535 "GET /favicon.ico HTTP/1.1" 404 3645
+INFO 2020-05-25 01:10:43,713 "GET /userprofile/playlist/Dynamic%20Programming/questions/ HTTP/1.1" 200 9013
+INFO 2020-05-25 01:10:43,775 "GET /static/css/profile.css HTTP/1.1" 200 1029
+INFO 2020-05-25 01:11:17,837 "POST /userprofile/Dynamic%20Programming/addQuestion/ HTTP/1.1" 302 0
+INFO 2020-05-25 01:11:17,877 "GET /userprofile/playlist/Dynamic%20Programming/questions/ HTTP/1.1" 200 9291
+INFO 2020-05-25 01:11:17,933 "GET /static/css/profile.css HTTP/1.1" 200 1029
+INFO 2020-05-25 01:11:29,281 "GET /userprofile/ HTTP/1.1" 200 8500
+INFO 2020-05-25 01:11:34,418 "GET /userprofile/playlist/Dynamic%20Programming/questions/ HTTP/1.1" 200 9291
+INFO 2020-05-25 01:11:56,729 "GET /contest/all/ HTTP/1.1" 200 9145
+INFO 2020-05-25 01:11:56,881 "GET /static/css/allContests.css HTTP/1.1" 200 686
+INFO 2020-05-25 01:12:13,809 "GET /dashboard/problems/ HTTP/1.1" 200 7141
+INFO 2020-05-25 01:12:13,894 "GET /static/css/problems.css HTTP/1.1" 200 686
+INFO 2020-05-25 01:12:18,043 "POST /dashboard/problems/4/ HTTP/1.1" 200 8544
+INFO 2020-05-25 01:12:18,151 "GET /static/css/problem.css HTTP/1.1" 200 876
+INFO 2020-05-25 01:12:18,192 "GET /static/css/form-validation.css HTTP/1.1" 200 73
+WARNING 2020-05-25 01:12:18,241 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 01:12:18,242 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-25 01:12:18,243 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 159515
+INFO 2020-05-25 01:12:18,331 "GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2020-05-25 01:12:18,378 "GET /static/js/ace.js HTTP/1.1" 304 0
+INFO 2020-05-25 01:12:18,379 "GET /static/js/problem.js HTTP/1.1" 304 0
+WARNING 2020-05-25 01:12:18,590 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 01:12:18,602 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-25 01:12:18,652 "GET /static/js/theme-monokai.js HTTP/1.1" 304 0
+INFO 2020-05-25 01:12:18,674 "GET /static/js/mode-c_cpp.js HTTP/1.1" 304 0
+WARNING 2020-05-25 01:12:18,693 "GET /static/docs/4.0/assets/img/favicons/favicon.ico HTTP/1.1" 404 1744
+INFO 2020-05-25 01:12:40,961 "GET /static/js/mode-java.js HTTP/1.1" 200 23848
+INFO 2020-05-25 01:12:42,430 "GET /static/js/theme-terminal.js HTTP/1.1" 200 3534
+INFO 2020-05-25 01:12:56,608 "POST /dashboard/submission/4/ HTTP/1.1" 200 10891
+WARNING 2020-05-25 01:12:56,662 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 01:12:56,675 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-25 01:12:56,680 "GET /static/css/problem.css HTTP/1.1" 200 876
+INFO 2020-05-25 01:12:56,684 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 159515
+INFO 2020-05-25 01:12:56,686 "GET /static/css/form-validation.css HTTP/1.1" 200 73
+INFO 2020-05-25 01:12:56,692 "GET /static/images/grrentick.jpg HTTP/1.1" 304 0
+WARNING 2020-05-25 01:12:56,775 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 01:12:56,809 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 01:12:56,922 "GET /static/docs/4.0/assets/img/favicons/favicon.ico HTTP/1.1" 404 1744
+INFO 2020-05-25 01:13:11,297 "POST /dashboard/submission/4/ HTTP/1.1" 200 9812
+WARNING 2020-05-25 01:13:11,388 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 01:13:11,391 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-25 01:13:11,393 "GET /static/css/problem.css HTTP/1.1" 200 876
+INFO 2020-05-25 01:13:11,397 "GET /static/css/form-validation.css HTTP/1.1" 304 0
+INFO 2020-05-25 01:13:11,399 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 159515
+INFO 2020-05-25 01:13:11,418 "GET /static/images/wrong3.png HTTP/1.1" 304 0
+WARNING 2020-05-25 01:13:11,454 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 01:13:11,477 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 01:13:11,562 Not Found: /favicon.ico
+WARNING 2020-05-25 01:13:11,562 Not Found: /favicon.ico
+WARNING 2020-05-25 01:13:11,562 "GET /favicon.ico HTTP/1.1" 404 3645
+INFO 2020-05-25 01:13:37,760 "POST /dashboard/submission/4/ HTTP/1.1" 200 10891
+WARNING 2020-05-25 01:13:37,832 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 01:13:37,834 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-25 01:13:37,837 "GET /static/css/problem.css HTTP/1.1" 200 876
+INFO 2020-05-25 01:13:37,844 "GET /static/css/form-validation.css HTTP/1.1" 200 73
+INFO 2020-05-25 01:13:37,845 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 159515
+WARNING 2020-05-25 01:13:37,884 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 01:13:37,919 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 01:13:38,019 Not Found: /favicon.ico
+WARNING 2020-05-25 01:13:38,019 Not Found: /favicon.ico
+WARNING 2020-05-25 01:13:38,020 "GET /favicon.ico HTTP/1.1" 404 3645
+INFO 2020-05-25 01:13:45,027 "GET /dashboard/createProblem/ HTTP/1.1" 200 10426
+INFO 2020-05-25 01:13:45,135 "GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+WARNING 2020-05-25 01:13:45,138 "GET /static/https%3A/code.jquery.com/jquery-3.2.1.slim.min.js HTTP/1.1" 404 1765
+WARNING 2020-05-25 01:13:45,138 "GET /static/form-validation.css HTTP/1.1" 404 1681
+WARNING 2020-05-25 01:13:45,141 Not Found: /dashboard/createProblem/assets/js/vendor/popper.min.js
+WARNING 2020-05-25 01:13:45,141 Not Found: /dashboard/createProblem/assets/js/vendor/popper.min.js
+WARNING 2020-05-25 01:13:45,143 "GET /dashboard/createProblem/assets/js/vendor/popper.min.js HTTP/1.1" 404 5146
+WARNING 2020-05-25 01:13:45,148 Not Found: /dashboard/createProblem/assets/js/vendor/holder.min.js
+WARNING 2020-05-25 01:13:45,148 Not Found: /dashboard/createProblem/assets/js/vendor/holder.min.js
+WARNING 2020-05-25 01:13:45,148 "GET /dashboard/createProblem/assets/js/vendor/holder.min.js HTTP/1.1" 404 5146
+INFO 2020-05-25 01:13:45,239 "GET /static/css/createproblem.css HTTP/1.1" 200 505
+INFO 2020-05-25 01:13:45,301 "GET /static/js/uploadFiles.js HTTP/1.1" 200 619
+WARNING 2020-05-25 01:13:45,687 "GET /static/https%3A/code.jquery.com/jquery-3.2.1.slim.min.js HTTP/1.1" 404 1765
+WARNING 2020-05-25 01:13:45,696 Not Found: /assets/js/vendor/jquery-slim.min.js
+WARNING 2020-05-25 01:13:45,696 Not Found: /assets/js/vendor/jquery-slim.min.js
+WARNING 2020-05-25 01:13:45,697 "GET /assets/js/vendor/jquery-slim.min.js HTTP/1.1" 404 3717
+WARNING 2020-05-25 01:13:45,710 Not Found: /dashboard/createProblem/assets/js/vendor/popper.min.js
+WARNING 2020-05-25 01:13:45,710 Not Found: /dashboard/createProblem/assets/js/vendor/popper.min.js
+WARNING 2020-05-25 01:13:45,711 "GET /dashboard/createProblem/assets/js/vendor/popper.min.js HTTP/1.1" 404 5146
+WARNING 2020-05-25 01:13:45,722 Not Found: /dashboard/createProblem/assets/js/vendor/holder.min.js
+WARNING 2020-05-25 01:13:45,722 Not Found: /dashboard/createProblem/assets/js/vendor/holder.min.js
+WARNING 2020-05-25 01:13:45,722 "GET /dashboard/createProblem/assets/js/vendor/holder.min.js HTTP/1.1" 404 5146
+INFO 2020-05-25 01:13:45,874 "GET /static/js/ckeditor/skins/moono-lisa/editor_gecko.css?t=JB9C HTTP/1.1" 200 8192
+INFO 2020-05-25 01:13:45,968 "GET /static/js/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css?t=JB9C HTTP/1.1" 200 381
+INFO 2020-05-25 01:13:45,968 "GET /static/js/ckeditor/plugins/scayt/dialogs/dialog.css?t=JB9C HTTP/1.1" 200 419
+INFO 2020-05-25 01:13:45,969 "GET /static/js/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css?t=JB9C HTTP/1.1" 200 1306
+INFO 2020-05-25 01:13:45,979 "GET /static/js/ckeditor/plugins/tableselection/styles/tableselection.css HTTP/1.1" 200 1145
+INFO 2020-05-25 01:13:45,981 "GET /static/js/ckeditor/plugins/dialog/styles/dialog.css HTTP/1.1" 200 249
+INFO 2020-05-25 01:13:46,016 "GET /static/js/ckeditor/skins/moono-lisa/icons.png?t=411985373e HTTP/1.1" 200 5881
+INFO 2020-05-25 01:13:46,081 "GET /static/js/ckeditor/contents.css?t=JB9C HTTP/1.1" 200 3094
+INFO 2020-05-25 01:13:51,577 "GET /contest/create/ HTTP/1.1" 200 18271
+WARNING 2020-05-25 01:13:51,627 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 01:13:51,629 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-25 01:13:51,630 "GET /static/css/form-validation.css HTTP/1.1" 200 73
+INFO 2020-05-25 01:13:51,632 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 159515
+INFO 2020-05-25 01:13:51,707 "GET /static/css/createContest.css HTTP/1.1" 200 534
+WARNING 2020-05-25 01:13:51,786 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 01:13:51,808 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693

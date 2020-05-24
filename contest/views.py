@@ -12,13 +12,11 @@ from problems.utils import Utils
 import os, zipfile
 import shutil
 import time
-from OJ.settings import updateLog
 # Create your views here.
 def contestsView(request):
     return render(request,'thanks.html')
 
 def createContestView(request):
-    updateLog('info',request.user.username,'GET','/createContest','Creating new contest')
     questions = Question.objects.all()
     all_questions = []
     for question in questions:
