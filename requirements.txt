@@ -2,3 +2,4 @@ Django==2.1
 six
 pyyaml
 dmoj==1.0
+django-crontab==0.7.1

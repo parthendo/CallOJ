@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+from contest.emailAlert import alertEmail
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -42,6 +44,7 @@ INSTALLED_APPS = [
     'contest',
     'userprofile',
     'six',
+    'django_crontab',
 ]
 
 MIDDLEWARE = [
@@ -52,6 +55,11 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
+
+CRONJOBS = [
+    ('30 22 * * *','contest.cron.contestAlert'),
+    ('30 22 * * *','problems.cron.makePublic'),
 ]
 
 ROOT_URLCONF = 'OJ.urls'
@@ -141,7 +149,3 @@ EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'mike.dent9@gmail.com'
 EMAIL_HOST_PASSWORD = '8009998615122179'
-
-# Path Variables
-fun = [{'DIRECTORY_PATH' : '/home/parthendo/Project/media/judgeConfiguration'},]
-#JUDGE_CONFIGURATION = os.path.join(DIRECTORY_PATH, 'media/judgeConfiguration')

@@ -9,13 +9,13 @@ class alertEmail:
 	
 	def alertMassUsers(self, userList, subject, message):
 		msg = []
-		sender_email = OJ.settings.EMAIL_HOST_USER
+		sender_email = 'mike.dent9@gmail.com'
 		for user in userList:
 			temp = (subject, message, sender_email, [user])
 			msg.append(temp)
 		send_mass_mail((msg), fail_silently=False)
 
 	def alertSingleUser(self, user, subject, message):
-		send_mail = OJ.settings.EMAIL_HOST_USER
+		send_mail = 'mike.dent9@gmail.com'
 		msg = EmailMessage(subject, message, send_mail, [user])
 		msg.send()
