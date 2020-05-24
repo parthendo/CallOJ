@@ -12,11 +12,119 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 from contest.emailAlert import alertEmail
+import logging
+
+log = logging.getLogger('CallOJLogs')
+id = 0
+def updateLog(logType, username, method, function, message):
+    global id
+    id = id + 1
+    if logType == 'info':
+        log.info({"index":{"username":username, "_id":id},"level":'info','message':""})
+        log.info({"type":'api-call',"module":function,"method":method, "text_entry":message})
+    elif logType == 'warning':
+        log.warning({"index":{"username":username, "_id":id},"level":'warning','message':""})
+        log.warning({"type":'api-call',"module":function,"method":method, "text_entry":message})
+    else:
+        log.error({"index":{"username":username, "_id":id},"level":'error','message':""})
+        log.error({"type":'api-call',"module":function,"method":method, "text_entry":message})
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+ELASTICSEARCH_DSL={
+    'default': {
+        'hosts': 'localhost:9200'
+    },
+}
+
+LOGGING = {
+  'version': 1,
+  'disable_existing_loggers': False,
+  'formatters': {
+      'simple': {
+            'format': '%(levelname)s %(message)s'
+        },
+        'standard': {
+            'format' : "[%(asctime)s] %(levelname)s %(message)s ",
+            'datefmt' : "%d/%b/%Y %H:%M:%S"
+        },
+        'verbose': {
+            'format': '{levelname} {asctime} {message}',
+            'style': '{',
+        },
+        'my':{
+            'format':'%(levelname)s %(asctime)s %(clientip)s %(user)s %(message)s'
+        },
+        'my1':{
+            'format':'%(apicall)s %(module)s %(method)s %(username)s %(message)s'
+        }
+  },
+  'handlers': {
+        'console': {
+            'level': 'INFO',
+            'class': 'logging.StreamHandler',
+            'formatter': 'verbose'
+        },
+        'file': {
+            'level':'INFO',
+            'class':'logging.FileHandler',
+            'filename': BASE_DIR + "/logfile",
+            #'maxBytes': 50000,
+            #'backupCount': 2,
+            'formatter': 'verbose',
+        },
+        'CallOJLogHandler': {
+            'level':'INFO',
+            'class':'logging.handlers.RotatingFileHandler',
+            'filename': 'CallOJLogFile',
+            'formatter':'my'
+        },
+        'CallOJLogHandler1': {
+            'level':'INFO',
+            'class':'logging.handlers.RotatingFileHandler',
+            'filename': 'CallOJLogFile',
+            'formatter':'my1'
+        }
+        #'logstash': {
+        #    'level': 'INFO',
+        #    'class': 'logstash.TCPLogstashHandler',
+        #    'host': '127.0.0.1',
+        #    'port': 5959, #Default value: 5959
+        #    'version': 1, # Version of logstash event schema. Default value: 0 (for backward compatibility of the library)
+        #    'message_type': 'django_logstash',  # 'type' field in logstash message. Default value: 'logstash'.
+        #    'fqdn': False, # Fully qualified domain name. Default value: false.
+        #    'tags': ['django.request'], # list of tags. Default: None.
+        #},
+  },
+  'loggers': {
+        #'django.request': {
+        #    'handlers': ['logstash'],
+        #    'level': 'INFO',
+        #    'propagate': True,
+        #},
+        'django': {
+            'handlers': ['console'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+        'django': {
+            'handlers': ['file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+        'django.request': {
+            'handlers': ['file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+        'CallOJLogs':{
+            'handlers': ['CallOJLogHandler','CallOJLogHandler1'],
+            'level': 'INFO'
+        }
+    }
+}
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/

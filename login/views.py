@@ -5,7 +5,6 @@ from django.contrib import messages
 from django.contrib import auth
 from django.conf import settings
 import os
-# from .models import User
 
 from django.template.loader import render_to_string
 from django.utils.encoding import force_bytes, force_text
@@ -19,52 +18,19 @@ from django.template import Context
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from .tokens import account_activation_token
 from django.core.mail import EmailMessage
-import logging
-
-log = logging.getLogger('login')
-
-def get_client_ip(request):
-    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
-    if x_forwarded_for:
-        ip = x_forwarded_for.split(',')[0]
-    else:
-        ip = request.META.get('REMOTE_ADDR')
-    return ip
+from OJ.loggingUtils import get_client_ip
+from OJ.loggingUtils import registerLog
 
 def loginView(request):
-    #print(request.POST['username'],request.POST['pass'])
-    # insertInProblems = 1
-    # if(insertInProblems == 1):
-    #     problemCode1 = "ABC"
-    #     problemName1 = "Add Two Numbers"
-    #     problemStatement1 = "Given two numbers a and b , print their Sum."
-    #     timeLimit1 = 2.0
-    #     memoryLimit1 = 65573
-    #     creator1 = "Jayant0730"
-    #     editorialist1 = "Jayant0730"
-    #     problem1 = AllProblems(problemCode=problemCode1,problemName=problemName1,problemStatement=problemStatement1,timeLimit=timeLimit1,memoryLimit=memoryLimit1,creator=creator1,editorialist=editorialist1)
-    #     problem1.save()
-    #     problemCode2 = "XYZ"
-    #     problemName2 = "XOR"
-    #     problemStatement2 = "Perform XOR of two numbers and return the output ."
-    #     timeLimit2 = 1.0
-    #     memoryLimit2 = 65573
-    #     creator2 = "Parth74"
-    #     editorialist2 = "Parth74"
-    #     problem2 = AllProblems(problemCode=problemCode2,problemName=problemName2,problemStatement=problemStatement2,timeLimit=timeLimit2,memoryLimit=memoryLimit2,creator=creator2,editorialist=editorialist2)
-    #     problem2.save()
-    # invalid = 1
-    # userfound = 0
-    d = {'clientip': get_client_ip(request), 'user': request.user}
-    log.warning('"GET Login started when logged in"', extra=d)
+    
     username = request.POST['username']
     password = request.POST['pass']
+    
     print(username," ",password)
-    user = auth.authenticate(username=username, password=password)
+    user = auth.authenticate(username = username, password = password)
     if user is not None and user.is_active:
         auth.login(request,user)
-        d = {'clientip': get_client_ip(request), 'user': request.user}
-        log.info('"POST '+user.username+' user logged in"', extra=d)
+        registerLog('INFO','POST',user.username,'Login','LoginSuccessful',get_client_ip(request))
         return HttpResponseRedirect('/dashboard/')
     else:
         allusers = User.objects.all()
@@ -73,57 +39,15 @@ def loginView(request):
             if user.username == username and user.password!=password:
                 messages.info(request,'Password did not match')
                 whichMessageToShow = 2
+                registerLog('ERROR','POST',user.username,'Login','IncorrectPassword',get_client_ip(request))
                 break
         if whichMessageToShow == 1:
+            registerLog('ERROR','POST',username,'Login','UsernameDoesNotExist',get_client_ip(request))
             messages.info(request,'Username does not exist')
         return HttpResponseRedirect('/')
-    # all_users = User.objects.all()
-    # for user in all_users:
-    #     if user.userid == username:
-    #         userfound=1
-    #         if user.password == password:
-    #             invalid = 0
-    #             break
-    #         else:
-    #             messages.info(request,'Password did not match')
-    #             break
-    # if userfound==0:
-    #     messages.info(request,'Username is not valid')
-    #loop through all the users in the user table
-    #if username matches but password does not match
-    # if invalid == 1:
-    #     return HttpResponseRedirect('/')
-    # else:
-    #     return HttpResponseRedirect('/dashboard/')
-    #else
-    #render to the dashboard page
-
-    #return HttpResponseRedirect('/thanks/')
-    # if request.method == 'POST':
-
-    #     form = NameForm(request.POST)
-
-    #     if form.is_valid():
-    #         print(form.cleaned_data['your_name'])
-    #         your_name = form.cleaned_data['your_name']
-    #         your_pass = form.cleaned_data['your_pass']
-    #         your_code = form.cleaned_data['your_code']
-    #         sender = form.cleaned_data['sender']
-    #         cc_myself = form.cleaned_data['cc_myself']
-    #         recipients = ['jayant.tiwari@iiitb.org']
-    #         if cc_myself:
-    #             recipients.append(sender)
-    #        # send_mail(your_name,your_code,sender,recipients)
-    #         return HttpResponseRedirect('/thanks/')
-    # else:
-    #     form = NameForm()
-    # return render(request,'home.html',{'form':form})
-# Create your views here.
-
-#def initial_view(request):
- #   return render(request,'home.html',{'form':form})
 
 def logoutView(request):
+    registerLog('INFO','GET',request.user.username,'Login','UserLogsOut',get_client_ip(request))
     auth.logout(request)
     return HttpResponseRedirect('/')
 

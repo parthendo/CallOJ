@@ -1,0 +1,4 @@
+ERROR 2020-05-25 00:34:40,157 127.0.0.1 parthoooooo "POST parthoooooo Login UsernameDoesNotExist"
+ERROR 2020-05-25 00:34:47,350 127.0.0.1 parthendo "POST parthendo Login IncorrectPassword"
+INFO 2020-05-25 00:34:55,539 127.0.0.1 parthendo "POST parthendo Login LoginSuccessful"
+INFO 2020-05-25 00:34:59,166 127.0.0.1 parthendo "GET parthendo Login UserLogsOut"
