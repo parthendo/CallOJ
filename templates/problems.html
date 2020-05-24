@@ -1,6 +1,32 @@
 <head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" />
         <title> View problems </title>
-        <link rel="stylesheet" type="text/css"  href="../../static/css/problems.css">
+        <link rel="stylesheet" type="text/css"  href="{% static "css/problems.css" %}">
+        <style>
+table {
+  width:100%;
+}
+table, th, td {
+  border: 1px solid #808080;
+  padding-top: 2px; 
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+table#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+table#t01 th {
+  background-color: #808080;
+  color: white;
+}
+            </style>
         <style>
             input[type=submit] {
                 background-color: white;
@@ -90,20 +116,45 @@
                     <li><a href="/logout/">Logout</a></li>
                 </ul>
             </div>
-            <div class ="title">
-                <h1> Problems: </h1> <br> <br>
-                {% for problem in all_problems %}
-                    <h2><li>  {{ problem.problemName }} </h2><br> <p> &nbsp Successful Submissions : {{ problem.successfulAttempts }}  <br>     &nbsp   Total Attempts : {{ problem.totalAttempts }} </p>
-                    <!-- {{ problem.problemCode }} --><br> &nbsp
-                    <form action="/dashboard/problems/{{ problem.id }}/"
-                        style="display: inline;"
-                        method="post">
-                        {% csrf_token %}
-                        <input type="submit" value="Go to problem-->"/>
-                        <br> <br> <br>
-                    </form>
-                    </li>
-                {% endfor %}
-            </div>
+
         </header>
+        <div class ="title">
+            <h1> Problems: </h1> <br> <br>
+            <div style="width:122%; padding:5px;">
+                <table id="t01">
+                    <thead>
+                        <tr>
+                            <th>Problem</th>
+                            <th>Succesful Submissions</th>
+                            <th>Total Attempts</th>
+                            <th>Go to Problem</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+            {% for problem in all_problems %}
+                <tr>
+                <td><h2>  {{ problem.problemName }} </h2></td> 
+                <td> &nbsp {{ problem.successfulAttempts }}</td>
+                <td> &nbsp  {{ problem.totalAttempts }} </td>
+                <!-- {{ problem.problemCode }} -->
+                <td> &nbsp <form action="/dashboard/problems/{{ problem.id }}/"
+                    style="display: inline;"
+                    method="post">
+                    {% csrf_token %}
+                    <input type="submit" value="Go to problem-->"/>
+                </form></td>
+                </tr>
+            {% endfor %}
+                </tbody>
+              </table>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap.min.js"></script>
+        <script>$(document).ready( function () {
+            $('#t01').DataTable(
+              {'ordering':false}
+            );
+        } );</script>
     </body>

@@ -4,9 +4,15 @@ from django.contrib import auth
 from django.http import HttpResponseRedirect
 from django.contrib import messages
 from django.contrib import auth
+from .models import UserPlaylist
+from problems.models import PlaylistProblems
+from django.urls import reverse
 # Create your views here.
 def profileView(request):
-    return render(request,'profilepage.html')
+    # UserPlaylistEntry = UserPlaylist.objects.create(userId_id=request.user.id,playlistCategory="DP",problemCount=0)
+    # UserPlaylistEntry.save()
+    playlistEntries = UserPlaylist.objects.all()
+    return render(request,'profilepage.html',{'playlistEntries':playlistEntries})
 
 def updateProfileView(request):
     return render(request,'updateProfile.html')
@@ -43,6 +49,53 @@ def changesToProfileView(request):
         messages.info(request,'Password successfully changed please login again')
         return HttpResponseRedirect('/')
     return render(request,'profilepage.html')
+
+def showUserProfileView(request,searchedUser):
+    print("OHO",searchedUser)
+    requestedUserInfo = User.objects.get(username=searchedUser)
+    print("Sahi hua ?",requestedUserInfo)
+    return render(request,'profilepage.html',{'searchedUser':requestedUserInfo})
+
+def playlistCategoryProblemsView(request,playlistCategory):
+    categoryEntry = UserPlaylist.objects.get(userId_id=request.user.id,playlistCategory=playlistCategory)
+    problems = categoryEntry.problems.all()
+    return render(request,'profilepage.html',{'categoryProblems':problems,'category':playlistCategory})
+
+def addCategoryView(request):
+    print('Rangdebasanti')
+    categoryName = request.POST["category"]
+    newEntry = UserPlaylist.objects.create(userId_id=request.user.id,playlistCategory=categoryName,problemCount=0)
+    newEntry.save()
+    playlistEntries = UserPlaylist.objects.all()
+    url = reverse('initialProfile')
+    return HttpResponseRedirect(url)
+    return render(request,'profilepage.html',{'playlistEntries':playlistEntries})
+
+def addQuestionToPlaylistView(request,playlistCategory):
+    problemlink = request.POST['problemLink']
+    problemname = request.POST['problemName']
+    contestname = request.POST['contestName']
+    difficultylevel = request.POST['difficulty']
+    difficulty = int(difficultylevel)
+    newPlaylistProblemsEntry = PlaylistProblems.objects.create(problemOfUser_id=request.user.id,problemLink=problemlink,problemName=problemname,contestName=contestname,difficultyLevel=difficulty)
+    newPlaylistProblemsEntry.save()
+    categoryEntry = UserPlaylist.objects.get(userId_id=request.user.id,playlistCategory=playlistCategory)
+    if categoryEntry:
+        print('Chalo')
+    categoryEntry.problemCount = (categoryEntry.problemCount + 1)
+    categoryEntry.save()
+    categoryEntry.problems.add(newPlaylistProblemsEntry)
+    problems = categoryEntry.problems.all()
+    print(problems)
+    url = reverse('categoryQuestions',args=[playlistCategory])
+    return HttpResponseRedirect(url)
+    return render(request,'profilepage.html',{'categoryProblems':problems,'category':playlistCategory})
+    
+
+# def categoryQuestionsView(request,category):
+#     userPlaylistEntry = UserPlaylist.objects.get(userId_id=request.user.id,playlistCategory=category)
+#     questions = userPlaylistEntry.problems.all()
+#     return render(request,'profilepage.html',{'questionsInCategory':questions})
     
 
 

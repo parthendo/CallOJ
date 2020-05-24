@@ -19,6 +19,17 @@ from django.template import Context
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from .tokens import account_activation_token
 from django.core.mail import EmailMessage
+import logging
+
+log = logging.getLogger('login')
+
+def get_client_ip(request):
+    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+    if x_forwarded_for:
+        ip = x_forwarded_for.split(',')[0]
+    else:
+        ip = request.META.get('REMOTE_ADDR')
+    return ip
 
 def loginView(request):
     #print(request.POST['username'],request.POST['pass'])
@@ -44,12 +55,16 @@ def loginView(request):
     #     problem2.save()
     # invalid = 1
     # userfound = 0
+    d = {'clientip': get_client_ip(request), 'user': request.user}
+    log.warning('"GET Login started when logged in"', extra=d)
     username = request.POST['username']
     password = request.POST['pass']
     print(username," ",password)
     user = auth.authenticate(username=username, password=password)
     if user is not None and user.is_active:
         auth.login(request,user)
+        d = {'clientip': get_client_ip(request), 'user': request.user}
+        log.info('"POST '+user.username+' user logged in"', extra=d)
         return HttpResponseRedirect('/dashboard/')
     else:
         allusers = User.objects.all()

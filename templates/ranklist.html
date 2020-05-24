@@ -1,11 +1,106 @@
-<h1>Ranklist</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+<style>
+table {
+  width:100%;
+}
+table, th, td {
+  border: 1px solid #808080;
+  padding-top: 2px; 
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+table#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+table#t01 th {
+  background-color: #808080;
+  color: white;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" />
+
+</head>
+<body>
+
+<h1>{{ currentContest.contestName }}</h1>
+
+<br>
+
+<table id="t01">
+    {% if ioi %}
+    <thead>
+    <tr>
+        <th>Rank</th>
+        <th>User</th> 
+        <th>Score</th>
+    </tr>
+    </thead>
+    <tbody>
+  {% for item in rankings %}
+  <tr>
+      {% for values in item %}
+      {% if forloop.counter == 2 %}
+      <td><a href="/userprofile/{{ values }}/">{{ values }}</a></td>
+      {% else %}
+      <td>{{ values }}</td>
+      {% endif %}
+      {% endfor %}
+  </tr>
+  {% endfor %}
+  </tbody>
+  {% else %}
+  <thead>
+  <tr>
+    <th>Rank</th>
+    <th>User</th> 
+    <th>Score</th>
+    <th>Total Time</th>
+  </tr>
+  </thead>
+  <tbody>
+  {% for item in rankings %}
+  <tr>
+      <td>{{ forloop.counter }}</td>
+      {% for values in item %}
+      {% if forloop.counter == 1 %}
+      <td><a href="/userprofile/{{ values }}/">{{ values }}</a></td>
+      {% else %}
+      <td>{{ values }}</td>
+      {% endif %}
+      {% endfor %}
+  </tr>
+  {% endfor %}
+  </tbody>
+  {% endif %}
+
+</table>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap.min.js"></script>
+<script>$(document).ready( function () {
+    $('#t01').DataTable();
+} );</script>
+</body>
+</html>
+
+<!-- <h1>Ranklist</h1>
 
 <ul>
     {% if ioi %}
-        <!-- {{ user.username }} -->
+        {{ user.username }}
         {% for item in rankings %}
         <li>
-            <!-- {{ problem.problemCode }} -->
+            {{ problem.problemCode }}
             <p>
             {% for values in item %}
             {{ values }}
@@ -16,7 +111,7 @@
     {% else %}
         {% for item in rankings %}
         <li>
-            <!-- {{ problem.problemCode }} -->
+            {{ problem.problemCode }}
             <p>
             {{ forloop.counter }}
             {% for values in item %}
@@ -26,4 +121,4 @@
         </li>
         {% endfor %}
     {% endif %}
-</ul>
+</ul> -->

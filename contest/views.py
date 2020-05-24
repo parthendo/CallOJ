@@ -8,6 +8,7 @@ from problems.judge import Judge
 from problems.utils import Utils
 from django.contrib.auth.models import User
 from .utils import ContestUtilities
+from problems.utils import Utils
 import os, zipfile
 import shutil
 import time
@@ -101,7 +102,17 @@ def submitProblemView(request,contest_id,problem_id):
     print('Hello',len(x))
     print(x[0][0])
     contestUtil.submitProblem(x,contest_id,problem_id,request)
-    return render(request,'results.html',{'results':x})
+    if(x[0]=='CE'):
+            temp = []
+            errorMessage = " "
+            temp.append("Compilation Error")
+            for messageString in x[4]:
+                errorMessage = errorMessage + messageString + "    "
+            temp.append(errorMessage)
+            x=[]
+            x.append(temp)
+    languages = Utils.fetchAvailableLanguages(None)
+    return render(request,'problem.html',{'problem':problem,'languages': languages,'results':x,'usercode':usercode,'languageUsed':language,'resultLength':len(x)})
 
 def rankListView(request,contest_id):
     currentContest = Contest.objects.get(id=contest_id)
@@ -109,12 +120,12 @@ def rankListView(request,contest_id):
     if currentContest.rankingStyle == 1:
         final_list = util.ioiRanklist(contest_id)
         contest_type = 1
-        return render(request,"ranklist.html",{'rankings':final_list,'ioi':contest_type})
+        return render(request,"ranklist.html",{'rankings':final_list,'ioi':contest_type,'currentContest':currentContest})
     else:
         print('Rajjo')
         final_list = util.icpcRanklist(contest_id)
         contest_type = 2 
-        return render(request,"ranklist.html",{'rankings':final_list})
+        return render(request,"ranklist.html",{'rankings':final_list,'currentContest':currentContest})
 
 
 

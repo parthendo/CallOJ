@@ -1,6 +1,42 @@
 <head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" />
         <title> All Contests </title>
         <link rel="stylesheet" type="text/css"  href="../../static/css/allContests.css">
+        <style>
+            table {
+              width:100%;
+            }
+            table, th, td {
+              border: 1px white;
+              padding-top: 2px; 
+              border-collapse: collapse;
+            }
+            th, td {
+              padding: 15px;
+              text-align: left;
+            }
+            table#t01 tr:nth-child(even) {
+              background-color: #eee;
+            }
+            table#t01 tr:nth-child(odd) {
+             background-color: #fff;
+            }
+            table#t01 th {
+              background-color: #808080;
+              color: white;
+            }
+            table#t02 tr:nth-child(even) {
+              background-color: #eee;
+            }
+            table#t02 tr:nth-child(odd) {
+             background-color: #fff;
+            }
+            table#t02 th {
+              background-color: #808080;
+              color: white;
+            }
+            </style>
         <style>
             input[type=submit] {
                 background-color: white;
@@ -59,6 +95,7 @@
     color: white;}
 
 </style>
+
     </head>
     <body>
         <header>
@@ -92,11 +129,22 @@
             </div>
             <div class ="title">
                 <h1> Contests: </h1> <br> <br>
+                <div style="width:110%; padding:5px;">
+                    <table id="t01">
+                        <thead>
+                            <tr>
+                                <th>Contest</th>
+                                <th>Time Remaining</th>
+                                <th>Go to Contest</th>
+                            </tr>
+                        </thead>
+                        <tbody>
                 {% for present_cont in present %}
-                    <h2> <li>{{ present_cont.contestName }} </h2>
+                <tr>
+                    <td><h2> {{ present_cont.contestName }} </h2></td>
 
 
-                <div id="{{present_cont.contestCode}}"></div>
+                <td><div id="{{present_cont.contestCode}}"></div></td>
                 <script type="text/javascript">
                     setInterval(displayclock, 1000);
                     function displayclock (){
@@ -120,36 +168,62 @@
 
                 <br> &nbsp
                         <!-- {{ problem.problemCode }} -->
-                    <form action="/contest/{{ present_cont.id }}/"
+                   <td> <form action="/contest/{{ present_cont.id }}/"
                     style="display: inline;"
                     method="post">
                     {% csrf_token %}
                         <input type="submit" value="Go to contest-->"/>
-                    </form>
-                    <p> <br> <br> </p>
-                    <p> </p>
-                    </li>
+                    </form></td>
+                </tr>
                 {% endfor %}
+                 </tbody>
+               </table>
+            </div>
                 <br><br><br>
                 <h1> Upcoming Contests: </h1> <br> <br>
+                <div style="width:110%; padding:5px;">
+                    <table id="t02" >
+                        <thead>
+                            <tr>
+                                <th>Contest</th>
+                                <th>Start Day and Time</th>
+                                <th>Duration</th>
+                            </tr>
+                        </thead>
+                        <tbody>
                 {% for future_cont in future %}
-                <h2> <li>{{ future_cont.contestName }} </h2><br>
+                <tr>
+                <td><h2> {{ future_cont.contestName }} </h2></td>
                     <!-- {{ problem.problemCode }} -->
+
                     <form action="/contest/{{ future_cont.id }}/"
                     style="display: inline;"
                     method="post">
-                    <p>&nbsp Contest begins on:  {{ future_cont.startDay }}/{{ future_cont.startMonth }}/{{ future_cont.startYear }}  at {{ future_cont.startHours }}:{{ future_cont.startMinutes}}:00</p>
-                     <br>
-                    <p>&nbsp Contest duration is: {{ future_cont.durationHours }} hours and {{ future_cont.durationMinutes }} minutes </p> <br>
+                    <td><p>&nbsp Contest begins on:  {{ future_cont.startDay }}/{{ future_cont.startMonth }}/{{ future_cont.startYear }}  at {{ future_cont.startHours }}:{{ future_cont.startMinutes}}:00</p></td>
+                    <td><p>&nbsp Contest duration is: {{ future_cont.durationHours }} hours and {{ future_cont.durationMinutes }} minutes </p></td>
                     {% csrf_token %}
                     <!-- <input type="submit" value="Go to contest"/> -->
                     </form>
-                    <p> </p>
-                    <p> </p>
-                    </li>
                     <br>
+                </tr>
                 {% endfor %}
+                       </tbody>
+                  </table>
+                </div>
                 <br> <br>
             </div>
         </header>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap.min.js"></script>
+    <script>$(document).ready( function () {
+        $('#t01').DataTable(
+          {'ordering':false}
+        );
+    } );</script>
+    <script>$(document).ready( function () {
+        $('#t02').DataTable(
+          {'ordering':false}
+        );
+    } );</script>
     </body>

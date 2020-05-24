@@ -40,11 +40,13 @@ def showProblemView(request,problem_id):
 def submitProblemView(request,problem_id):
     if request.method == 'POST':
         usercode = request.POST['code']
+        print(usercode)
         language = request.POST['language']
         problem = Question.objects.get(id=problem_id)
 
         utils = Utils()
         x = utils.submitProblem(request.user, usercode, language, problem)
+
         problem.totalAttempts = problem.totalAttempts + 1
         if x[len(x)-1][0] == "AC":
             problem.successfulAttempts = problem.successfulAttempts + 1
@@ -78,7 +80,17 @@ def submitProblemView(request,problem_id):
     # judge.problemType = problem.marking #ICPC type
     # x = judge.executeJudge()
         print(x)
-        return render(request,'results.html',{'results':x})
+        if(x[0]=='CE'):
+            temp = []
+            errorMessage = " "
+            temp.append("Compilation Error")
+            for messageString in x[4]:
+                errorMessage = errorMessage + messageString + "    "
+            temp.append(errorMessage)
+            x=[]
+            x.append(temp)
+        languages = Utils.fetchAvailableLanguages(None)
+        return render(request,'problem.html',{'problem':problem,'languages': languages,'results':x,'usercode':usercode,'languageUsed':language,'resultLength':len(x)})
 
 @login_required
 def createProblemView(request):
