@@ -25,7 +25,7 @@ def createContestView(request):
         if question.access == 1 or question.creator == request.user.username:
             print("Hello")
             all_questions.append(question)
-    registerLog('INFO','GET',user.username,'createContest','creatingContest',get_client_ip(request))
+    registerLog('INFO','GET',request.user.username,'createContest','creatingContest',get_client_ip(request))
     return render(request,'createContest.html',{'all_problems':all_questions})
 
 def submitContestView(request):
@@ -71,7 +71,7 @@ def submitContestView(request):
     # question_instance = Contest.objects.filter(questions__problemCode="ADDALL")
     # print(question_instance.problemCode)
     registerLog('INFO','POST',request.user.username,'Contest','ContestMarkingStyle_'+str(marking),get_client_ip(request))
-    registerLog('INFO','POST',user.username,'Contest','successfullyCreatedContest',get_client_ip(request))
+    registerLog('INFO','POST',request.user.username,'Contest','successfullyCreatedContest',get_client_ip(request))
     return HttpResponseRedirect('/contest/all/')
 
 def allContestView(request):
@@ -99,7 +99,7 @@ def showProblemView(request,contest_id,problem_id):
 
 def submitProblemView(request,contest_id,problem_id):
     registerLog('INFO','POST',request.user.username,'Contest'+str((Contest.objects.get(id=contest_id)).contestCode),'AtLeastSubmittedOneProblem',get_client_ip(request))
-    registerLog('INFO','POST',request.user.username,'Contest'+str((Contest.objects.get(id=contest_id)).contestCode),'AttemptedProblem'+str(problem.problemCode),get_client_ip(request))
+    registerLog('INFO','POST',request.user.username,'Contest'+str((Contest.objects.get(id=contest_id)).contestCode),'AttemptedProblem'+str((Question.objects.get(id=problem_id)).problemCode),get_client_ip(request))
     usercode = request.POST['code']
     print(usercode)
     language = request.POST['language']

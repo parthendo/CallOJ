@@ -10,7 +10,7 @@ public class Ideone{
 		Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt();
 		while(t!=0){
-			int n, sum = 10;
+			int n, sum = 0;
 			n = sc.nextInt();
 			for(int i=0;i<n;i++){
 				int x = sc.nextInt();
