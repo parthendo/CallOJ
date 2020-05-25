@@ -189,8 +189,8 @@
                 {% endif %}
             </div>
         </header>
-        {% if not category %}
-        <button class="open-button" onclick="openForm()">Add Category</button>
+        {% if not category and not searchedUser %}
+        
         <div class="form-popup" id="myForm">
             <form action="/userprofile/addCategory/" class="form-container" method="post" enctype="multipart/form-data">
                 {% csrf_token %}
@@ -206,9 +206,10 @@
               <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
             </form>
           </div>
+          <button class="open-button" onclick="openForm()">Add Category</button>
           <div><br><br></div>
           {% endif %}
-          {% if playlistEntries %}
+          {% if playlistEntries and not searchedUser %}
           <div>
             <table id="t01">
                 <thead>
@@ -235,46 +236,8 @@
 
         <div><br><br></div>
 
-        {% if category %}
-        <button class="open-button" onclick="openForm2()">Add Problem</button>
-        <div class="form-popup" id="questionForm">
-            <form action="/userprofile/{{ category }}/addQuestion/" class="form-container" method="post" enctype="multipart/form-data">
-                {% csrf_token %}
-              <!-- <h1>Login</h1> -->
-          
-              <label for="problemLink"><b>Link</b></label>
-              <input type="text" placeholder="Problem Link" name="problemLink" required>
-
-              <label for="problemName"><b>Name</b></label>
-              <input type="text" placeholder="Enter name" name="problemName" required>
-
-              <label for="contestName"><b>ContestName</b></label>
-              <input type="text" placeholder="Enter Contest" name="contestName" required>
-
-              <label for="difficulty"><b>Difficulty</b></label>
-              <select id="difficulty" name="difficulty" required>
-                <option value="">Choose...</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-              </select>
-          
-              <!-- <label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" required> -->
-              <br>
-              <button type="submit" class="btn">Add</button>
-              <button type="button" class="btn cancel" onclick="closeForm2()">Close</button>
-              <!-- <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->
-            </form>
-          </div>
-          <div><br><br></div>
+        {% if category and not searchedUser %}
+ 
         <div>
             <table id="t02">
                 <thead>
@@ -297,6 +260,45 @@
                 </tbody>
             </table>
         </div>
+        <div class="form-popup" id="questionForm">
+          <form action="/userprofile/{{ category }}/addQuestion/" class="form-container" method="post" enctype="multipart/form-data">
+              {% csrf_token %}
+            <!-- <h1>Login</h1> -->
+        
+            <label for="problemLink"><b>Link</b></label>
+            <input type="text" placeholder="Problem Link" name="problemLink" required>
+
+            <label for="problemName"><b>Name</b></label>
+            <input type="text" placeholder="Enter name" name="problemName" required>
+
+            <label for="contestName"><b>ContestName</b></label>
+            <input type="text" placeholder="Enter Contest" name="contestName" required>
+
+            <label for="difficulty"><b>Difficulty</b></label>
+            <select id="difficulty" name="difficulty" required>
+              <option value="">Choose...</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+        
+            <!-- <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required> -->
+            <br>
+            <button type="submit" class="btn">Add</button>
+            <button type="button" class="btn cancel" onclick="closeForm2()">Close</button>
+            <!-- <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->
+          </form>
+        </div>
+        <button class="open-button" onclick="openForm2()">Add Problem</button>
+        <div><br><br></div>
         {% endif %}
 
         <script src="https://code.jquery.com/jquery-3.5.1.js"></script>

@@ -12,6 +12,8 @@ from problems.utils import Utils
 import os, zipfile
 import shutil
 import time
+from OJ.loggingUtils import get_client_ip
+from OJ.loggingUtils import registerLog
 # Create your views here.
 def contestsView(request):
     return render(request,'thanks.html')
@@ -23,6 +25,7 @@ def createContestView(request):
         if question.access == 1 or question.creator == request.user.username:
             print("Hello")
             all_questions.append(question)
+    registerLog('INFO','GET',user.username,'createContest','creatingContest',get_client_ip(request))
     return render(request,'createContest.html',{'all_problems':all_questions})
 
 def submitContestView(request):
@@ -58,6 +61,7 @@ def submitContestView(request):
     #all_problems = Quesion.objects.all()
     for question in checked_questions:
         problem = Question.objects.get(problemCode=str(question))
+        registerLog('INFO','POST',request.user.username,'Contest','AddedQuestion_'+str(problem.problemCode),get_client_ip(request))
         contest.questions.add(problem)
 
     print(contest.questions.all())
@@ -66,6 +70,8 @@ def submitContestView(request):
         print(question.problemCode)
     # question_instance = Contest.objects.filter(questions__problemCode="ADDALL")
     # print(question_instance.problemCode)
+    registerLog('INFO','POST',request.user.username,'Contest','ContestMarkingStyle_'+str(marking),get_client_ip(request))
+    registerLog('INFO','POST',user.username,'Contest','successfullyCreatedContest',get_client_ip(request))
     return HttpResponseRedirect('/contest/all/')
 
 def allContestView(request):
@@ -81,6 +87,7 @@ def contestView(request,contest_id):
     return render(request,'contestQuestions.html',{'all_problems':all_questions,'contestId':contest_id,'status':contestStatus})
 
 def showProblemView(request,contest_id,problem_id):
+    registerLog('INFO','POST',request.user.username,'Contest'+str((Contest.objects.get(id=contest_id)).contestCode),'atLeastCameToContest',get_client_ip(request))
     util = ContestUtilities()
     languages = Utils.fetchAvailableLanguages(None)
     contestStatus = util.contestFinished(contest_id)
@@ -91,6 +98,8 @@ def showProblemView(request,contest_id,problem_id):
         return render(request,'problem.html',{'problem':problem_to_show,'contestId':contest_id,'languages':languages})
 
 def submitProblemView(request,contest_id,problem_id):
+    registerLog('INFO','POST',request.user.username,'Contest'+str((Contest.objects.get(id=contest_id)).contestCode),'AtLeastSubmittedOneProblem',get_client_ip(request))
+    registerLog('INFO','POST',request.user.username,'Contest'+str((Contest.objects.get(id=contest_id)).contestCode),'AttemptedProblem'+str(problem.problemCode),get_client_ip(request))
     usercode = request.POST['code']
     print(usercode)
     language = request.POST['language']
@@ -102,6 +111,12 @@ def submitProblemView(request,contest_id,problem_id):
     print('Hello',len(x))
     print(x[0][0])
     contestUtil.submitProblem(x,contest_id,problem_id,request)
+    if x[len(x)-1][0]=="AC":
+        registerLog('INFO','POST',request.user.username,'Contest'+str((Contest.objects.get(id=contest_id)).contestCode),'CorrectAnswerFor_'+str(problem.problemCode),get_client_ip(request))
+    elif x[0]=='CE':
+        registerLog('INFO','POST',request.user.username,'Contest'+str((Contest.objects.get(id=contest_id)).contestCode),'CompilationErrorFor_'+str(problem.problemCode),get_client_ip(request))
+    else:
+        registerLog('INFO','POST',request.user.username,'Contest'+str((Contest.objects.get(id=contest_id)).contestCode),'WrongAnswerFor_'+str(problem.problemCode),get_client_ip(request))
     if(x[0]=='CE'):
             temp = []
             errorMessage = " "
@@ -117,6 +132,7 @@ def submitProblemView(request,contest_id,problem_id):
 def rankListView(request,contest_id):
     currentContest = Contest.objects.get(id=contest_id)
     util = ContestUtilities()
+    registerLog('INFO','POST',request.user.username,'Contest'+str(currentContest.contestCode),'PartOfRanklist',get_client_ip(request))
     if currentContest.rankingStyle == 1:
         final_list = util.ioiRanklist(contest_id)
         contest_type = 1

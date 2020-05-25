@@ -96,7 +96,7 @@
                 <form action="/userprofile/changesToProfile/" method="post">
                         {% csrf_token %}
                       <label>UserName</label>
-                      <input value= {{ user.username }} type="text" input id="textboxid" name="username" required><br> <br>
+                      <input value= {{ user.username }} type="text" input id="textboxid" name="username" readonly><br> <br>
                       <label>FirstName</label>
                       <input value= {{ user.first_name }} type="text" input id="textboxid" name="firstName" required><br> <br>
                       <label>LastName</label>
@@ -104,9 +104,9 @@
                       <label>Email</label>
                       <input value={{ user.email }} type="email" input id="textboxid" name="email" readonly><br> <br>
                       <label>Password</label>
-                      <input type="password" input id="textboxid" name="password1" required><br>
+                      <input type="password" input id="textboxid" name="password1"><br>
                       <label>Confirm Password</label>
-                      <input type="password" input id="textboxid" name="password2" required><br>
+                      <input type="password" input id="textboxid" name="password2"><br>
                       <div>
                           <br>
                           <br>
