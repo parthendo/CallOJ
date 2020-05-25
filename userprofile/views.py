@@ -11,7 +11,11 @@ from django.urls import reverse
 def profileView(request):
     # UserPlaylistEntry = UserPlaylist.objects.create(userId_id=request.user.id,playlistCategory="DP",problemCount=0)
     # UserPlaylistEntry.save()
-    playlistEntries = UserPlaylist.objects.all()
+    playlistEntries = []
+    allEntries = UserPlaylist.objects.all()
+    for entry in allEntries:
+        if entry.userId_id == request.user.id:
+            playlistEntries.append(entry)
     return render(request,'profilepage.html',{'playlistEntries':playlistEntries})
 
 def updateProfileView(request):
@@ -66,10 +70,8 @@ def addCategoryView(request):
     categoryName = request.POST["category"]
     newEntry = UserPlaylist.objects.create(userId_id=request.user.id,playlistCategory=categoryName,problemCount=0)
     newEntry.save()
-    playlistEntries = UserPlaylist.objects.all()
     url = reverse('initialProfile')
     return HttpResponseRedirect(url)
-    return render(request,'profilepage.html',{'playlistEntries':playlistEntries})
 
 def addQuestionToPlaylistView(request,playlistCategory):
     problemlink = request.POST['problemLink']
@@ -89,7 +91,6 @@ def addQuestionToPlaylistView(request,playlistCategory):
     print(problems)
     url = reverse('categoryQuestions',args=[playlistCategory])
     return HttpResponseRedirect(url)
-    return render(request,'profilepage.html',{'categoryProblems':problems,'category':playlistCategory})
     
 
 # def categoryQuestionsView(request,category):
