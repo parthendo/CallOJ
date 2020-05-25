@@ -8,7 +8,8 @@ from .judge import Judge
 import os, zipfile
 import shutil
 import time
-from .utils import Utils 
+from .utils import Utils
+from userprofile.models import UserPlaylist
 
 from django.core.files.storage import FileSystemStorage
 from OJ.loggingUtils import registerLog
@@ -25,12 +26,17 @@ def dashboardView(request):
 @login_required
 def problemsView(request):
     questions = Question.objects.all()
+    allEntriesInUserPlaylist = UserPlaylist.objects.all()
+    categories = []
+    for entry in allEntriesInUserPlaylist:
+        if entry.userId_id == request.user.id:
+            categories.append(entry.playlistCategory)
     all_questions = []
     registerLog('INFO','GET',request.user.username,'Problem','ViewProblemList',get_client_ip(request))
     for ques in questions:
         if ques.access == 1 or ques.creator == request.user.username:
             all_questions.append(ques)
-    return render(request,'problems.html',{'all_problems':all_questions})
+    return render(request,'problems.html',{'all_problems':all_questions,'categories':categories})
 
 @login_required
 def showProblemView(request,problem_id):

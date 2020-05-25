@@ -6,6 +6,7 @@ from django.contrib import messages
 from django.contrib import auth
 from .models import UserPlaylist
 from problems.models import PlaylistProblems
+from problems.models import Question
 from django.urls import reverse
 # Create your views here.
 def profileView(request):
@@ -91,8 +92,21 @@ def addQuestionToPlaylistView(request,playlistCategory):
     print(problems)
     url = reverse('categoryQuestions',args=[playlistCategory])
     return HttpResponseRedirect(url)
-    
 
+def addCallOjProblemView(request,problemId):
+    link = "http://127.0.0.1:8000/dashboard/problems/"+str(problemId)+"/"
+    category = request.POST['categoryOfProblem']
+    difficulty = int(request.POST['difficulty'])
+    problem = Question.objects.get(id=problemId)
+    name = problem.problemName
+    contestName = "CallOJ"
+    newPlaylistProblemsEntry = PlaylistProblems.objects.create(problemOfUser_id=request.user.id,problemLink=link,problemName=name,contestName=contestName,difficultyLevel=difficulty)
+    newPlaylistProblemsEntry.save()
+    categoryEntry = UserPlaylist.objects.get(userId_id=request.user.id,playlistCategory=category)
+    categoryEntry.problemCount = (categoryEntry.problemCount + 1)
+    categoryEntry.save()
+    categoryEntry.problems.add(newPlaylistProblemsEntry)
+    return HttpResponseRedirect('/dashboard/problems/')
 # def categoryQuestionsView(request,category):
 #     userPlaylistEntry = UserPlaylist.objects.get(userId_id=request.user.id,playlistCategory=category)
 #     questions = userPlaylistEntry.problems.all()
