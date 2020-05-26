@@ -1,24 +1,7 @@
-<div>
-    <head>
-        <title> Contest page </title>
-        <link rel="stylesheet" type="text/css"  href="../../static/css/contestQuestions.css">
+<head>
+        <title> About Us </title>
+        <link rel="stylesheet" type="text/css"  href="../static/css/about.css">
         <style>
-            input[type=submit] {
-                background-color: white;
-                color: black;
-                padding: 8px 15px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                cursor: pointer;
-                border: 1px solid transparent;
-                transition: 0.6s ease;
-            }
-            input[type=submit]:hover{
-                background-color: #000;
-                color: #fff;
-            }
             .dropbtn {
                 text-decoration: none;
                 color: #000;
@@ -56,8 +39,8 @@
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #000;
-    color: #fff;}
+.dropdown:hover .dropbtn { background-color: black;
+    color: white;}
 
 </style>
     </head>
@@ -97,33 +80,36 @@
                     </div>
                     <li><a href="/logout/">Logout</a></li>
                 </ul>
-        </header>
-    <div class ="title">
-                <ul>
-                    <li><a href="/contest/{{ contestId }}/ranklist/">Ranklist--> </a></li>
-                    <br><br><br>
-                    <p2>Contest problems:</p2>
-                    {% for problem in all_problems %}
-                    <br>
-                    <li><p1>{{ problem.problemName }}</p1>
-
-                    <form action="/contest/{{ contestId }}/{{ problem.id }}/"
-                    style="display: inline;"
-                    method="post">
-                    {% csrf_token %}
-                    <input type="submit" value="Go to problem-->"/>
-                    </form>
-                    <p></p>
-                    <p> </p>
-                    </li>
-                    {% endfor %}
-                    <br><br>
-                    {% if status %}
-                    <p3><i><b>Contest ended, your submission won't count against your score in this contest.</b></i></p3>
-                    {% endif %}
-            </ul>
-
             </div>
-    </body>
+            <div class ="title">
+                <p>  About Us</p> <br> <br>
+                <p3> CallOJ:</p3> <br> <br>
+                <p2><li> Like any other institution for higher education, the International Institute of Information Technology, Bengaluru <br>
+                    sees its fair share of coding enthusiasts every year. In this age, for an institution like IIITB which offers courses <br>
+                    predominantly rooted in programming, everyone deserves to be a part of a community where we can learn and grow together <br>
+                    through some friendly competition.</p2></li>
+<br>
+                <p2><li> OnlineJudge</em> is a Django based web application for people to prepare for interviews by honing their programming <br>
+                    skills.<br></li> <br>
+                    <li>The reason it is any different than so many already existing platforms like Leetcode, GFG, etc. is that we can implement <br>
+                    it on our college LAN and it would work seamlessly without the internet.</p2></li>
+<br>
+                <p2><li>We can create a problem, make it available to everyone if you choose, you can create a contest to encourage people <br>
+                    to participate, keep everyone busy by tracking their score on the Ranklist page and much more.
+</p2></li>
+<br> <br>
+                <p3> Playlist: </p3> <br> <br>
+                <p2><li> Playlist can be an archive store where you bookmarks all your problems. You can mark and tag your problems with <br>
+                    different names and rate it accordingly.</li> <br>
+                    <li>In later versions of CallOJ, you will also be able to share this playlist with fellow CallOJer(s). <br>
+                        CallOJ provides you a provision with directly adding a problem to one of the playlists. <br></li><br>
+                      <li> Just like any other movie or song playlist, this feature is your one-stop solution for making an impact on the community.</p2></li>
+<br> <br>
+                <p3>Alerts: </p3> <br> <br>
+                <p2><li> CallOJ provides you with e-mail alerts on the night (IST) before the contest is scheduled to take place. <br>
+                    This gives you an opportunity to plan your schedule and make space for this CallOJ contest.</p2></li>
 
-</div>
+                <br> <br>
+            </div>
+        </header>
+    </body>

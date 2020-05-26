@@ -1,0 +1,202 @@
+INFO 2020-05-26 22:45:16,676 "GET / HTTP/1.1" 200 5208
+INFO 2020-05-26 22:45:25,275 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-26 22:45:25,280 "GET / HTTP/1.1" 200 5252
+INFO 2020-05-26 22:45:31,279 "GET /registration/ HTTP/1.1" 200 6493
+WARNING 2020-05-26 22:45:31,415 Not Found: /registration/static/images/IIIT-B_logo.jpg
+WARNING 2020-05-26 22:45:31,415 Not Found: /registration/static/images/IIIT-B_logo.jpg
+WARNING 2020-05-26 22:45:31,416 "GET /registration/static/images/IIIT-B_logo.jpg HTTP/1.1" 404 3953
+ERROR 2020-05-26 22:45:46,441 Internal Server Error: /saveUser/
+Traceback (most recent call last):
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-wKDWXaFF/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-wKDWXaFF/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-wKDWXaFF/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/parthendo/Desktop/CallOJ/login/views.py", line 118, in saveUserView
+    os.mkdir(path,mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/parthendo/Desktop/CallOJ/media/submittedFiles/parthendo'
+ERROR 2020-05-26 22:45:46,441 Internal Server Error: /saveUser/
+Traceback (most recent call last):
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-wKDWXaFF/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-wKDWXaFF/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-wKDWXaFF/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/parthendo/Desktop/CallOJ/login/views.py", line 118, in saveUserView
+    os.mkdir(path,mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/parthendo/Desktop/CallOJ/media/submittedFiles/parthendo'
+ERROR 2020-05-26 22:45:46,442 "POST /saveUser/ HTTP/1.1" 500 78018
+WARNING 2020-05-26 22:45:46,580 Not Found: /favicon.ico
+WARNING 2020-05-26 22:45:46,580 Not Found: /favicon.ico
+WARNING 2020-05-26 22:45:46,581 "GET /favicon.ico HTTP/1.1" 404 3860
+ERROR 2020-05-26 22:46:36,525 Internal Server Error: /saveUser/
+Traceback (most recent call last):
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-wKDWXaFF/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-wKDWXaFF/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-wKDWXaFF/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/parthendo/Desktop/CallOJ/login/views.py", line 118, in saveUserView
+    os.mkdir(path,mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/parthendo/Desktop/CallOJ/media/submittedFiles/parthendo'
+ERROR 2020-05-26 22:46:36,525 Internal Server Error: /saveUser/
+Traceback (most recent call last):
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-wKDWXaFF/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-wKDWXaFF/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-wKDWXaFF/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/parthendo/Desktop/CallOJ/login/views.py", line 118, in saveUserView
+    os.mkdir(path,mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/parthendo/Desktop/CallOJ/media/submittedFiles/parthendo'
+ERROR 2020-05-26 22:46:36,526 "POST /saveUser/ HTTP/1.1" 500 77803
+INFO 2020-05-26 22:47:09,294 "POST /saveUser/ HTTP/1.1" 200 62
+INFO 2020-05-26 22:47:26,049 "GET /activate/MQ/5gt-ce0c935436c0730bc592/ HTTP/1.1" 302 0
+INFO 2020-05-26 22:47:26,062 "GET / HTTP/1.1" 200 5287
+INFO 2020-05-26 22:47:26,231 "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 8192
+INFO 2020-05-26 22:47:26,283 "GET /static/fonts/Linearicons-Free-v1.0.0/icon-font.min.css HTTP/1.1" 200 7354
+INFO 2020-05-26 22:47:26,284 "GET /static/fonts/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 8192
+INFO 2020-05-26 22:47:26,404 "GET /static/images/bg-01.jpg HTTP/1.1" 200 24337
+INFO 2020-05-26 22:47:26,416 "GET /static/fonts/poppins/Poppins-Bold.ttf HTTP/1.1" 200 141260
+INFO 2020-05-26 22:47:26,423 "GET /static/fonts/poppins/Poppins-Regular.ttf HTTP/1.1" 200 145312
+INFO 2020-05-26 22:47:26,474 "GET /static/images/CollegeLogo.png HTTP/1.1" 200 43363
+INFO 2020-05-26 22:47:31,484 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-26 22:47:31,509 "GET /dashboard/ HTTP/1.1" 200 3286
+INFO 2020-05-26 22:47:31,637 "GET /static/css/dashboard.css HTTP/1.1" 200 839
+INFO 2020-05-26 22:47:31,641 "GET /static/images/coding.jpg HTTP/1.1" 200 139789
+INFO 2020-05-26 22:47:35,412 "GET /logout/ HTTP/1.1" 302 0
+INFO 2020-05-26 22:47:35,418 "GET / HTTP/1.1" 200 5208
+INFO 2020-05-26 22:47:35,474 "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 8192
+INFO 2020-05-26 22:47:35,485 "GET /static/vendor/animsition/css/animsition.min.css HTTP/1.1" 200 8192
+INFO 2020-05-26 22:47:35,496 "GET /static/vendor/daterangepicker/daterangepicker.css HTTP/1.1" 200 8163
+INFO 2020-05-26 22:47:35,498 "GET /static/vendor/select2/select2.min.css HTTP/1.1" 200 8192
+INFO 2020-05-26 22:47:35,540 "GET /static/images/bg-01.jpg HTTP/1.1" 200 8192
+INFO 2020-05-26 22:47:35,547 "GET /static/css/util.css HTTP/1.1" 200 8192
+INFO 2020-05-26 22:47:35,572 "GET /static/css/main.css HTTP/1.1" 200 8192
+INFO 2020-05-26 22:47:35,576 "GET /static/images/CollegeLogo.png HTTP/1.1" 200 43363
+INFO 2020-05-26 22:47:41,338 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-26 22:47:41,346 "GET /dashboard/ HTTP/1.1" 200 3286
+INFO 2020-05-26 22:47:41,411 "GET /static/css/dashboard.css HTTP/1.1" 200 839
+INFO 2020-05-26 22:47:43,901 "GET /userprofile/ HTTP/1.1" 200 8126
+INFO 2020-05-26 22:47:43,986 "GET /static/css/profile.css HTTP/1.1" 200 1042
+INFO 2020-05-26 22:47:44,041 "GET /static/images/jayant.jpg HTTP/1.1" 200 92505
+INFO 2020-05-26 22:47:57,391 "GET /userprofile/updateProfile HTTP/1.1" 301 0
+INFO 2020-05-26 22:47:57,428 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5799
+WARNING 2020-05-26 22:47:57,504 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 22:47:57,507 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 22:47:57,522 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 22:47:57,525 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+INFO 2020-05-26 22:47:57,525 "GET /static/js/scripts.js HTTP/1.1" 200 2427
+WARNING 2020-05-26 22:47:57,526 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 22:47:57,548 "GET /static/css/updateProfile.css HTTP/1.1" 200 710
+WARNING 2020-05-26 22:47:57,660 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 22:47:57,687 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 22:47:57,697 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 22:47:57,704 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 22:47:57,720 Not Found: /favicon.ico
+WARNING 2020-05-26 22:47:57,720 Not Found: /favicon.ico
+WARNING 2020-05-26 22:47:57,721 "GET /favicon.ico HTTP/1.1" 404 3860
+INFO 2020-05-26 22:48:02,298 "GET /userprofile/ HTTP/1.1" 200 8126
+INFO 2020-05-26 22:48:08,616 "GET /userprofile/ HTTP/1.1" 200 8126
+INFO 2020-05-26 22:48:08,678 "GET /static/css/profile.css HTTP/1.1" 200 1042
+INFO 2020-05-26 22:48:12,013 "GET /dashboard/ HTTP/1.1" 200 3286
+INFO 2020-05-26 22:48:13,606 "GET /userprofile/ HTTP/1.1" 200 8126
+INFO 2020-05-26 22:48:26,639 "GET /contest/all/ HTTP/1.1" 200 6430
+INFO 2020-05-26 22:48:26,709 "GET /static/css/allContests.css HTTP/1.1" 200 686
+WARNING 2020-05-26 22:48:29,091 Not Found: /favicon.ico
+WARNING 2020-05-26 22:48:29,091 Not Found: /favicon.ico
+WARNING 2020-05-26 22:48:29,091 "GET /favicon.ico HTTP/1.1" 404 3860
+INFO 2020-05-26 22:48:32,941 "GET /dashboard/problems/ HTTP/1.1" 200 7305
+INFO 2020-05-26 22:48:32,987 "GET /static/css/problems.css HTTP/1.1" 200 686
+WARNING 2020-05-26 22:48:33,045 Not Found: /favicon.ico
+WARNING 2020-05-26 22:48:33,045 Not Found: /favicon.ico
+WARNING 2020-05-26 22:48:33,046 "GET /favicon.ico HTTP/1.1" 404 3860
+INFO 2020-05-26 22:48:37,913 "GET /dashboard/createProblem/ HTTP/1.1" 200 10802
+WARNING 2020-05-26 22:48:37,985 "GET /static/form-validation.css HTTP/1.1" 404 1681
+INFO 2020-05-26 22:48:37,996 "GET /static/js/uploadFiles.js HTTP/1.1" 200 619
+WARNING 2020-05-26 22:48:38,012 "GET /static/https%3A/code.jquery.com/jquery-3.2.1.slim.min.js HTTP/1.1" 404 1765
+WARNING 2020-05-26 22:48:38,013 Not Found: /dashboard/createProblem/assets/js/vendor/popper.min.js
+WARNING 2020-05-26 22:48:38,013 Not Found: /dashboard/createProblem/assets/js/vendor/popper.min.js
+WARNING 2020-05-26 22:48:38,020 Not Found: /dashboard/createProblem/assets/js/vendor/holder.min.js
+WARNING 2020-05-26 22:48:38,021 "GET /dashboard/createProblem/assets/js/vendor/popper.min.js HTTP/1.1" 404 5361
+WARNING 2020-05-26 22:48:38,020 Not Found: /dashboard/createProblem/assets/js/vendor/holder.min.js
+WARNING 2020-05-26 22:48:38,022 "GET /dashboard/createProblem/assets/js/vendor/holder.min.js HTTP/1.1" 404 5361
+INFO 2020-05-26 22:48:38,115 "GET /static/css/createproblem.css HTTP/1.1" 200 505
+INFO 2020-05-26 22:48:38,116 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 159515
+WARNING 2020-05-26 22:48:38,564 "GET /static/https%3A/code.jquery.com/jquery-3.2.1.slim.min.js HTTP/1.1" 404 1765
+WARNING 2020-05-26 22:48:38,589 Not Found: /assets/js/vendor/jquery-slim.min.js
+WARNING 2020-05-26 22:48:38,589 Not Found: /assets/js/vendor/jquery-slim.min.js
+WARNING 2020-05-26 22:48:38,590 "GET /assets/js/vendor/jquery-slim.min.js HTTP/1.1" 404 3932
+WARNING 2020-05-26 22:48:38,613 Not Found: /dashboard/createProblem/assets/js/vendor/popper.min.js
+WARNING 2020-05-26 22:48:38,613 Not Found: /dashboard/createProblem/assets/js/vendor/popper.min.js
+WARNING 2020-05-26 22:48:38,613 "GET /dashboard/createProblem/assets/js/vendor/popper.min.js HTTP/1.1" 404 5361
+WARNING 2020-05-26 22:48:38,633 Not Found: /dashboard/createProblem/assets/js/vendor/holder.min.js
+WARNING 2020-05-26 22:48:38,633 Not Found: /dashboard/createProblem/assets/js/vendor/holder.min.js
+WARNING 2020-05-26 22:48:38,636 "GET /dashboard/createProblem/assets/js/vendor/holder.min.js HTTP/1.1" 404 5361
+INFO 2020-05-26 22:48:38,687 "GET /static/js/ckeditor/skins/moono-lisa/editor_gecko.css?t=JB9C HTTP/1.1" 200 35663
+INFO 2020-05-26 22:48:38,827 "GET /static/js/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css?t=JB9C HTTP/1.1" 200 381
+INFO 2020-05-26 22:48:38,840 "GET /static/js/ckeditor/plugins/scayt/dialogs/dialog.css?t=JB9C HTTP/1.1" 200 419
+INFO 2020-05-26 22:48:38,843 "GET /static/js/ckeditor/plugins/tableselection/styles/tableselection.css HTTP/1.1" 200 1145
+INFO 2020-05-26 22:48:38,843 "GET /static/js/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css?t=JB9C HTTP/1.1" 200 1306
+INFO 2020-05-26 22:48:38,890 "GET /static/js/ckeditor/skins/moono-lisa/icons.png?t=411985373e HTTP/1.1" 200 5881
+INFO 2020-05-26 22:48:38,954 "GET /static/js/ckeditor/contents.css?t=JB9C HTTP/1.1" 200 3094
+INFO 2020-05-26 22:53:15,534 "POST /dashboard/createProblem/ HTTP/1.1" 302 0
+INFO 2020-05-26 22:53:15,546 "GET /dashboard/problems/ HTTP/1.1" 200 9965
+INFO 2020-05-26 22:53:15,587 "GET /static/css/problems.css HTTP/1.1" 200 686
+INFO 2020-05-26 22:53:19,663 "POST /dashboard/problems/1/ HTTP/1.1" 200 9523
+WARNING 2020-05-26 22:53:19,791 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 22:53:19,799 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 22:53:20,114 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 22:53:20,127 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 22:53:20,255 "GET /static/docs/4.0/assets/img/favicons/favicon.ico HTTP/1.1" 404 1744
+INFO 2020-05-26 22:53:33,335 "GET /dashboard/problems/ HTTP/1.1" 200 9965
+INFO 2020-05-26 22:53:33,404 "GET /static/css/problems.css HTTP/1.1" 200 686
+INFO 2020-05-26 22:53:38,956 "GET /userprofile/ HTTP/1.1" 200 8126
+INFO 2020-05-26 22:53:48,431 "POST /userprofile/addCategory/ HTTP/1.1" 302 0
+INFO 2020-05-26 22:53:48,473 "GET /userprofile/ HTTP/1.1" 200 8777
+INFO 2020-05-26 22:53:50,680 "GET /contest/all/ HTTP/1.1" 200 6430
+INFO 2020-05-26 22:53:50,732 "GET /static/css/allContests.css HTTP/1.1" 200 686
+INFO 2020-05-26 22:53:51,898 "GET /dashboard/problems/ HTTP/1.1" 200 10046
+INFO 2020-05-26 22:54:01,669 "POST /userprofile/addCallOjProblem/1/ HTTP/1.1" 302 0
+INFO 2020-05-26 22:54:01,677 "GET /dashboard/problems/ HTTP/1.1" 200 10046
+INFO 2020-05-26 22:54:03,444 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5799
+WARNING 2020-05-26 22:54:03,523 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 22:54:03,533 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 22:54:03,534 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 22:54:03,542 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+INFO 2020-05-26 22:54:03,547 "GET /static/css/updateProfile.css HTTP/1.1" 200 710
+INFO 2020-05-26 22:54:03,549 "GET /static/js/scripts.js HTTP/1.1" 200 2427
+WARNING 2020-05-26 22:54:03,549 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 22:54:03,562 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 22:54:03,571 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 22:54:03,579 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 22:54:05,013 "GET /userprofile/ HTTP/1.1" 200 8777
+INFO 2020-05-26 22:56:02,345 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5799
+WARNING 2020-05-26 22:56:02,427 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 22:56:02,441 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 22:56:02,443 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 22:56:02,450 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 22:56:02,450 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 22:56:02,450 "GET /static/js/scripts.js HTTP/1.1" 304 0
+WARNING 2020-05-26 22:56:02,459 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 22:56:02,465 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 22:56:12,113 "GET /userprofile/ HTTP/1.1" 200 8777
+INFO 2020-05-26 22:57:44,181 "GET /contest/all/ HTTP/1.1" 200 6430
+WARNING 2020-05-26 22:57:44,299 Not Found: /favicon.ico
+WARNING 2020-05-26 22:57:44,299 Not Found: /favicon.ico
+WARNING 2020-05-26 22:57:44,299 "GET /favicon.ico HTTP/1.1" 404 3860
+INFO 2020-05-26 22:57:54,413 "GET /about2/ HTTP/1.1" 200 7855
+INFO 2020-05-26 22:57:54,631 "GET /static/css/about.css HTTP/1.1" 200 748
+INFO 2020-05-26 22:58:00,966 "GET /about1 HTTP/1.1" 301 0
+INFO 2020-05-26 22:58:01,082 "GET /about1/ HTTP/1.1" 200 4763
+INFO 2020-05-26 22:58:01,160 "GET /static/css/about.css HTTP/1.1" 200 748
+INFO 2020-05-26 22:58:04,415 "GET /about3/ HTTP/1.1" 200 5447
+INFO 2020-05-26 22:58:04,484 "GET /static/css/about.css HTTP/1.1" 200 748
+INFO 2020-05-26 22:58:08,463 "GET /userprofile/ HTTP/1.1" 200 8777
+INFO 2020-05-26 22:58:11,790 "GET /contest/all/ HTTP/1.1" 200 6430
+INFO 2020-05-26 22:58:12,986 "GET /dashboard/problems/ HTTP/1.1" 200 10046
+INFO 2020-05-26 22:58:13,572 "GET /dashboard/ HTTP/1.1" 200 3286
