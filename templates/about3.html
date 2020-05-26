@@ -1,0 +1,115 @@
+<head>
+        <title> About Us </title>
+        <link rel="stylesheet" type="text/css"  href="../static/css/about.css">
+        <style>
+            .dropbtn {
+                text-decoration: none;
+                color: #000;
+                font-size: 15px;
+                padding: 8px 15px;
+                border: 1px solid transparent;
+                transition: 0.6s ease;
+                background-color: white;
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #fff;
+                min-width: 160px;
+                z-index: 1;
+                transition: 0.6s ease;
+            }
+
+            .dropdown-content a {
+                color: black;
+                padding: 8px 15px;
+                text-decoration: none;
+                display: block;
+                transition: 0.6s ease;
+            }
+
+.dropdown-content a:hover {background-color: #000;
+    color: #fff;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn { background-color: black;
+    color: white;}
+
+</style>
+    </head>
+    <body>
+        <header>
+            <div class="main">
+                <ul>
+                    <li><a href="/dashboard">Home</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Problems</button>
+                            <div class="dropdown-content">
+                                <a href="/dashboard/problems/">View</a>
+                                <a href="/dashboard/createProblem/">Create</a>
+                            </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Contests</button>
+                            <div class="dropdown-content">
+                                <a href="/contest/all/">View</a>
+                                <a href="/contest/create/">Create</a>
+                            </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Profile</button>
+                            <div class="dropdown-content">
+                                <a href="/userprofile/">View</a>
+                                <a href="/userprofile/updateProfile">Update</a>
+                            </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Info</button>
+                            <div class="dropdown-content">
+                                <a href="/about2/">Create a problem</a>
+                                <a href="/about1">Create a contest</a>
+                                <a href="/about3/">About us</a>
+                            </div>
+                    </div>
+                    <li><a href="/logout/">Logout</a></li>
+                </ul>
+            </div>
+            <div class ="title">
+                <p>  About Us</p> <br> <br>
+                <p3> CallOJ:</p3> <br> <br>
+                <p2><li> Like any other institution for higher education, the International Institute of Information Technology, Bengaluru <br>
+                    sees its fair share of coding enthusiasts every year. In this age, for an institution like IIITB which offers courses <br>
+                    predominantly rooted in programming, everyone deserves to be a part of a community where we can learn and grow together <br>
+                    through some friendly competition.</p2></li>
+<br>
+                <p2><li> OnlineJudge</em> is a Django based web application for people to prepare for interviews by honing their programming <br>
+                    skills.<br></li> <br>
+                    <li>The reason it is any different than so many already existing platforms like Leetcode, GFG, etc. is that we can implement <br>
+                    it on our college LAN and it would work seamlessly without the internet.</p2></li>
+<br>
+                <p2><li>We can create a problem, make it available to everyone if you choose, you can create a contest to encourage people <br>
+                    to participate, keep everyone busy by tracking their score on the Ranklist page and much more.
+</p2></li>
+<br> <br>
+                <p3> Playlist: </p3> <br> <br>
+                <p2><li> Playlist can be an archive store where you bookmarks all your problems. You can mark and tag your problems with <br>
+                    different names and rate it accordingly.</li> <br>
+                    <li>In later versions of CallOJ, you will also be able to share this playlist with fellow CallOJer(s). <br>
+                        CallOJ provides you a provision with directly adding a problem to one of the playlists. <br></li><br>
+                      <li> Just like any other movie or song playlist, this feature is your one-stop solution for making an impact on the community.</p2></li>
+<br> <br>
+                <p3>Alerts: </p3> <br> <br>
+                <p2><li> CallOJ provides you with e-mail alerts on the night (IST) before the contest is scheduled to take place. <br>
+                    This gives you an opportunity to plan your schedule and make space for this CallOJ contest.</p2></li>
+
+                <br> <br>
+            </div>
+        </header>
+    </body>
