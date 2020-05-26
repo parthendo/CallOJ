@@ -99,8 +99,9 @@
     /* The popup form - hidden by default */
     .form-popup {
       display: none;
-
+      
       border: 3px solid #f1f1f1;
+      z-index: 9;
     }
     
     /* Add styles to the form container */
@@ -174,32 +175,22 @@
                                 <a href="/userprofile/updateProfile">Update</a>
                             </div>
                     </div>
-                    <div class="dropdown">
-                        <button class="dropbtn">Info</button>
-                            <div class="dropdown-content">
-                                <a href="/about2/">Create a problem</a>
-                                <a href="/about1">Create a contest</a>
-                                <a href="/about3/">About us</a>
-                            </div>
-                    </div>
+                    <li><a href="/about/">About</a></li>
                     <li><a href="/logout/">Logout</a></li>
                 </ul>
             </div>
             <div class ="email">
                 {% if searchedUser %}
                 <h1> UserName: {{ searchedUser.username }} </h1>
-                <h2> Email: {{ searchedUser.email }} <br><br> FullName: {{ searchedUser.first_name }} {{ searchedUser.last_name }} </h2>
+                <h2> Email: {{ searchedUser.email }} <br> FullName: {{ searchedUser.first_name }} {{ searchedUser.last_name }} </h2>
                 {% else %}
                 <h1> UserName: {{ user.username }} </h1>
-                <h2> Email: {{ user.email }} <br><br> FullName: {{ user.first_name }} {{ user.last_name }} </h2>
+                <h2> Email: {{ user.email }} <br> FullName: {{ user.first_name }} {{ user.last_name }} </h2>
                 {% endif %}
             </div>
         </header>
         {% if not category and not searchedUser %}
-        <div class="formm">
-<div class="imgg">
-        <img src="{% static "images/jayant.jpg" %}" width="270" height="400" margin-left: 30%>
-        </div>
+        
         <div class="form-popup" id="myForm">
             <form action="/userprofile/addCategory/" class="form-container" method="post" enctype="multipart/form-data">
                 {% csrf_token %}
@@ -310,7 +301,6 @@
         <div><br><br></div>
         {% endif %}
 
-        </div>
         <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap.min.js"></script>
@@ -339,4 +329,5 @@
         }
         </script>
     </body>
+
 </div>

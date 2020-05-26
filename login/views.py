@@ -5,6 +5,7 @@ from django.contrib import messages
 from django.contrib import auth
 from django.conf import settings
 import os
+import shutil
 
 from django.template.loader import render_to_string
 from django.utils.encoding import force_bytes, force_text
@@ -116,6 +117,10 @@ def saveUserView(request):
             parent_dir = os.path.join(parentDirPath,'media/submittedFiles')
             path = os.path.join(parent_dir, directory)
             os.mkdir(path,mode)
+            shutil.copy("static/images/f.jpg",path)
+            renamedPath = path + "/" + username + ".jpg"
+            path=path + "/f.jpg"
+            os.rename(path,renamedPath)
             new_user = User.objects.create_user(username=username,first_name=firstname,last_name=lastname,email=email,password=password1)
             registerLog('INFO','POST',username,'Login','NewUserCreated',get_client_ip(request))
             # Setting active status for the user false for the email verification

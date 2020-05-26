@@ -8,6 +8,9 @@ from .models import UserPlaylist
 from problems.models import PlaylistProblems
 from problems.models import Question
 from django.urls import reverse
+from django.core.files.storage import FileSystemStorage
+import shutil
+import os
 # Create your views here.
 def profileView(request):
     # UserPlaylistEntry = UserPlaylist.objects.create(userId_id=request.user.id,playlistCategory="DP",problemCount=0)
@@ -23,37 +26,59 @@ def updateProfileView(request):
     return render(request,'updateProfile.html')
 
 def changesToProfileView(request):
-    current_user=request.user
-    username = request.POST["username"]
-    firstName = request.POST["firstName"]
-    lastName = request.POST["lastName"]
-    email = request.POST["email"]
-    password1 = request.POST["password1"]
-    password2 = request.POST["password2"]
-    all_users = User.objects.all()
-    credentials_exist = 0
-    password_ok = 0
-    if password1 != password2:
-        messages.info(request,'Password did not match')
-        return HttpResponseRedirect('/userprofile/updateProfile/')
-    if request.user.username != username:
-        for user in all_users:
-            if user.username!=request.user.username and user.username == username:
-                messages.info(request,'Username already exist')
-                return HttpResponseRedirect('/userprofile/updateProfile/')
-    password_length = len(password1)
-    current_user.username = username
-    current_user.first_name = firstName
-    current_user.last_name = lastName
-    if password_length!=0:
-        print("Change Hogaya Bhyii")
-        current_user.set_password(password1)
-    current_user.save()
-    if password_length!=0:
-        auth.logout(request)
-        messages.info(request,'Password successfully changed please login again')
-        return HttpResponseRedirect('/')
-    return render(request,'profilepage.html')
+    if request.method == 'POST':
+        current_user=request.user
+        username = request.POST["username"]
+        firstName = request.POST["firstName"]
+        lastName = request.POST["lastName"]
+        email = request.POST["email"]
+        password1 = request.POST["password1"]
+        password2 = request.POST["password2"]
+        profilePhoto = request.FILES["profilePhoto"]
+        extension = ""
+        indexOfExtension = 0
+        currIndex=0
+        for character in str(profilePhoto.name):
+            if character == '.':
+                indexOfExtension =currIndex
+            currIndex = currIndex + 1
+        print("Index:",indexOfExtension)
+        for index in range(indexOfExtension,len(profilePhoto.name)):
+            extension = extension + profilePhoto.name[index] 
+        print("Extension:",extension)
+        profilePhoto.name = request.user.username + extension
+        all_users = User.objects.all()
+        credentials_exist = 0
+        password_ok = 0
+        if password1 != password2:
+            messages.info(request,'Password did not match')
+            return HttpResponseRedirect('/userprofile/updateProfile/')
+        if request.user.username != username:
+            for user in all_users:
+                if user.username!=request.user.username and user.username == username:
+                    messages.info(request,'Username already exist')
+                    return HttpResponseRedirect('/userprofile/updateProfile/')
+        password_length = len(password1)
+        current_user.username = username
+        current_user.first_name = firstName
+        current_user.last_name = lastName
+        parentDirPath = os.path.dirname(__file__).rsplit('/',1)[0]
+        path = os.path.join(parentDirPath,'media/submittedFiles/'+ request.user.username)
+        fileSystem = FileSystemStorage()
+        fileSystem.save(profilePhoto.name, profilePhoto)
+        src = os.path.join(parentDirPath,'media/'+request.user.username+ extension)
+        if profilePhoto:
+            os.remove(path+"/"+request.user.username+ extension)
+        shutil.move(src, path)
+        if password_length!=0:
+            print("Change Hogaya Bhyii")
+            current_user.set_password(password1)
+        current_user.save()
+        if password_length!=0:
+            auth.logout(request)
+            messages.info(request,'Password successfully changed please login again')
+            return HttpResponseRedirect('/')
+        return HttpResponseRedirect('/userprofile/')
 
 def showUserProfileView(request,searchedUser):
     print("OHO",searchedUser)

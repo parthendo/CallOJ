@@ -86,11 +86,11 @@ class ContestUtilities:
 	        final_list.append(temp)
         print(final_list)
         final_list.sort(key=lambda x: (-x[2]))
-        rank = 1
+        count = 0
         for count in range(len(final_list)):
             skiprank = 1
             if count==0:
-                final_list[0][0]=rank
+                final_list[0][0]=1
                 continue
             if final_list[count][2] == final_list[count-1][2]:
                 index=count
@@ -103,7 +103,7 @@ class ContestUtilities:
                         rank = final_list[newcount-1][0]+skiprank
                         break
             else:
-                final_list[count][0] = rank
+                final_list[count][0] = final_list[count-1][0] + 1
         return final_list
     
     def icpcRanklist(self,contest_id):

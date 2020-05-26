@@ -123,14 +123,7 @@
                                 <a href="/userprofile/updateProfile">Update</a>
                             </div>
                     </div>
-                    <div class="dropdown">
-                        <button class="dropbtn">Info</button>
-                            <div class="dropdown-content">
-                                <a href="/about2/">Create a problem</a>
-                                <a href="/about1">Create a contest</a>
-                                <a href="/about3/">About us</a>
-                            </div>
-                    </div>
+                    <li><a href="/about/">About</a></li>
                     <li><a href="/logout/">Logout</a></li>
                 </ul>
             </div>
@@ -155,25 +148,21 @@
                 <script type="text/javascript">
                     setInterval(displayclock, 1000);
                     function displayclock (){
-                        if(contestFinished({{present_cont.contestCode}})=="contestEnded")
-                            document.getElementById('{{present_cont.contestCode}}').innerHTML='(Sorry, this contest has ended)' ;
-                        else{
-                            var time=new Date();
-                            var pt=(time.getHours())*60 + time.getMinutes();
-                            var et=(      ((    {{present_cont.startHours}}  +  {{present_cont.durationHours}}  +  parseInt( ({{present_cont.startMinutes}} + {{present_cont.durationMinutes}})/60 )  )%24)*60    + ({{present_cont.startMinutes}}  +  {{present_cont.durationMinutes}})%60       )%1440;
+                        var time=new Date();
+                        var pt=(time.getHours())*60 + time.getMinutes();
+                        var et=(      ((    {{present_cont.startHours}}  +  {{present_cont.durationHours}}  +  parseInt( ({{present_cont.startMinutes}} + {{present_cont.durationMinutes}})/60 )  )%24)*60    + ({{present_cont.startMinutes}}  +  {{present_cont.durationMinutes}})%60       )%1440;
 
-                            var rh, rm;
-                            if(pt<=et){
-                                rh=parseInt((et-pt)/60);
-                                rm=(et-pt)%60;
-                            }
-                            else{
-                                rh=parseInt(((1440-pt)+et)/60);
-                                rm=((1440-pt)+et)%60;
-                            }
-
-                            document.getElementById('{{present_cont.contestCode}}').innerHTML='(this contest ends in ' + rh + ' hours and ' + rm +' minutes)' ;
+                        var rh, rm;
+                        if(pt<=et){
+                            rh=parseInt((et-pt)/60);
+                            rm=(et-pt)%60;
                         }
+                        else{
+                            rh=parseInt(((1440-pt)+et)/60);
+                            rm=((1440-pt)+et)%60;
+                        }
+
+                        document.getElementById('{{present_cont.contestCode}}').innerHTML='(this contest ends in ' + rh + ' hours and ' + rm +' minutes)' ;
                     }
                 </script>
 

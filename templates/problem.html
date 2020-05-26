@@ -10,6 +10,11 @@
           left: 0;
       }
   </style>
+  <style>
+  .ace_editor, .ace_editor div{
+    font-family:monospace
+}
+</style>
       <style>
         table {
           width:210%;
@@ -120,14 +125,7 @@
                                 <a href="/userprofile/updateProfile">Update</a>
                             </div>
                     </div>
-                    <div class="dropdown">
-                        <button class="dropbtn">Info</button>
-                            <div class="dropdown-content">
-                                <a href="/about2/">Create a problem</a>
-                                <a href="/about1">Create a contest</a>
-                                <a href="/about3/">About us</a>
-                            </div>
-                    </div>
+                    <li><a href="/about/">About</a></li>
                     <li><a href="/logout/">Logout</a></li>
                 </ul>
             </div>
@@ -144,7 +142,7 @@
           <label style="font-size:24px;" for="firstName">Problem Description</label><br>
           <p> Memory limit: {{ problem.memoryLimit }}</p>
           <p> Time limit: {{ problem.timeLimit }}</p>
-          <p> Creator: {{ problem.creator }}</p> <br> <br>
+          <p> Creator: <a href="/userprofile/{{ creatorObject.username }}/">{{ problem.creator }}</a></p> <br> <br>
         </div>
         <div class="col-md-12">
           <h4 class="mb-3">Your code goes here: </h4>

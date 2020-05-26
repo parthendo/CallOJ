@@ -10,7 +10,7 @@ import shutil
 import time
 from .utils import Utils
 from userprofile.models import UserPlaylist
-
+from django.contrib.auth.models import User
 from django.core.files.storage import FileSystemStorage
 from OJ.loggingUtils import registerLog
 from OJ.loggingUtils import get_client_ip
@@ -41,9 +41,10 @@ def problemsView(request):
 @login_required
 def showProblemView(request,problem_id):
     problem_to_show = Question.objects.get(id=problem_id)
+    creatorObject = User.objects.get(username = problem_to_show.creator)
     languages = Utils.fetchAvailableLanguages(None)
     registerLog('INFO','GET',request.user.username,'Problem','AccessProblemWithID_'+str(problem_id),get_client_ip(request))
-    return render(request,'problem.html',{'problem':problem_to_show, 'languages': languages})
+    return render(request,'problem.html',{'problem':problem_to_show, 'languages': languages,'creatorObject':creatorObject})
 
 @login_required
 def submitProblemView(request,problem_id):
