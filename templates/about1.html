@@ -1,5 +1,5 @@
 <head>
-        <title> About </title>
+        <title> Contest Creation Info </title>
         <link rel="stylesheet" type="text/css"  href="../static/css/about.css">
         <style>
             .dropbtn {
@@ -70,28 +70,40 @@
                                 <a href="/userprofile/updateProfile">Update</a>
                             </div>
                     </div>
-                    <li><a href="/about/">About</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Info</button>
+                            <div class="dropdown-content">
+                                <a href="/about2/">Create a problem</a>
+                                <a href="/about1">Create a contest</a>
+                                <a href="/about3/">About us</a>
+                            </div>
+                    </div>
                     <li><a href="/logout/">Logout</a></li>
                 </ul>
             </div>
             <div class ="title">
-                <p>  Creating a new problem: </p> <br>
-                <p2><li> The problem statement should be easy to understand and the problem name or problem code must not be used in any other <br>
-                    problem previously made. If so, you will be prompted to use a new problem name or problem code. <br> <br></p2></li>
-                <p2><li> The time limit specifies the maximum amount of time(in seconds) the solution should run before terminating. <br> <br></p2></li>
-                <p2><li> The memory limit specifies the maximum amount of memory(in kB) the solution can allocate before terminating. <br> <br></2></li>
-                <p2><li> If you choose visibility as Public, the problem will be visible to everyone, but if you choose the visibility as Private<br>
-                    only you can view it.<br><br></p2></li>
-                <p2><li> The problem type can be IOI or ICPC which will choose the evaluation method.<br>
-                 &nbsp The IOI evaluation method employs a partial marking scheme which can be configured inside the init.yml file. <br>
-                 &nbsp The ICPC evaluation method employs a 0/1 marking scheme which can be configured inside the init.yml file. <br><br></p2></li>
-                <p2><li> You need to copy the input and the expected output to the problem in a textfile and upload them.<br></p2></li>
+                <p>  Create A Contest </p> <br> <br>
 
-                <p> <br><br>Creating a new contest: </p> <br>
-                <p2><li> The contest name or contest code must not be used in any other contest. If so, you will be prompted to use a new name or <br>
-                    code for the same. <br> <br></p2></li>
-                <p2><li> After selecting the details regarding the contest duration and starting time, you will be prompted to choose a single <br>
-                    marking scheme for all the problems included in the contest.<br><br></p2></li>
+                <p3> Contest Code:</p3> <br> <br>
+                <p2><li> Contest code is a unique identifier for each contest. Keep a one-word contest code for the contest.
+                   <br> If duplicacy is detected, you will be prompted to use a new code for the same.</p2></li>
+<br> <br>
+                <p3> Contest Name:</p3> <br> <br>
+                <p2><li> Contest name specifies the contest. Use a fancy name to stand out</p2></li>
+<br> <br>
+                <p3> Start Date:</p3> <br> <br>
+                <p2><li>Select from the drop down menu to use the required date to start the contest.</p2></li>
+<br> <br>
+                <p3> Duration:</p3> <br> <br>
+                <p2><li> Select from the drop down menu to use the required duration for the contest</p2></li>
+<br> <br>
+                <p3>Marking Style:</p3> <br> <br>
+                <p2><li> Select the marking style for scoring the contest. Refer to creating a problem documentation for more <br>information.
+                    Even if you select a problem with marking belonging to another category, the marking style <br>of contest overpowers the pattern of a single question</p2></li>
+<br> <br>
+                <p3>Add Problems to the contest:</p3> <br> <br>
+                <p2><li> Select the problems from the list below. Once the contest is created, there is no provision currently of <br>editing problem or contest once created.
+                    For more, refer to the <a href="https://github.com/jayant-tiwari/CallOJ/blob/master/README.md">readme</p2></li>
                 <br> <br>
             </div>
         </header>
