@@ -448,3 +448,1740 @@ INFO 2020-05-25 23:16:38,114 "GET /contest/5/ranklist/ HTTP/1.1" 200 1932
 INFO 2020-05-25 23:16:42,093 "GET /userprofile/markus__/ HTTP/1.1" 200 6613
 INFO 2020-05-25 23:16:55,556 "GET /logout/ HTTP/1.1" 302 0
 INFO 2020-05-25 23:16:55,565 "GET / HTTP/1.1" 200 5208
+INFO 2020-05-26 00:47:03,390 "GET / HTTP/1.1" 200 5208
+INFO 2020-05-26 00:47:08,824 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-26 00:47:08,874 "GET /dashboard/ HTTP/1.1" 200 2907
+WARNING 2020-05-26 00:47:09,638 Not Found: /favicon.ico
+WARNING 2020-05-26 00:47:09,638 Not Found: /favicon.ico
+WARNING 2020-05-26 00:47:09,640 "GET /favicon.ico HTTP/1.1" 404 3645
+INFO 2020-05-26 00:47:11,833 "GET /dashboard/problems/ HTTP/1.1" 200 17862
+INFO 2020-05-26 00:49:34,903 "POST /dashboard/problems/1/ HTTP/1.1" 200 8461
+WARNING 2020-05-26 00:49:34,990 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 00:49:34,997 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 00:49:35,253 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 00:49:35,288 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-26 00:49:49,669 "POST /dashboard/problems/1/ HTTP/1.1" 200 8461
+WARNING 2020-05-26 00:49:49,738 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 00:49:49,752 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 00:49:49,935 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 00:49:49,957 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-26 00:50:15,641 "POST /dashboard/submission/1/ HTTP/1.1" 200 10803
+WARNING 2020-05-26 00:50:15,928 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 00:50:15,928 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 00:50:15,993 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 00:50:16,011 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-26 00:53:15,673 "GET /dashboard/createProblem/ HTTP/1.1" 200 10426
+WARNING 2020-05-26 00:53:15,761 "GET /static/form-validation.css HTTP/1.1" 404 1681
+WARNING 2020-05-26 00:53:15,778 Not Found: /dashboard/createProblem/assets/js/vendor/popper.min.js
+WARNING 2020-05-26 00:53:15,778 Not Found: /dashboard/createProblem/assets/js/vendor/popper.min.js
+WARNING 2020-05-26 00:53:15,785 Not Found: /dashboard/createProblem/assets/js/vendor/holder.min.js
+WARNING 2020-05-26 00:53:15,785 Not Found: /dashboard/createProblem/assets/js/vendor/holder.min.js
+WARNING 2020-05-26 00:53:15,789 "GET /dashboard/createProblem/assets/js/vendor/popper.min.js HTTP/1.1" 404 5146
+WARNING 2020-05-26 00:53:15,790 "GET /dashboard/createProblem/assets/js/vendor/holder.min.js HTTP/1.1" 404 5146
+WARNING 2020-05-26 00:53:15,790 "GET /static/https%3A/code.jquery.com/jquery-3.2.1.slim.min.js HTTP/1.1" 404 1765
+INFO 2020-05-26 00:53:15,792 "GET /static/js/uploadFiles.js HTTP/1.1" 304 0
+INFO 2020-05-26 00:53:15,799 "GET /static/css/createproblem.css HTTP/1.1" 304 0
+INFO 2020-05-26 00:53:15,811 "GET /static/js/ckeditor/ckeditor.js HTTP/1.1" 200 655681
+WARNING 2020-05-26 00:53:16,007 "GET /static/form-validation.css HTTP/1.1" 404 1681
+WARNING 2020-05-26 00:53:16,098 "GET /static/https%3A/code.jquery.com/jquery-3.2.1.slim.min.js HTTP/1.1" 404 1765
+WARNING 2020-05-26 00:53:16,152 Not Found: /assets/js/vendor/jquery-slim.min.js
+WARNING 2020-05-26 00:53:16,152 Not Found: /assets/js/vendor/jquery-slim.min.js
+WARNING 2020-05-26 00:53:16,153 "GET /assets/js/vendor/jquery-slim.min.js HTTP/1.1" 404 3717
+WARNING 2020-05-26 00:53:16,165 Not Found: /dashboard/createProblem/assets/js/vendor/popper.min.js
+WARNING 2020-05-26 00:53:16,165 Not Found: /dashboard/createProblem/assets/js/vendor/popper.min.js
+WARNING 2020-05-26 00:53:16,166 "GET /dashboard/createProblem/assets/js/vendor/popper.min.js HTTP/1.1" 404 5146
+WARNING 2020-05-26 00:53:16,202 Not Found: /dashboard/createProblem/assets/js/vendor/holder.min.js
+WARNING 2020-05-26 00:53:16,202 Not Found: /dashboard/createProblem/assets/js/vendor/holder.min.js
+WARNING 2020-05-26 00:53:16,203 "GET /dashboard/createProblem/assets/js/vendor/holder.min.js HTTP/1.1" 404 5146
+INFO 2020-05-26 00:53:16,450 "GET /static/js/ckeditor/config.js?t=JB9C HTTP/1.1" 200 1347
+INFO 2020-05-26 00:53:16,491 "GET /static/js/ckeditor/skins/moono-lisa/editor.css?t=JB9C HTTP/1.1" 200 35582
+INFO 2020-05-26 00:53:16,518 "GET /static/js/ckeditor/lang/en-gb.js?t=JB9C HTTP/1.1" 200 12461
+INFO 2020-05-26 00:53:16,559 "GET /static/js/ckeditor/styles.js?t=JB9C HTTP/1.1" 200 5579
+INFO 2020-05-26 00:53:16,661 "GET /static/js/ckeditor/plugins/scayt/dialogs/dialog.css?t=JB9C HTTP/1.1" 200 419
+INFO 2020-05-26 00:53:16,663 "GET /static/js/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css?t=JB9C HTTP/1.1" 200 381
+INFO 2020-05-26 00:53:16,665 "GET /static/js/ckeditor/plugins/tableselection/styles/tableselection.css HTTP/1.1" 200 1145
+INFO 2020-05-26 00:53:16,666 "GET /static/js/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css?t=JB9C HTTP/1.1" 200 1306
+INFO 2020-05-26 00:53:16,674 "GET /static/js/ckeditor/plugins/dialog/styles/dialog.css HTTP/1.1" 200 249
+INFO 2020-05-26 00:53:16,700 "GET /static/js/ckeditor/skins/moono-lisa/icons.png?t=411985373e HTTP/1.1" 200 5881
+INFO 2020-05-26 00:53:16,805 "GET /static/js/ckeditor/contents.css?t=JB9C HTTP/1.1" 200 3094
+INFO 2020-05-26 00:53:38,426 "GET /dashboard/createProblem/ HTTP/1.1" 200 10426
+WARNING 2020-05-26 00:53:38,476 "GET /static/form-validation.css HTTP/1.1" 404 1681
+WARNING 2020-05-26 00:53:38,493 "GET /static/https%3A/code.jquery.com/jquery-3.2.1.slim.min.js HTTP/1.1" 404 1765
+WARNING 2020-05-26 00:53:38,499 Not Found: /dashboard/createProblem/assets/js/vendor/holder.min.js
+WARNING 2020-05-26 00:53:38,499 Not Found: /dashboard/createProblem/assets/js/vendor/holder.min.js
+WARNING 2020-05-26 00:53:38,500 "GET /dashboard/createProblem/assets/js/vendor/holder.min.js HTTP/1.1" 404 5146
+WARNING 2020-05-26 00:53:38,513 Not Found: /dashboard/createProblem/assets/js/vendor/popper.min.js
+WARNING 2020-05-26 00:53:38,513 Not Found: /dashboard/createProblem/assets/js/vendor/popper.min.js
+WARNING 2020-05-26 00:53:38,514 "GET /dashboard/createProblem/assets/js/vendor/popper.min.js HTTP/1.1" 404 5146
+WARNING 2020-05-26 00:53:38,737 "GET /static/form-validation.css HTTP/1.1" 404 1681
+WARNING 2020-05-26 00:53:38,858 "GET /static/https%3A/code.jquery.com/jquery-3.2.1.slim.min.js HTTP/1.1" 404 1765
+WARNING 2020-05-26 00:53:38,917 Not Found: /assets/js/vendor/jquery-slim.min.js
+WARNING 2020-05-26 00:53:38,917 Not Found: /assets/js/vendor/jquery-slim.min.js
+WARNING 2020-05-26 00:53:38,919 "GET /assets/js/vendor/jquery-slim.min.js HTTP/1.1" 404 3717
+WARNING 2020-05-26 00:53:38,933 Not Found: /dashboard/createProblem/assets/js/vendor/popper.min.js
+WARNING 2020-05-26 00:53:38,933 Not Found: /dashboard/createProblem/assets/js/vendor/popper.min.js
+WARNING 2020-05-26 00:53:38,933 "GET /dashboard/createProblem/assets/js/vendor/popper.min.js HTTP/1.1" 404 5146
+WARNING 2020-05-26 00:53:38,944 Not Found: /dashboard/createProblem/assets/js/vendor/holder.min.js
+WARNING 2020-05-26 00:53:38,944 Not Found: /dashboard/createProblem/assets/js/vendor/holder.min.js
+WARNING 2020-05-26 00:53:38,944 "GET /dashboard/createProblem/assets/js/vendor/holder.min.js HTTP/1.1" 404 5146
+INFO 2020-05-26 00:54:44,203 "GET /contest/all/ HTTP/1.1" 200 12918
+INFO 2020-05-26 00:55:58,974 "GET /contest/all/ HTTP/1.1" 200 12918
+INFO 2020-05-26 00:57:11,326 "GET /contest/all/ HTTP/1.1" 200 12918
+INFO 2020-05-26 00:58:49,425 "GET /contest/create/ HTTP/1.1" 200 18271
+WARNING 2020-05-26 00:58:49,481 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 00:58:49,488 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 00:58:49,784 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 00:58:49,808 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 00:58:50,107 "GET /static/docs/4.0/assets/img/favicons/favicon.ico HTTP/1.1" 404 1744
+INFO 2020-05-26 00:59:28,534 "GET /contest/create/ HTTP/1.1" 200 18271
+WARNING 2020-05-26 00:59:28,598 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 00:59:28,602 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 00:59:28,850 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 00:59:28,917 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-26 01:00:16,108 "GET /contest/all/ HTTP/1.1" 200 12918
+INFO 2020-05-26 01:00:19,021 "POST /contest/5/ HTTP/1.1" 200 5731
+INFO 2020-05-26 01:00:21,460 "GET /contest/5/ranklist/ HTTP/1.1" 200 1932
+INFO 2020-05-26 01:01:22,905 "GET /userprofile/ HTTP/1.1" 200 8252
+INFO 2020-05-26 01:01:27,901 "GET /userprofile/playlist/Greedy/questions/ HTTP/1.1" 200 9777
+INFO 2020-05-26 01:03:52,191 "GET /about/ HTTP/1.1" 200 4669
+INFO 2020-05-26 01:03:52,270 "GET /static/css/about.css HTTP/1.1" 304 0
+INFO 2020-05-26 12:43:56,870 "GET / HTTP/1.1" 200 5208
+INFO 2020-05-26 12:43:57,525 "GET /static/js/coding.js HTTP/1.1" 304 0
+INFO 2020-05-26 12:44:00,923 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-26 12:44:00,952 "GET /dashboard/ HTTP/1.1" 200 2907
+INFO 2020-05-26 12:44:01,082 "GET /static/css/dashboard.css HTTP/1.1" 304 0
+INFO 2020-05-26 12:44:01,375 "GET /static/images/coding.jpg HTTP/1.1" 304 0
+WARNING 2020-05-26 12:44:01,635 Not Found: /favicon.ico
+WARNING 2020-05-26 12:44:01,635 Not Found: /favicon.ico
+WARNING 2020-05-26 12:44:01,635 "GET /favicon.ico HTTP/1.1" 404 3645
+INFO 2020-05-26 12:44:06,324 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5565
+WARNING 2020-05-26 12:44:06,466 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+INFO 2020-05-26 12:44:06,469 "GET /static/css/updateProfile.css HTTP/1.1" 200 710
+WARNING 2020-05-26 12:44:06,470 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 12:44:06,475 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 12:44:06,479 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 12:44:06,489 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 12:44:06,514 "GET /static/js/scripts.js HTTP/1.1" 200 2427
+WARNING 2020-05-26 12:44:06,557 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 12:44:06,608 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 12:44:06,618 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 12:44:06,627 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 12:44:06,637 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 13:09:14,419 "GET /logout/ HTTP/1.1" 302 0
+INFO 2020-05-26 13:09:14,463 "GET / HTTP/1.1" 200 5208
+INFO 2020-05-26 13:09:19,198 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-26 13:09:19,230 "GET /dashboard/ HTTP/1.1" 200 2907
+INFO 2020-05-26 13:09:23,056 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5572
+WARNING 2020-05-26 13:09:23,126 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 13:09:23,136 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 13:09:23,145 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 13:09:23,149 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 13:09:23,155 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 13:09:23,333 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 13:09:23,344 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 13:09:23,353 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 13:09:23,364 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 13:09:23,371 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+ERROR 2020-05-26 13:09:38,806 Internal Server Error: /userprofile/changesToProfile/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'profilePhoto'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 36, in changesToProfileView
+    profilePhoto = request.FILES["profilePhoto"]
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'profilePhoto'
+ERROR 2020-05-26 13:09:38,806 Internal Server Error: /userprofile/changesToProfile/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'profilePhoto'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 36, in changesToProfileView
+    profilePhoto = request.FILES["profilePhoto"]
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'profilePhoto'
+ERROR 2020-05-26 13:09:38,807 "POST /userprofile/changesToProfile/ HTTP/1.1" 500 84891
+ERROR 2020-05-26 13:14:00,508 Internal Server Error: /userprofile/changesToProfile/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'profilePhoto'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 36, in changesToProfileView
+    profilePhoto = request.FILES["profilePhoto"]
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'profilePhoto'
+ERROR 2020-05-26 13:14:00,508 Internal Server Error: /userprofile/changesToProfile/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'profilePhoto'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 36, in changesToProfileView
+    profilePhoto = request.FILES["profilePhoto"]
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'profilePhoto'
+ERROR 2020-05-26 13:14:00,509 "POST /userprofile/changesToProfile/ HTTP/1.1" 500 84891
+ERROR 2020-05-26 13:16:57,023 Internal Server Error: /userprofile/changesToProfile/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'profilePhoto'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 36, in changesToProfileView
+    profilePhoto = request.FILES["profilePhoto"]
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'profilePhoto'
+ERROR 2020-05-26 13:16:57,023 Internal Server Error: /userprofile/changesToProfile/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'profilePhoto'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 36, in changesToProfileView
+    profilePhoto = request.FILES["profilePhoto"]
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'profilePhoto'
+ERROR 2020-05-26 13:16:57,024 "POST /userprofile/changesToProfile/ HTTP/1.1" 500 84891
+ERROR 2020-05-26 13:18:30,770 Internal Server Error: /userprofile/changesToProfile/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'profilePhoto'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 36, in changesToProfileView
+    profilePhoto = request.FILES["profilePhoto"]
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'profilePhoto'
+ERROR 2020-05-26 13:18:30,770 Internal Server Error: /userprofile/changesToProfile/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'profilePhoto'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 36, in changesToProfileView
+    profilePhoto = request.FILES["profilePhoto"]
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'profilePhoto'
+ERROR 2020-05-26 13:18:30,774 "POST /userprofile/changesToProfile/ HTTP/1.1" 500 84913
+ERROR 2020-05-26 13:19:09,655 Internal Server Error: /userprofile/changesToProfile/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'profilePhoto'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 36, in changesToProfileView
+    profilePhoto = request.FILES["profilePhoto"]
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'profilePhoto'
+ERROR 2020-05-26 13:19:09,655 Internal Server Error: /userprofile/changesToProfile/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'profilePhoto'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 36, in changesToProfileView
+    profilePhoto = request.FILES["profilePhoto"]
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'profilePhoto'
+ERROR 2020-05-26 13:19:09,657 "POST /userprofile/changesToProfile/ HTTP/1.1" 500 84880
+ERROR 2020-05-26 13:24:53,494 Internal Server Error: /userprofile/changesToProfile/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'profilePhoto'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 37, in changesToProfileView
+    profilePhoto = request.FILES["profilePhoto"]
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'profilePhoto'
+ERROR 2020-05-26 13:24:53,494 Internal Server Error: /userprofile/changesToProfile/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'profilePhoto'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 37, in changesToProfileView
+    profilePhoto = request.FILES["profilePhoto"]
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'profilePhoto'
+ERROR 2020-05-26 13:24:53,495 "POST /userprofile/changesToProfile/ HTTP/1.1" 500 84940
+INFO 2020-05-26 14:54:40,553 "GET /logout/ HTTP/1.1" 302 0
+INFO 2020-05-26 14:54:40,601 "GET / HTTP/1.1" 200 5208
+INFO 2020-05-26 14:54:45,151 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-26 14:54:45,188 "GET /dashboard/ HTTP/1.1" 200 2907
+INFO 2020-05-26 14:54:50,428 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5598
+WARNING 2020-05-26 14:54:50,472 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 14:54:50,501 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 14:54:50,504 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 14:54:50,508 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 14:54:50,509 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 14:54:50,654 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 14:54:50,660 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 14:54:50,666 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 14:54:50,675 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 14:54:50,687 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 14:55:09,226 "POST /userprofile/changesToProfile/ HTTP/1.1" 200 7617
+INFO 2020-05-26 14:55:09,360 "GET /static/css/profile.css HTTP/1.1" 304 0
+INFO 2020-05-26 14:55:09,502 "GET /static/images/jayant.jpg HTTP/1.1" 304 0
+INFO 2020-05-26 14:56:56,675 "GET /logout/ HTTP/1.1" 302 0
+INFO 2020-05-26 14:56:56,746 "GET / HTTP/1.1" 200 5208
+INFO 2020-05-26 14:57:04,151 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-26 14:57:04,185 "GET /dashboard/ HTTP/1.1" 200 2907
+INFO 2020-05-26 14:57:07,183 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5598
+WARNING 2020-05-26 14:57:07,235 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 14:57:07,246 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 14:57:07,257 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 14:57:07,263 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 14:57:07,267 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 14:57:07,417 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 14:57:07,425 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 14:57:07,433 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 14:57:07,440 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 14:57:07,450 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 14:57:14,716 "POST /userprofile/changesToProfile/ HTTP/1.1" 200 7617
+INFO 2020-05-26 14:57:53,540 "GET /userprofile/ HTTP/1.1" 200 8252
+INFO 2020-05-26 14:58:02,521 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5598
+WARNING 2020-05-26 14:58:02,582 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 14:58:02,584 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 14:58:02,589 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 14:58:02,605 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 14:58:02,605 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 14:58:02,775 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 14:58:02,797 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 14:58:02,803 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 14:58:02,812 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 14:58:02,830 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+ERROR 2020-05-26 14:58:19,229 Internal Server Error: /userprofile/changesToProfile/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 59, in changesToProfileView
+    shutil.move(src, path)
+  File "/usr/lib/python3.6/shutil.py", line 548, in move
+    raise Error("Destination path '%s' already exists" % real_dst)
+shutil.Error: Destination path '/home/jayant/Desktop/CallOJ/media/submittedFiles/Jayant/Jayant.jpg' already exists
+ERROR 2020-05-26 14:58:19,229 Internal Server Error: /userprofile/changesToProfile/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 59, in changesToProfileView
+    shutil.move(src, path)
+  File "/usr/lib/python3.6/shutil.py", line 548, in move
+    raise Error("Destination path '%s' already exists" % real_dst)
+shutil.Error: Destination path '/home/jayant/Desktop/CallOJ/media/submittedFiles/Jayant/Jayant.jpg' already exists
+ERROR 2020-05-26 14:58:19,230 "POST /userprofile/changesToProfile/ HTTP/1.1" 500 83161
+INFO 2020-05-26 15:03:11,439 "GET /logout/ HTTP/1.1" 302 0
+INFO 2020-05-26 15:03:11,498 "GET / HTTP/1.1" 200 5208
+INFO 2020-05-26 15:03:19,091 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-26 15:03:19,128 "GET /dashboard/ HTTP/1.1" 200 2907
+INFO 2020-05-26 15:03:21,111 "GET /userprofile/ HTTP/1.1" 200 8252
+INFO 2020-05-26 15:03:25,492 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5598
+WARNING 2020-05-26 15:03:25,552 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 15:03:25,560 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 15:03:25,571 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 15:03:25,572 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 15:03:25,580 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 15:03:25,721 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 15:03:25,729 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 15:03:25,736 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 15:03:25,748 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 15:03:25,759 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 15:03:35,901 "POST /userprofile/changesToProfile/ HTTP/1.1" 200 7617
+INFO 2020-05-26 15:03:42,260 "GET /userprofile/ HTTP/1.1" 200 8252
+INFO 2020-05-26 15:03:47,221 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5598
+WARNING 2020-05-26 15:03:47,266 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 15:03:47,272 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 15:03:47,302 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 15:03:47,306 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 15:03:47,306 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 15:03:47,447 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 15:03:47,453 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 15:03:47,463 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 15:03:47,477 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 15:03:47,489 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 15:04:20,114 "POST /userprofile/changesToProfile/ HTTP/1.1" 200 7617
+INFO 2020-05-26 15:04:36,729 "GET /userprofile/ HTTP/1.1" 200 8252
+INFO 2020-05-26 15:04:40,411 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5598
+WARNING 2020-05-26 15:04:40,479 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 15:04:40,494 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 15:04:40,503 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 15:04:40,515 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 15:04:40,521 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 15:04:40,665 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 15:04:40,678 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 15:04:40,687 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 15:04:40,695 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 15:04:40,701 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 15:04:49,739 "POST /userprofile/changesToProfile/ HTTP/1.1" 200 7617
+INFO 2020-05-26 15:07:41,238 "GET /userprofile/ HTTP/1.1" 200 8252
+INFO 2020-05-26 15:10:45,228 "GET /logout/ HTTP/1.1" 302 0
+INFO 2020-05-26 15:10:45,242 "GET / HTTP/1.1" 200 5208
+INFO 2020-05-26 15:11:02,231 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-26 15:11:02,272 "GET /dashboard/ HTTP/1.1" 200 2909
+INFO 2020-05-26 15:11:07,368 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5597
+WARNING 2020-05-26 15:11:07,429 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 15:11:07,438 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 15:11:07,445 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 15:11:07,455 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 15:11:07,462 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 15:11:07,604 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 15:11:07,611 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 15:11:07,617 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 15:11:07,631 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 15:11:07,643 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+ERROR 2020-05-26 15:11:21,812 Internal Server Error: /userprofile/changesToProfile/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 60, in changesToProfileView
+    os.remove(path+"/"+request.user.username+".jpg")
+FileNotFoundError: [Errno 2] No such file or directory: '/home/jayant/Desktop/CallOJ/media/submittedFiles/markus__/markus__.jpg'
+ERROR 2020-05-26 15:11:21,812 Internal Server Error: /userprofile/changesToProfile/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 60, in changesToProfileView
+    os.remove(path+"/"+request.user.username+".jpg")
+FileNotFoundError: [Errno 2] No such file or directory: '/home/jayant/Desktop/CallOJ/media/submittedFiles/markus__/markus__.jpg'
+ERROR 2020-05-26 15:11:21,812 "POST /userprofile/changesToProfile/ HTTP/1.1" 500 79019
+INFO 2020-05-26 15:23:21,321 "GET /logout/ HTTP/1.1" 302 0
+INFO 2020-05-26 15:23:21,351 "GET / HTTP/1.1" 200 5208
+INFO 2020-05-26 15:23:36,142 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-26 15:23:36,182 "GET /dashboard/ HTTP/1.1" 200 2909
+INFO 2020-05-26 15:23:38,929 "GET /userprofile/ HTTP/1.1" 200 8598
+WARNING 2020-05-26 15:23:39,114 Not Found: /userprofile/media/submittedFiles/
+WARNING 2020-05-26 15:23:39,114 Not Found: /userprofile/media/submittedFiles/
+WARNING 2020-05-26 15:23:39,115 "GET /userprofile/media/submittedFiles/ HTTP/1.1" 404 5116
+INFO 2020-05-26 15:23:45,452 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5597
+WARNING 2020-05-26 15:23:45,511 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 15:23:45,528 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 15:23:45,529 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 15:23:45,539 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 15:23:45,540 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 15:23:45,698 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 15:23:45,707 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 15:23:45,713 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 15:23:45,729 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 15:23:45,740 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+ERROR 2020-05-26 15:24:08,298 Internal Server Error: /userprofile/changesToProfile/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 60, in changesToProfileView
+    os.remove(path+"/"+request.user.username+".jpg")
+FileNotFoundError: [Errno 2] No such file or directory: '/home/jayant/Desktop/CallOJ/media/submittedFiles/markus__/markus__.jpg'
+ERROR 2020-05-26 15:24:08,298 Internal Server Error: /userprofile/changesToProfile/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 60, in changesToProfileView
+    os.remove(path+"/"+request.user.username+".jpg")
+FileNotFoundError: [Errno 2] No such file or directory: '/home/jayant/Desktop/CallOJ/media/submittedFiles/markus__/markus__.jpg'
+ERROR 2020-05-26 15:24:08,299 "POST /userprofile/changesToProfile/ HTTP/1.1" 500 79019
+INFO 2020-05-26 15:24:31,740 "POST /userprofile/changesToProfile/ HTTP/1.1" 200 7693
+WARNING 2020-05-26 15:24:31,975 Not Found: /userprofile/changesToProfile/media/submittedFiles/
+WARNING 2020-05-26 15:24:31,975 Not Found: /userprofile/changesToProfile/media/submittedFiles/
+WARNING 2020-05-26 15:24:31,976 "GET /userprofile/changesToProfile/media/submittedFiles/ HTTP/1.1" 404 5167
+INFO 2020-05-26 15:37:27,344 "GET /logout/ HTTP/1.1" 302 0
+INFO 2020-05-26 15:37:27,400 "GET / HTTP/1.1" 200 5208
+INFO 2020-05-26 15:37:57,867 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-26 15:37:57,900 "GET /dashboard/ HTTP/1.1" 200 2907
+INFO 2020-05-26 15:38:01,497 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5598
+WARNING 2020-05-26 15:38:01,560 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 15:38:01,580 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 15:38:01,592 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 15:38:01,593 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 15:38:01,593 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 15:38:01,751 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 15:38:01,765 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 15:38:01,773 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 15:38:01,782 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 15:38:01,791 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+ERROR 2020-05-26 15:38:09,667 Internal Server Error: /userprofile/changesToProfile/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 44, in changesToProfileView
+    extension = extension + profilePhoto.name[index]
+UnboundLocalError: local variable 'extension' referenced before assignment
+ERROR 2020-05-26 15:38:09,667 Internal Server Error: /userprofile/changesToProfile/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 44, in changesToProfileView
+    extension = extension + profilePhoto.name[index]
+UnboundLocalError: local variable 'extension' referenced before assignment
+ERROR 2020-05-26 15:38:09,671 "POST /userprofile/changesToProfile/ HTTP/1.1" 500 77757
+ERROR 2020-05-26 15:38:39,204 Internal Server Error: /userprofile/changesToProfile/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 68, in changesToProfileView
+    os.remove(path+"/"+request.user.username+ extension)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/jayant/Desktop/CallOJ/media/submittedFiles/Jayant/Jayantf1.jpg'
+ERROR 2020-05-26 15:38:39,204 Internal Server Error: /userprofile/changesToProfile/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 68, in changesToProfileView
+    os.remove(path+"/"+request.user.username+ extension)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/jayant/Desktop/CallOJ/media/submittedFiles/Jayant/Jayantf1.jpg'
+ERROR 2020-05-26 15:38:39,207 "POST /userprofile/changesToProfile/ HTTP/1.1" 500 79809
+ERROR 2020-05-26 15:40:18,552 Internal Server Error: /userprofile/changesToProfile/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 69, in changesToProfileView
+    os.remove(path+"/"+request.user.username+ extension)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/jayant/Desktop/CallOJ/media/submittedFiles/Jayant/Jayantf1.jpg'
+ERROR 2020-05-26 15:40:18,552 Internal Server Error: /userprofile/changesToProfile/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 69, in changesToProfileView
+    os.remove(path+"/"+request.user.username+ extension)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/jayant/Desktop/CallOJ/media/submittedFiles/Jayant/Jayantf1.jpg'
+ERROR 2020-05-26 15:40:18,553 "POST /userprofile/changesToProfile/ HTTP/1.1" 500 79809
+INFO 2020-05-26 15:41:16,230 "GET /logout/ HTTP/1.1" 302 0
+INFO 2020-05-26 15:41:16,276 "GET / HTTP/1.1" 200 5208
+INFO 2020-05-26 15:41:20,472 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-26 15:41:20,516 "GET /dashboard/ HTTP/1.1" 200 2907
+INFO 2020-05-26 15:41:25,413 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5598
+WARNING 2020-05-26 15:41:25,475 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 15:41:25,497 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 15:41:25,498 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 15:41:25,499 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 15:41:25,502 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 15:41:25,679 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 15:41:25,686 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 15:41:25,699 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 15:41:25,711 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 15:41:25,718 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+ERROR 2020-05-26 15:41:33,902 Internal Server Error: /userprofile/changesToProfile/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 70, in changesToProfileView
+    os.remove(path+"/"+request.user.username+ extension)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/jayant/Desktop/CallOJ/media/submittedFiles/Jayant/Jayantf1.jpg'
+ERROR 2020-05-26 15:41:33,902 Internal Server Error: /userprofile/changesToProfile/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 70, in changesToProfileView
+    os.remove(path+"/"+request.user.username+ extension)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/jayant/Desktop/CallOJ/media/submittedFiles/Jayant/Jayantf1.jpg'
+ERROR 2020-05-26 15:41:33,904 "POST /userprofile/changesToProfile/ HTTP/1.1" 500 79809
+ERROR 2020-05-26 15:41:58,775 Internal Server Error: /userprofile/changesToProfile/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 70, in changesToProfileView
+    os.remove(path+"/"+request.user.username+ extension)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/jayant/Desktop/CallOJ/media/submittedFiles/Jayant/Jayantf1.jpg'
+ERROR 2020-05-26 15:41:58,775 Internal Server Error: /userprofile/changesToProfile/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 70, in changesToProfileView
+    os.remove(path+"/"+request.user.username+ extension)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/jayant/Desktop/CallOJ/media/submittedFiles/Jayant/Jayantf1.jpg'
+ERROR 2020-05-26 15:41:58,777 "POST /userprofile/changesToProfile/ HTTP/1.1" 500 79809
+INFO 2020-05-26 15:42:37,916 "POST /userprofile/changesToProfile/ HTTP/1.1" 200 7615
+INFO 2020-05-26 15:44:36,008 "POST /userprofile/changesToProfile/ HTTP/1.1" 200 7615
+INFO 2020-05-26 15:44:42,123 "GET /userprofile/ HTTP/1.1" 200 8250
+INFO 2020-05-26 15:45:02,931 "GET /logout/ HTTP/1.1" 302 0
+INFO 2020-05-26 15:45:02,968 "GET / HTTP/1.1" 200 5208
+INFO 2020-05-26 15:45:07,427 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-26 15:45:07,460 "GET /dashboard/ HTTP/1.1" 200 2907
+INFO 2020-05-26 15:45:09,189 "GET /userprofile/ HTTP/1.1" 200 8250
+INFO 2020-05-26 15:45:16,987 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5598
+WARNING 2020-05-26 15:45:17,057 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 15:45:17,060 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 15:45:17,064 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 15:45:17,078 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 15:45:17,078 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 15:45:17,219 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 15:45:17,233 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 15:45:17,251 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 15:45:17,261 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 15:45:17,274 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 15:45:27,382 "POST /userprofile/changesToProfile/ HTTP/1.1" 200 7615
+INFO 2020-05-26 15:46:13,463 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5598
+WARNING 2020-05-26 15:46:13,521 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 15:46:13,532 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 15:46:13,537 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 15:46:13,546 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 15:46:13,563 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 15:46:13,783 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 15:46:13,795 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 15:46:13,800 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 15:46:13,810 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 15:46:13,817 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 15:46:24,021 "POST /userprofile/changesToProfile/ HTTP/1.1" 200 7615
+INFO 2020-05-26 15:49:54,908 "GET /logout/ HTTP/1.1" 302 0
+INFO 2020-05-26 15:49:54,963 "GET / HTTP/1.1" 200 5208
+INFO 2020-05-26 15:51:07,307 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-26 15:51:07,340 "GET /dashboard/ HTTP/1.1" 200 2907
+INFO 2020-05-26 15:51:10,563 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5598
+WARNING 2020-05-26 15:51:10,630 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 15:51:10,660 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 15:51:10,663 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 15:51:10,665 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 15:51:10,667 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 15:51:10,847 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 15:51:10,860 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 15:51:10,876 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 15:51:10,883 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 15:51:10,896 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 15:51:20,449 "POST /userprofile/changesToProfile/ HTTP/1.1" 200 7615
+INFO 2020-05-26 15:51:27,466 "GET /userprofile/ HTTP/1.1" 200 8250
+INFO 2020-05-26 15:52:13,974 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5598
+WARNING 2020-05-26 15:52:14,014 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 15:52:14,034 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 15:52:14,042 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 15:52:14,044 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 15:52:14,045 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 15:52:14,318 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 15:52:14,337 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 15:52:14,345 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 15:52:14,356 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 15:52:14,363 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 15:52:21,379 "POST /userprofile/changesToProfile/ HTTP/1.1" 200 7615
+INFO 2020-05-26 15:53:50,917 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5598
+WARNING 2020-05-26 15:53:50,970 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 15:53:50,990 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 15:53:50,999 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 15:53:51,008 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 15:53:51,013 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 15:53:51,285 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 15:53:51,296 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 15:53:51,305 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 15:53:51,313 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 15:53:51,320 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+ERROR 2020-05-26 15:54:07,493 Internal Server Error: /userprofile/changesToProfile/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 71, in changesToProfileView
+    os.remove(path+"/"+request.user.username+ extension)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/jayant/Desktop/CallOJ/media/submittedFiles/Jayant/Jayant.png'
+ERROR 2020-05-26 15:54:07,493 Internal Server Error: /userprofile/changesToProfile/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 71, in changesToProfileView
+    os.remove(path+"/"+request.user.username+ extension)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/jayant/Desktop/CallOJ/media/submittedFiles/Jayant/Jayant.png'
+ERROR 2020-05-26 15:54:07,494 "POST /userprofile/changesToProfile/ HTTP/1.1" 500 79797
+INFO 2020-05-26 16:09:43,881 "GET / HTTP/1.1" 200 5208
+INFO 2020-05-26 16:09:46,004 "GET /registration/ HTTP/1.1" 200 6493
+WARNING 2020-05-26 16:09:46,324 Not Found: /registration/static/images/IIIT-B_logo.jpg
+WARNING 2020-05-26 16:09:46,324 Not Found: /registration/static/images/IIIT-B_logo.jpg
+WARNING 2020-05-26 16:09:46,325 "GET /registration/static/images/IIIT-B_logo.jpg HTTP/1.1" 404 3738
+ERROR 2020-05-26 16:10:17,110 Internal Server Error: /saveUser/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/login/views.py", line 119, in saveUserView
+    shutil.copy("static/images/f.jpg",path)
+NameError: name 'shutil' is not defined
+ERROR 2020-05-26 16:10:17,110 Internal Server Error: /saveUser/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/login/views.py", line 119, in saveUserView
+    shutil.copy("static/images/f.jpg",path)
+NameError: name 'shutil' is not defined
+ERROR 2020-05-26 16:10:17,112 "POST /saveUser/ HTTP/1.1" 500 77548
+ERROR 2020-05-26 16:10:44,146 Internal Server Error: /saveUser/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/login/views.py", line 119, in saveUserView
+    os.mkdir(path,mode)
+FileExistsError: [Errno 17] File exists: '/home/jayant/Desktop/CallOJ/media/submittedFiles/Deidara'
+ERROR 2020-05-26 16:10:44,146 Internal Server Error: /saveUser/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/login/views.py", line 119, in saveUserView
+    os.mkdir(path,mode)
+FileExistsError: [Errno 17] File exists: '/home/jayant/Desktop/CallOJ/media/submittedFiles/Deidara'
+ERROR 2020-05-26 16:10:44,152 "POST /saveUser/ HTTP/1.1" 500 77692
+ERROR 2020-05-26 16:11:13,753 Internal Server Error: /saveUser/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/login/views.py", line 139, in saveUserView
+    msg.send()
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/mail/message.py", line 291, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/mail/backends/smtp.py", line 103, in send_messages
+    new_conn_created = self.open()
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/mail/backends/smtp.py", line 70, in open
+    self.connection.login(self.username, self.password)
+  File "/usr/lib/python3.6/smtplib.py", line 730, in login
+    raise last_exception
+  File "/usr/lib/python3.6/smtplib.py", line 721, in login
+    initial_response_ok=initial_response_ok)
+  File "/usr/lib/python3.6/smtplib.py", line 642, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (534, b'5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbv\n5.7.14 AA7ElU0Z2nIs0hX3kWio35BMrJiYkFgUKJyfnWHLoPMUAEwfqgevlmw-j1jiDoeiK_eAi\n5.7.14 heH-4u9lz7qB-RhGgjvWK9fnH9amJ5yQHNDJ6zKg9RXLJFkM0-uT1OQFTB1qDEkG>\n5.7.14 Please log in via your web browser and then try again.\n5.7.14  Learn more at\n5.7.14  https://support.google.com/mail/answer/78754 e13sm7847473pgh.76 - gsmtp')
+ERROR 2020-05-26 16:11:13,753 Internal Server Error: /saveUser/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/login/views.py", line 139, in saveUserView
+    msg.send()
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/mail/message.py", line 291, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/mail/backends/smtp.py", line 103, in send_messages
+    new_conn_created = self.open()
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/mail/backends/smtp.py", line 70, in open
+    self.connection.login(self.username, self.password)
+  File "/usr/lib/python3.6/smtplib.py", line 730, in login
+    raise last_exception
+  File "/usr/lib/python3.6/smtplib.py", line 721, in login
+    initial_response_ok=initial_response_ok)
+  File "/usr/lib/python3.6/smtplib.py", line 642, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (534, b'5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbv\n5.7.14 AA7ElU0Z2nIs0hX3kWio35BMrJiYkFgUKJyfnWHLoPMUAEwfqgevlmw-j1jiDoeiK_eAi\n5.7.14 heH-4u9lz7qB-RhGgjvWK9fnH9amJ5yQHNDJ6zKg9RXLJFkM0-uT1OQFTB1qDEkG>\n5.7.14 Please log in via your web browser and then try again.\n5.7.14  Learn more at\n5.7.14  https://support.google.com/mail/answer/78754 e13sm7847473pgh.76 - gsmtp')
+ERROR 2020-05-26 16:11:13,755 "POST /saveUser/ HTTP/1.1" 500 110173
+ERROR 2020-05-26 16:15:49,302 Internal Server Error: /saveUser/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/login/views.py", line 142, in saveUserView
+    msg.send()
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/mail/message.py", line 291, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/mail/backends/smtp.py", line 103, in send_messages
+    new_conn_created = self.open()
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/mail/backends/smtp.py", line 70, in open
+    self.connection.login(self.username, self.password)
+  File "/usr/lib/python3.6/smtplib.py", line 730, in login
+    raise last_exception
+  File "/usr/lib/python3.6/smtplib.py", line 721, in login
+    initial_response_ok=initial_response_ok)
+  File "/usr/lib/python3.6/smtplib.py", line 642, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (534, b'5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbu\n5.7.14 k2k0P4vRNTET4kF9zgaRoIKl6EII7OI6azQnM6eyaxVp57kfx9ZhaqK3SUR13q9qtoQPJ\n5.7.14 KIe8Cv4QRBmOEytEkJWI1H2hcwKmFNHxyB3fsA4nL_LaAkRshXMj9xYxHSY8OPnX>\n5.7.14 Please log in via your web browser and then try again.\n5.7.14  Learn more at\n5.7.14  https://support.google.com/mail/answer/78754 y13sm15478287pfq.107 - gsmtp')
+ERROR 2020-05-26 16:15:49,302 Internal Server Error: /saveUser/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/login/views.py", line 142, in saveUserView
+    msg.send()
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/mail/message.py", line 291, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/mail/backends/smtp.py", line 103, in send_messages
+    new_conn_created = self.open()
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/mail/backends/smtp.py", line 70, in open
+    self.connection.login(self.username, self.password)
+  File "/usr/lib/python3.6/smtplib.py", line 730, in login
+    raise last_exception
+  File "/usr/lib/python3.6/smtplib.py", line 721, in login
+    initial_response_ok=initial_response_ok)
+  File "/usr/lib/python3.6/smtplib.py", line 642, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (534, b'5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbu\n5.7.14 k2k0P4vRNTET4kF9zgaRoIKl6EII7OI6azQnM6eyaxVp57kfx9ZhaqK3SUR13q9qtoQPJ\n5.7.14 KIe8Cv4QRBmOEytEkJWI1H2hcwKmFNHxyB3fsA4nL_LaAkRshXMj9xYxHSY8OPnX>\n5.7.14 Please log in via your web browser and then try again.\n5.7.14  Learn more at\n5.7.14  https://support.google.com/mail/answer/78754 y13sm15478287pfq.107 - gsmtp')
+ERROR 2020-05-26 16:15:49,304 "POST /saveUser/ HTTP/1.1" 500 110464
+INFO 2020-05-26 16:27:21,202 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-26 16:27:21,253 "GET /dashboard/ HTTP/1.1" 200 2907
+INFO 2020-05-26 16:27:24,044 "GET /userprofile/ HTTP/1.1" 200 8250
+INFO 2020-05-26 16:27:33,352 "GET /contest/all/ HTTP/1.1" 200 12918
+INFO 2020-05-26 16:27:33,443 "GET /static/css/allContests.css HTTP/1.1" 304 0
+INFO 2020-05-26 16:27:44,211 "GET /dashboard/ HTTP/1.1" 200 2907
+INFO 2020-05-26 16:27:46,659 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5598
+WARNING 2020-05-26 16:27:46,729 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 16:27:46,732 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 16:27:46,738 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 16:27:46,763 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 16:27:46,764 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 16:27:46,948 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 16:27:46,955 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 16:27:46,967 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 16:27:46,977 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 16:27:46,986 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 16:27:51,943 "GET /dashboard/problems/ HTTP/1.1" 200 17862
+INFO 2020-05-26 16:27:52,004 "GET /static/css/problems.css HTTP/1.1" 304 0
+INFO 2020-05-26 16:27:54,073 "POST /dashboard/problems/1/ HTTP/1.1" 200 8540
+WARNING 2020-05-26 16:27:54,126 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 16:27:54,154 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-26 16:27:54,176 "GET /static/css/problem.css HTTP/1.1" 304 0
+INFO 2020-05-26 16:27:54,233 "GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-05-26 16:27:54,302 "GET /static/js/ace.js HTTP/1.1" 304 0
+INFO 2020-05-26 16:27:54,395 "GET /static/js/problem.js HTTP/1.1" 304 0
+WARNING 2020-05-26 16:27:54,691 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 16:27:54,734 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-26 16:27:54,845 "GET /static/js/theme-monokai.js HTTP/1.1" 304 0
+INFO 2020-05-26 16:27:54,904 "GET /static/js/mode-c_cpp.js HTTP/1.1" 304 0
+INFO 2020-05-26 16:29:23,837 "GET /static/js/mode-java.js HTTP/1.1" 304 0
+INFO 2020-05-26 16:29:35,234 "POST /dashboard/submission/1/ HTTP/1.1" 200 10882
+WARNING 2020-05-26 16:29:35,535 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 16:29:35,536 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+INFO 2020-05-26 16:29:35,551 "GET /static/images/grrentick.jpg HTTP/1.1" 304 0
+WARNING 2020-05-26 16:29:35,608 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 16:29:35,622 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-26 16:29:55,673 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5598
+WARNING 2020-05-26 16:29:55,725 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 16:29:55,745 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 16:29:55,758 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 16:29:55,777 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 16:29:55,778 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 16:29:56,033 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 16:29:56,050 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 16:29:56,060 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 16:29:56,067 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 16:29:56,074 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 16:29:58,320 "GET /logout/ HTTP/1.1" 302 0
+INFO 2020-05-26 16:29:58,355 "GET / HTTP/1.1" 200 5208
+INFO 2020-05-26 16:39:18,214 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-26 16:39:18,227 "GET / HTTP/1.1" 200 5251
+INFO 2020-05-26 16:39:28,703 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-26 16:39:28,739 "GET /dashboard/ HTTP/1.1" 200 2909
+INFO 2020-05-26 16:39:31,305 "GET /dashboard/problems/ HTTP/1.1" 200 18222
+ERROR 2020-05-26 16:40:21,518 Internal Server Error: /dashboard/problems/1/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/jayant/Desktop/CallOJ/problems/views.py", line 44, in showProblemView
+    creatorObject = User.objects.get(username = problem_to_show.creator)
+NameError: name 'User' is not defined
+ERROR 2020-05-26 16:40:21,518 Internal Server Error: /dashboard/problems/1/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/jayant/Desktop/CallOJ/problems/views.py", line 44, in showProblemView
+    creatorObject = User.objects.get(username = problem_to_show.creator)
+NameError: name 'User' is not defined
+ERROR 2020-05-26 16:40:21,519 "POST /dashboard/problems/1/ HTTP/1.1" 500 79889
+INFO 2020-05-26 16:41:22,819 "POST /dashboard/problems/1/ HTTP/1.1" 200 8575
+WARNING 2020-05-26 16:41:22,887 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 16:41:22,905 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 16:41:23,129 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 16:41:23,150 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-26 16:41:33,573 "GET /userprofile/Jayant/ HTTP/1.1" 200 6612
+INFO 2020-05-26 16:43:09,163 "POST /dashboard/problems/1/ HTTP/1.1" 200 8575
+WARNING 2020-05-26 16:43:09,215 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 16:43:09,231 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 16:43:09,538 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 16:43:09,555 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-26 16:43:12,361 "GET /userprofile/Jayant/ HTTP/1.1" 200 6612
+INFO 2020-05-26 16:43:39,915 "POST /dashboard/submission/1/ HTTP/1.1" 200 9266
+WARNING 2020-05-26 16:43:40,212 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 16:43:40,213 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-26 16:43:40,265 "GET /static/images/wrong3.png HTTP/1.1" 304 0
+WARNING 2020-05-26 16:43:40,290 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 16:43:40,306 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-26 16:44:04,492 "GET /logout/ HTTP/1.1" 302 0
+INFO 2020-05-26 16:44:04,546 "GET / HTTP/1.1" 200 5208
+INFO 2020-05-26 16:47:54,484 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-26 16:47:54,515 "GET /dashboard/ HTTP/1.1" 200 2907
+INFO 2020-05-26 16:47:57,778 "GET /contest/all/ HTTP/1.1" 200 12918
+INFO 2020-05-26 16:48:09,592 "POST /contest/1/ HTTP/1.1" 200 4253
+INFO 2020-05-26 16:48:09,651 "GET /static/css/contestQuestions.css HTTP/1.1" 304 0
+INFO 2020-05-26 16:48:13,522 "GET /contest/1/ranklist/ HTTP/1.1" 200 1523
+INFO 2020-05-26 16:48:23,054 "POST /contest/2/ HTTP/1.1" 200 4253
+INFO 2020-05-26 16:48:24,911 "GET /contest/2/ranklist/ HTTP/1.1" 200 1146
+INFO 2020-05-26 16:48:30,908 "POST /contest/4/ HTTP/1.1" 200 5336
+INFO 2020-05-26 16:48:32,880 "GET /contest/4/ranklist/ HTTP/1.1" 200 1871
+INFO 2020-05-26 16:50:06,112 "GET /contest/4/ranklist/ HTTP/1.1" 200 1871
+INFO 2020-05-26 16:54:05,172 "GET /contest/4/ranklist/ HTTP/1.1" 200 1871
+INFO 2020-05-26 16:54:37,681 "GET /logout/ HTTP/1.1" 302 0
+INFO 2020-05-26 16:54:37,739 "GET / HTTP/1.1" 200 5208
+INFO 2020-05-26 16:54:45,370 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-26 16:54:45,424 "GET /dashboard/ HTTP/1.1" 200 2907
+INFO 2020-05-26 16:54:48,753 "GET /contest/all/ HTTP/1.1" 200 12918
+INFO 2020-05-26 16:54:51,474 "POST /contest/1/ HTTP/1.1" 200 4253
+INFO 2020-05-26 16:55:00,974 "POST /contest/1/3/ HTTP/1.1" 200 8380
+WARNING 2020-05-26 16:55:01,028 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 16:55:01,037 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 16:55:01,274 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 16:55:01,290 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 16:55:08,194 Not Found: /userprofile//
+WARNING 2020-05-26 16:55:08,194 Not Found: /userprofile//
+WARNING 2020-05-26 16:55:08,195 "GET /userprofile// HTTP/1.1" 404 5056
+INFO 2020-05-26 16:57:58,102 "POST /contest/1/3/ HTTP/1.1" 200 8389
+WARNING 2020-05-26 16:57:58,142 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 16:57:58,151 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 16:57:58,437 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 16:57:58,457 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-26 16:58:01,554 "GET /userprofile/parthendo/ HTTP/1.1" 200 6607
+INFO 2020-05-26 16:58:11,378 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5598
+WARNING 2020-05-26 16:58:11,457 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 16:58:11,457 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 16:58:11,463 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 16:58:11,468 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 16:58:11,470 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 16:58:11,644 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 16:58:11,657 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 16:58:11,672 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 16:58:11,685 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 16:58:11,692 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 16:58:28,283 "POST /userprofile/changesToProfile/ HTTP/1.1" 200 7615
+INFO 2020-05-26 16:59:54,869 "GET /userprofile/ HTTP/1.1" 200 8250
+INFO 2020-05-26 17:00:23,721 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5598
+WARNING 2020-05-26 17:00:23,787 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 17:00:23,799 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 17:00:23,801 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 17:00:23,802 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 17:00:23,808 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 17:00:24,067 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 17:00:24,091 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 17:00:24,099 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 17:00:24,110 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 17:00:24,116 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 17:00:31,936 "POST /userprofile/changesToProfile/ HTTP/1.1" 302 0
+INFO 2020-05-26 17:00:31,983 "GET /userprofile/ HTTP/1.1" 200 8250
+INFO 2020-05-26 17:52:24,284 "GET /userprofile/ HTTP/1.1" 200 8252
+INFO 2020-05-26 17:52:32,931 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5598
+WARNING 2020-05-26 17:52:32,977 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 17:52:32,997 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 17:52:32,999 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 17:52:32,999 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 17:52:33,005 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 17:52:33,153 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 17:52:33,163 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 17:52:33,176 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 17:52:33,188 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 17:52:33,199 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 17:53:17,890 "POST /userprofile/changesToProfile/ HTTP/1.1" 302 0
+INFO 2020-05-26 17:53:17,906 "GET /userprofile/ HTTP/1.1" 200 8252
+INFO 2020-05-26 17:54:29,520 "GET /userprofile/ HTTP/1.1" 200 8252
+INFO 2020-05-26 17:54:32,466 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5593
+WARNING 2020-05-26 17:54:32,514 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 17:54:32,533 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 17:54:32,537 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 17:54:32,547 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 17:54:32,548 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 17:54:32,693 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 17:54:32,700 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 17:54:32,714 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 17:54:32,726 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 17:54:32,733 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 17:55:34,520 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5631
+WARNING 2020-05-26 17:55:34,565 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 17:55:34,570 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 17:55:34,574 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 17:55:34,586 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 17:55:34,589 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 17:55:34,839 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 17:55:34,848 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 17:55:34,864 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 17:55:34,873 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 17:55:34,882 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 17:56:05,362 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5642
+WARNING 2020-05-26 17:56:05,431 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 17:56:05,440 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 17:56:05,450 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 17:56:05,452 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 17:56:05,458 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 17:56:05,691 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 17:56:05,701 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 17:56:05,717 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 17:56:05,725 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 17:56:05,733 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 18:00:32,699 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5987
+WARNING 2020-05-26 18:00:32,784 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:00:32,787 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 18:00:32,787 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:00:32,788 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:00:32,792 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:00:33,053 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:00:33,064 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:00:33,072 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:00:33,086 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:00:33,094 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 18:01:10,260 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5642
+WARNING 2020-05-26 18:01:10,342 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:01:10,342 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:01:10,351 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:01:10,358 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:01:10,361 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 18:01:10,599 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:01:10,619 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:01:10,626 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:01:10,636 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:01:10,643 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 18:01:42,437 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5643
+WARNING 2020-05-26 18:01:42,501 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:01:42,535 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:01:42,535 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:01:42,535 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:01:42,543 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 18:01:42,800 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:01:42,806 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:01:42,818 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:01:42,827 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:01:42,836 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 18:01:54,627 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5642
+WARNING 2020-05-26 18:01:54,710 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:01:54,719 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:01:54,739 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:01:54,740 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:01:54,742 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 18:01:54,996 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:01:55,012 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:01:55,023 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:01:55,034 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:01:55,042 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 18:02:12,423 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5644
+WARNING 2020-05-26 18:02:12,497 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:02:12,508 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:02:12,509 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:02:12,523 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:02:12,525 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 18:02:12,774 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:02:12,787 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:02:12,797 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:02:12,804 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:02:12,810 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 18:02:23,887 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5645
+WARNING 2020-05-26 18:02:23,936 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:02:23,951 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:02:23,951 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:02:23,953 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:02:23,964 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 18:02:24,208 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:02:24,223 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:02:24,229 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:02:24,235 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:02:24,248 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 18:02:40,122 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5647
+WARNING 2020-05-26 18:02:40,171 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:02:40,199 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:02:40,202 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:02:40,205 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:02:40,206 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 18:02:40,458 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:02:40,469 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:02:40,479 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:02:40,487 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:02:40,494 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 18:03:00,958 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5650
+WARNING 2020-05-26 18:03:01,045 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:03:01,050 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:03:01,053 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:03:01,064 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 18:03:01,065 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:03:01,326 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:03:01,340 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:03:01,349 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:03:01,355 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:03:01,366 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 18:03:09,868 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5652
+WARNING 2020-05-26 18:03:09,923 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:03:09,928 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:03:09,940 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:03:09,945 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:03:09,953 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 18:03:10,106 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:03:10,113 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:03:10,130 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:03:10,143 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:03:10,152 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 18:03:12,371 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5652
+WARNING 2020-05-26 18:03:12,429 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:03:12,449 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:03:12,452 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 18:03:12,460 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:03:12,460 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:03:12,716 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:03:12,726 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:03:12,735 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:03:12,744 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:03:12,750 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 18:03:15,350 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5652
+WARNING 2020-05-26 18:03:15,400 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:03:15,416 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:03:15,418 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:03:15,419 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:03:15,419 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 18:03:15,588 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:03:15,597 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:03:15,605 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:03:15,615 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:03:15,625 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 18:03:18,231 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5652
+WARNING 2020-05-26 18:03:18,309 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:03:18,312 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:03:18,319 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:03:18,334 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:03:18,340 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 18:03:18,511 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:03:18,527 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:03:18,536 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:03:18,546 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:03:18,554 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 18:03:33,039 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5661
+WARNING 2020-05-26 18:03:33,107 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:03:33,130 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:03:33,131 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:03:33,132 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 18:03:33,133 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:03:33,374 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:03:33,391 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:03:33,401 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:03:33,407 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:03:33,416 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 18:03:50,737 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5653
+WARNING 2020-05-26 18:03:50,789 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:03:50,804 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:03:50,810 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:03:50,817 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:03:50,817 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 18:03:51,060 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:03:51,075 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:03:51,086 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:03:51,093 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:03:51,101 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 18:04:05,729 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5653
+WARNING 2020-05-26 18:04:05,797 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:04:05,812 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:04:05,826 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:04:05,827 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 18:04:05,829 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:04:06,069 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:04:06,085 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:04:06,100 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:04:06,111 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:04:06,121 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 18:04:23,949 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5652
+WARNING 2020-05-26 18:04:24,007 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:04:24,016 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:04:24,033 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:04:24,037 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:04:24,040 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 18:04:24,289 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:04:24,308 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:04:24,318 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:04:24,327 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:04:24,334 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 18:04:37,461 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5655
+WARNING 2020-05-26 18:04:37,523 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:04:37,544 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:04:37,549 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:04:37,550 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:04:37,555 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 18:04:37,792 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:04:37,808 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:04:37,820 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:04:37,827 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:04:37,837 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 18:05:00,549 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5648
+WARNING 2020-05-26 18:05:00,589 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:05:00,596 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:05:00,605 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:05:00,617 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:05:00,617 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 18:05:00,868 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:05:00,883 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:05:00,894 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:05:00,901 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:05:00,911 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 18:05:10,962 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5649
+WARNING 2020-05-26 18:05:11,032 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:05:11,053 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:05:11,053 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:05:11,070 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 18:05:11,072 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:05:11,314 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:05:11,329 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:05:11,339 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:05:11,349 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:05:11,371 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 18:05:13,309 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5649
+WARNING 2020-05-26 18:05:13,387 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:05:13,394 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:05:13,406 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:05:13,411 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:05:13,413 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 18:05:13,578 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:05:13,593 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:05:13,604 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:05:13,612 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:05:13,625 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 18:06:06,475 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5649
+WARNING 2020-05-26 18:06:06,532 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:06:06,548 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:06:06,551 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:06:06,562 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:06:06,563 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 18:06:06,822 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:06:06,844 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:06:06,855 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:06:06,865 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:06:06,874 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 18:06:33,127 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5647
+WARNING 2020-05-26 18:06:33,214 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:06:33,226 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:06:33,228 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:06:33,236 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:06:33,238 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 18:06:33,489 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:06:33,503 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:06:33,513 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:06:33,521 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:06:33,528 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 18:06:41,538 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5648
+WARNING 2020-05-26 18:06:41,635 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:06:41,635 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:06:41,653 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:06:41,656 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 18:06:41,658 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:06:41,814 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:06:41,829 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:06:41,837 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:06:41,846 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:06:41,853 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 18:06:50,182 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5649
+WARNING 2020-05-26 18:06:50,245 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:06:50,265 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:06:50,269 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:06:50,272 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 18:06:50,278 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:06:50,512 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:06:50,529 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:06:50,543 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:06:50,552 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:06:50,563 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 18:06:52,374 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5649
+WARNING 2020-05-26 18:06:52,431 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:06:52,449 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:06:52,451 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:06:52,452 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:06:52,461 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 18:06:52,614 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:06:52,629 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:06:52,642 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:06:52,648 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:06:52,659 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 18:07:46,690 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5651
+WARNING 2020-05-26 18:07:46,765 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:07:46,787 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:07:46,792 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:07:46,795 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:07:46,806 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 18:07:47,049 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:07:47,067 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:07:47,074 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:07:47,082 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:07:47,091 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 18:08:01,397 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5650
+WARNING 2020-05-26 18:08:01,480 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:08:01,480 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:08:01,498 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:08:01,498 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:08:01,501 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 18:08:01,745 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:08:01,761 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:08:01,772 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:08:01,778 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:08:01,787 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 18:08:14,605 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5649
+WARNING 2020-05-26 18:08:14,688 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:08:14,708 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:08:14,710 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:08:14,711 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:08:14,715 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 18:08:14,946 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:08:14,958 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:08:14,977 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:08:14,985 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:08:14,995 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 18:28:00,836 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5649
+WARNING 2020-05-26 18:28:00,935 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:28:00,945 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:28:00,954 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:28:00,956 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:28:00,959 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+WARNING 2020-05-26 18:28:01,199 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-26 18:28:01,211 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-26 18:28:01,221 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-26 18:28:01,227 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-26 18:28:01,234 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-26 18:28:03,558 "GET /userprofile/ HTTP/1.1" 200 8354
+WARNING 2020-05-26 18:28:03,793 Not Found: /images/jayant.jpg
+WARNING 2020-05-26 18:28:03,793 Not Found: /images/jayant.jpg
+WARNING 2020-05-26 18:28:03,794 "GET /images/jayant.jpg HTTP/1.1" 404 3663
+INFO 2020-05-26 18:28:09,297 "GET /userprofile/ HTTP/1.1" 200 8354
+WARNING 2020-05-26 18:28:09,515 Not Found: /images/jayant.jpg
+WARNING 2020-05-26 18:28:09,515 Not Found: /images/jayant.jpg
+WARNING 2020-05-26 18:28:09,516 "GET /images/jayant.jpg HTTP/1.1" 404 3663
+INFO 2020-05-26 18:28:13,437 "GET /logout/ HTTP/1.1" 302 0
+INFO 2020-05-26 18:28:13,471 "GET / HTTP/1.1" 200 5208
+INFO 2020-05-26 18:28:25,114 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-26 18:28:25,158 "GET /dashboard/ HTTP/1.1" 200 2907
+INFO 2020-05-26 18:28:27,807 "GET /userprofile/ HTTP/1.1" 200 8354
+WARNING 2020-05-26 18:28:28,057 Not Found: /images/jayant.jpg
+WARNING 2020-05-26 18:28:28,057 Not Found: /images/jayant.jpg
+WARNING 2020-05-26 18:28:28,058 "GET /images/jayant.jpg HTTP/1.1" 404 3663
+INFO 2020-05-26 18:30:02,500 "GET /userprofile/ HTTP/1.1" 200 8357
+WARNING 2020-05-26 18:30:02,818 Not Found: /userprofile/media/images/jayant.jpg
+WARNING 2020-05-26 18:30:02,818 Not Found: /userprofile/media/images/jayant.jpg
+WARNING 2020-05-26 18:30:02,818 "GET /userprofile/media/images/jayant.jpg HTTP/1.1" 404 5122
+INFO 2020-05-26 18:30:05,785 "GET /userprofile/ HTTP/1.1" 200 8357
+WARNING 2020-05-26 18:30:06,060 Not Found: /userprofile/media/images/jayant.jpg
+WARNING 2020-05-26 18:30:06,060 Not Found: /userprofile/media/images/jayant.jpg
+WARNING 2020-05-26 18:30:06,061 "GET /userprofile/media/images/jayant.jpg HTTP/1.1" 404 5122
+INFO 2020-05-26 18:31:08,973 "GET /userprofile/ HTTP/1.1" 200 8386
+WARNING 2020-05-26 18:31:09,322 Not Found: /home/jayant/Desktop/CallOJ/static/images/jayant.jpg
+WARNING 2020-05-26 18:31:09,322 Not Found: /home/jayant/Desktop/CallOJ/static/images/jayant.jpg
+WARNING 2020-05-26 18:31:09,324 "GET /home/jayant/Desktop/CallOJ/static/images/jayant.jpg HTTP/1.1" 404 3765
+INFO 2020-05-26 18:31:12,273 "GET /userprofile/ HTTP/1.1" 200 8386
+WARNING 2020-05-26 18:31:12,521 Not Found: /home/jayant/Desktop/CallOJ/static/images/jayant.jpg
+WARNING 2020-05-26 18:31:12,521 Not Found: /home/jayant/Desktop/CallOJ/static/images/jayant.jpg
+WARNING 2020-05-26 18:31:12,524 "GET /home/jayant/Desktop/CallOJ/static/images/jayant.jpg HTTP/1.1" 404 3765
+INFO 2020-05-26 18:33:49,517 "GET /userprofile/ HTTP/1.1" 200 8338
+INFO 2020-05-26 18:33:49,885 "GET /userprofile/ HTTP/1.1" 200 8338
+INFO 2020-05-26 18:34:49,511 "GET /userprofile/ HTTP/1.1" 200 8340
+INFO 2020-05-26 18:34:49,910 "GET /userprofile/%EF%BF%BD HTTP/1.1" 301 0
+ERROR 2020-05-26 18:34:50,100 Internal Server Error: /userprofile/�/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 85, in showUserProfileView
+    requestedUserInfo = User.objects.get(username=searchedUser)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/db/models/query.py", line 399, in get
+    self.model._meta.object_name
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+ERROR 2020-05-26 18:34:50,100 Internal Server Error: /userprofile/�/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 85, in showUserProfileView
+    requestedUserInfo = User.objects.get(username=searchedUser)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/db/models/query.py", line 399, in get
+    self.model._meta.object_name
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+ERROR 2020-05-26 18:34:50,102 "GET /userprofile/%EF%BF%BD/ HTTP/1.1" 500 82510
+INFO 2020-05-26 18:35:30,995 "GET /userprofile/ HTTP/1.1" 200 8415
+WARNING 2020-05-26 18:35:31,297 Not Found: /home/jayant/Desktop/CallOJ/static/images/jayant.jpg
+WARNING 2020-05-26 18:35:31,297 Not Found: /home/jayant/Desktop/CallOJ/static/images/jayant.jpg
+WARNING 2020-05-26 18:35:31,300 "GET /home/jayant/Desktop/CallOJ/static/images/jayant.jpg HTTP/1.1" 404 3765
+ERROR 2020-05-26 18:35:31,457 Internal Server Error: /userprofile/�/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 85, in showUserProfileView
+    requestedUserInfo = User.objects.get(username=searchedUser)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/db/models/query.py", line 399, in get
+    self.model._meta.object_name
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+ERROR 2020-05-26 18:35:31,457 Internal Server Error: /userprofile/�/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 85, in showUserProfileView
+    requestedUserInfo = User.objects.get(username=searchedUser)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/db/models/query.py", line 399, in get
+    self.model._meta.object_name
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+ERROR 2020-05-26 18:35:31,458 "GET /userprofile/%EF%BF%BD/ HTTP/1.1" 500 82510
+INFO 2020-05-26 18:36:21,017 "GET /userprofile/ HTTP/1.1" 200 8427
+WARNING 2020-05-26 18:36:21,328 Not Found: /home/jayant/Desktop/CallOJ/static/images/jayant.jpg
+WARNING 2020-05-26 18:36:21,328 Not Found: /home/jayant/Desktop/CallOJ/static/images/jayant.jpg
+WARNING 2020-05-26 18:36:21,329 "GET /home/jayant/Desktop/CallOJ/static/images/jayant.jpg HTTP/1.1" 404 3765
+ERROR 2020-05-26 18:36:21,494 Internal Server Error: /userprofile/�/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 85, in showUserProfileView
+    requestedUserInfo = User.objects.get(username=searchedUser)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/db/models/query.py", line 399, in get
+    self.model._meta.object_name
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+ERROR 2020-05-26 18:36:21,494 Internal Server Error: /userprofile/�/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 85, in showUserProfileView
+    requestedUserInfo = User.objects.get(username=searchedUser)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/db/models/query.py", line 399, in get
+    self.model._meta.object_name
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+ERROR 2020-05-26 18:36:21,495 "GET /userprofile/%EF%BF%BD/ HTTP/1.1" 500 82510
+INFO 2020-05-26 18:37:05,653 "GET /userprofile/ HTTP/1.1" 200 8388
+ERROR 2020-05-26 18:37:06,089 Internal Server Error: /userprofile/�/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 85, in showUserProfileView
+    requestedUserInfo = User.objects.get(username=searchedUser)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/db/models/query.py", line 399, in get
+    self.model._meta.object_name
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+ERROR 2020-05-26 18:37:06,089 Internal Server Error: /userprofile/�/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 85, in showUserProfileView
+    requestedUserInfo = User.objects.get(username=searchedUser)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/db/models/query.py", line 399, in get
+    self.model._meta.object_name
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+ERROR 2020-05-26 18:37:06,090 "GET /userprofile/%EF%BF%BD/ HTTP/1.1" 500 82510
+INFO 2020-05-26 18:38:09,703 "GET /userprofile/ HTTP/1.1" 200 8312
+ERROR 2020-05-26 18:38:10,155 Internal Server Error: /userprofile/�/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 85, in showUserProfileView
+    requestedUserInfo = User.objects.get(username=searchedUser)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/db/models/query.py", line 399, in get
+    self.model._meta.object_name
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+ERROR 2020-05-26 18:38:10,155 Internal Server Error: /userprofile/�/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/userprofile/views.py", line 85, in showUserProfileView
+    requestedUserInfo = User.objects.get(username=searchedUser)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/db/models/query.py", line 399, in get
+    self.model._meta.object_name
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+ERROR 2020-05-26 18:38:10,156 "GET /userprofile/%EF%BF%BD/ HTTP/1.1" 500 82510
+INFO 2020-05-26 18:39:30,168 "GET /userprofile/ HTTP/1.1" 200 8311
+INFO 2020-05-26 18:39:30,507 "GET /userprofile/ HTTP/1.1" 200 8311
+INFO 2020-05-26 18:40:16,573 "GET /userprofile/ HTTP/1.1" 200 8364
+INFO 2020-05-26 18:40:16,976 "GET /userprofile/ HTTP/1.1" 200 8364
+INFO 2020-05-26 18:41:12,946 "GET /userprofile/ HTTP/1.1" 200 8311
+INFO 2020-05-26 18:41:13,288 "GET /userprofile/ HTTP/1.1" 200 8311
+INFO 2020-05-26 18:47:45,795 "GET /userprofile/ HTTP/1.1" 200 8302
+INFO 2020-05-26 18:48:09,473 "GET /userprofile/ HTTP/1.1" 200 8297
+INFO 2020-05-26 18:48:13,148 "GET /userprofile/ HTTP/1.1" 200 8297
+INFO 2020-05-26 18:48:14,213 "GET /userprofile/ HTTP/1.1" 200 8297
+INFO 2020-05-26 18:48:15,246 "GET /userprofile/ HTTP/1.1" 200 8297
+INFO 2020-05-26 18:48:15,619 "GET /userprofile/ HTTP/1.1" 200 8297
+INFO 2020-05-26 18:48:27,550 "GET /userprofile/ HTTP/1.1" 200 8298
+INFO 2020-05-26 18:48:30,478 "GET /userprofile/ HTTP/1.1" 200 8298
+INFO 2020-05-26 18:48:56,981 "GET / HTTP/1.1" 200 5208
+INFO 2020-05-26 18:49:01,664 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-26 18:49:01,701 "GET /dashboard/ HTTP/1.1" 200 2907
+WARNING 2020-05-26 18:49:02,119 Not Found: /favicon.ico
+WARNING 2020-05-26 18:49:02,119 Not Found: /favicon.ico
+WARNING 2020-05-26 18:49:02,120 "GET /favicon.ico HTTP/1.1" 404 3645
+INFO 2020-05-26 18:49:04,683 "GET /userprofile/ HTTP/1.1" 200 8298
+INFO 2020-05-26 18:49:50,266 "GET /userprofile/ HTTP/1.1" 200 8252
+INFO 2020-05-26 18:49:52,733 "GET /userprofile/ HTTP/1.1" 200 8252
+INFO 2020-05-26 18:50:28,146 "GET /userprofile/ HTTP/1.1" 200 8252
+INFO 2020-05-26 18:50:32,910 "GET /userprofile/ HTTP/1.1" 200 8252
+INFO 2020-05-26 18:51:37,807 "GET /userprofile/ HTTP/1.1" 200 8252
+INFO 2020-05-26 18:51:42,175 "GET /dashboard/problems/ HTTP/1.1" 200 17862
+INFO 2020-05-26 18:51:46,015 "GET /dashboard/ HTTP/1.1" 200 2907
+INFO 2020-05-26 18:51:48,042 "GET /userprofile/ HTTP/1.1" 200 8252
+INFO 2020-05-26 18:58:27,939 "GET /userprofile/ HTTP/1.1" 200 8346
+WARNING 2020-05-26 18:58:28,181 Not Found: /home/jayant/Desktop/CallOJ/media/submittedFiles/Jayant/Jayant.jpg
+WARNING 2020-05-26 18:58:28,181 Not Found: /home/jayant/Desktop/CallOJ/media/submittedFiles/Jayant/Jayant.jpg
+WARNING 2020-05-26 18:58:28,181 "GET /home/jayant/Desktop/CallOJ/media/submittedFiles/Jayant/Jayant.jpg HTTP/1.1" 404 3807
+INFO 2020-05-26 18:58:56,205 "GET /userprofile/ HTTP/1.1" 200 8346
+WARNING 2020-05-26 18:58:56,453 Not Found: /home/jayant/Desktop/CallOJ/media/submittedFiles/Jayant/Jayant.jpg
+WARNING 2020-05-26 18:58:56,453 Not Found: /home/jayant/Desktop/CallOJ/media/submittedFiles/Jayant/Jayant.jpg
+WARNING 2020-05-26 18:58:56,453 "GET /home/jayant/Desktop/CallOJ/media/submittedFiles/Jayant/Jayant.jpg HTTP/1.1" 404 3807
+INFO 2020-05-26 18:59:44,424 "GET /userprofile/ HTTP/1.1" 200 8350
+WARNING 2020-05-26 18:59:44,661 Not Found: /home/jayant/Desktop/CallOJ/media/submittedFiles/markus__/markus__.jpg
+WARNING 2020-05-26 18:59:44,661 Not Found: /home/jayant/Desktop/CallOJ/media/submittedFiles/markus__/markus__.jpg
+WARNING 2020-05-26 18:59:44,661 "GET /home/jayant/Desktop/CallOJ/media/submittedFiles/markus__/markus__.jpg HTTP/1.1" 404 3819
+INFO 2020-05-26 19:00:02,602 "GET /logout/ HTTP/1.1" 302 0
+INFO 2020-05-26 19:00:02,639 "GET / HTTP/1.1" 200 5208

@@ -3,7 +3,7 @@
 <div>
     <head>
         <title> Update Profile </title>
-        <link rel="stylesheet" type="text/css"  href="../../static/css/updateProfile.css">
+        <link rel="stylesheet" type="text/css"  href="{% static "css/updateProfile.css" %}">
         <style>
         .button {
                 background-color: #fff;
@@ -93,20 +93,23 @@
                 </ul>
             </div>
             <div class ="form">
-                <form action="/userprofile/changesToProfile/" method="post">
+                <form action="/userprofile/changesToProfile/" enctype="multipart/form-data" method="post">
                         {% csrf_token %}
-                      <label>UserName</label>
+                      <label>UserName :</label>
                       <input value= {{ user.username }} type="text" input id="textboxid" name="username" readonly><br> <br>
-                      <label>FirstName</label>
+                      <label>FirstName:</label>
                       <input value= {{ user.first_name }} type="text" input id="textboxid" name="firstName" required><br> <br>
-                      <label>LastName</label>
+                      <label>LastName :</label>
                       <input value={{ user.last_name }} type="text" input id="textboxid" name="lastName" required><br> <br>
-                      <label>Email</label>
+                      <label>User mail:</label>
                       <input value={{ user.email }} type="email" input id="textboxid" name="email" readonly><br> <br>
-                      <label>Password</label>
-                      <input type="password" input id="textboxid" name="password1"><br>
-                      <label>Confirm Password</label>
+                      <label>Password  :</label>
+                      <input type="password" input id="textboxid" name="password1"><div><br></div>
+                      <label>Re Enter :</label>
                       <input type="password" input id="textboxid" name="password2"><br>
+                      <div><br></div>
+                      <label>Upload Profile Photo</label>
+                      <input type="file" id="profile" name="profilePhoto" required/>
                       <div>
                           <br>
                           <br>

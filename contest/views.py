@@ -92,10 +92,11 @@ def showProblemView(request,contest_id,problem_id):
     languages = Utils.fetchAvailableLanguages(None)
     contestStatus = util.contestFinished(contest_id)
     problem_to_show = Question.objects.get(id=problem_id)
+    creatorObject = User.objects.get(username = problem_to_show.creator)
     if contestStatus == "contestEnded":
-        return render(request,'problem.html',{'problem':problem_to_show})
+        return render(request,'problem.html',{'problem':problem_to_show,'creatorObject':creatorObject})
     else:
-        return render(request,'problem.html',{'problem':problem_to_show,'contestId':contest_id,'languages':languages})
+        return render(request,'problem.html',{'problem':problem_to_show,'contestId':contest_id,'languages':languages,'creatorObject':creatorObject})
 
 def submitProblemView(request,contest_id,problem_id):
     registerLog('INFO','POST',request.user.username,'Contest'+str((Contest.objects.get(id=contest_id)).contestCode),'AtLeastSubmittedOneProblem',get_client_ip(request))
