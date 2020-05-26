@@ -1,0 +1,110 @@
+<head>
+        <title> Contest Creation Info </title>
+        <link rel="stylesheet" type="text/css"  href="../static/css/about.css">
+        <style>
+            .dropbtn {
+                text-decoration: none;
+                color: #000;
+                font-size: 15px;
+                padding: 8px 15px;
+                border: 1px solid transparent;
+                transition: 0.6s ease;
+                background-color: white;
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #fff;
+                min-width: 160px;
+                z-index: 1;
+                transition: 0.6s ease;
+            }
+
+            .dropdown-content a {
+                color: black;
+                padding: 8px 15px;
+                text-decoration: none;
+                display: block;
+                transition: 0.6s ease;
+            }
+
+.dropdown-content a:hover {background-color: #000;
+    color: #fff;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn { background-color: black;
+    color: white;}
+
+</style>
+    </head>
+    <body>
+        <header>
+            <div class="main">
+                <ul>
+                    <li><a href="/dashboard">Home</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Problems</button>
+                            <div class="dropdown-content">
+                                <a href="/dashboard/problems/">View</a>
+                                <a href="/dashboard/createProblem/">Create</a>
+                            </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Contests</button>
+                            <div class="dropdown-content">
+                                <a href="/contest/all/">View</a>
+                                <a href="/contest/create/">Create</a>
+                            </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Profile</button>
+                            <div class="dropdown-content">
+                                <a href="/userprofile/">View</a>
+                                <a href="/userprofile/updateProfile">Update</a>
+                            </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Info</button>
+                            <div class="dropdown-content">
+                                <a href="/about2/">Create a problem</a>
+                                <a href="/about1">Create a contest</a>
+                                <a href="/about3/">About us</a>
+                            </div>
+                    </div>
+                    <li><a href="/logout/">Logout</a></li>
+                </ul>
+            </div>
+            <div class ="title">
+                <p>  Create A Contest </p> <br> <br>
+
+                <p3> Contest Code:</p3> <br> <br>
+                <p2><li> Contest code is a unique identifier for each contest. Keep a one-word contest code for the contest.
+                   <br> If duplicacy is detected, you will be prompted to use a new code for the same.</p2></li>
+<br> <br>
+                <p3> Contest Name:</p3> <br> <br>
+                <p2><li> Contest name specifies the contest. Use a fancy name to stand out</p2></li>
+<br> <br>
+                <p3> Start Date:</p3> <br> <br>
+                <p2><li>Select from the drop down menu to use the required date to start the contest.</p2></li>
+<br> <br>
+                <p3> Duration:</p3> <br> <br>
+                <p2><li> Select from the drop down menu to use the required duration for the contest</p2></li>
+<br> <br>
+                <p3>Marking Style:</p3> <br> <br>
+                <p2><li> Select the marking style for scoring the contest. Refer to creating a problem documentation for more <br>information.
+                    Even if you select a problem with marking belonging to another category, the marking style <br>of contest overpowers the pattern of a single question</p2></li>
+<br> <br>
+                <p3>Add Problems to the contest:</p3> <br> <br>
+                <p2><li> Select the problems from the list below. Once the contest is created, there is no provision currently of <br>editing problem or contest once created.
+                    For more, refer to the <a href="https://github.com/jayant-tiwari/CallOJ/blob/master/README.md">readme</p2></li>
+                <br> <br>
+            </div>
+        </header>
+    </body>

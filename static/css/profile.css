@@ -5,11 +5,8 @@
 }
 
 header{
-    background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(../images/jayant.jpg);
-    height: 100vh;
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: 20% 60%;
 }
 
 ul{
@@ -52,16 +49,27 @@ ul li.active a{
 .email h1{
     position: absolute;
     width: 100%;
-    margin-top: 7%;
-    text-align: center;
+    margin-top: 14%;
+    margin-left: 25%;
     color: #000;
     font-size: 20px;
 }
 .email h2{
     position: absolute;
     width: 100%;
-    margin-top: 40%;
-    text-align: center;
+    margin-top: 16%;
+    margin-left: 25%;
     color: #000;
     font-size: 20px;
+}
+.formm{
+    position: absolute;
+    width: 100%;
+    margin-top: 35%;
+    margin-left: 0%;
+}
+.imgg{
+    position: absolute;
+    margin-top: -30%;
+    margin-left: 5%;
 }

@@ -17,14 +17,16 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from OJ.views import aboutview
+from OJ.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('login.urls')),
     path('dashboard/',include('problems.urls')),
     path('contest/',include('contest.urls')),
     path('userprofile/',include('userprofile.urls')),
-    path('about/',aboutview),
+    path('about1/',aboutview1),
+    path('about2/',aboutview2),
+    path('about3/',aboutview3),
 ]
 
 if settings.DEBUG:
