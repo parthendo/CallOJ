@@ -39,3 +39,412 @@ INFO 2020-05-25 22:27:40,907 "GET /contest/1/ranklist/ HTTP/1.1" 200 1526
 INFO 2020-05-25 22:27:42,939 "GET /userprofile/parthendo/ HTTP/1.1" 200 6609
 INFO 2020-05-25 22:27:43,020 "GET /static/css/profile.css HTTP/1.1" 200 1029
 INFO 2020-05-25 22:27:43,046 "GET /static/images/jayant.jpg HTTP/1.1" 200 8192
+INFO 2020-05-25 22:46:43,244 "GET / HTTP/1.1" 200 5208
+INFO 2020-05-25 22:46:43,593 "GET /static/js/coding.js HTTP/1.1" 304 0
+INFO 2020-05-25 22:46:48,390 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-25 22:46:48,418 "GET /dashboard/ HTTP/1.1" 200 2907
+INFO 2020-05-25 22:46:48,517 "GET /static/css/dashboard.css HTTP/1.1" 304 0
+INFO 2020-05-25 22:46:48,777 "GET /static/images/coding.jpg HTTP/1.1" 304 0
+INFO 2020-05-25 22:46:52,991 "GET /userprofile/ HTTP/1.1" 200 8252
+INFO 2020-05-25 22:46:53,100 "GET /static/css/profile.css HTTP/1.1" 304 0
+INFO 2020-05-25 22:46:53,431 "GET /static/images/jayant.jpg HTTP/1.1" 304 0
+INFO 2020-05-25 22:46:56,031 "GET /userprofile/playlist/Greedy/questions/ HTTP/1.1" 200 9777
+INFO 2020-05-25 22:47:06,233 "GET /logout/ HTTP/1.1" 302 0
+INFO 2020-05-25 22:47:06,299 "GET / HTTP/1.1" 200 5208
+INFO 2020-05-25 22:47:08,211 "GET /registration/ HTTP/1.1" 200 6493
+WARNING 2020-05-25 22:47:08,628 Not Found: /registration/static/images/IIIT-B_logo.jpg
+WARNING 2020-05-25 22:47:08,628 Not Found: /registration/static/images/IIIT-B_logo.jpg
+WARNING 2020-05-25 22:47:08,628 "GET /registration/static/images/IIIT-B_logo.jpg HTTP/1.1" 404 3738
+ERROR 2020-05-25 22:47:40,062 Internal Server Error: /saveUser/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/login/views.py", line 137, in saveUserView
+    msg.send()
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/mail/message.py", line 291, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/mail/backends/smtp.py", line 103, in send_messages
+    new_conn_created = self.open()
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/mail/backends/smtp.py", line 70, in open
+    self.connection.login(self.username, self.password)
+  File "/usr/lib/python3.6/smtplib.py", line 730, in login
+    raise last_exception
+  File "/usr/lib/python3.6/smtplib.py", line 721, in login
+    initial_response_ok=initial_response_ok)
+  File "/usr/lib/python3.6/smtplib.py", line 642, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (534, b'5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbv\n5.7.14 hNQ5F6rX2L9SecUZYQIbEuo2iGCz-B6MKzv7kiRSinfQMohH8My8w6_dweWzMiK9PyWQd\n5.7.14 WTmnhZCHj-z2HFKoqZYcGu8XTak7p7jf6WUtsYypAUf8kiFZ1deuYV4VFyW9_C0V>\n5.7.14 Please log in via your web browser and then try again.\n5.7.14  Learn more at\n5.7.14  https://support.google.com/mail/answer/78754 x20sm13345684pfc.211 - gsmtp')
+ERROR 2020-05-25 22:47:40,062 Internal Server Error: /saveUser/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/login/views.py", line 137, in saveUserView
+    msg.send()
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/mail/message.py", line 291, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/mail/backends/smtp.py", line 103, in send_messages
+    new_conn_created = self.open()
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/mail/backends/smtp.py", line 70, in open
+    self.connection.login(self.username, self.password)
+  File "/usr/lib/python3.6/smtplib.py", line 730, in login
+    raise last_exception
+  File "/usr/lib/python3.6/smtplib.py", line 721, in login
+    initial_response_ok=initial_response_ok)
+  File "/usr/lib/python3.6/smtplib.py", line 642, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (534, b'5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbv\n5.7.14 hNQ5F6rX2L9SecUZYQIbEuo2iGCz-B6MKzv7kiRSinfQMohH8My8w6_dweWzMiK9PyWQd\n5.7.14 WTmnhZCHj-z2HFKoqZYcGu8XTak7p7jf6WUtsYypAUf8kiFZ1deuYV4VFyW9_C0V>\n5.7.14 Please log in via your web browser and then try again.\n5.7.14  Learn more at\n5.7.14  https://support.google.com/mail/answer/78754 x20sm13345684pfc.211 - gsmtp')
+ERROR 2020-05-25 22:47:40,064 "POST /saveUser/ HTTP/1.1" 500 109974
+INFO 2020-05-25 22:48:14,654 "GET / HTTP/1.1" 200 5208
+INFO 2020-05-25 22:48:15,047 "GET /static/images/CollegeLogo.png HTTP/1.1" 200 43363
+INFO 2020-05-25 22:51:18,552 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-25 22:51:18,595 "GET /dashboard/ HTTP/1.1" 200 2907
+INFO 2020-05-25 22:51:21,240 "GET /dashboard/problems/ HTTP/1.1" 200 17862
+INFO 2020-05-25 22:51:21,307 "GET /static/css/problems.css HTTP/1.1" 304 0
+INFO 2020-05-25 22:51:23,731 "POST /dashboard/problems/1/ HTTP/1.1" 200 8461
+WARNING 2020-05-25 22:51:23,812 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 22:51:23,819 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-25 22:51:23,840 "GET /static/css/problem.css HTTP/1.1" 304 0
+INFO 2020-05-25 22:51:23,863 "GET /static/js/ace.js HTTP/1.1" 304 0
+INFO 2020-05-25 22:51:23,898 "GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-05-25 22:51:23,959 "GET /static/js/problem.js HTTP/1.1" 304 0
+WARNING 2020-05-25 22:51:24,052 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 22:51:24,089 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-25 22:51:24,259 "GET /static/js/theme-monokai.js HTTP/1.1" 304 0
+INFO 2020-05-25 22:51:24,276 "GET /static/js/mode-c_cpp.js HTTP/1.1" 304 0
+INFO 2020-05-25 22:51:30,619 "GET /dashboard/ HTTP/1.1" 200 2907
+INFO 2020-05-25 22:51:32,575 "GET /contest/all/ HTTP/1.1" 200 9145
+INFO 2020-05-25 22:51:32,644 "GET /static/css/allContests.css HTTP/1.1" 304 0
+INFO 2020-05-25 22:51:44,971 "GET /dashboard/ HTTP/1.1" 200 2907
+ERROR 2020-05-25 22:51:47,310 Internal Server Error: /contest/create/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/contest/views.py", line 28, in createContestView
+    registerLog('INFO','GET',user.username,'createContest','creatingContest',get_client_ip(request))
+NameError: name 'user' is not defined
+ERROR 2020-05-25 22:51:47,310 Internal Server Error: /contest/create/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/contest/views.py", line 28, in createContestView
+    registerLog('INFO','GET',user.username,'createContest','creatingContest',get_client_ip(request))
+NameError: name 'user' is not defined
+ERROR 2020-05-25 22:51:47,312 "GET /contest/create/ HTTP/1.1" 500 74360
+INFO 2020-05-25 22:52:39,518 "GET /contest/create/ HTTP/1.1" 200 18271
+INFO 2020-05-25 22:52:39,621 "GET /static/css/createContest.css HTTP/1.1" 304 0
+WARNING 2020-05-25 22:52:39,681 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 22:52:39,681 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 22:52:39,887 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 22:52:39,902 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 22:52:40,085 "GET /static/docs/4.0/assets/img/favicons/favicon.ico HTTP/1.1" 404 1744
+ERROR 2020-05-25 22:53:29,863 Internal Server Error: /contest/submit/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/contest/views.py", line 74, in submitContestView
+    registerLog('INFO','POST',user.username,'Contest','successfullyCreatedContest',get_client_ip(request))
+NameError: name 'user' is not defined
+ERROR 2020-05-25 22:53:29,863 Internal Server Error: /contest/submit/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/contest/views.py", line 74, in submitContestView
+    registerLog('INFO','POST',user.username,'Contest','successfullyCreatedContest',get_client_ip(request))
+NameError: name 'user' is not defined
+ERROR 2020-05-25 22:53:29,864 "POST /contest/submit/ HTTP/1.1" 500 79337
+INFO 2020-05-25 22:53:59,953 "POST /contest/submit/ HTTP/1.1" 302 0
+INFO 2020-05-25 22:53:59,993 "GET /contest/create/ HTTP/1.1" 200 18271
+WARNING 2020-05-25 22:54:00,079 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 22:54:00,086 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 22:54:00,305 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 22:54:00,382 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-25 22:54:04,068 "GET /contest/all/ HTTP/1.1" 200 9848
+INFO 2020-05-25 22:54:55,876 "GET /contest/all/ HTTP/1.1" 200 9848
+INFO 2020-05-25 22:54:58,619 "GET /contest/all/ HTTP/1.1" 200 9848
+INFO 2020-05-25 22:55:00,475 "GET /contest/all/ HTTP/1.1" 200 9848
+INFO 2020-05-25 22:55:01,679 "GET /contest/all/ HTTP/1.1" 200 9848
+INFO 2020-05-25 22:55:02,871 "GET /contest/all/ HTTP/1.1" 200 9848
+INFO 2020-05-25 22:55:04,106 "GET /contest/all/ HTTP/1.1" 200 9848
+INFO 2020-05-25 22:55:05,491 "GET /contest/all/ HTTP/1.1" 200 9848
+INFO 2020-05-25 22:55:06,737 "GET /contest/all/ HTTP/1.1" 200 9848
+INFO 2020-05-25 22:55:07,854 "GET /contest/all/ HTTP/1.1" 200 9848
+INFO 2020-05-25 22:55:08,911 "GET /contest/all/ HTTP/1.1" 200 9848
+INFO 2020-05-25 22:55:10,004 "GET /contest/all/ HTTP/1.1" 200 9848
+INFO 2020-05-25 22:55:10,938 "GET /contest/all/ HTTP/1.1" 200 9848
+INFO 2020-05-25 22:55:11,967 "GET /contest/all/ HTTP/1.1" 200 9848
+INFO 2020-05-25 22:55:12,988 "GET /contest/all/ HTTP/1.1" 200 9848
+INFO 2020-05-25 22:55:13,920 "GET /contest/all/ HTTP/1.1" 200 9848
+INFO 2020-05-25 22:55:14,815 "GET /contest/all/ HTTP/1.1" 200 9848
+INFO 2020-05-25 22:55:15,706 "GET /contest/all/ HTTP/1.1" 200 9848
+INFO 2020-05-25 22:55:16,585 "GET /contest/all/ HTTP/1.1" 200 9848
+INFO 2020-05-25 22:55:17,555 "GET /contest/all/ HTTP/1.1" 200 9848
+INFO 2020-05-25 22:55:18,469 "GET /contest/all/ HTTP/1.1" 200 9848
+INFO 2020-05-25 22:55:19,286 "GET /contest/all/ HTTP/1.1" 200 9848
+INFO 2020-05-25 22:55:20,310 "GET /contest/all/ HTTP/1.1" 200 9848
+INFO 2020-05-25 22:55:24,050 "GET /contest/all/ HTTP/1.1" 200 9848
+INFO 2020-05-25 22:55:25,517 "GET /contest/all/ HTTP/1.1" 200 9848
+INFO 2020-05-25 22:55:32,907 "GET /contest/all/ HTTP/1.1" 200 9848
+INFO 2020-05-25 22:55:34,228 "GET /contest/all/ HTTP/1.1" 200 9848
+INFO 2020-05-25 22:55:35,349 "GET /contest/all/ HTTP/1.1" 200 9848
+INFO 2020-05-25 22:55:36,472 "GET /contest/all/ HTTP/1.1" 200 9848
+INFO 2020-05-25 22:56:02,076 "GET /dashboard/ HTTP/1.1" 200 2907
+INFO 2020-05-25 22:56:06,516 "GET /contest/create/ HTTP/1.1" 200 18271
+WARNING 2020-05-25 22:56:06,610 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 22:56:06,615 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 22:56:06,866 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 22:56:06,887 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-25 22:56:58,097 "POST /contest/submit/ HTTP/1.1" 302 0
+INFO 2020-05-25 22:56:58,107 "GET /contest/all/ HTTP/1.1" 200 10548
+INFO 2020-05-25 22:58:28,315 "GET /contest/all/ HTTP/1.1" 200 11376
+INFO 2020-05-25 22:58:32,865 "POST /contest/4/ HTTP/1.1" 200 5193
+INFO 2020-05-25 22:58:32,936 "GET /static/css/contestQuestions.css HTTP/1.1" 304 0
+INFO 2020-05-25 22:58:38,588 "POST /contest/4/1/ HTTP/1.1" 200 8493
+WARNING 2020-05-25 22:58:38,651 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 22:58:38,656 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 22:58:38,898 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 22:58:38,918 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-25 22:58:45,416 "GET /static/js/mode-java.js HTTP/1.1" 304 0
+INFO 2020-05-25 22:58:48,838 "GET /static/js/theme-twilight.js HTTP/1.1" 304 0
+ERROR 2020-05-25 22:58:50,467 Internal Server Error: /contest/4/1/submit/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/contest/views.py", line 102, in submitProblemView
+    registerLog('INFO','POST',request.user.username,'Contest'+str((Contest.objects.get(id=contest_id)).contestCode),'AttemptedProblem'+str(problem.problemCode),get_client_ip(request))
+UnboundLocalError: local variable 'problem' referenced before assignment
+ERROR 2020-05-25 22:58:50,467 Internal Server Error: /contest/4/1/submit/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/contest/views.py", line 102, in submitProblemView
+    registerLog('INFO','POST',request.user.username,'Contest'+str((Contest.objects.get(id=contest_id)).contestCode),'AttemptedProblem'+str(problem.problemCode),get_client_ip(request))
+UnboundLocalError: local variable 'problem' referenced before assignment
+ERROR 2020-05-25 22:58:50,468 "POST /contest/4/1/submit/ HTTP/1.1" 500 76578
+ERROR 2020-05-25 23:01:49,239 Internal Server Error: /contest/4/1/submit/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/contest/views.py", line 109, in submitProblemView
+    x = utils.submitProblem(request.user, usercode, language, problem)
+  File "/home/jayant/Desktop/CallOJ/problems/utils.py", line 81, in submitProblem
+    return judge.executeJudge()
+  File "/home/jayant/Desktop/CallOJ/problems/judge.py", line 124, in executeJudge
+    self.grade()
+  File "/home/jayant/Desktop/CallOJ/problems/judge.py", line 87, in grade
+    verdict = self.verdict[tc]
+IndexError: list index out of range
+ERROR 2020-05-25 23:01:49,239 Internal Server Error: /contest/4/1/submit/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/contest/views.py", line 109, in submitProblemView
+    x = utils.submitProblem(request.user, usercode, language, problem)
+  File "/home/jayant/Desktop/CallOJ/problems/utils.py", line 81, in submitProblem
+    return judge.executeJudge()
+  File "/home/jayant/Desktop/CallOJ/problems/judge.py", line 124, in executeJudge
+    self.grade()
+  File "/home/jayant/Desktop/CallOJ/problems/judge.py", line 87, in grade
+    verdict = self.verdict[tc]
+IndexError: list index out of range
+ERROR 2020-05-25 23:01:49,241 "POST /contest/4/1/submit/ HTTP/1.1" 500 92832
+INFO 2020-05-25 23:03:35,486 "POST /contest/4/1/submit/ HTTP/1.1" 200 10803
+INFO 2020-05-25 23:03:35,872 "GET /static/images/grrentick.jpg HTTP/1.1" 304 0
+WARNING 2020-05-25 23:03:35,908 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:03:35,908 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:03:35,951 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-25 23:04:33,224 "GET /contest/all/ HTTP/1.1" 200 11376
+INFO 2020-05-25 23:04:35,878 "POST /contest/4/ HTTP/1.1" 200 5193
+INFO 2020-05-25 23:04:37,957 "GET /contest/4/ranklist/ HTTP/1.1" 200 1501
+INFO 2020-05-25 23:04:43,202 "POST /contest/4/3/ HTTP/1.1" 200 8720
+WARNING 2020-05-25 23:04:43,265 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:04:43,273 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:04:43,520 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:04:43,546 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-25 23:05:28,858 "POST /contest/4/3/submit/ HTTP/1.1" 200 11030
+WARNING 2020-05-25 23:05:29,275 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:05:29,277 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:05:29,367 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:05:29,385 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-25 23:05:35,134 "GET /contest/all/ HTTP/1.1" 200 11376
+INFO 2020-05-25 23:05:37,415 "POST /contest/4/ HTTP/1.1" 200 5193
+INFO 2020-05-25 23:05:38,909 "GET /contest/4/ranklist/ HTTP/1.1" 200 1501
+INFO 2020-05-25 23:05:46,558 "POST /contest/4/4/ HTTP/1.1" 200 8576
+WARNING 2020-05-25 23:05:46,639 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:05:46,660 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:05:46,892 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:05:46,928 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-25 23:06:09,930 "POST /contest/4/4/submit/ HTTP/1.1" 200 10872
+WARNING 2020-05-25 23:06:10,252 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:06:10,253 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-25 23:06:10,266 "GET /static/images/wrong3.png HTTP/1.1" 304 0
+WARNING 2020-05-25 23:06:10,368 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:06:10,395 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-25 23:06:23,435 "GET /logout/ HTTP/1.1" 302 0
+INFO 2020-05-25 23:06:23,452 "GET / HTTP/1.1" 200 5208
+INFO 2020-05-25 23:06:32,804 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-25 23:06:32,822 "GET /dashboard/ HTTP/1.1" 200 2909
+INFO 2020-05-25 23:06:36,980 "GET /contest/all/ HTTP/1.1" 200 11376
+INFO 2020-05-25 23:06:39,421 "POST /contest/4/ HTTP/1.1" 200 5193
+INFO 2020-05-25 23:06:42,301 "POST /contest/4/1/ HTTP/1.1" 200 8493
+WARNING 2020-05-25 23:06:42,356 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:06:42,389 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:06:42,638 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:06:42,661 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-25 23:06:54,515 "POST /contest/4/1/submit/ HTTP/1.1" 200 10803
+WARNING 2020-05-25 23:06:54,764 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:06:54,769 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:06:54,822 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:06:54,848 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-25 23:06:59,874 "GET /contest/all/ HTTP/1.1" 200 11376
+INFO 2020-05-25 23:07:02,293 "POST /contest/4/ HTTP/1.1" 200 5193
+INFO 2020-05-25 23:07:04,134 "GET /contest/4/ranklist/ HTTP/1.1" 200 1873
+INFO 2020-05-25 23:07:58,974 "GET /userprofile/markus__/ HTTP/1.1" 200 6613
+INFO 2020-05-25 23:08:03,007 "GET /userprofile/Jayant/ HTTP/1.1" 200 6614
+INFO 2020-05-25 23:08:27,228 "POST /contest/4/3/ HTTP/1.1" 200 8720
+WARNING 2020-05-25 23:08:27,305 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:08:27,314 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:08:27,544 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:08:27,562 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-25 23:08:54,462 "POST /contest/4/3/submit/ HTTP/1.1" 200 11016
+WARNING 2020-05-25 23:08:54,902 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:08:54,918 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-25 23:09:17,230 "GET /contest/all/ HTTP/1.1" 200 11376
+INFO 2020-05-25 23:09:19,617 "POST /contest/4/ HTTP/1.1" 200 5193
+INFO 2020-05-25 23:09:21,386 "GET /contest/4/ranklist/ HTTP/1.1" 200 1873
+INFO 2020-05-25 23:09:31,043 "GET /logout/ HTTP/1.1" 302 0
+INFO 2020-05-25 23:09:31,067 "GET / HTTP/1.1" 200 5208
+INFO 2020-05-25 23:09:36,371 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-25 23:09:36,408 "GET /dashboard/ HTTP/1.1" 200 2907
+INFO 2020-05-25 23:09:38,428 "GET /contest/all/ HTTP/1.1" 200 11376
+INFO 2020-05-25 23:09:42,222 "GET /dashboard/ HTTP/1.1" 200 2907
+INFO 2020-05-25 23:09:43,943 "GET /contest/create/ HTTP/1.1" 200 18271
+WARNING 2020-05-25 23:09:44,014 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:09:44,023 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:09:44,255 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:09:44,273 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-25 23:10:37,017 "POST /contest/submit/ HTTP/1.1" 302 0
+INFO 2020-05-25 23:10:37,047 "GET /contest/all/ HTTP/1.1" 200 12088
+INFO 2020-05-25 23:13:21,055 "GET /contest/all/ HTTP/1.1" 200 12918
+INFO 2020-05-25 23:13:28,932 "POST /contest/5/ HTTP/1.1" 200 5731
+INFO 2020-05-25 23:13:30,868 "POST /contest/5/1/ HTTP/1.1" 200 8493
+WARNING 2020-05-25 23:13:31,255 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:13:31,257 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:13:31,485 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:13:31,624 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-25 23:13:59,522 "POST /contest/5/1/submit/ HTTP/1.1" 200 10803
+WARNING 2020-05-25 23:13:59,852 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:13:59,853 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:13:59,928 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:13:59,949 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-25 23:14:10,976 "POST /contest/5/2/ HTTP/1.1" 200 8532
+WARNING 2020-05-25 23:14:11,042 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:14:11,064 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:14:11,280 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:14:11,298 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+ERROR 2020-05-25 23:14:22,222 Internal Server Error: /contest/5/2/submit/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/contest/views.py", line 109, in submitProblemView
+    x = utils.submitProblem(request.user, usercode, language, problem)
+  File "/home/jayant/Desktop/CallOJ/problems/utils.py", line 81, in submitProblem
+    return judge.executeJudge()
+  File "/home/jayant/Desktop/CallOJ/problems/judge.py", line 124, in executeJudge
+    self.grade()
+  File "/home/jayant/Desktop/CallOJ/problems/judge.py", line 87, in grade
+    verdict = self.verdict[tc]
+IndexError: list index out of range
+ERROR 2020-05-25 23:14:22,222 Internal Server Error: /contest/5/2/submit/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-vq7gCoI_/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/CallOJ/contest/views.py", line 109, in submitProblemView
+    x = utils.submitProblem(request.user, usercode, language, problem)
+  File "/home/jayant/Desktop/CallOJ/problems/utils.py", line 81, in submitProblem
+    return judge.executeJudge()
+  File "/home/jayant/Desktop/CallOJ/problems/judge.py", line 124, in executeJudge
+    self.grade()
+  File "/home/jayant/Desktop/CallOJ/problems/judge.py", line 87, in grade
+    verdict = self.verdict[tc]
+IndexError: list index out of range
+ERROR 2020-05-25 23:14:22,224 "POST /contest/5/2/submit/ HTTP/1.1" 500 92819
+INFO 2020-05-25 23:14:43,164 "POST /contest/5/3/ HTTP/1.1" 200 8720
+WARNING 2020-05-25 23:14:43,227 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:14:43,234 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:14:43,447 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:14:43,466 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-25 23:14:56,612 "POST /contest/5/3/submit/ HTTP/1.1" 200 11030
+WARNING 2020-05-25 23:14:56,945 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:14:56,945 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:14:57,037 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:14:57,059 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-25 23:15:02,904 "GET /logout/ HTTP/1.1" 302 0
+INFO 2020-05-25 23:15:02,994 "GET / HTTP/1.1" 200 5208
+INFO 2020-05-25 23:15:19,339 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-25 23:15:19,377 "GET /dashboard/ HTTP/1.1" 200 2909
+INFO 2020-05-25 23:15:23,743 "GET /contest/all/ HTTP/1.1" 200 12918
+INFO 2020-05-25 23:15:26,492 "POST /contest/5/ HTTP/1.1" 200 5731
+INFO 2020-05-25 23:15:28,352 "POST /contest/5/1/ HTTP/1.1" 200 8493
+WARNING 2020-05-25 23:15:28,426 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:15:28,429 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:15:28,676 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:15:28,695 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-25 23:15:40,595 "POST /contest/5/1/submit/ HTTP/1.1" 200 10802
+WARNING 2020-05-25 23:15:40,859 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:15:40,859 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:15:40,932 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-25 23:15:40,951 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-25 23:16:34,067 "GET /contest/all/ HTTP/1.1" 200 12918
+INFO 2020-05-25 23:16:36,677 "POST /contest/5/ HTTP/1.1" 200 5731
+INFO 2020-05-25 23:16:38,114 "GET /contest/5/ranklist/ HTTP/1.1" 200 1932
+INFO 2020-05-25 23:16:42,093 "GET /userprofile/markus__/ HTTP/1.1" 200 6613
+INFO 2020-05-25 23:16:55,556 "GET /logout/ HTTP/1.1" 302 0
+INFO 2020-05-25 23:16:55,565 "GET / HTTP/1.1" 200 5208

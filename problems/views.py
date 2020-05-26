@@ -99,7 +99,6 @@ def createProblemView(request):
                 fileValidity = False
                 registerLog('ERROR','POST',request.user.username,'Problem','CreateProblem_Invalid_testCase',get_client_ip(request))
                 break
-
         if fileValidity == True:
             problem_code = request.POST['problemCode']
             problem_name = request.POST['problemName']
