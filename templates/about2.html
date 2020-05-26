@@ -1,0 +1,141 @@
+<head>
+        <title> Problem Creation Info</title>
+        <link rel="stylesheet" type="text/css"  href="../static/css/about.css">
+        <style>
+            .dropbtn {
+                text-decoration: none;
+                color: #000;
+                font-size: 15px;
+                padding: 8px 15px;
+                border: 1px solid transparent;
+                transition: 0.6s ease;
+                background-color: white;
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #fff;
+                min-width: 160px;
+                z-index: 1;
+                transition: 0.6s ease;
+            }
+
+            .dropdown-content a {
+                color: black;
+                padding: 8px 15px;
+                text-decoration: none;
+                display: block;
+                transition: 0.6s ease;
+            }
+
+.dropdown-content a:hover {background-color: #000;
+    color: #fff;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn { background-color: black;
+    color: white;}
+
+</style>
+    </head>
+    <body>
+        <header>
+            <div class="main">
+                <ul>
+                    <li><a href="/dashboard">Home</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Problems</button>
+                            <div class="dropdown-content">
+                                <a href="/dashboard/problems/">View</a>
+                                <a href="/dashboard/createProblem/">Create</a>
+                            </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Contests</button>
+                            <div class="dropdown-content">
+                                <a href="/contest/all/">View</a>
+                                <a href="/contest/create/">Create</a>
+                            </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Profile</button>
+                            <div class="dropdown-content">
+                                <a href="/userprofile/">View</a>
+                                <a href="/userprofile/updateProfile">Update</a>
+                            </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Info</button>
+                            <div class="dropdown-content">
+                                <a href="/about2/">Create a problem</a>
+                                <a href="/about1">Create a contest</a>
+                                <a href="/about3/">About us</a>
+                            </div>
+                    </div>
+                    <li><a href="/logout/">Logout</a></li>
+                </ul>
+            </div>
+            <div class ="title">
+                <p>  Create a problem </p> <br> <br>
+
+                <p3> Problem Code:</p3> <br> <br>
+                <p2><li> The problem code acts as an identifier to the problem. Thus, enter tag the problem by keeping
+                    the problem code <br>unique and just a single word without any spaces.</p2></li>
+<br> <br>
+                <p3> Problem Name:</p3> <br> <br>
+                <p2><li> Just put in a fancy name there to lure the users to solve this problem</p2></li>
+<br> <br>
+                <p3> Problem statement:</p3> <br> <br>
+                <p2><li>The problem statement comes with a WYSIWYG editor. Please format the problem and make it explainable <br>
+                    enough for users to solve the problem. Please follow the guidelines in order to make the problem more understandable. <br> <br>
+                    Note: These are just the guidelines, you need not strictly follow this if you have some creative method </li><br> <br>
+                    <li>Problem statement: Put in a statement explaining your problem </li>
+                    <li>Input: This section conveys the user what the input will be provided by the judge <br></li>
+                    <li>Output: This section conveys the output the judge expects from the user's code to produce.</li></p2>
+<br> <br>
+                <p3> Time limit:</p3> <br> <br>
+                <p2><li> Time Limit specifies how much time should each test file take to run on the judge i.e. the amount of time the<br>
+                    code of the user should take to produce solutions.</li> <br>
+                    <li>This specifies the user how efficient the solution code needs to be and the judge in cutting of the feed and <br> generating results.</li></p2></li>
+<br> <br>
+                <p3>Memory limit:</p3> <br> <br>
+                <p2><li> Each problem solution is given some desired space it must occupy while running the code. The memory stack that can <br>
+                    be used by the solution in kilobytes (kb).</p2></li>
+<br> <br>
+                <p3>Visibility:</p3> <br> <br>
+                <p2><li> Each idea is a million dollar scheme! Similarily, each question's idea is also a big deal of teaching someone who does <br>
+                    not know the specific concept the question conveys. </li><br>
+                    <li>CallOJ gives each user to create a private question and test it. Once the question with private tag is create, it shall be <br>
+                        visible in the problem section only to the user who created the problem. </li><br>
+                    <li>This gives the capability to the user to create a problem and use it in the future contests.</li><br>
+                    <li>NOTE: ONCE ANY PROBLEM IS USED IN A CONTEST, IT BECOMES PUBLIC AT 10:30PM IST ONCE THE CONTEST IS OVER!</p2></li>
+                <br> <br>
+                <p3>Problem type:</p3> <br> <br>
+                <p2><li> <b>IOI Marking: </b>User is ranked according to the maximum score. Users with same score achieve same rank and the next ranks <br>
+                    are skipped. The problem is partially graded in order to maximize the score and comes with no penalty on wrong submissions.
+                    <br><br></li>
+                    <li><b>ICPC Marking:</b> User is ranked according to the most problems solved.  For awards, or in determining qualifier(s) e.g. ICPC World<br>
+                    Finals, users who solve the same number of problems are ranked by least total time.  <br>
+                        The total time is the sum of the time consumed for each problem solved.  The time consumed for a solved problem is the time elapsed <br>
+                        from the beginning of the contest to the submission of the first accepted run plus 20 penalty minutes for every previously rejected <br>
+                        run for that problem.<br>
+                    There is no time consumed for a problem that is not solved.</p2></li>
+                <br><br>
+                <p3>Scoring:</p3> <br> <br>
+                <p2><li> <b>init.yml:</b> </strong>init.yml is required to grade the problem and specify the points each testcase beholds. <br>
+                    Details about init.yml can be found <a href="https://docs.dmoj.ca/#/problem_format/problem_format">here</a></p2></li>
+<br><br>
+<p3>Testcases:</p3> <br> <br>
+                <p2><li> The file to be uploaded should only be of <b>.txt</b> format. For each testcase, add test cases and input file takes <br>
+                    in the input test cases and output file takes in the output test cases in a text file.<br>
+                    NOTE: Please be aware of the extra whitespaces</p2></li>
+<br> <br>
+            </div>
+        </header>
+    </body>

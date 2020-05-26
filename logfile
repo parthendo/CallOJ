@@ -200,3 +200,159 @@ INFO 2020-05-26 22:58:08,463 "GET /userprofile/ HTTP/1.1" 200 8777
 INFO 2020-05-26 22:58:11,790 "GET /contest/all/ HTTP/1.1" 200 6430
 INFO 2020-05-26 22:58:12,986 "GET /dashboard/problems/ HTTP/1.1" 200 10046
 INFO 2020-05-26 22:58:13,572 "GET /dashboard/ HTTP/1.1" 200 3286
+INFO 2020-05-26 23:24:28,322 "GET / HTTP/1.1" 200 5208
+INFO 2020-05-26 23:24:28,757 "GET /static/fonts/Linearicons-Free-v1.0.0/icon-font.min.css HTTP/1.1" 200 7354
+INFO 2020-05-26 23:24:28,758 "GET /static/vendor/css-hamburgers/hamburgers.min.css HTTP/1.1" 200 19686
+INFO 2020-05-26 23:24:28,760 "GET /static/vendor/animate/animate.css HTTP/1.1" 200 23848
+INFO 2020-05-26 23:24:28,762 "GET /static/vendor/animsition/css/animsition.min.css HTTP/1.1" 200 27478
+INFO 2020-05-26 23:24:28,764 "GET /static/fonts/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 31000
+INFO 2020-05-26 23:24:28,850 "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 124962
+INFO 2020-05-26 23:24:28,850 "GET /static/vendor/daterangepicker/daterangepicker.css HTTP/1.1" 200 8163
+INFO 2020-05-26 23:24:28,864 "GET /static/vendor/select2/select2.min.css HTTP/1.1" 200 15196
+INFO 2020-05-26 23:24:28,877 "GET /static/js/coding.js HTTP/1.1" 200 234
+INFO 2020-05-26 23:24:28,889 "GET /static/css/util.css HTTP/1.1" 200 86814
+INFO 2020-05-26 23:24:28,904 "GET /static/css/main.css HTTP/1.1" 200 10109
+INFO 2020-05-26 23:24:29,022 "GET /static/images/bg-01.jpg HTTP/1.1" 200 24337
+INFO 2020-05-26 23:24:29,042 "GET /static/fonts/poppins/Poppins-Regular.ttf HTTP/1.1" 200 145312
+INFO 2020-05-26 23:24:29,161 "GET /static/fonts/poppins/Poppins-Bold.ttf HTTP/1.1" 200 141260
+INFO 2020-05-26 23:24:29,690 "GET /static/images/CollegeLogo.png HTTP/1.1" 200 8192
+INFO 2020-05-26 23:24:34,305 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-26 23:24:34,352 "GET /dashboard/ HTTP/1.1" 200 2910
+INFO 2020-05-26 23:24:34,507 "GET /static/css/dashboard.css HTTP/1.1" 200 839
+INFO 2020-05-26 23:24:34,508 "GET /static/images/coding.jpg HTTP/1.1" 200 8192
+WARNING 2020-05-26 23:24:34,586 Not Found: /favicon.ico
+WARNING 2020-05-26 23:24:34,586 Not Found: /favicon.ico
+WARNING 2020-05-26 23:24:34,587 "GET /favicon.ico HTTP/1.1" 404 3860
+INFO 2020-05-26 23:24:37,162 "GET /dashboard/problems/ HTTP/1.1" 200 9670
+INFO 2020-05-26 23:24:37,382 "GET /static/css/problems.css HTTP/1.1" 200 686
+INFO 2020-05-26 23:24:41,808 "GET /dashboard/problems/ HTTP/1.1" 200 9670
+INFO 2020-05-26 23:24:42,907 "POST /dashboard/problems/1/ HTTP/1.1" 200 9264
+INFO 2020-05-26 23:24:43,057 "GET /static/css/form-validation.css HTTP/1.1" 200 73
+INFO 2020-05-26 23:24:43,057 "GET /static/css/problem.css HTTP/1.1" 200 876
+INFO 2020-05-26 23:24:43,128 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 159515
+WARNING 2020-05-26 23:24:43,192 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 23:24:43,197 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 23:24:43,719 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 23:24:43,741 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 23:24:43,990 "GET /static/docs/4.0/assets/img/favicons/favicon.ico HTTP/1.1" 404 1744
+INFO 2020-05-26 23:25:05,510 "GET /userprofile/parthendo/ HTTP/1.1" 200 6612
+INFO 2020-05-26 23:25:05,558 "GET /static/css/profile.css HTTP/1.1" 200 1042
+WARNING 2020-05-26 23:25:05,828 Not Found: /favicon.ico
+WARNING 2020-05-26 23:25:05,828 Not Found: /favicon.ico
+WARNING 2020-05-26 23:25:05,828 "GET /favicon.ico HTTP/1.1" 404 3860
+INFO 2020-05-26 23:25:16,936 "GET /userprofile/ HTTP/1.1" 200 8266
+INFO 2020-05-26 23:25:16,995 "GET /static/css/profile.css HTTP/1.1" 200 1042
+INFO 2020-05-26 23:25:17,078 "GET /static/images/jayant.jpg HTTP/1.1" 200 92505
+WARNING 2020-05-26 23:25:17,088 Not Found: /favicon.ico
+WARNING 2020-05-26 23:25:17,088 Not Found: /favicon.ico
+WARNING 2020-05-26 23:25:17,089 "GET /favicon.ico HTTP/1.1" 404 3860
+INFO 2020-05-26 23:25:43,587 "GET /userprofile/parthendo/ HTTP/1.1" 200 6612
+INFO 2020-05-26 23:25:43,619 "GET /static/css/profile.css HTTP/1.1" 200 1042
+INFO 2020-05-26 23:25:43,907 "GET /static/images/jayant.jpg HTTP/1.1" 200 8192
+INFO 2020-05-26 23:25:49,675 "GET /userprofile/parthendo/ HTTP/1.1" 200 6612
+INFO 2020-05-26 23:25:49,791 "GET /static/css/profile.css HTTP/1.1" 200 1042
+INFO 2020-05-26 23:26:13,218 "GET /userprofile/parthendo/ HTTP/1.1" 200 6612
+INFO 2020-05-26 23:26:13,286 "GET /static/css/profile.css HTTP/1.1" 200 1042
+INFO 2020-05-26 23:26:13,571 "GET /static/images/jayant.jpg HTTP/1.1" 200 8192
+WARNING 2020-05-26 23:26:13,582 Not Found: /favicon.ico
+WARNING 2020-05-26 23:26:13,582 Not Found: /favicon.ico
+WARNING 2020-05-26 23:26:13,582 "GET /favicon.ico HTTP/1.1" 404 3860
+INFO 2020-05-26 23:26:18,716 "GET /userprofile/parthendo/ HTTP/1.1" 200 6612
+INFO 2020-05-26 23:26:57,412 "GET /userprofile/parthendo/ HTTP/1.1" 200 6612
+WARNING 2020-05-26 23:26:57,743 Not Found: /favicon.ico
+WARNING 2020-05-26 23:26:57,743 Not Found: /favicon.ico
+WARNING 2020-05-26 23:26:57,743 "GET /favicon.ico HTTP/1.1" 404 3860
+INFO 2020-05-26 23:28:08,930 "GET /static/js/theme-github.js HTTP/1.1" 200 2784
+INFO 2020-05-26 23:28:11,845 "GET /static/js/mode-java.js HTTP/1.1" 200 8192
+ERROR 2020-05-26 23:29:16,373 Internal Server Error: /dashboard/submission/1/
+Traceback (most recent call last):
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-K4fYLF2w/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-K4fYLF2w/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-K4fYLF2w/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-K4fYLF2w/lib/python3.6/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/parthendo/Project/CallOJ/problems/views.py", line 60, in submitProblemView
+    x = utils.submitProblem(request.user, usercode, language, problem)
+  File "/home/parthendo/Project/CallOJ/problems/utils.py", line 65, in submitProblem
+    self.saveFile(user, problem, languageExtension, code)
+  File "/home/parthendo/Project/CallOJ/problems/utils.py", line 40, in saveFile
+    with open(("media/submittedFiles/" + user.username + "/" + problem.problemCode + ".txt"), "w") as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'media/submittedFiles/parthendo/ADDALL.txt'
+ERROR 2020-05-26 23:29:16,373 Internal Server Error: /dashboard/submission/1/
+Traceback (most recent call last):
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-K4fYLF2w/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-K4fYLF2w/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-K4fYLF2w/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-K4fYLF2w/lib/python3.6/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/parthendo/Project/CallOJ/problems/views.py", line 60, in submitProblemView
+    x = utils.submitProblem(request.user, usercode, language, problem)
+  File "/home/parthendo/Project/CallOJ/problems/utils.py", line 65, in submitProblem
+    self.saveFile(user, problem, languageExtension, code)
+  File "/home/parthendo/Project/CallOJ/problems/utils.py", line 40, in saveFile
+    with open(("media/submittedFiles/" + user.username + "/" + problem.problemCode + ".txt"), "w") as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'media/submittedFiles/parthendo/ADDALL.txt'
+ERROR 2020-05-26 23:29:16,374 "POST /dashboard/submission/1/ HTTP/1.1" 500 91958
+WARNING 2020-05-26 23:29:39,583 "GET /static/docs/4.0/assets/img/favicons/favicon.ico HTTP/1.1" 404 1744
+INFO 2020-05-26 23:30:19,873 "POST /dashboard/submission/1/ HTTP/1.1" 200 10188
+WARNING 2020-05-26 23:30:19,933 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 23:30:19,950 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-26 23:30:19,953 "GET /static/css/problem.css HTTP/1.1" 200 876
+INFO 2020-05-26 23:30:20,023 "GET /static/images/wrong3.png HTTP/1.1" 200 8192
+WARNING 2020-05-26 23:30:20,178 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 23:30:20,223 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 23:30:20,307 "GET /static/docs/4.0/assets/img/favicons/favicon.ico HTTP/1.1" 404 1744
+INFO 2020-05-26 23:31:00,611 "POST /dashboard/submission/1/ HTTP/1.1" 200 11087
+WARNING 2020-05-26 23:31:00,668 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 23:31:00,673 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+INFO 2020-05-26 23:31:00,674 "GET /static/css/problem.css HTTP/1.1" 200 876
+WARNING 2020-05-26 23:31:00,793 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 23:31:00,834 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-26 23:31:00,998 "GET /static/docs/4.0/assets/img/favicons/favicon.ico HTTP/1.1" 404 1744
+INFO 2020-05-26 23:31:26,043 "GET /dashboard HTTP/1.1" 301 0
+INFO 2020-05-26 23:31:26,049 "GET /dashboard/ HTTP/1.1" 200 2910
+INFO 2020-05-26 23:31:26,087 "GET /static/css/dashboard.css HTTP/1.1" 200 839
+WARNING 2020-05-26 23:31:26,144 Not Found: /favicon.ico
+WARNING 2020-05-26 23:31:26,144 Not Found: /favicon.ico
+WARNING 2020-05-26 23:31:26,145 "GET /favicon.ico HTTP/1.1" 404 3860
+INFO 2020-05-26 23:31:29,506 "GET /dashboard/problems/ HTTP/1.1" 200 9670
+INFO 2020-05-26 23:31:29,590 "GET /static/css/problems.css HTTP/1.1" 200 686
+INFO 2020-05-26 23:31:31,871 "GET /contest/all/ HTTP/1.1" 200 6054
+INFO 2020-05-26 23:31:32,054 "GET /static/css/allContests.css HTTP/1.1" 200 686
+INFO 2020-05-26 23:31:35,045 "GET /dashboard/problems/ HTTP/1.1" 200 9670
+INFO 2020-05-26 23:31:35,116 "GET /static/css/problems.css HTTP/1.1" 200 686
+INFO 2020-05-26 23:31:36,006 "GET /dashboard/ HTTP/1.1" 200 2910
+INFO 2020-05-26 23:31:36,067 "GET /static/css/dashboard.css HTTP/1.1" 200 839
+INFO 2020-05-26 23:31:37,918 "GET /dashboard/problems/ HTTP/1.1" 200 9670
+INFO 2020-05-26 23:31:37,994 "GET /static/css/problems.css HTTP/1.1" 200 686
+INFO 2020-05-26 23:31:46,256 "GET /userprofile/ HTTP/1.1" 200 8266
+INFO 2020-05-26 23:31:46,323 "GET /static/css/profile.css HTTP/1.1" 200 1042
+INFO 2020-05-26 23:31:46,382 "GET /static/images/jayant.jpg HTTP/1.1" 200 92505
+INFO 2020-05-26 23:31:55,571 "GET /dashboard/problems/ HTTP/1.1" 200 9670
+INFO 2020-05-26 23:31:55,624 "GET /static/css/problems.css HTTP/1.1" 200 686
+INFO 2020-05-26 23:31:57,146 "GET /dashboard/ HTTP/1.1" 200 2910
+INFO 2020-05-26 23:31:59,206 "GET /dashboard/problems/ HTTP/1.1" 200 9670
+INFO 2020-05-26 23:31:59,258 "GET /static/css/problems.css HTTP/1.1" 200 686
+INFO 2020-05-26 23:32:01,271 "GET /userprofile/ HTTP/1.1" 200 8266
+INFO 2020-05-26 23:32:01,328 "GET /static/css/profile.css HTTP/1.1" 200 1042
+INFO 2020-05-26 23:32:01,374 "GET /static/images/jayant.jpg HTTP/1.1" 200 8192
+INFO 2020-05-26 23:32:06,970 "GET /contest/all/ HTTP/1.1" 200 6054
+INFO 2020-05-26 23:32:07,007 "GET /static/css/allContests.css HTTP/1.1" 200 686
+WARNING 2020-05-26 23:32:13,113 Not Found: /about/
+WARNING 2020-05-26 23:32:13,113 Not Found: /about/
+WARNING 2020-05-26 23:32:13,113 "GET /about/ HTTP/1.1" 404 3845
+WARNING 2020-05-26 23:32:20,145 Not Found: /favicon.ico
+WARNING 2020-05-26 23:32:20,145 Not Found: /favicon.ico
+WARNING 2020-05-26 23:32:20,146 "GET /favicon.ico HTTP/1.1" 404 3860
+WARNING 2020-05-26 23:32:21,487 Not Found: /about/
+WARNING 2020-05-26 23:32:21,487 Not Found: /about/
+WARNING 2020-05-26 23:32:21,488 "GET /about/ HTTP/1.1" 404 3845
+WARNING 2020-05-26 23:32:24,598 Not Found: /about/
+WARNING 2020-05-26 23:32:24,598 Not Found: /about/
+WARNING 2020-05-26 23:32:24,598 "GET /about/ HTTP/1.1" 404 3845
