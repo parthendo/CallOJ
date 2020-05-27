@@ -16,7 +16,8 @@ from OJ.loggingUtils import get_client_ip
 from OJ.loggingUtils import registerLog
 # Create your views here.
 def contestsView(request):
-    return render(request,'thanks.html')
+    imageName = "parthendo.jpg"
+    return render(request,'thanks.html',{'imageName':imageName})
 
 def createContestView(request):
     questions = Question.objects.all()
@@ -76,8 +77,13 @@ def submitContestView(request):
 
 def allContestView(request):
     util = ContestUtilities()
+    contestEnded = []
     present_contests,future_contests = util.getContests()
-    return render(request,'allContests.html',{'present':present_contests,'future':future_contests})
+    for entry in present_contests:
+        if util.contestFinished(entry.id) == "contestEnded":
+            print(entry.contestName)
+            contestEnded.append(entry.id)
+    return render(request,'allContests.html',{'present':present_contests,'future':future_contests,'contestEnded':contestEnded})
 
 def contestView(request,contest_id):
     util = ContestUtilities()

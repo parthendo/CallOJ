@@ -175,38 +175,32 @@
                                 <a href="/userprofile/updateProfile">Update</a>
                             </div>
                     </div>
-                    <li><a href="/about/">About</a></li>
+                    <div class="dropdown">
+                      <button class="dropbtn">Info</button>
+                          <div class="dropdown-content">
+                              <a href="/about2/">Create a problem</a>
+                              <a href="/about1">Create a contest</a>
+                              <a href="/about3/">About us</a>
+                          </div>
+                  </div>
                     <li><a href="/logout/">Logout</a></li>
                 </ul>
             </div>
-            <div class ="email">
-                {% if searchedUser %}
-                <h1> UserName: {{ searchedUser.username }} </h1>
-                <h2> Email: {{ searchedUser.email }} <br> FullName: {{ searchedUser.first_name }} {{ searchedUser.last_name }} </h2>
-                {% else %}
-                <h1> UserName: {{ user.username }} </h1>
-                <h2> Email: {{ user.email }} <br> FullName: {{ user.first_name }} {{ user.last_name }} </h2>
-                {% endif %}
-            </div>
+            
         </header>
+        <div class ="email">
+          {% if searchedUser %}
+          <h1> UserName: {{ searchedUser.username }} </h1>
+          <h2> Email: {{ searchedUser.email }} <br> FullName: {{ searchedUser.first_name }} {{ searchedUser.last_name }} </h2>
+          {% else %}
+          <h1> UserName: {{ user.username }} </h1>
+          <h2> Email: {{ user.email }} <br> FullName: {{ user.first_name }} {{ user.last_name }} </h2>
+          {% endif %}
+      </div>
         {% if not category and not searchedUser %}
         
-        <div class="form-popup" id="myForm">
-            <form action="/userprofile/addCategory/" class="form-container" method="post" enctype="multipart/form-data">
-                {% csrf_token %}
-              <!-- <h1>Login</h1> -->
+
           
-              <label for="category"><b>Category</b></label>
-              <input type="text" placeholder="Enter Category" name="category" required>
-          
-              <!-- <label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" required> -->
-              <br>
-              <button type="submit" class="btn">Add</button>
-              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-            </form>
-          </div>
-          <button class="open-button" onclick="openForm()">Add Category</button>
           <div><br><br></div>
           {% endif %}
           {% if playlistEntries and not searchedUser %}
@@ -232,6 +226,22 @@
       
         
         </div>
+        <div class="form-popup" id="myForm">
+          <form action="/userprofile/addCategory/" class="form-container" method="post" enctype="multipart/form-data">
+              {% csrf_token %}
+            <!-- <h1>Login</h1> -->
+        
+            <label for="category"><b>Category</b></label>
+            <input type="text" placeholder="Enter Category" name="category" required>
+        
+            <!-- <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required> -->
+            <br>
+            <button type="submit" class="btn">Add</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>
+        <button class="open-button" onclick="openForm()">Add Category</button>
         {% endif %}
 
         <div><br><br></div>

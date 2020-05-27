@@ -356,3 +356,299 @@ WARNING 2020-05-26 23:32:21,488 "GET /about/ HTTP/1.1" 404 3845
 WARNING 2020-05-26 23:32:24,598 Not Found: /about/
 WARNING 2020-05-26 23:32:24,598 Not Found: /about/
 WARNING 2020-05-26 23:32:24,598 "GET /about/ HTTP/1.1" 404 3845
+INFO 2020-05-27 11:28:01,162 "GET / HTTP/1.1" 200 5208
+INFO 2020-05-27 11:28:02,356 "GET /static/js/coding.js HTTP/1.1" 304 0
+INFO 2020-05-27 11:28:12,403 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-27 11:28:12,417 "GET /dashboard/ HTTP/1.1" 200 2910
+INFO 2020-05-27 11:28:12,494 "GET /static/css/dashboard.css HTTP/1.1" 304 0
+INFO 2020-05-27 11:28:12,802 "GET /static/images/coding.jpg HTTP/1.1" 304 0
+WARNING 2020-05-27 11:28:13,198 Not Found: /favicon.ico
+WARNING 2020-05-27 11:28:13,198 Not Found: /favicon.ico
+WARNING 2020-05-27 11:28:13,198 "GET /favicon.ico HTTP/1.1" 404 3860
+WARNING 2020-05-27 11:28:16,464 Not Found: /about/
+WARNING 2020-05-27 11:28:16,464 Not Found: /about/
+WARNING 2020-05-27 11:28:16,468 "GET /about/ HTTP/1.1" 404 3845
+INFO 2020-05-27 11:28:27,078 "GET /userprofile/ HTTP/1.1" 200 8266
+INFO 2020-05-27 11:28:27,251 "GET /static/css/profile.css HTTP/1.1" 200 1042
+INFO 2020-05-27 11:28:38,009 "GET /userprofile/ HTTP/1.1" 200 8266
+INFO 2020-05-27 11:28:42,064 "GET /userprofile/updateProfile/ HTTP/1.1" 200 5647
+WARNING 2020-05-27 11:28:42,219 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-27 11:28:42,219 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-27 11:28:42,220 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-27 11:28:42,221 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-27 11:28:42,224 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-27 11:28:42,229 "GET /static/js/scripts.js HTTP/1.1" 200 2427
+INFO 2020-05-27 11:28:42,237 "GET /static/css/updateProfile.css HTTP/1.1" 200 710
+WARNING 2020-05-27 11:28:42,304 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js HTTP/1.1" 404 1816
+WARNING 2020-05-27 11:28:42,312 "GET /static/https%3A/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js HTTP/1.1" 404 1852
+WARNING 2020-05-27 11:28:42,321 "GET /static/https%3A/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js HTTP/1.1" 404 1858
+WARNING 2020-05-27 11:28:42,335 "GET /static/assets/mail/jqBootstrapValidation.js HTTP/1.1" 404 1732
+WARNING 2020-05-27 11:28:42,344 "GET /static/assets/mail/contact_me.js HTTP/1.1" 404 1699
+INFO 2020-05-27 11:28:48,974 "GET /userprofile/ HTTP/1.1" 200 8266
+INFO 2020-05-27 11:28:52,054 "GET /userprofile/playlist/Implementation/questions/ HTTP/1.1" 200 9229
+INFO 2020-05-27 11:29:26,914 "POST /userprofile/Implementation/addQuestion/ HTTP/1.1" 302 0
+INFO 2020-05-27 11:29:26,928 "GET /userprofile/playlist/Implementation/questions/ HTTP/1.1" 200 9510
+INFO 2020-05-27 11:32:43,290 "GET /userprofile/ HTTP/1.1" 200 8266
+INFO 2020-05-27 11:52:24,534 "GET /contest/all/ HTTP/1.1" 200 6054
+INFO 2020-05-27 11:52:24,594 "GET /static/css/allContests.css HTTP/1.1" 304 0
+INFO 2020-05-27 11:52:52,705 "GET /contest/all/ HTTP/1.1" 200 6054
+INFO 2020-05-27 11:53:05,280 "GET /contest/all/ HTTP/1.1" 200 6054
+INFO 2020-05-27 11:53:39,035 "GET /contest/create/ HTTP/1.1" 200 17114
+WARNING 2020-05-27 11:53:39,095 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-27 11:53:39,096 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+INFO 2020-05-27 11:53:39,102 "GET /static/css/createContest.css HTTP/1.1" 304 0
+INFO 2020-05-27 11:53:39,240 "GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+WARNING 2020-05-27 11:53:39,319 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-27 11:53:39,382 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-27 11:53:39,649 "GET /static/docs/4.0/assets/img/favicons/favicon.ico HTTP/1.1" 404 1744
+INFO 2020-05-27 11:54:39,537 "POST /contest/submit/ HTTP/1.1" 302 0
+INFO 2020-05-27 11:54:39,551 "GET /contest/all/ HTTP/1.1" 200 6773
+INFO 2020-05-27 11:55:11,100 "GET /contest/all/ HTTP/1.1" 200 6773
+INFO 2020-05-27 11:55:42,396 "GET /contest/all/ HTTP/1.1" 200 6773
+INFO 2020-05-27 11:58:08,071 "GET /contest/all/ HTTP/1.1" 200 7648
+INFO 2020-05-27 11:58:27,358 "POST /contest/1/ HTTP/1.1" 200 4105
+INFO 2020-05-27 11:58:27,394 "GET /static/css/contestQuestions.css HTTP/1.1" 304 0
+INFO 2020-05-27 11:58:37,832 "GET /dashboard/ HTTP/1.1" 200 2910
+INFO 2020-05-27 11:58:42,865 "GET /userprofile/ HTTP/1.1" 200 8266
+INFO 2020-05-27 11:59:43,199 "GET /userprofile/ HTTP/1.1" 200 8275
+INFO 2020-05-27 12:00:28,192 "GET /userprofile/ HTTP/1.1" 200 8248
+INFO 2020-05-27 12:00:36,531 "POST /userprofile/addCategory/ HTTP/1.1" 302 0
+INFO 2020-05-27 12:00:36,582 "GET /userprofile/ HTTP/1.1" 200 8484
+INFO 2020-05-27 12:01:00,661 "POST /userprofile/addCategory/ HTTP/1.1" 302 0
+INFO 2020-05-27 12:01:00,671 "GET /userprofile/ HTTP/1.1" 200 8730
+INFO 2020-05-27 12:01:54,497 "GET /userprofile/ HTTP/1.1" 200 8709
+INFO 2020-05-27 12:01:57,348 "GET /userprofile/ HTTP/1.1" 200 8709
+INFO 2020-05-27 12:04:33,684 "GET /userprofile/ HTTP/1.1" 200 8709
+INFO 2020-05-27 12:04:36,832 "GET /contest/all/ HTTP/1.1" 200 7648
+INFO 2020-05-27 12:24:21,384 "GET /contest/all/ HTTP/1.1" 200 7648
+INFO 2020-05-27 12:51:48,529 "GET /about1/ HTTP/1.1" 200 4763
+INFO 2020-05-27 12:51:48,661 "GET /static/css/about.css HTTP/1.1" 200 748
+INFO 2020-05-27 12:54:17,402 "GET /about1 HTTP/1.1" 301 0
+INFO 2020-05-27 12:54:17,429 "GET /about1/ HTTP/1.1" 200 4763
+INFO 2020-05-27 12:54:19,559 "GET /about2/ HTTP/1.1" 200 7855
+INFO 2020-05-27 12:54:21,693 "GET /about3/ HTTP/1.1" 200 5447
+INFO 2020-05-27 12:57:33,116 "GET /contest/all/ HTTP/1.1" 200 8024
+INFO 2020-05-27 12:57:50,739 "GET /about2/ HTTP/1.1" 200 7855
+INFO 2020-05-27 12:57:55,316 "GET /contest/all/ HTTP/1.1" 200 8024
+INFO 2020-05-27 12:58:56,140 "GET /contest/all/ HTTP/1.1" 200 8024
+INFO 2020-05-27 12:59:55,490 "GET /contest/all/ HTTP/1.1" 200 7224
+INFO 2020-05-27 13:00:07,117 "GET /contest/create/ HTTP/1.1" 200 17476
+WARNING 2020-05-27 13:00:07,169 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-27 13:00:07,177 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-27 13:00:07,446 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-27 13:00:07,462 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-27 13:00:44,663 "POST /contest/submit/ HTTP/1.1" 302 0
+INFO 2020-05-27 13:00:44,672 "GET /contest/all/ HTTP/1.1" 200 7926
+INFO 2020-05-27 13:01:19,626 "POST /contest/1/ HTTP/1.1" 200 4624
+INFO 2020-05-27 13:01:29,578 "GET /contest/all/ HTTP/1.1" 200 8784
+INFO 2020-05-27 13:14:04,792 "GET /contest/ HTTP/1.1" 200 842
+WARNING 2020-05-27 13:14:04,830 Not Found: /home/jayant/Desktop/Latest/CallOJ/static/images/i.jpg
+WARNING 2020-05-27 13:14:04,830 Not Found: /home/jayant/Desktop/Latest/CallOJ/static/images/i.jpg
+WARNING 2020-05-27 13:14:04,874 "GET /home/jayant/Desktop/Latest/CallOJ/static/images/i.jpg HTTP/1.1" 404 3986
+INFO 2020-05-27 13:15:07,007 "GET /contest/ HTTP/1.1" 200 809
+INFO 2020-05-27 13:15:07,051 "GET /static/images/i.jpg HTTP/1.1" 200 26233
+ERROR 2020-05-27 13:17:36,262 Internal Server Error: /contest/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'media'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/Latest/CallOJ/contest/views.py", line 19, in contestsView
+    return render(request,'thanks.html')
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/base.py", line 534, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 2: 'media'. Did you forget to register or load this tag?
+ERROR 2020-05-27 13:17:36,262 Internal Server Error: /contest/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'media'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/Latest/CallOJ/contest/views.py", line 19, in contestsView
+    return render(request,'thanks.html')
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/base.py", line 534, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 2: 'media'. Did you forget to register or load this tag?
+ERROR 2020-05-27 13:17:36,263 "GET /contest/ HTTP/1.1" 500 133374
+ERROR 2020-05-27 13:19:41,243 Internal Server Error: /contest/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'media'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/Latest/CallOJ/contest/views.py", line 19, in contestsView
+    return render(request,'thanks.html')
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/base.py", line 534, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 2: 'media'. Did you forget to register or load this tag?
+ERROR 2020-05-27 13:19:41,243 Internal Server Error: /contest/
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'media'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jayant/Desktop/Latest/CallOJ/contest/views.py", line 19, in contestsView
+    return render(request,'thanks.html')
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/jayant/.local/share/virtualenvs/CallOJ-Oz8ajVND/lib/python3.6/site-packages/django/template/base.py", line 534, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 2: 'media'. Did you forget to register or load this tag?
+ERROR 2020-05-27 13:19:41,244 "GET /contest/ HTTP/1.1" 500 133374
+INFO 2020-05-27 13:19:57,495 "GET /contest/ HTTP/1.1" 200 847
+WARNING 2020-05-27 13:19:57,550 "GET /static/images/%7B%7B%20request.user.username%20%7D%7D.jpg HTTP/1.1" 404 1750
+INFO 2020-05-27 13:22:14,710 "GET /contest/ HTTP/1.1" 200 819
+WARNING 2020-05-27 13:22:14,787 Not Found: /media/parthendo/parthendo.jpg
+WARNING 2020-05-27 13:22:14,787 Not Found: /media/parthendo/parthendo.jpg
+WARNING 2020-05-27 13:22:14,788 "GET /media/parthendo/parthendo.jpg HTTP/1.1" 404 1831
+INFO 2020-05-27 13:22:39,353 "GET /contest/ HTTP/1.1" 200 834
+INFO 2020-05-27 13:22:39,393 "GET /media/submittedFiles/parthendo/parthendo.jpg HTTP/1.1" 200 4537
+INFO 2020-05-27 13:24:58,274 "GET /contest/ HTTP/1.1" 200 834
+INFO 2020-05-27 13:26:51,257 "GET /userprofile/ HTTP/1.1" 200 9071
+INFO 2020-05-27 13:26:51,291 "GET /static/css/profile.css HTTP/1.1" 200 1140
+INFO 2020-05-27 13:26:51,574 "GET /static/images/jayant.jpg HTTP/1.1" 200 92505
+INFO 2020-05-27 13:27:22,547 "GET /userprofile/ HTTP/1.1" 200 9071
+INFO 2020-05-27 13:27:22,597 "GET /static/css/profile.css HTTP/1.1" 200 1145
+INFO 2020-05-27 13:27:25,458 "GET /userprofile/ HTTP/1.1" 200 9071
+INFO 2020-05-27 13:27:25,498 "GET /static/css/profile.css HTTP/1.1" 304 0
+INFO 2020-05-27 13:27:26,641 "GET /userprofile/ HTTP/1.1" 200 9071
+INFO 2020-05-27 13:27:26,664 "GET /static/css/profile.css HTTP/1.1" 304 0
+INFO 2020-05-27 13:27:28,726 "GET /dashboard/problems/ HTTP/1.1" 200 10183
+INFO 2020-05-27 13:27:28,790 "GET /static/css/problems.css HTTP/1.1" 200 686
+INFO 2020-05-27 13:27:31,328 "GET /logout/ HTTP/1.1" 302 0
+INFO 2020-05-27 13:27:31,374 "GET / HTTP/1.1" 200 5208
+INFO 2020-05-27 13:27:31,443 "GET /static/js/coding.js HTTP/1.1" 304 0
+INFO 2020-05-27 13:27:40,322 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-27 13:27:40,328 "GET / HTTP/1.1" 200 5251
+INFO 2020-05-27 13:27:47,228 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-27 13:27:47,262 "GET /dashboard/ HTTP/1.1" 200 3286
+INFO 2020-05-27 13:27:47,347 "GET /static/css/dashboard.css HTTP/1.1" 304 0
+INFO 2020-05-27 13:27:47,520 "GET /static/images/coding.jpg HTTP/1.1" 304 0
+INFO 2020-05-27 13:27:50,682 "GET /userprofile/ HTTP/1.1" 200 9071
+INFO 2020-05-27 13:27:50,730 "GET /static/css/profile.css HTTP/1.1" 304 0
+INFO 2020-05-27 13:28:14,608 "GET /logout/ HTTP/1.1" 302 0
+INFO 2020-05-27 13:28:14,642 "GET / HTTP/1.1" 200 5208
+INFO 2020-05-27 19:44:17,067 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-27 19:44:17,104 "GET /dashboard/ HTTP/1.1" 200 3286
+INFO 2020-05-27 19:44:17,185 "GET /static/css/dashboard.css HTTP/1.1" 304 0
+INFO 2020-05-27 19:44:17,584 "GET /static/images/coding.jpg HTTP/1.1" 304 0
+INFO 2020-05-27 19:44:21,385 "GET /contest/all/ HTTP/1.1" 200 7986
+INFO 2020-05-27 19:44:21,442 "GET /static/css/allContests.css HTTP/1.1" 304 0
+INFO 2020-05-27 19:44:42,653 "GET /about2/ HTTP/1.1" 200 7855
+INFO 2020-05-27 19:44:42,712 "GET /static/css/about.css HTTP/1.1" 304 0
+INFO 2020-05-27 19:44:55,939 "POST /contest/1/ HTTP/1.1" 200 4624
+INFO 2020-05-27 19:44:55,990 "GET /static/css/contestQuestions.css HTTP/1.1" 304 0

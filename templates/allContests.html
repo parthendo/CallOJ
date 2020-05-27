@@ -123,13 +123,20 @@
                                 <a href="/userprofile/updateProfile">Update</a>
                             </div>
                     </div>
-                    <li><a href="/about/">About</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Info</button>
+                            <div class="dropdown-content">
+                                <a href="/about2/">Create a problem</a>
+                                <a href="/about1">Create a contest</a>
+                                <a href="/about3/">About us</a>
+                            </div>
+                    </div>
                     <li><a href="/logout/">Logout</a></li>
                 </ul>
             </div>
             <div class ="title">
                 <h1> Contests: </h1> <br> <br>
-                <div style="width:110%; padding:5px;">
+                <div style="width:100%; padding:5px;">
                     <table id="t01">
                         <thead>
                             <tr>
@@ -145,6 +152,7 @@
 
 
                 <td><div id="{{present_cont.contestCode}}"></div></td>
+                {% if present_cont.id not in contestEnded %}
                 <script type="text/javascript">
                     setInterval(displayclock, 1000);
                     function displayclock (){
@@ -165,6 +173,12 @@
                         document.getElementById('{{present_cont.contestCode}}').innerHTML='(this contest ends in ' + rh + ' hours and ' + rm +' minutes)' ;
                     }
                 </script>
+                {% else %}
+                <script>
+                    document.getElementById('{{present_cont.contestCode}}').innerHTML="Contest Ended" ;
+                </script>
+                {% endif %}
+
 
                 <br> &nbsp
                         <!-- {{ problem.problemCode }} -->
@@ -181,7 +195,7 @@
             </div>
                 <br><br><br>
                 <h1> Upcoming Contests: </h1> <br> <br>
-                <div style="width:110%; padding:5px;">
+                <div style="width:100%; padding:5px;">
                     <table id="t02" >
                         <thead>
                             <tr>
