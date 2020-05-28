@@ -2,7 +2,7 @@ id: dmoj
 key: dmoj
 
 problem_storage_root:
-  - /home/parthendo/Project/CallOJ/media/problems
+  - /home/jayant/Desktop/Latest/CallOJ/media/problems
 
 runtime:
   as_x64: /usr/bin/x86_64-linux-gnu-as

@@ -11,16 +11,18 @@ from django.urls import reverse
 from django.core.files.storage import FileSystemStorage
 import shutil
 import os
+import pathlib
 # Create your views here.
 def profileView(request):
     # UserPlaylistEntry = UserPlaylist.objects.create(userId_id=request.user.id,playlistCategory="DP",problemCount=0)
     # UserPlaylistEntry.save()
+    profilePhotoPath = "/media/submittedFiles/"+request.user.username+"/"+request.user.username+".jpg"
     playlistEntries = []
     allEntries = UserPlaylist.objects.all()
     for entry in allEntries:
         if entry.userId_id == request.user.id:
             playlistEntries.append(entry)
-    return render(request,'profilepage.html',{'playlistEntries':playlistEntries})
+    return render(request,'profilepage.html',{'playlistEntries':playlistEntries,'profilePhotoPath':profilePhotoPath})
 
 def updateProfileView(request):
     return render(request,'updateProfile.html')
@@ -68,7 +70,8 @@ def changesToProfileView(request):
         fileSystem.save(profilePhoto.name, profilePhoto)
         src = os.path.join(parentDirPath,'media/'+request.user.username+ extension)
         if profilePhoto:
-            os.remove(path+"/"+request.user.username+ extension)
+            file_to_rem = pathlib.Path(path+"/"+request.user.username+ extension)
+            file_to_rem.unlink()
         shutil.move(src, path)
         if password_length!=0:
             print("Change Hogaya Bhyii")
@@ -83,13 +86,15 @@ def changesToProfileView(request):
 def showUserProfileView(request,searchedUser):
     print("OHO",searchedUser)
     requestedUserInfo = User.objects.get(username=searchedUser)
+    profilePhotoPath = "/media/submittedFiles/"+requestedUserInfo.username+"/"+requestedUserInfo.username+".jpg"
     print("Sahi hua ?",requestedUserInfo)
-    return render(request,'profilepage.html',{'searchedUser':requestedUserInfo})
+    return render(request,'profilepage.html',{'searchedUser':requestedUserInfo,'profilePhotoPath':profilePhotoPath})
 
 def playlistCategoryProblemsView(request,playlistCategory):
     categoryEntry = UserPlaylist.objects.get(userId_id=request.user.id,playlistCategory=playlistCategory)
     problems = categoryEntry.problems.all()
-    return render(request,'profilepage.html',{'categoryProblems':problems,'category':playlistCategory})
+    profilePhotoPath = "/media/submittedFiles/"+request.user.username+"/"+request.user.username+".jpg"
+    return render(request,'profilepage.html',{'categoryProblems':problems,'category':playlistCategory,'profilePhotoPath':profilePhotoPath})
 
 def addCategoryView(request):
     print('Rangdebasanti')

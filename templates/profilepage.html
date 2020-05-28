@@ -148,6 +148,49 @@
       opacity: 1;
     }
     </style>
+    <style>
+      .split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 5%;
+  top:60%;
+  background-color: white;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  top:20%;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+    </style>
     </head>
     <body>
         <header>
@@ -188,45 +231,58 @@
             </div>
             
         </header>
-        <div class ="email">
-          {% if searchedUser %}
+        <div><br><br></div>
+          
+        
+        {% if searchedUser %}
+        <div class="centered" style="top:50%;left:50%">
+          <img src={{ profilePhotoPath }} alt="Avatar woman">
+          <div><br></div>
           <h1> UserName: {{ searchedUser.username }} </h1>
-          <h2> Email: {{ searchedUser.email }} <br> FullName: {{ searchedUser.first_name }} {{ searchedUser.last_name }} </h2>
-          {% else %}
-          <h1> UserName: {{ user.username }} </h1>
-          <h2> Email: {{ user.email }} <br> FullName: {{ user.first_name }} {{ user.last_name }} </h2>
-          {% endif %}
+        <h2> Email: {{ searchedUser.email }} <br> FullName: {{ searchedUser.first_name }} {{ searchedUser.last_name }} </h2>
       </div>
+        
+        {% else %}
+        <div class="centered">
+          <img src={{ profilePhotoPath }} alt="Avatar woman">
+      </div>
+      <div class="split left">
+        <h2> User: {{ user.username }} </h2>
+        <h2> Email :  {{ user.email }} </h2><h2> Name: {{ user.first_name }} {{ user.last_name }} </h2>
+      </div>
+        {% endif %}
+
         {% if not category and not searchedUser %}
         
 
           
-          <div><br><br></div>
+          <div><br><br><br><br><br><br></div>
           {% endif %}
-          {% if playlistEntries and not searchedUser %}
-          <div>
-            <table id="t01">
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Category</th>
-                        <th>ProblemsCount</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for entry in playlistEntries%}
-                    <tr>
-                        <td>{{ forloop.counter }}</td>
-                        <td><a href="/userprofile/playlist/{{ entry.playlistCategory }}/questions/">{{ entry.playlistCategory }}</a></td>
-                        <td>{{ entry.problemCount }}</td>
-                    </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
-      
-        
-        </div>
-        <div class="form-popup" id="myForm">
+          {% if not category and not searchedUser %}
+          <div class = "split right">
+            <div class ="centered">
+
+
+         </div>
+         <table id="t01">
+          <thead>
+              <tr>
+                  <th></th>
+                  <th>Category</th>
+                  <th>ProblemsCount</th>
+              </tr>
+          </thead>
+          <tbody>
+              {% for entry in playlistEntries%}
+              <tr>
+                  <td>{{ forloop.counter }}</td>
+                  <td><a href="/userprofile/playlist/{{ entry.playlistCategory }}/questions/">{{ entry.playlistCategory }}</a></td>
+                  <td>{{ entry.problemCount }}</td>
+              </tr>
+              {% endfor %}
+          </tbody>
+      </table>
+         <div class="form-popup" id="myForm">
           <form action="/userprofile/addCategory/" class="form-container" method="post" enctype="multipart/form-data">
               {% csrf_token %}
             <!-- <h1>Login</h1> -->
@@ -236,18 +292,20 @@
         
             <!-- <label for="psw"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="psw" required> -->
-            <br>
+            <div><br></div>
             <button type="submit" class="btn">Add</button>
             <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
           </form>
         </div>
         <button class="open-button" onclick="openForm()">Add Category</button>
+        </div>
+
         {% endif %}
 
         <div><br><br></div>
 
         {% if category and not searchedUser %}
- 
+        <div class="split right">
         <div>
             <table id="t02">
                 <thead>
@@ -270,7 +328,7 @@
                 </tbody>
             </table>
         </div>
-        <div class="form-popup" id="questionForm">
+        <div class="form-popup" id="questionForm"  style="padding-bottom: 50px;">
           <form action="/userprofile/{{ category }}/addQuestion/" class="form-container" method="post" enctype="multipart/form-data">
               {% csrf_token %}
             <!-- <h1>Login</h1> -->
@@ -298,7 +356,7 @@
               <option>9</option>
               <option>10</option>
             </select>
-        
+            <div><br></div>
             <!-- <label for="psw"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="psw" required> -->
             <br>
@@ -310,7 +368,8 @@
         <button class="open-button" onclick="openForm2()">Add Problem</button>
         <div><br><br></div>
         {% endif %}
-
+      </div>
+    
         <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap.min.js"></script>
