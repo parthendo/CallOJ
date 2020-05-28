@@ -482,3 +482,121 @@ INFO 2020-05-28 17:38:35,137 "GET /static/js/coding.js HTTP/1.1" 304 0
 INFO 2020-05-28 17:38:35,482 "GET /static/images/bg-01.jpg HTTP/1.1" 304 0
 INFO 2020-05-28 17:38:35,573 "GET /static/fonts/poppins/Poppins-Bold.ttf HTTP/1.1" 304 0
 INFO 2020-05-28 17:38:35,588 "GET /static/fonts/poppins/Poppins-Regular.ttf HTTP/1.1" 304 0
+INFO 2020-05-28 17:45:25,535 "GET / HTTP/1.1" 200 5208
+INFO 2020-05-28 17:45:25,651 "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 124962
+INFO 2020-05-28 17:45:25,679 "GET /static/fonts/Linearicons-Free-v1.0.0/icon-font.min.css HTTP/1.1" 200 7354
+INFO 2020-05-28 17:45:25,704 "GET /static/fonts/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 31000
+INFO 2020-05-28 17:45:25,713 "GET /static/vendor/animate/animate.css HTTP/1.1" 200 23848
+INFO 2020-05-28 17:45:25,715 "GET /static/vendor/css-hamburgers/hamburgers.min.css HTTP/1.1" 200 19686
+INFO 2020-05-28 17:45:25,730 "GET /static/vendor/animsition/css/animsition.min.css HTTP/1.1" 200 27478
+INFO 2020-05-28 17:45:25,737 "GET /static/vendor/select2/select2.min.css HTTP/1.1" 200 15196
+INFO 2020-05-28 17:45:25,753 "GET /static/vendor/daterangepicker/daterangepicker.css HTTP/1.1" 200 8163
+INFO 2020-05-28 17:45:25,754 "GET /static/css/main.css HTTP/1.1" 200 10109
+INFO 2020-05-28 17:45:25,768 "GET /static/vendor/animsition/js/animsition.min.js HTTP/1.1" 200 5615
+INFO 2020-05-28 17:45:25,771 "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 51143
+INFO 2020-05-28 17:45:25,782 "GET /static/vendor/bootstrap/js/popper.js HTTP/1.1" 200 81670
+INFO 2020-05-28 17:45:25,784 "GET /static/css/util.css HTTP/1.1" 200 86814
+INFO 2020-05-28 17:45:25,789 "GET /static/vendor/jquery/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+INFO 2020-05-28 17:45:25,790 "GET /static/vendor/select2/select2.min.js HTTP/1.1" 200 66664
+INFO 2020-05-28 17:45:25,805 "GET /static/js/coding.js HTTP/1.1" 200 234
+INFO 2020-05-28 17:45:25,810 "GET /static/vendor/daterangepicker/daterangepicker.js HTTP/1.1" 200 69776
+INFO 2020-05-28 17:45:25,811 "GET /static/vendor/countdowntime/countdowntime.js HTTP/1.1" 200 1340
+INFO 2020-05-28 17:45:25,829 "GET /static/vendor/daterangepicker/moment.min.js HTTP/1.1" 200 46645
+INFO 2020-05-28 17:45:25,893 "GET /static/images/bg-01.jpg HTTP/1.1" 200 24337
+INFO 2020-05-28 17:45:25,998 "GET /static/fonts/poppins/Poppins-Bold.ttf HTTP/1.1" 200 141260
+INFO 2020-05-28 17:45:26,006 "GET /static/fonts/poppins/Poppins-Regular.ttf HTTP/1.1" 200 145312
+INFO 2020-05-28 17:45:31,971 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-28 17:45:31,978 "GET / HTTP/1.1" 200 5252
+INFO 2020-05-28 17:45:33,607 "GET /registration/ HTTP/1.1" 200 6493
+WARNING 2020-05-28 17:45:33,680 Not Found: /registration/static/images/IIIT-B_logo.jpg
+WARNING 2020-05-28 17:45:33,680 Not Found: /registration/static/images/IIIT-B_logo.jpg
+WARNING 2020-05-28 17:45:33,682 "GET /registration/static/images/IIIT-B_logo.jpg HTTP/1.1" 404 3953
+INFO 2020-05-28 17:45:50,911 "POST /saveUser/ HTTP/1.1" 200 62
+INFO 2020-05-28 17:46:11,428 "GET /activate/Mw/5gv-05dc1c0bb909a3096dc3/ HTTP/1.1" 302 0
+INFO 2020-05-28 17:46:11,489 "GET / HTTP/1.1" 200 5287
+INFO 2020-05-28 17:46:11,681 "GET /static/fonts/Linearicons-Free-v1.0.0/icon-font.min.css HTTP/1.1" 304 0
+INFO 2020-05-28 17:46:11,696 "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-05-28 17:46:11,720 "GET /static/fonts/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 304 0
+INFO 2020-05-28 17:46:11,742 "GET /static/vendor/animate/animate.css HTTP/1.1" 304 0
+INFO 2020-05-28 17:46:11,767 "GET /static/vendor/css-hamburgers/hamburgers.min.css HTTP/1.1" 304 0
+INFO 2020-05-28 17:46:11,787 "GET /static/vendor/animsition/css/animsition.min.css HTTP/1.1" 304 0
+INFO 2020-05-28 17:46:11,801 "GET /static/vendor/daterangepicker/daterangepicker.css HTTP/1.1" 304 0
+INFO 2020-05-28 17:46:11,827 "GET /static/css/main.css HTTP/1.1" 304 0
+INFO 2020-05-28 17:46:11,836 "GET /static/css/util.css HTTP/1.1" 304 0
+INFO 2020-05-28 17:46:11,855 "GET /static/vendor/select2/select2.min.css HTTP/1.1" 304 0
+INFO 2020-05-28 17:46:11,877 "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2020-05-28 17:46:11,925 "GET /static/vendor/daterangepicker/moment.min.js HTTP/1.1" 304 0
+INFO 2020-05-28 17:46:11,928 "GET /static/vendor/bootstrap/js/popper.js HTTP/1.1" 304 0
+INFO 2020-05-28 17:46:11,950 "GET /static/vendor/daterangepicker/daterangepicker.js HTTP/1.1" 304 0
+INFO 2020-05-28 17:46:11,951 "GET /static/vendor/jquery/jquery-3.2.1.min.js HTTP/1.1" 304 0
+INFO 2020-05-28 17:46:11,969 "GET /static/vendor/select2/select2.min.js HTTP/1.1" 304 0
+INFO 2020-05-28 17:46:11,976 "GET /static/js/coding.js HTTP/1.1" 304 0
+INFO 2020-05-28 17:46:12,001 "GET /static/vendor/countdowntime/countdowntime.js HTTP/1.1" 304 0
+INFO 2020-05-28 17:46:12,003 "GET /static/vendor/animsition/js/animsition.min.js HTTP/1.1" 304 0
+INFO 2020-05-28 17:46:12,157 "GET /static/images/bg-01.jpg HTTP/1.1" 304 0
+INFO 2020-05-28 17:46:12,320 "GET /static/fonts/poppins/Poppins-Bold.ttf HTTP/1.1" 304 0
+INFO 2020-05-28 17:46:12,328 "GET /static/fonts/poppins/Poppins-Regular.ttf HTTP/1.1" 304 0
+INFO 2020-05-28 17:46:21,000 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-28 17:46:21,016 "GET /dashboard/ HTTP/1.1" 200 3283
+INFO 2020-05-28 17:46:21,088 "GET /static/css/dashboard.css HTTP/1.1" 200 839
+INFO 2020-05-28 17:46:21,171 "GET /static/images/coding.jpg HTTP/1.1" 200 139789
+INFO 2020-05-28 17:46:24,880 "GET /userprofile/ HTTP/1.1" 200 9245
+INFO 2020-05-28 17:46:25,003 "GET /static/css/profile.css HTTP/1.1" 200 1145
+INFO 2020-05-28 17:46:25,104 "GET /media/submittedFiles/modhzz/modhzz.jpg HTTP/1.1" 200 25383
+INFO 2020-05-28 17:46:25,105 "GET /static/images/jayant.jpg HTTP/1.1" 200 92505
+INFO 2020-05-28 17:46:50,477 "GET /contest/all/ HTTP/1.1" 200 7997
+INFO 2020-05-28 17:46:50,634 "GET /static/css/allContests.css HTTP/1.1" 200 686
+INFO 2020-05-28 17:46:55,888 "POST /contest/1/ HTTP/1.1" 200 5588
+INFO 2020-05-28 17:46:56,061 "GET /static/css/contestQuestions.css HTTP/1.1" 200 867
+INFO 2020-05-28 17:46:57,604 "GET /contest/1/ranklist/ HTTP/1.1" 200 1519
+INFO 2020-05-28 17:47:12,472 "POST /contest/1/2/ HTTP/1.1" 200 10310
+INFO 2020-05-28 17:47:12,586 "GET /static/css/problem.css HTTP/1.1" 200 876
+WARNING 2020-05-28 17:47:12,678 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-28 17:47:12,690 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+INFO 2020-05-28 17:47:12,712 "GET /static/css/form-validation.css HTTP/1.1" 200 73
+INFO 2020-05-28 17:47:12,715 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 159515
+INFO 2020-05-28 17:47:12,727 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60010
+INFO 2020-05-28 17:47:12,742 "GET /static/js/problem.js HTTP/1.1" 200 2531
+INFO 2020-05-28 17:47:12,745 "GET /static/js/ace.js HTTP/1.1" 200 379869
+WARNING 2020-05-28 17:47:12,948 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-28 17:47:12,990 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-28 17:47:13,135 "GET /static/js/theme-monokai.js HTTP/1.1" 200 2704
+INFO 2020-05-28 17:47:13,146 "GET /static/js/mode-c_cpp.js HTTP/1.1" 200 19330
+WARNING 2020-05-28 17:47:56,764 "GET /static/js/mode-CPP.js HTTP/1.1" 404 1666
+INFO 2020-05-28 17:47:59,844 "GET /static/js/theme-github.js HTTP/1.1" 200 2784
+ERROR 2020-05-28 17:48:11,271 Internal Server Error: /contest/1/2/submit/
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/modhzz/CallOJ/contest/views.py", line 116, in submitProblemView
+    x = utils.submitProblem(request.user, usercode, language, problem)
+  File "/home/modhzz/CallOJ/problems/utils.py", line 81, in submitProblem
+    return judge.executeJudge()
+  File "/home/modhzz/CallOJ/problems/judge.py", line 124, in executeJudge
+    self.grade()
+  File "/home/modhzz/CallOJ/problems/judge.py", line 87, in grade
+    verdict = self.verdict[tc]
+IndexError: list index out of range
+ERROR 2020-05-28 17:48:11,271 Internal Server Error: /contest/1/2/submit/
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/modhzz/CallOJ/contest/views.py", line 116, in submitProblemView
+    x = utils.submitProblem(request.user, usercode, language, problem)
+  File "/home/modhzz/CallOJ/problems/utils.py", line 81, in submitProblem
+    return judge.executeJudge()
+  File "/home/modhzz/CallOJ/problems/judge.py", line 124, in executeJudge
+    self.grade()
+  File "/home/modhzz/CallOJ/problems/judge.py", line 87, in grade
+    verdict = self.verdict[tc]
+IndexError: list index out of range
+ERROR 2020-05-28 17:48:11,273 "POST /contest/1/2/submit/ HTTP/1.1" 500 86302
+WARNING 2020-05-28 17:48:17,869 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
