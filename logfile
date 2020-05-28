@@ -1,0 +1,346 @@
+INFO 2020-05-28 17:05:40,499 "GET / HTTP/1.1" 200 5208
+INFO 2020-05-28 17:05:40,926 "GET /static/fonts/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 31000
+INFO 2020-05-28 17:05:40,927 "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 124962
+INFO 2020-05-28 17:05:40,928 "GET /static/fonts/Linearicons-Free-v1.0.0/icon-font.min.css HTTP/1.1" 200 7354
+INFO 2020-05-28 17:05:40,929 "GET /static/vendor/animate/animate.css HTTP/1.1" 200 23848
+INFO 2020-05-28 17:05:40,934 "GET /static/vendor/css-hamburgers/hamburgers.min.css HTTP/1.1" 200 19686
+INFO 2020-05-28 17:05:40,953 "GET /static/vendor/animsition/css/animsition.min.css HTTP/1.1" 200 27478
+INFO 2020-05-28 17:05:40,958 "GET /static/css/main.css HTTP/1.1" 200 10109
+INFO 2020-05-28 17:05:40,959 "GET /static/vendor/select2/select2.min.css HTTP/1.1" 200 15196
+INFO 2020-05-28 17:05:40,961 "GET /static/css/util.css HTTP/1.1" 200 86814
+INFO 2020-05-28 17:05:40,965 "GET /static/vendor/daterangepicker/daterangepicker.css HTTP/1.1" 200 8163
+INFO 2020-05-28 17:05:40,965 "GET /static/js/coding.js HTTP/1.1" 200 234
+INFO 2020-05-28 17:05:40,968 "GET /static/vendor/jquery/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+INFO 2020-05-28 17:05:40,992 "GET /static/vendor/animsition/js/animsition.min.js HTTP/1.1" 200 5615
+INFO 2020-05-28 17:05:41,001 "GET /static/vendor/bootstrap/js/popper.js HTTP/1.1" 200 81670
+INFO 2020-05-28 17:05:41,050 "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 51143
+INFO 2020-05-28 17:05:41,054 "GET /static/vendor/daterangepicker/moment.min.js HTTP/1.1" 200 46645
+INFO 2020-05-28 17:05:41,055 "GET /static/vendor/daterangepicker/daterangepicker.js HTTP/1.1" 200 69776
+INFO 2020-05-28 17:05:41,056 "GET /static/vendor/select2/select2.min.js HTTP/1.1" 200 66664
+INFO 2020-05-28 17:05:41,059 "GET /static/vendor/countdowntime/countdowntime.js HTTP/1.1" 200 1340
+INFO 2020-05-28 17:05:41,097 "GET /static/images/bg-01.jpg HTTP/1.1" 200 24337
+INFO 2020-05-28 17:05:41,111 "GET /static/fonts/poppins/Poppins-Regular.ttf HTTP/1.1" 200 145312
+INFO 2020-05-28 17:05:41,112 "GET /static/fonts/poppins/Poppins-Bold.ttf HTTP/1.1" 200 141260
+INFO 2020-05-28 17:05:41,207 "GET /static/images/CollegeLogo.png HTTP/1.1" 200 43363
+INFO 2020-05-28 17:05:42,467 "GET /registration/ HTTP/1.1" 200 6493
+INFO 2020-05-28 17:05:42,532 "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 124962
+INFO 2020-05-28 17:05:42,548 "GET /static/fonts/Linearicons-Free-v1.0.0/icon-font.min.css HTTP/1.1" 200 7354
+INFO 2020-05-28 17:05:42,554 "GET /static/vendor/select2/select2.min.css HTTP/1.1" 200 15196
+INFO 2020-05-28 17:05:42,554 "GET /static/vendor/animsition/css/animsition.min.css HTTP/1.1" 200 27478
+INFO 2020-05-28 17:05:42,555 "GET /static/fonts/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 31000
+INFO 2020-05-28 17:05:42,556 "GET /static/js/coding.js HTTP/1.1" 200 234
+INFO 2020-05-28 17:05:42,562 "GET /static/vendor/animate/animate.css HTTP/1.1" 200 23848
+INFO 2020-05-28 17:05:42,562 "GET /static/vendor/daterangepicker/daterangepicker.css HTTP/1.1" 200 8163
+INFO 2020-05-28 17:05:42,563 "GET /static/vendor/css-hamburgers/hamburgers.min.css HTTP/1.1" 200 19686
+WARNING 2020-05-28 17:05:42,690 Not Found: /registration/static/images/IIIT-B_logo.jpg
+WARNING 2020-05-28 17:05:42,690 Not Found: /registration/static/images/IIIT-B_logo.jpg
+WARNING 2020-05-28 17:05:42,691 "GET /registration/static/images/IIIT-B_logo.jpg HTTP/1.1" 404 3953
+ERROR 2020-05-28 17:06:05,348 Internal Server Error: /saveUser/
+Traceback (most recent call last):
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-K4fYLF2w/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-K4fYLF2w/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-K4fYLF2w/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/parthendo/Project/CallOJ/login/views.py", line 142, in saveUserView
+    msg.send()
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-K4fYLF2w/lib/python3.6/site-packages/django/core/mail/message.py", line 291, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-K4fYLF2w/lib/python3.6/site-packages/django/core/mail/backends/smtp.py", line 103, in send_messages
+    new_conn_created = self.open()
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-K4fYLF2w/lib/python3.6/site-packages/django/core/mail/backends/smtp.py", line 70, in open
+    self.connection.login(self.username, self.password)
+  File "/usr/lib/python3.6/smtplib.py", line 730, in login
+    raise last_exception
+  File "/usr/lib/python3.6/smtplib.py", line 721, in login
+    initial_response_ok=initial_response_ok)
+  File "/usr/lib/python3.6/smtplib.py", line 642, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (534, b'5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbv\n5.7.14 Gj0yeELSM3fchmOhrwB8L8EqnI0iGD2wPsEW8NYE_alP0lC4jNpstJvglESntNnMkoBuw\n5.7.14 Ma3RjjNBZGMj34hNPVKf4NzHkhIW7Uj2SGkunWEoLgXSWG2xagYtd6ni3fzWjNhg>\n5.7.14 Please log in via your web browser and then try again.\n5.7.14  Learn more at\n5.7.14  https://support.google.com/mail/answer/78754 a71sm5047819pje.0 - gsmtp')
+ERROR 2020-05-28 17:06:05,348 Internal Server Error: /saveUser/
+Traceback (most recent call last):
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-K4fYLF2w/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-K4fYLF2w/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-K4fYLF2w/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/parthendo/Project/CallOJ/login/views.py", line 142, in saveUserView
+    msg.send()
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-K4fYLF2w/lib/python3.6/site-packages/django/core/mail/message.py", line 291, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-K4fYLF2w/lib/python3.6/site-packages/django/core/mail/backends/smtp.py", line 103, in send_messages
+    new_conn_created = self.open()
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-K4fYLF2w/lib/python3.6/site-packages/django/core/mail/backends/smtp.py", line 70, in open
+    self.connection.login(self.username, self.password)
+  File "/usr/lib/python3.6/smtplib.py", line 730, in login
+    raise last_exception
+  File "/usr/lib/python3.6/smtplib.py", line 721, in login
+    initial_response_ok=initial_response_ok)
+  File "/usr/lib/python3.6/smtplib.py", line 642, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (534, b'5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbv\n5.7.14 Gj0yeELSM3fchmOhrwB8L8EqnI0iGD2wPsEW8NYE_alP0lC4jNpstJvglESntNnMkoBuw\n5.7.14 Ma3RjjNBZGMj34hNPVKf4NzHkhIW7Uj2SGkunWEoLgXSWG2xagYtd6ni3fzWjNhg>\n5.7.14 Please log in via your web browser and then try again.\n5.7.14  Learn more at\n5.7.14  https://support.google.com/mail/answer/78754 a71sm5047819pje.0 - gsmtp')
+ERROR 2020-05-28 17:06:05,349 "POST /saveUser/ HTTP/1.1" 500 110351
+WARNING 2020-05-28 17:06:05,389 Not Found: /favicon.ico
+WARNING 2020-05-28 17:06:05,389 Not Found: /favicon.ico
+WARNING 2020-05-28 17:06:05,390 "GET /favicon.ico HTTP/1.1" 404 3860
+INFO 2020-05-28 17:06:30,782 "POST /saveUser/ HTTP/1.1" 302 0
+INFO 2020-05-28 17:06:30,797 "GET /registration/ HTTP/1.1" 200 6528
+INFO 2020-05-28 17:06:30,886 "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 124962
+INFO 2020-05-28 17:06:30,891 "GET /static/fonts/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 31000
+INFO 2020-05-28 17:06:30,894 "GET /static/fonts/Linearicons-Free-v1.0.0/icon-font.min.css HTTP/1.1" 200 7354
+INFO 2020-05-28 17:06:30,900 "GET /static/vendor/animate/animate.css HTTP/1.1" 200 23848
+INFO 2020-05-28 17:06:30,910 "GET /static/vendor/css-hamburgers/hamburgers.min.css HTTP/1.1" 200 19686
+INFO 2020-05-28 17:06:30,927 "GET /static/vendor/select2/select2.min.css HTTP/1.1" 200 15196
+INFO 2020-05-28 17:06:30,929 "GET /static/vendor/animsition/css/animsition.min.css HTTP/1.1" 200 27478
+INFO 2020-05-28 17:06:30,935 "GET /static/vendor/daterangepicker/daterangepicker.css HTTP/1.1" 200 8163
+INFO 2020-05-28 17:06:30,943 "GET /static/vendor/jquery/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+INFO 2020-05-28 17:06:30,944 "GET /static/css/util.css HTTP/1.1" 200 86814
+INFO 2020-05-28 17:06:30,956 "GET /static/vendor/animsition/js/animsition.min.js HTTP/1.1" 200 5615
+INFO 2020-05-28 17:06:30,962 "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 51143
+INFO 2020-05-28 17:06:30,969 "GET /static/vendor/daterangepicker/moment.min.js HTTP/1.1" 200 46645
+INFO 2020-05-28 17:06:30,976 "GET /static/vendor/countdowntime/countdowntime.js HTTP/1.1" 200 1340
+INFO 2020-05-28 17:06:30,988 "GET /static/vendor/select2/select2.min.js HTTP/1.1" 200 66664
+INFO 2020-05-28 17:06:30,990 "GET /static/vendor/bootstrap/js/popper.js HTTP/1.1" 200 81670
+INFO 2020-05-28 17:06:31,003 "GET /static/css/main.css HTTP/1.1" 200 10109
+INFO 2020-05-28 17:06:31,003 "GET /static/js/coding.js HTTP/1.1" 200 234
+INFO 2020-05-28 17:06:31,004 "GET /static/vendor/daterangepicker/daterangepicker.js HTTP/1.1" 200 69776
+WARNING 2020-05-28 17:06:31,045 Not Found: /registration/static/images/IIIT-B_logo.jpg
+WARNING 2020-05-28 17:06:31,045 Not Found: /registration/static/images/IIIT-B_logo.jpg
+WARNING 2020-05-28 17:06:31,049 "GET /registration/static/images/IIIT-B_logo.jpg HTTP/1.1" 404 3953
+INFO 2020-05-28 17:06:46,445 "POST /saveUser/ HTTP/1.1" 302 0
+INFO 2020-05-28 17:06:46,453 "GET /registration/ HTTP/1.1" 200 6528
+INFO 2020-05-28 17:06:46,493 "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 124962
+INFO 2020-05-28 17:06:46,562 "GET /static/vendor/select2/select2.min.js HTTP/1.1" 200 8192
+WARNING 2020-05-28 17:06:46,622 Not Found: /registration/static/images/IIIT-B_logo.jpg
+WARNING 2020-05-28 17:06:46,622 Not Found: /registration/static/images/IIIT-B_logo.jpg
+WARNING 2020-05-28 17:06:46,623 "GET /registration/static/images/IIIT-B_logo.jpg HTTP/1.1" 404 3953
+INFO 2020-05-28 17:06:46,700 "GET /static/images/CollegeLogo.png HTTP/1.1" 200 8192
+INFO 2020-05-28 17:07:21,834 "GET / HTTP/1.1" 200 5208
+INFO 2020-05-28 17:07:22,100 "GET /static/images/bg-01.jpg HTTP/1.1" 200 24337
+INFO 2020-05-28 17:07:22,111 "GET /static/fonts/poppins/Poppins-Bold.ttf HTTP/1.1" 200 141260
+INFO 2020-05-28 17:07:22,115 "GET /static/fonts/poppins/Poppins-Regular.ttf HTTP/1.1" 200 145312
+INFO 2020-05-28 17:07:22,191 "GET /static/images/CollegeLogo.png HTTP/1.1" 200 8192
+INFO 2020-05-28 17:07:38,337 "GET /registration/ HTTP/1.1" 200 6493
+INFO 2020-05-28 17:07:38,420 "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 8192
+WARNING 2020-05-28 17:07:38,475 Not Found: /registration/static/images/IIIT-B_logo.jpg
+WARNING 2020-05-28 17:07:38,475 Not Found: /registration/static/images/IIIT-B_logo.jpg
+WARNING 2020-05-28 17:07:38,475 "GET /registration/static/images/IIIT-B_logo.jpg HTTP/1.1" 404 3953
+INFO 2020-05-28 17:07:58,664 "POST /saveUser/ HTTP/1.1" 200 62
+INFO 2020-05-28 17:08:10,555 "GET /activate/MQ/5gv-425c613f47da36fb1e60/ HTTP/1.1" 302 0
+INFO 2020-05-28 17:08:10,562 "GET / HTTP/1.1" 200 5287
+INFO 2020-05-28 17:08:10,876 "GET /static/vendor/jquery/jquery-3.2.1.min.js HTTP/1.1" 304 0
+INFO 2020-05-28 17:08:10,907 "GET /static/fonts/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 31000
+INFO 2020-05-28 17:08:10,908 "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 124962
+INFO 2020-05-28 17:08:10,908 "GET /static/vendor/animsition/js/animsition.min.js HTTP/1.1" 304 0
+INFO 2020-05-28 17:08:10,914 "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2020-05-28 17:08:10,918 "GET /static/fonts/Linearicons-Free-v1.0.0/icon-font.min.css HTTP/1.1" 304 0
+INFO 2020-05-28 17:08:10,925 "GET /static/vendor/animate/animate.css HTTP/1.1" 304 0
+INFO 2020-05-28 17:08:10,950 "GET /static/vendor/daterangepicker/moment.min.js HTTP/1.1" 304 0
+INFO 2020-05-28 17:08:10,954 "GET /static/vendor/daterangepicker/daterangepicker.js HTTP/1.1" 304 0
+INFO 2020-05-28 17:08:10,955 "GET /static/js/coding.js HTTP/1.1" 304 0
+INFO 2020-05-28 17:08:10,958 "GET /static/vendor/bootstrap/js/popper.js HTTP/1.1" 304 0
+INFO 2020-05-28 17:08:10,960 "GET /static/vendor/select2/select2.min.js HTTP/1.1" 304 0
+INFO 2020-05-28 17:08:10,961 "GET /static/vendor/countdowntime/countdowntime.js HTTP/1.1" 304 0
+INFO 2020-05-28 17:08:10,969 "GET /static/images/bg-01.jpg HTTP/1.1" 200 8192
+INFO 2020-05-28 17:08:10,988 "GET /static/fonts/poppins/Poppins-Bold.ttf HTTP/1.1" 200 8192
+INFO 2020-05-28 17:08:10,993 "GET /static/fonts/poppins/Poppins-Regular.ttf HTTP/1.1" 200 8192
+INFO 2020-05-28 17:08:16,317 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-05-28 17:08:16,328 "GET /dashboard/ HTTP/1.1" 200 3286
+INFO 2020-05-28 17:08:16,477 "GET /static/css/dashboard.css HTTP/1.1" 200 839
+INFO 2020-05-28 17:08:16,499 "GET /static/images/coding.jpg HTTP/1.1" 200 139789
+WARNING 2020-05-28 17:08:16,546 Not Found: /favicon.ico
+WARNING 2020-05-28 17:08:16,546 Not Found: /favicon.ico
+WARNING 2020-05-28 17:08:16,547 "GET /favicon.ico HTTP/1.1" 404 3860
+INFO 2020-05-28 17:08:19,142 "GET /dashboard/problems/ HTTP/1.1" 200 7291
+INFO 2020-05-28 17:08:19,543 "GET /static/css/problems.css HTTP/1.1" 200 686
+INFO 2020-05-28 17:14:42,478 "GET /dashboard/problems/ HTTP/1.1" 200 7291
+INFO 2020-05-28 17:14:42,536 "GET /static/css/problems.css HTTP/1.1" 200 686
+INFO 2020-05-28 17:14:49,671 "GET /dashboard/createProblem/ HTTP/1.1" 200 10788
+INFO 2020-05-28 17:14:49,723 "GET /static/css/createproblem.css HTTP/1.1" 200 505
+INFO 2020-05-28 17:14:49,732 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 159515
+INFO 2020-05-28 17:14:49,739 "GET /static/js/uploadFiles.js HTTP/1.1" 200 619
+WARNING 2020-05-28 17:14:49,750 Not Found: /dashboard/createProblem/assets/js/vendor/popper.min.js
+WARNING 2020-05-28 17:14:49,750 Not Found: /dashboard/createProblem/assets/js/vendor/popper.min.js
+WARNING 2020-05-28 17:14:49,754 Not Found: /dashboard/createProblem/assets/js/vendor/holder.min.js
+WARNING 2020-05-28 17:14:49,754 Not Found: /dashboard/createProblem/assets/js/vendor/holder.min.js
+WARNING 2020-05-28 17:14:49,755 "GET /dashboard/createProblem/assets/js/vendor/popper.min.js HTTP/1.1" 404 5361
+WARNING 2020-05-28 17:14:49,757 "GET /dashboard/createProblem/assets/js/vendor/holder.min.js HTTP/1.1" 404 5361
+WARNING 2020-05-28 17:14:49,768 "GET /static/https%3A/code.jquery.com/jquery-3.2.1.slim.min.js HTTP/1.1" 404 1765
+WARNING 2020-05-28 17:14:49,768 "GET /static/form-validation.css HTTP/1.1" 404 1681
+INFO 2020-05-28 17:14:50,153 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60010
+WARNING 2020-05-28 17:14:50,304 "GET /static/https%3A/code.jquery.com/jquery-3.2.1.slim.min.js HTTP/1.1" 404 1765
+WARNING 2020-05-28 17:14:50,312 Not Found: /assets/js/vendor/jquery-slim.min.js
+WARNING 2020-05-28 17:14:50,312 Not Found: /assets/js/vendor/jquery-slim.min.js
+WARNING 2020-05-28 17:14:50,313 "GET /assets/js/vendor/jquery-slim.min.js HTTP/1.1" 404 3932
+WARNING 2020-05-28 17:14:50,321 Not Found: /dashboard/createProblem/assets/js/vendor/popper.min.js
+WARNING 2020-05-28 17:14:50,321 Not Found: /dashboard/createProblem/assets/js/vendor/popper.min.js
+WARNING 2020-05-28 17:14:50,321 "GET /dashboard/createProblem/assets/js/vendor/popper.min.js HTTP/1.1" 404 5361
+WARNING 2020-05-28 17:14:50,341 Not Found: /dashboard/createProblem/assets/js/vendor/holder.min.js
+WARNING 2020-05-28 17:14:50,341 Not Found: /dashboard/createProblem/assets/js/vendor/holder.min.js
+WARNING 2020-05-28 17:14:50,345 "GET /dashboard/createProblem/assets/js/vendor/holder.min.js HTTP/1.1" 404 5361
+INFO 2020-05-28 17:14:50,397 "GET /static/js/ckeditor/skins/moono-lisa/editor_gecko.css?t=JB9C HTTP/1.1" 200 35663
+INFO 2020-05-28 17:14:50,526 "GET /static/js/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css?t=JB9C HTTP/1.1" 200 381
+INFO 2020-05-28 17:14:50,540 "GET /static/js/ckeditor/plugins/tableselection/styles/tableselection.css HTTP/1.1" 200 1145
+INFO 2020-05-28 17:14:50,540 "GET /static/js/ckeditor/plugins/scayt/dialogs/dialog.css?t=JB9C HTTP/1.1" 200 419
+INFO 2020-05-28 17:14:50,547 "GET /static/js/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css?t=JB9C HTTP/1.1" 200 1306
+INFO 2020-05-28 17:14:50,555 "GET /static/js/ckeditor/plugins/dialog/styles/dialog.css HTTP/1.1" 200 249
+INFO 2020-05-28 17:14:50,607 "GET /static/js/ckeditor/skins/moono-lisa/icons.png?t=411985373e HTTP/1.1" 200 5881
+INFO 2020-05-28 17:14:50,810 "GET /static/js/ckeditor/contents.css?t=JB9C HTTP/1.1" 200 3094
+INFO 2020-05-28 17:16:35,388 "POST /dashboard/createProblem/ HTTP/1.1" 302 0
+INFO 2020-05-28 17:16:35,403 "GET /dashboard/problems/ HTTP/1.1" 200 9949
+INFO 2020-05-28 17:16:35,480 "GET /static/css/problems.css HTTP/1.1" 200 686
+INFO 2020-05-28 17:19:10,086 "POST /dashboard/problems/1/ HTTP/1.1" 200 9679
+INFO 2020-05-28 17:19:10,175 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 159515
+INFO 2020-05-28 17:19:10,176 "GET /static/css/problem.css HTTP/1.1" 200 876
+INFO 2020-05-28 17:19:10,182 "GET /static/css/form-validation.css HTTP/1.1" 200 73
+WARNING 2020-05-28 17:19:10,233 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+INFO 2020-05-28 17:19:10,241 "GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+WARNING 2020-05-28 17:19:10,361 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-28 17:19:10,417 "GET /static/js/ace.js HTTP/1.1" 200 379869
+INFO 2020-05-28 17:19:10,424 "GET /static/js/problem.js HTTP/1.1" 200 2531
+WARNING 2020-05-28 17:19:10,512 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-28 17:19:10,569 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-28 17:19:10,666 "GET /static/js/theme-monokai.js HTTP/1.1" 200 2704
+INFO 2020-05-28 17:19:10,678 "GET /static/js/mode-c_cpp.js HTTP/1.1" 200 19330
+WARNING 2020-05-28 17:19:10,682 "GET /static/docs/4.0/assets/img/favicons/favicon.ico HTTP/1.1" 404 1744
+WARNING 2020-05-28 17:19:14,631 "GET /static/js/mode-CPP.js HTTP/1.1" 404 1666
+INFO 2020-05-28 17:19:25,814 "GET /static/js/theme-twilight.js HTTP/1.1" 200 3566
+ERROR 2020-05-28 17:19:40,478 Internal Server Error: /dashboard/submission/1/
+Traceback (most recent call last):
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-K4fYLF2w/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-K4fYLF2w/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-K4fYLF2w/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-K4fYLF2w/lib/python3.6/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/parthendo/Project/CallOJ/problems/views.py", line 60, in submitProblemView
+    x = utils.submitProblem(request.user, usercode, language, problem)
+  File "/home/parthendo/Project/CallOJ/problems/utils.py", line 81, in submitProblem
+    return judge.executeJudge()
+  File "/home/parthendo/Project/CallOJ/problems/judge.py", line 124, in executeJudge
+    self.grade()
+  File "/home/parthendo/Project/CallOJ/problems/judge.py", line 87, in grade
+    verdict = self.verdict[tc]
+IndexError: list index out of range
+ERROR 2020-05-28 17:19:40,478 Internal Server Error: /dashboard/submission/1/
+Traceback (most recent call last):
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-K4fYLF2w/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-K4fYLF2w/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-K4fYLF2w/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/parthendo/.local/share/virtualenvs/CallOJ-K4fYLF2w/lib/python3.6/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/parthendo/Project/CallOJ/problems/views.py", line 60, in submitProblemView
+    x = utils.submitProblem(request.user, usercode, language, problem)
+  File "/home/parthendo/Project/CallOJ/problems/utils.py", line 81, in submitProblem
+    return judge.executeJudge()
+  File "/home/parthendo/Project/CallOJ/problems/judge.py", line 124, in executeJudge
+    self.grade()
+  File "/home/parthendo/Project/CallOJ/problems/judge.py", line 87, in grade
+    verdict = self.verdict[tc]
+IndexError: list index out of range
+ERROR 2020-05-28 17:19:40,479 "POST /dashboard/submission/1/ HTTP/1.1" 500 99470
+INFO 2020-05-28 17:20:02,085 "POST /dashboard/submission/1/ HTTP/1.1" 200 12751
+WARNING 2020-05-28 17:20:02,147 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+INFO 2020-05-28 17:20:02,153 "GET /static/images/grrentick.jpg HTTP/1.1" 200 17583
+WARNING 2020-05-28 17:20:02,154 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-28 17:20:02,180 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-28 17:20:02,215 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-28 17:21:29,949 "GET /dashboard/createProblem/ HTTP/1.1" 200 10788
+INFO 2020-05-28 17:21:30,021 "GET /static/css/createproblem.css HTTP/1.1" 200 505
+WARNING 2020-05-28 17:21:30,021 "GET /static/form-validation.css HTTP/1.1" 404 1681
+INFO 2020-05-28 17:21:30,031 "GET /static/js/uploadFiles.js HTTP/1.1" 200 619
+WARNING 2020-05-28 17:21:30,038 Not Found: /dashboard/createProblem/assets/js/vendor/popper.min.js
+WARNING 2020-05-28 17:21:30,038 Not Found: /dashboard/createProblem/assets/js/vendor/popper.min.js
+INFO 2020-05-28 17:21:30,041 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 8192
+WARNING 2020-05-28 17:21:30,043 "GET /dashboard/createProblem/assets/js/vendor/popper.min.js HTTP/1.1" 404 5361
+WARNING 2020-05-28 17:21:30,048 "GET /static/https%3A/code.jquery.com/jquery-3.2.1.slim.min.js HTTP/1.1" 404 1765
+WARNING 2020-05-28 17:21:30,053 Not Found: /dashboard/createProblem/assets/js/vendor/holder.min.js
+WARNING 2020-05-28 17:21:30,053 Not Found: /dashboard/createProblem/assets/js/vendor/holder.min.js
+WARNING 2020-05-28 17:21:30,054 "GET /dashboard/createProblem/assets/js/vendor/holder.min.js HTTP/1.1" 404 5361
+WARNING 2020-05-28 17:21:30,111 Not Found: /assets/js/vendor/jquery-slim.min.js
+WARNING 2020-05-28 17:21:30,111 Not Found: /assets/js/vendor/jquery-slim.min.js
+WARNING 2020-05-28 17:21:30,113 "GET /assets/js/vendor/jquery-slim.min.js HTTP/1.1" 404 3932
+WARNING 2020-05-28 17:21:30,127 Not Found: /dashboard/createProblem/assets/js/vendor/popper.min.js
+WARNING 2020-05-28 17:21:30,127 Not Found: /dashboard/createProblem/assets/js/vendor/popper.min.js
+WARNING 2020-05-28 17:21:30,127 "GET /dashboard/createProblem/assets/js/vendor/popper.min.js HTTP/1.1" 404 5361
+WARNING 2020-05-28 17:21:30,140 Not Found: /dashboard/createProblem/assets/js/vendor/holder.min.js
+WARNING 2020-05-28 17:21:30,140 Not Found: /dashboard/createProblem/assets/js/vendor/holder.min.js
+WARNING 2020-05-28 17:21:30,140 "GET /dashboard/createProblem/assets/js/vendor/holder.min.js HTTP/1.1" 404 5361
+INFO 2020-05-28 17:23:44,502 "POST /dashboard/createProblem/ HTTP/1.1" 302 0
+INFO 2020-05-28 17:23:44,539 "GET /dashboard/problems/ HTTP/1.1" 200 12598
+INFO 2020-05-28 17:23:44,636 "GET /static/css/problems.css HTTP/1.1" 304 0
+INFO 2020-05-28 17:23:47,918 "POST /dashboard/problems/2/ HTTP/1.1" 200 10278
+INFO 2020-05-28 17:23:48,011 "GET /static/css/problem.css HTTP/1.1" 200 876
+INFO 2020-05-28 17:23:48,014 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 159515
+INFO 2020-05-28 17:23:48,022 "GET /static/css/form-validation.css HTTP/1.1" 200 73
+WARNING 2020-05-28 17:23:48,040 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+INFO 2020-05-28 17:23:48,041 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60010
+INFO 2020-05-28 17:23:48,050 "GET /static/js/problem.js HTTP/1.1" 304 0
+WARNING 2020-05-28 17:23:48,051 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-28 17:23:48,052 "GET /static/js/ace.js HTTP/1.1" 304 0
+WARNING 2020-05-28 17:23:48,073 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-28 17:23:48,101 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-28 17:23:48,186 "GET /static/js/theme-monokai.js HTTP/1.1" 304 0
+INFO 2020-05-28 17:23:48,186 "GET /static/js/mode-c_cpp.js HTTP/1.1" 304 0
+INFO 2020-05-28 17:24:14,992 "GET /dashboard/createProblem/ HTTP/1.1" 200 10788
+INFO 2020-05-28 17:24:15,033 "GET /static/css/createproblem.css HTTP/1.1" 200 505
+INFO 2020-05-28 17:24:15,035 "GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+WARNING 2020-05-28 17:24:15,044 "GET /static/form-validation.css HTTP/1.1" 404 1681
+WARNING 2020-05-28 17:24:15,053 Not Found: /dashboard/createProblem/assets/js/vendor/popper.min.js
+WARNING 2020-05-28 17:24:15,053 Not Found: /dashboard/createProblem/assets/js/vendor/popper.min.js
+WARNING 2020-05-28 17:24:15,057 Not Found: /dashboard/createProblem/assets/js/vendor/holder.min.js
+WARNING 2020-05-28 17:24:15,057 Not Found: /dashboard/createProblem/assets/js/vendor/holder.min.js
+WARNING 2020-05-28 17:24:15,059 "GET /dashboard/createProblem/assets/js/vendor/popper.min.js HTTP/1.1" 404 5361
+WARNING 2020-05-28 17:24:15,059 "GET /dashboard/createProblem/assets/js/vendor/holder.min.js HTTP/1.1" 404 5361
+INFO 2020-05-28 17:24:15,063 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60010
+WARNING 2020-05-28 17:24:15,063 "GET /static/https%3A/code.jquery.com/jquery-3.2.1.slim.min.js HTTP/1.1" 404 1765
+WARNING 2020-05-28 17:24:15,100 Not Found: /assets/js/vendor/jquery-slim.min.js
+WARNING 2020-05-28 17:24:15,100 Not Found: /assets/js/vendor/jquery-slim.min.js
+WARNING 2020-05-28 17:24:15,101 "GET /assets/js/vendor/jquery-slim.min.js HTTP/1.1" 404 3932
+WARNING 2020-05-28 17:24:15,109 Not Found: /dashboard/createProblem/assets/js/vendor/popper.min.js
+WARNING 2020-05-28 17:24:15,109 Not Found: /dashboard/createProblem/assets/js/vendor/popper.min.js
+WARNING 2020-05-28 17:24:15,109 "GET /dashboard/createProblem/assets/js/vendor/popper.min.js HTTP/1.1" 404 5361
+WARNING 2020-05-28 17:24:15,126 Not Found: /dashboard/createProblem/assets/js/vendor/holder.min.js
+WARNING 2020-05-28 17:24:15,126 Not Found: /dashboard/createProblem/assets/js/vendor/holder.min.js
+WARNING 2020-05-28 17:24:15,127 "GET /dashboard/createProblem/assets/js/vendor/holder.min.js HTTP/1.1" 404 5361
+INFO 2020-05-28 17:25:03,438 "GET /static/js/ckeditor/plugins/specialchar/dialogs/lang/en.js?t=JB9C HTTP/1.1" 200 4563
+INFO 2020-05-28 17:25:03,463 "GET /static/js/ckeditor/plugins/specialchar/dialogs/specialchar.js?t=JB9C HTTP/1.1" 200 5007
+INFO 2020-05-28 17:25:03,526 "GET /static/js/ckeditor/skins/moono-lisa/images/close.png HTTP/1.1" 200 615
+INFO 2020-05-28 17:25:37,691 "GET /static/js/ckeditor/contents.css?t=JB9C HTTP/1.1" 200 3094
+INFO 2020-05-28 17:27:00,195 "POST /dashboard/createProblem/ HTTP/1.1" 302 0
+INFO 2020-05-28 17:27:00,230 "GET /dashboard/problems/ HTTP/1.1" 200 15248
+INFO 2020-05-28 17:27:00,348 "GET /static/css/problems.css HTTP/1.1" 200 686
+INFO 2020-05-28 17:27:03,487 "POST /dashboard/problems/3/ HTTP/1.1" 200 9775
+WARNING 2020-05-28 17:27:03,575 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+INFO 2020-05-28 17:27:03,584 "GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+WARNING 2020-05-28 17:27:03,594 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-28 17:27:03,599 "GET /static/css/problem.css HTTP/1.1" 304 0
+INFO 2020-05-28 17:27:03,602 "GET /static/css/form-validation.css HTTP/1.1" 304 0
+WARNING 2020-05-28 17:27:03,622 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-28 17:27:03,651 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-28 17:27:12,898 "GET /contest/all/ HTTP/1.1" 200 6430
+INFO 2020-05-28 17:27:13,005 "GET /static/css/allContests.css HTTP/1.1" 200 686
+INFO 2020-05-28 17:27:15,222 "GET /dashboard/problems/ HTTP/1.1" 200 15248
+INFO 2020-05-28 17:27:16,863 "GET /contest/all/ HTTP/1.1" 200 6430
+INFO 2020-05-28 17:27:16,948 "GET /static/css/allContests.css HTTP/1.1" 200 686
+INFO 2020-05-28 17:27:19,769 "GET /dashboard/problems/ HTTP/1.1" 200 15248
+INFO 2020-05-28 17:27:24,151 "GET /userprofile/ HTTP/1.1" 200 9251
+INFO 2020-05-28 17:27:24,255 "GET /media/submittedFiles/parthendo/parthendo.jpg HTTP/1.1" 200 25383
+INFO 2020-05-28 17:27:24,260 "GET /static/css/profile.css HTTP/1.1" 200 1145
+INFO 2020-05-28 17:27:24,312 "GET /static/images/jayant.jpg HTTP/1.1" 200 92505
+INFO 2020-05-28 17:27:34,887 "GET /contest/all/ HTTP/1.1" 200 6430
+INFO 2020-05-28 17:27:37,740 "GET /contest/create/ HTTP/1.1" 200 18248
+WARNING 2020-05-28 17:27:37,846 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-28 17:27:37,846 "GET /static/css/createContest.css HTTP/1.1" 200 534
+WARNING 2020-05-28 17:27:37,847 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-28 17:27:37,992 "GET /static/js/vendor/popper.min.js HTTP/1.1" 404 1693
+WARNING 2020-05-28 17:27:38,004 "GET /static/js/vendor/holder.min.js HTTP/1.1" 404 1693
+INFO 2020-05-28 17:28:49,871 "POST /contest/submit/ HTTP/1.1" 302 0
+INFO 2020-05-28 17:28:49,889 "GET /contest/all/ HTTP/1.1" 200 7136
